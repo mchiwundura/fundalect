@@ -9,6 +9,23 @@ import { useNavigation } from "expo-router";
 export default function ActivityCard({activity}: { activity: Activity }) {
     const navigation = useNavigation<any>();
     const colorScheme = useColorScheme();
+    
+    const colorMap = {
+  Flashcards: {
+    textColor: "rgba(128, 184, 147, 1)",  // Green
+    backgroundColor: "rgba(128, 184, 147, 0.2)"
+  },
+  Quiz: {
+    textColor: "rgba(149, 132, 255, 1)",  // Purple
+    backgroundColor: "rgba(149, 132, 255, 0.2)"
+  },
+  Lesson: {
+    textColor: "rgba(100, 170, 255, 1)",  // Blue (New color)
+    backgroundColor: "rgba(100, 170, 255, 0.2)"
+  }
+};
+
+const activityColors = colorMap[activity.type] || colorMap.Flashcards;
 
     return (
         <TouchableOpacity 
@@ -37,8 +54,9 @@ export default function ActivityCard({activity}: { activity: Activity }) {
                     <ThemedView style={{flexDirection: "row", justifyContent: "space-between", alignItems: "center"}}>
                         <ThemedText type="subtle">Completion: {activity.completion}%</ThemedText>
                         <IconTextButton title={activity.type} 
-                        textColor={activity.type === "Flashcards"? "rgba(128, 184, 147, 1)" : "rgba(149, 132, 255, 1 )"} 
-                        color={activity.type === "Flashcards"? "rgba(128, 184, 147, 0.2)" : "rgba(149, 132, 255, 0.2 )"} 
+                        textColor={activityColors.textColor}
+                        
+                        color={activityColors.backgroundColor}
                         icon={activity.type === "Flashcards"? "bolt" : "doc.plaintext"} 
                         onPress={() => navigation.navigate("flashcards", {activity})} />
                     </ThemedView>

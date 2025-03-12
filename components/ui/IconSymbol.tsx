@@ -18,6 +18,8 @@ const MAPPING = {
    "bolt" : "flash-on",
    "doc.plaintext" : "description",
    "list.dash": "list",
+   "bell" : "notifications-none",
+   "magnifyingglass" : "search"
 } as Partial<
   Record<
     import('expo-symbols').SymbolViewProps['name'],

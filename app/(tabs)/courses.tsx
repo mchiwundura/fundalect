@@ -1,7 +1,6 @@
 import ParallaxScrollView from "@/components/ParallaxScrollView";
 import { useEffect, useState } from "react";
 import { ThemedText } from "@/components/ThemedText";
-
 import { IconSymbol } from "@/components/ui/IconSymbol";
 import { StyleSheet, ScrollView, useColorScheme } from "react-native";
 import CourseCard from "@/components/CourseCard";
@@ -9,6 +8,7 @@ import IconTextButton from "@/components/ui/IconTextButton";
 import ActivityCard from "@/components/ui/ActivityCard";
 // import { getCourses } from "@/hooks/database";
 import SQLite from 'expo-sqlite';
+import HeaderNavigation from "@/components/HeaderNav";
 
 // Add activities to database and get them from there
 // Add courses to database and get them from there
@@ -18,36 +18,58 @@ const colorScheme = useColorScheme()
 
     // activities db lol
 
-   const activitiesDB =  [
-        {
-            id: 1,
-            title: "Central Nervous System",
-            icon: "😰",
-            completion: 55,
-            type: "Flashcards",
-        },
-        {
-            id: 2,
-            title: "Collidal Systems",
-            icon: "🧴",
-            completion: 35,
-            type: "Test",
-        },
-        {
-            id: 3,
-            title: "Arrays",
-            icon: "🧑‍💻",
-            completion: 55,
-            type: "Flashcards",
-        },
-        {
-            id: 4,
-            title: "Novel Dosage forms",
-            icon: "🧑‍💻",
-            completion: 21,
-            type: "Lesson",
-        },
-    ]
+   const activitiesDB = [
+    {
+        "id": 1,
+        "title": "Central Nervous System",
+        "icon": "😰",
+        "completion": 55,
+        "type": "Flashcards"
+    },
+    {
+        "id": 2,
+        "title": "Colloidal Systems",
+        "icon": "🧴",
+        "completion": 35,
+        "type": "Quiz"
+    },
+    {
+        "id": 3,
+        "title": "Arrays",
+        "icon": "🧑‍💻",
+        "completion": 55,
+        "type": "Flashcards"
+    },
+    {
+        "id": 4,
+        "title": "Novel Dosage Forms",
+        "icon": "💊",
+        "completion": 21,
+        "type": "Lesson"
+    },
+    {
+        "id": 5,
+        "title": "Drug Delivery Systems",
+        "icon": "🧪",
+        "completion": 40,
+        "type": "Lesson"
+    },
+    {
+        "id": 6,
+        "title": "Pharmacokinetics Basics",
+        "icon": "📉",
+        "completion": 30,
+        "type": "Lesson"
+    },
+    {
+        "id": 7,
+        "title": "Biopharmaceutics",
+        "icon": "🧬",
+        "completion": 25,
+        "type": "Lesson"
+    }
+]
+
 
     async function getCourses() {
         const db = await SQLite.openDatabaseAsync('local.db');
@@ -134,10 +156,12 @@ const colorScheme = useColorScheme()
     const [activities, setActivities] = useState<any>();
 
     function filterActivities(type: string) {
-        if (type === "Test") { 
-            setActivities(activitiesDB.filter(x => x.type === "Test"));
+        if (type === "Quiz") { 
+            setActivities(activitiesDB.filter(x => x.type === "Quiz"));
         } else if (type === "Flashcards") {
             setActivities(activitiesDB.filter(x => x.type === "Flashcards"));
+        } else if (type === "Lesson") {
+            setActivities(activitiesDB.filter(x => x.type === "Lesson"))
         } else
         setActivities(activitiesDB);
     }
@@ -147,12 +171,7 @@ const colorScheme = useColorScheme()
         <ParallaxScrollView
         headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
         headerImage={
-            <IconSymbol
-            size={310}
-            color="#808080"
-            name="chevron.left.forwardslash.chevron.right"
-            style={styles.headerImage}
-            />
+       <HeaderNavigation/> 
         }
         >
             <ThemedText type="title">My Courses</ThemedText>
@@ -172,7 +191,8 @@ const colorScheme = useColorScheme()
         icon="list.dash"
         />
         <IconTextButton onPress={() => filterActivities("Flashcards")} textColor="rgba(128, 184, 147, 1)" color="rgba(128, 184, 147, 0.2)"  title="Flashcards" icon="bolt" />
-        <IconTextButton onPress={() => filterActivities("Test")} textColor="rgba(149, 132, 255, 1 )" color="rgba(149, 132, 255, 0.2 )" title="Tests" icon="doc.plaintext"  />
+        <IconTextButton onPress={() => filterActivities("Quiz")} textColor="rgba(149, 132, 255, 1 )" color="rgba(149, 132, 255, 0.2 )" title="Quizes" icon="doc.plaintext"  />     
+        <IconTextButton onPress={() => filterActivities("Lesson")} textColor="rgba(100, 170, 255, 1)" color="rgba(100, 170, 255, 0.2)" title="Lessons" icon="doc.plaintext"  />
         </ScrollView>
         <ScrollView>
             
