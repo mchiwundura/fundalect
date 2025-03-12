@@ -5,6 +5,9 @@ import { useLocalSearchParams, useNavigation } from "expo-router";
 import { View, StyleSheet, Text } from "react-native";
 import * as SQLite from "expo-sqlite";
 import { useEffect, useState } from "react";
+import LessonCard from "@/components/ui/LessonCard";
+import { ThemedView } from "@/components/ThemedView";
+import { ThemedText } from "@/components/ThemedText";
 
 
 export default function Course() {
@@ -16,33 +19,45 @@ export default function Course() {
 
   async function runDatabase() {
     try {
-      const db = await SQLite.openDatabaseAsync('localCourses.db');
+      const db = await SQLite.openDatabaseAsync('local.db');
 
       await db.execAsync(`
         CREATE TABLE IF NOT EXISTS courses (
           id INTEGER PRIMARY KEY AUTOINCREMENT,
           title TEXT,
-          description TEXT
+          description TEXT,
+          color TEXT,
+          completion INTEGER,
+          icon TEXT
         );
+      `);
 
+      await db.execAsync(`
         CREATE TABLE IF NOT EXISTS lessons (
           id INTEGER PRIMARY KEY AUTOINCREMENT,
           course_id INTEGER NOT NULL,
           title TEXT,
+          completion INTEGER,
           FOREIGN KEY (course_id) REFERENCES courses (id) ON DELETE CASCADE
-          );
+        );
       `);
+      
+        // await db.execAsync(`
+        //   INSERT INTO lessons (course_id, title, completion) 
+        //   VALUES 
+        //     (1, 'Antibiotics', 100), 
+        //     (1, 'Novel dosage forms', 30), 
+        //     (1, 'Creams', 10);
+        // `);
 
+        // await db.execAsync(`
+        //   DROP TABLE lessons
+        //   `)
 
-      // await db.execAsync(`
-      // INSERT INTO courses (title, description) VALUES ('Math', 'Math is the study of numbers, quantities, and shapes. It is used to solve problems and understand the world around us.')
-      // `);
-
-    //   await db.execAsync(`
-    //     INSERT INTO lessons (course_id, title) VALUES (1, 'Lesson 1');
-    //     INSERT INTO lessons (course_id, title) VALUES (1, 'Lesson 2');
-    //     INSERT INTO lessons (course_id, title) VALUES (1, 'Lesson 3');
-    //     `);
+        // await db.execAsync(`
+        // INSERT INTO courses (title, description) VALUES ('Math', 'Math is the study of numbers, quantities, and shapes. It is used to solve problems and understand the world around us.')
+        // `);
+      
 
       const courses = await db.getAllAsync(`SELECT * FROM courses WHERE id = ${id}`);
       const lessons = await db.getAllAsync(`SELECT * FROM lessons`);
@@ -53,7 +68,15 @@ export default function Course() {
     //     WHERE courses.id = ${id};
     //     `);
  
-      setCourse(courses[0]);
+      // setCourse(courses[0]);
+      setCourse({
+        course_id: 1,
+        title: "Pharmaceutics",
+        description: "the course where you learn to make lotions",
+        color: "#FFB785",
+        icon: "🧪"
+      })
+
       setLessons(lessons);
 
     } catch (error) {
@@ -69,23 +92,27 @@ export default function Course() {
 
   return (
     <ParallaxScrollView
-      headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
+      headerBackgroundColor={{ light: '#FFFFFF', dark: '#000000' }}
       headerImage={
-        <IconSymbol
-          size={310}
-          color="#808080"
-          name="chevron.left.forwardslash.chevron.right"
-          style={styles.headerImage}
-        />
+<ThemedView style={[styles.header, {backgroundColor: course? course.color : "#fff"}]}>
+  <ThemedText type="title">
+    {course && course.title}
+
+  </ThemedText>
+  <Text style={styles.icon}>{course && course.icon}</Text>
+</ThemedView>
       }
     >
-      <IconTextButton color="#FF0000" title="Lessons" onPress={() => navigation.navigate("lesson")} />
+      <ThemedView style={styles.activityTypeContainer}>
+        <IconTextButton onPress={() => filterActivities("Flashcards")} textColor="rgba(128, 184, 147, 1)" color="rgba(128, 184, 147, 0.2)"  title="Flashcards" icon="bolt" />
+        <IconTextButton onPress={() => filterActivities("Quiz")} textColor="rgba(149, 132, 255, 1 )" color="rgba(149, 132, 255, 0.2 )" title="Quizes" icon="doc.plaintext"  />     
+        <IconTextButton  onPress={() => navigation.navigate("lesson")}textColor="rgba(100, 170, 255, 1)" color="rgba(100, 170, 255, 0.2)" title="Lessons" icon="doc.plaintext"  />
+      </ThemedView>
       {course && (
         <View>
-          <Text>{course.title}</Text>
-          <Text>{course.description}</Text>
+          <ThemedText>{course.description}</ThemedText>
         {lessons.map((x, y) => (
-          <Text key={y}>{x.title}</Text>
+          <LessonCard color={course.color} key={y} title={x.title} completion={x.completion}/>
         ))}
         </View>
       )}
@@ -94,8 +121,21 @@ export default function Course() {
 }
 
 const styles = StyleSheet.create({
-  headerImage: {
-    transform: [{ rotate: '180deg' }],
+  header: {
+  height: "100%",
+  borderRadius: 20,
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "space-between",
+  padding: 20
+  },
+  activityTypeContainer: {
+    display: "flex",
+    flexDirection: "row",
+  },
+  icon: {
+    fontSize: 80,
+    height: 120
   },
   titleContainer: {
     marginTop: 20,

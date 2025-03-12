@@ -48,6 +48,7 @@ const activityColors = colorMap[activity.type] || colorMap.Flashcards;
                 </ThemedView>
 
                  <ThemedView style={styles.cardInfo}>
+                    
                     {/* The title container */}
                     <ThemedText type="defaultSemiBold">{activity.title}</ThemedText>
                     
