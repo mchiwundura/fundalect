@@ -1,6 +1,7 @@
 import { StyleSheet, useColorScheme } from "react-native";
 import { ThemedText } from "../ThemedText";
 import { ThemedView } from "../ThemedView";
+import { Link } from "expo-router";
 
 interface LessonCardProps {
     title: string;
@@ -19,21 +20,26 @@ export default function LessonCard(props: LessonCardProps) {
     const colorScheme = useColorScheme()
 
     return (
+        <Link style={styles.link} href={`/lesson/${props.link}`}>
         <ThemedView style={[styles.container, {
             borderColor: rgbaColor(props.color, 0.8),
             backgroundColor : rgbaColor(props.color, 0.2),
             boxShadow: colorScheme === "light" ? "0 4px 4px rgba(0, 0, 0, 0.25)" : "0 4px 4px rgba(0, 0, 0, 0.9)"
         }]}>
-            <ThemedView style={[styles.progress, {backgroundColor: props.color, width: props.completion * 3}]}>
+            <ThemedView style={[styles.progress, {backgroundColor: props.color, width: props.completion * 3.18}]}>
             </ThemedView>
            <ThemedText type="defaultSemiBold">
                 {props.title}
            </ThemedText>
         </ThemedView>
+            </Link>
     )
 }
 
 const styles = StyleSheet.create({
+    link: {
+        marginVertical: 10,
+    },
     container: {
         padding: 10,
         borderRadius: 8,
@@ -41,7 +47,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",   
         justifyContent: "space-between",
         alignItems: "center",
-        margin: 10,
+        width: "100%",
         flex: 1,
         borderWidth: 3,
         height: 60 

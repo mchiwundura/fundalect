@@ -33,6 +33,7 @@ export default function RootLayout() {
         <Stack.Screen name="flashcards" options={{ headerShown: true }} />
         <Stack.Screen name="course" options={{ headerShown: false }} />
         <Stack.Screen name="course/[id]" options={{ headerShown: true, title: "Courses" }} />
+        <Stack.Screen name="lesson/[id]" options={{ headerShown: true, title: "Lesson" }} />
         <Stack.Screen name="lesson" options={{ headerShown: true }} />
         <Stack.Screen name="+not-found" />
       </Stack>

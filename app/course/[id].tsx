@@ -1,7 +1,7 @@
 import ParallaxScrollView from "@/components/ParallaxScrollView";
 import { IconSymbol } from "@/components/ui/IconSymbol";
 import IconTextButton from "@/components/ui/IconTextButton";
-import { useLocalSearchParams, useNavigation } from "expo-router";
+import { Link, useLocalSearchParams, useNavigation } from "expo-router";
 import { View, StyleSheet, Text } from "react-native";
 import * as SQLite from "expo-sqlite";
 import { useEffect, useState } from "react";
@@ -106,13 +106,14 @@ export default function Course() {
       <ThemedView style={styles.activityTypeContainer}>
         <IconTextButton onPress={() => filterActivities("Flashcards")} textColor="rgba(128, 184, 147, 1)" color="rgba(128, 184, 147, 0.2)"  title="Flashcards" icon="bolt" />
         <IconTextButton onPress={() => filterActivities("Quiz")} textColor="rgba(149, 132, 255, 1 )" color="rgba(149, 132, 255, 0.2 )" title="Quizes" icon="doc.plaintext"  />     
-        <IconTextButton  onPress={() => navigation.navigate("lesson/1")}textColor="rgba(100, 170, 255, 1)" color="rgba(100, 170, 255, 0.2)" title="Lessons" icon="doc.plaintext"  />
+        <IconTextButton  onPress={() => console.log("going to lesson")}textColor="rgba(100, 170, 255, 1)" color="rgba(100, 170, 255, 0.2)" title="Lessons" icon="doc.plaintext"  />
+
       </ThemedView>
       {course && (
         <View>
           <ThemedText>{course.description}</ThemedText>
         {lessons.map((x, y) => (
-          <LessonCard color={course.color} key={y} title={x.title} completion={x.completion}/>
+          <LessonCard color={course.color} key={y} title={x.title} link={x.course_id} completion={x.completion}/>
         ))}
         </View>
       )}
