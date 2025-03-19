@@ -7,7 +7,7 @@ import Markdown from 'react-native-markdown-display';
 import IconTextButton from "@/components/ui/IconTextButton";
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { StyleSheet, Text} from 'react-native';
-import { useLocalSearchParams } from 'expo-router';
+import { useLocalSearchParams, useRouter } from 'expo-router';
 import { Lessons } from '@/db/database';
 
 interface Lesson extends Lessons {
@@ -15,6 +15,8 @@ interface Lesson extends Lessons {
 }
 
 export default function Lesson() {
+
+  const router = useRouter()
 
 const {id} = useLocalSearchParams();
 const [lesson, setLesson] = useState<Lesson | null>(null)
@@ -52,14 +54,14 @@ async function getLesson() {
             
         <ThemedView>
                   <ThemedView style={styles.activityTypeContainer}>
-         <IconTextButton onPress={() => console.log("Flashcards")} textColor="rgba(128, 184, 147, 1)" color="rgba(128, 184, 147, 0.2)"  title="Flashcards" icon="bolt" />
-        <IconTextButton onPress={() => console.log("Quiz")} textColor="rgba(149, 132, 255, 1 )" color="rgba(149, 132, 255, 0.2 )" title="Quizes" icon="doc.plaintext"  />     
+         <IconTextButton onPress={() => router.push(`/flashcards/${id}`)} textColor="rgba(128, 184, 147, 1)" color="rgba(128, 184, 147, 0.2)"  title="Flashcards" icon="bolt" />
+        <IconTextButton onPress={() => router.push(`/quizes/${id}`)} textColor="rgba(149, 132, 255, 1 )" color="rgba(149, 132, 255, 0.2 )" title="Quizes" icon="doc.plaintext"  />     
 
      </ThemedView>
             {lesson && <Markdown rules={rules}>{lesson.content}</Markdown>}
         </ThemedView>
-          <IconTextButton large onPress={() => console.log("Flashcards")} textColor="rgba(128, 184, 147, 1)" color="rgba(128, 184, 147, 0.2)"  title="Flashcards" icon="bolt" />
-        <IconTextButton large onPress={() => console.log("Quiz")} textColor="rgba(149, 132, 255, 1 )" color="rgba(149, 132, 255, 0.2 )" title="Quizes" icon="doc.plaintext"  />     
+          <IconTextButton large onPress={() => router.push(`/flashcards/${id}`)} textColor="rgba(128, 184, 147, 1)" color="rgba(128, 184, 147, 0.2)"  title="Flashcards" icon="bolt" />
+        <IconTextButton large onPress={() => router.push(`/quizes/${id}`)} textColor="rgba(149, 132, 255, 1 )" color="rgba(149, 132, 255, 0.2 )" title="Quizes" icon="doc.plaintext"  />     
 <ThemedText style={styles.homeLink}>Back to home</ThemedText>
         </ParallaxScrollView>
     );
