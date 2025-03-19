@@ -1,7 +1,6 @@
 import ParallaxScrollView from "@/components/ParallaxScrollView";
-import { IconSymbol } from "@/components/ui/IconSymbol";
 import IconTextButton from "@/components/ui/IconTextButton";
-import { Link, useLocalSearchParams, useNavigation } from "expo-router";
+import { useLocalSearchParams, useNavigation } from "expo-router";
 import { View, StyleSheet, Text } from "react-native";
 import * as SQLite from "expo-sqlite";
 import { useEffect, useState } from "react";
@@ -21,62 +20,18 @@ export default function Course() {
     try {
       const db = await SQLite.openDatabaseAsync('local.db');
 
-      await db.execAsync(`
-        CREATE TABLE IF NOT EXISTS courses (
-          id INTEGER PRIMARY KEY AUTOINCREMENT,
-          title TEXT,
-          description TEXT,
-          color TEXT,
-          completion INTEGER,
-          icon TEXT
-        );
-      `);
-
-      await db.execAsync(`
-        CREATE TABLE IF NOT EXISTS lessons (
-          id INTEGER PRIMARY KEY AUTOINCREMENT,
-          course_id INTEGER NOT NULL,
-          title TEXT,
-          completion INTEGER,
-          FOREIGN KEY (course_id) REFERENCES courses (id) ON DELETE CASCADE
-        );
-      `);
-      
-        // await db.execAsync(`
-        //   INSERT INTO lessons (course_id, title, completion) 
-        //   VALUES 
-        //     (1, 'Antibiotics', 100), 
-        //     (1, 'Novel dosage forms', 30), 
-        //     (1, 'Creams', 10);
-        // `);
-
-        // await db.execAsync(`
-        //   DROP TABLE lessons
-        //   `)
-
-        // await db.execAsync(`
-        // INSERT INTO courses (title, description) VALUES ('Math', 'Math is the study of numbers, quantities, and shapes. It is used to solve problems and understand the world around us.')
-        // `);
-      
 
       const courses = await db.getAllAsync(`SELECT * FROM courses WHERE id = ${id}`);
-      const lessons = await db.getAllAsync(`SELECT * FROM lessons`);
+      
+      console.log(courses)
 
-    //   const lessons = await db.getAllAsync(`
-    //     SELECT lessons.* FROM lessons 
-    //     JOIN courses ON lessons.course_id = courses.id
-    //     WHERE courses.id = ${id};
-    //     `);
+      const lessons = await db.getAllAsync(`
+        SELECT lessons.* FROM lessons 
+        JOIN courses ON lessons.course_id = courses.id
+        WHERE courses.id = ${id};
+        `);
  
-      // setCourse(courses[0]);
-      setCourse({
-        course_id: 1,
-        title: "Pharmaceutics",
-        description: "the course where you learn to make lotions",
-        color: "#FFB785",
-        icon: "🧪"
-      })
-
+      setCourse(courses[0])
       setLessons(lessons);
 
     } catch (error) {
@@ -104,8 +59,8 @@ export default function Course() {
       }
     >
       <ThemedView style={styles.activityTypeContainer}>
-        <IconTextButton onPress={() => filterActivities("Flashcards")} textColor="rgba(128, 184, 147, 1)" color="rgba(128, 184, 147, 0.2)"  title="Flashcards" icon="bolt" />
-        <IconTextButton onPress={() => filterActivities("Quiz")} textColor="rgba(149, 132, 255, 1 )" color="rgba(149, 132, 255, 0.2 )" title="Quizes" icon="doc.plaintext"  />     
+        <IconTextButton link="/flashcards/1" textColor="rgba(128, 184, 147, 1)" color="rgba(128, 184, 147, 0.2)"  title="Flashcards" icon="bolt" />
+        <IconTextButton onPress={() => console.log("Quiz")} textColor="rgba(149, 132, 255, 1 )" color="rgba(149, 132, 255, 0.2 )" title="Quizes" icon="doc.plaintext"  />     
         <IconTextButton  onPress={() => console.log("going to lesson")}textColor="rgba(100, 170, 255, 1)" color="rgba(100, 170, 255, 0.2)" title="Lessons" icon="doc.plaintext"  />
 
       </ThemedView>
@@ -113,7 +68,7 @@ export default function Course() {
         <View>
           <ThemedText>{course.description}</ThemedText>
         {lessons.map((x, y) => (
-          <LessonCard color={course.color} key={y} title={x.title} link={x.course_id} completion={x.completion}/>
+          <LessonCard color={course.color} key={y} title={x.title} link={x.id} completion={x.completion}/>
         ))}
         </View>
       )}

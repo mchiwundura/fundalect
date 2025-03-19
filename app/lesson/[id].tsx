@@ -1,122 +1,65 @@
 import React, { useEffect, useState } from 'react';
 import { ThemedView } from "@/components/ThemedView";
 import { ThemedText } from "@/components/ThemedText";
-import * as FileSystem from "expo-file-system";
-import Markdown, {getUniqueID} from 'react-native-markdown-display';
+import * as SQLite from "expo-sqlite";
+import { rules } from '@/hooks/markdownRules';
+import Markdown from 'react-native-markdown-display';
 import IconTextButton from "@/components/ui/IconTextButton";
 import ParallaxScrollView from '@/components/ParallaxScrollView';
-import { StyleSheet, Text, Image } from 'react-native';
-import ContinueButton from '@/components/ui/ContunueButton';
+import { StyleSheet, Text} from 'react-native';
+import { useLocalSearchParams } from 'expo-router';
+import { Lessons } from '@/db/database';
 
-interface CourseMeta {
-title: string;
-color: string;
-id: number;
-icon: string;
-
+interface Lesson extends Lessons {
+  course_color: string 
 }
 
 export default function Lesson() {
 
+const {id} = useLocalSearchParams();
+const [lesson, setLesson] = useState<Lesson | null>(null)
 
-    const [fileContent, setFileContent] = useState<string>('');
-    const [lessonMeta, setLessonMeta] = useState<CourseMeta>()
-
-    const getLessonMetaData = async () => {
-        setLessonMeta({
-            title : "Colloids",
-            color : "#FFB785",
-            id: 1,
-            icon: "🧪"
-        })
-    }
-
-    const createAndReadFile = async () => {
-       try {
-           const fileUri = FileSystem.documentDirectory + 'example.md';
-           await FileSystem.writeAsStringAsync(fileUri, `
-Welcome to our first lessons on colloids and their properties.
-
-## What are colloids?
-> Colloids are mixtures in which one substance is divided into minute particles (called colloidal particles) and dispersed in another substance. The colloidal particles are larger than molecules but smaller than the particles of the suspension.
- 
-![image](https://picsum.photos/200/300)
-
-hello
-           `);
-           const fileInfo = await FileSystem.getInfoAsync(fileUri);
-           console.log(fileInfo);
-
-           const content = await FileSystem.readAsStringAsync(fileUri);
-           setFileContent(content);
-           console.log(content);
-
-       } catch (error) {
-           console.error('File system error:', error);
-       }
-    };
+async function getLesson() {
+  try {
+      const db = await SQLite.openDatabaseAsync('local.db');
+      const lesson = await db.getFirstAsync<Lesson>(
+        `SELECT lessons.*, courses.color AS course_color
+         FROM lessons
+         JOIN courses ON lessons.course_id = courses.id
+         WHERE lessons.id = ${id}
+         `
+      );
+        setLesson(lesson)
+  } catch (error) {
+    console.error(error)
+  }
+}
 
     useEffect(() => {
-        createAndReadFile();
-        getLessonMetaData();
+        getLesson()
     }, []);
-
-    const rules = {
-    heading1: (node, children, parent, styles) =>
-      <Text key={getUniqueID()} style={[styles.heading, styles.heading1]}>
-        {children}
-      </Text>,
-    heading2: (node, children, parent, styles) =>
-      <ThemedText key={getUniqueID()} style={[styles.heading, styles.heading2, {marginVertical: 10}]}>
-        {children}
-      </ThemedText>,
-    heading3: (node, children, parent, styles) =>
-      <Text key={getUniqueID()} style={[styles.heading, styles.heading3]}>
-        {children}
-      </Text>,
-    blockquote: (node, children, parent, styles) => 
-      <ThemedText key={getUniqueID()} style={[styles.blockquote, {backgroundColor: "black", marginVertical: 10}]}>
-        {children}
-      </ThemedText>,
-    paragraph: (node, children, parent, styles) => 
-        <ThemedText key={getUniqueID()} style={[styles]}>
-            {children}
-            </ThemedText>,
-    image: (node, children, parent, styles) => {
-        const { src, alt } = node.attributes;
-        return (
-            <Image
-                key={getUniqueID()}
-                style={[styles.image, {width: "100%", height: 200, margin: 10}]}
-                source={{ uri: src }}
-                accessible={true}
-                accessibilityLabel={alt}
-            />
-        );
-    }
-};
-
+    
     return (
         <ParallaxScrollView headerBackgroundColor={{ light: '#FFFFFF', dark: '#000000' }} headerImage={
-            <ThemedView style={[styles.header, {backgroundColor: lessonMeta? lessonMeta.color : "#fff"}]}>
+            <ThemedView style={[styles.header, {backgroundColor: lesson? lesson.course_color : "#fff"}]}>
   <ThemedText type="title">
-    {lessonMeta && lessonMeta.title}
+    {lesson && lesson.title}
 
   </ThemedText>
-  <Text style={styles.icon}>{lessonMeta && lessonMeta.icon}</Text>
+  <Text style={styles.icon}>{lesson && lesson.icon}</Text>
 </ThemedView>
         }>
             
         <ThemedView>
                   <ThemedView style={styles.activityTypeContainer}>
-         <IconTextButton onPress={() => filterActivities("Flashcards")} textColor="rgba(128, 184, 147, 1)" color="rgba(128, 184, 147, 0.2)"  title="Flashcards" icon="bolt" />
-        <IconTextButton onPress={() => filterActivities("Quiz")} textColor="rgba(149, 132, 255, 1 )" color="rgba(149, 132, 255, 0.2 )" title="Quizes" icon="doc.plaintext"  />     
+         <IconTextButton onPress={() => console.log("Flashcards")} textColor="rgba(128, 184, 147, 1)" color="rgba(128, 184, 147, 0.2)"  title="Flashcards" icon="bolt" />
+        <IconTextButton onPress={() => console.log("Quiz")} textColor="rgba(149, 132, 255, 1 )" color="rgba(149, 132, 255, 0.2 )" title="Quizes" icon="doc.plaintext"  />     
 
      </ThemedView>
-            <Markdown rules={rules} style={{backgroundColor: "green"}}>{fileContent}</Markdown>
+            {lesson && <Markdown rules={rules}>{lesson.content}</Markdown>}
         </ThemedView>
-          <IconTextButton large onPress={() => filterActivities("Flashcards")} textColor="rgba(128, 184, 147, 1)" color="rgba(128, 184, 147, 0.2)"  title="Flashcards" icon="bolt" />
-        <IconTextButton large onPress={() => filterActivities("Quiz")} textColor="rgba(149, 132, 255, 1 )" color="rgba(149, 132, 255, 0.2 )" title="Quizes" icon="doc.plaintext"  />     
+          <IconTextButton large onPress={() => console.log("Flashcards")} textColor="rgba(128, 184, 147, 1)" color="rgba(128, 184, 147, 0.2)"  title="Flashcards" icon="bolt" />
+        <IconTextButton large onPress={() => console.log("Quiz")} textColor="rgba(149, 132, 255, 1 )" color="rgba(149, 132, 255, 0.2 )" title="Quizes" icon="doc.plaintext"  />     
 <ThemedText style={styles.homeLink}>Back to home</ThemedText>
         </ParallaxScrollView>
     );

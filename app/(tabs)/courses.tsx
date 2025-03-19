@@ -7,13 +7,14 @@ import CourseCard from "@/components/CourseCard";
 import IconTextButton from "@/components/ui/IconTextButton";
 import ActivityCard from "@/components/ui/ActivityCard";
 // import { getCourses } from "@/hooks/database";
-import SQLite from 'expo-sqlite';
+import * as SQLite from 'expo-sqlite';
 import HeaderNavigation from "@/components/HeaderNav";
 
 // Add activities to database and get them from there
-// Add courses to database and get them from there
+
 
 export default function Courses() {
+
 const colorScheme = useColorScheme()
 
     // activities db lol
@@ -72,21 +73,10 @@ const colorScheme = useColorScheme()
 
 
     async function getCourses() {
-        const db = await SQLite.openDatabaseAsync('local.db');
-        const createCoursesTable = await db.execAsync(`
-            PRAGMA journal_mode=WAL;
-            CREATE TABLE IF NOT EXISTS Courses (
-            id INTEGER PRIMARY KEY AUTOINCREMENT, 
-            Title TEXT, 
-            color_primary TEXT,
-            color_secondary TEXT,
-            );
-          `);
-       
-        await db.runAsync('INSERT INTO Courses (Title, color_primary, color_secondary) VALUES (?, ?, ?)', ['Pharmaceurics 3', '#FF0000', '#00FF00']);
-        
-        const courses = await db.getAllAsync('SELECT * FROM Courses');
-       
+   
+        try {    
+        const db = await SQLite.openDatabaseAsync('local.db');      
+        const courses = await db.getAllAsync('SELECT * FROM courses');
         for (const row of courses) {
             console.log(row.value);
         }
@@ -94,6 +84,12 @@ const colorScheme = useColorScheme()
         console.log(courses);
         
         console.log("Courses table created");
+        setCourses(courses)
+        return courses 
+    } catch (error) {
+        console.error(error)
+    }
+
     }
 
     useEffect(() => {
@@ -101,58 +97,7 @@ const colorScheme = useColorScheme()
         setActivities(activitiesDB);
     }  , []);
 
-    const [courses, setCourses] = useState([
-        {
-            id: 1,
-            title: "Pharmaceutics 3",
-            color: "#FFB785",
-            completion: 33,
-            icon: "🧪",
-        },
-        {
-            id: 2,
-            title: "Pharmacology 4",
-            color: "#9584FF",
-            completion: 75,
-            icon: "💊",
-        },
-        {
-            id: 3,
-            title: "Clinical Pharmacy 2",
-            color: "#8CE99A",
-            completion: 50,
-            icon: "🏥",
-        },
-        {
-            id: 4,
-            title: "Biochemistry 1",
-            color: "#6CD3FF",
-            completion: 90,
-            icon: "🧬",
-        },
-        {
-            id: 5,
-            title: "Medicinal Chemistry 5",
-            color: "#FF88E5",
-            completion: 20,
-            icon: "🔬",
-        },
-        {
-            id: 6,
-            title: "Pharmacognosy 3",
-            color: "#FFD966",
-            completion: 60,
-            icon: "🌿",
-        },
-        {
-            id: 7,
-            title: "Pharmacy Law & Ethics",
-            color: "#C290FF",
-            completion: 85,
-            icon: "⚖️",
-        }
-    ]);
-
+    const [courses, setCourses] = useState<any>([]);
     const [activities, setActivities] = useState<any>();
 
     function filterActivities(type: string) {

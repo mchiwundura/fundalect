@@ -19,7 +19,11 @@ const MAPPING = {
    "doc.plaintext" : "description",
    "list.dash": "list",
    "bell" : "notifications-none",
-   "magnifyingglass" : "search"
+   "magnifyingglass" : "search",
+   "rectangle.portrait.and.arrow.right" : "logout",
+   "arrow.triangle.2.circlepath": "sync",
+   "moon.circle.fill": "brightness-3",
+   "questionmark.circle": "help"
 } as Partial<
   Record<
     import('expo-symbols').SymbolViewProps['name'],

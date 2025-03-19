@@ -30,7 +30,7 @@ async function initializeDatabase() {
 initializeDatabase()
   return (
     <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
+      headerBackgroundColor={{ light: '#FFFFFF', dark: '#000000' }}
       headerImage={
     <HeaderNavigation/> 
       }>

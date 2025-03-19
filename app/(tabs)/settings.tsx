@@ -4,17 +4,36 @@ import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import HeaderNavigation from '@/components/HeaderNav';
+import SettingSwitchInput from '@/components/settingSwitchInput';
+import { useState } from 'react';
+import { deleteDatabase, runDatabase } from '@/db/database';
 
 export default function Settings () {
+
+const [notifications, setNotifications] = useState(false)
+const [sync, setSync] = useState(false)
+const [ nightMode, setNightMode] = useState(true)
+
+
+
+
     return (
 <ParallaxScrollView
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
       headerImage={
 <HeaderNavigation/>
       }>
-<ThemedText>
-  Pakaipa
-</ThemedText>
+
+<SettingSwitchInput onPress={() => deleteDatabase()} icon={"rectangle.portrait.and.arrow.right"} title='Sign Out'/>
+<ThemedText   type='subtitle'>Settings</ThemedText>
+
+<SettingSwitchInput onPress={() => setNotifications(!notifications)} icon={"bell"} radio state={notifications} title='Notifications'/>
+<SettingSwitchInput onPress={() => setSync(!sync)} icon={"arrow.triangle.2.circlepath"} state={sync} radio title='Sync'/>
+<SettingSwitchInput onPress={() => setNightMode(!nightMode)} icon="moon.circle.fill" radio state={nightMode} title='Night mode'/>
+
+<ThemedText type='subtitle'>Help</ThemedText>
+
+<SettingSwitchInput onPress={() => runDatabase()} icon={"questionmark.circle"} title='Help'/>
       </ParallaxScrollView>
     )
 

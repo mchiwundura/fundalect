@@ -30,9 +30,10 @@ export default function RootLayout() {
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="flashcards" options={{ headerShown: true }} />
+        <Stack.Screen name="flashcards/[id]" options={{ headerShown: true }} />
         <Stack.Screen name="course" options={{ headerShown: false }} />
         <Stack.Screen name="course/[id]" options={{ headerShown: true, title: "Courses" }} />
+        <Stack.Screen name="quizes/[id]" options={{ headerShown: true, title: "Quiz" }} />
         <Stack.Screen name="lesson/[id]" options={{ headerShown: true, title: "Lesson" }} />
         <Stack.Screen name="lesson" options={{ headerShown: true }} />
         <Stack.Screen name="+not-found" />
