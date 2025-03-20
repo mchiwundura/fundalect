@@ -23,7 +23,11 @@ const MAPPING = {
    "rectangle.portrait.and.arrow.right" : "logout",
    "arrow.triangle.2.circlepath": "sync",
    "moon.circle.fill": "brightness-3",
-   "questionmark.circle": "help"
+   "questionmark.circle": "help",
+   "hand.thumbsup" : "thumb-up",
+   "hand.thumbsdown" : "thumb-down",
+   "arrow.right.arrow.left" : "rotate-right",
+   "repeat": "repeat"
 } as Partial<
   Record<
     import('expo-symbols').SymbolViewProps['name'],
