@@ -25,7 +25,7 @@ export default function FlashcardNav({ flip, good, bad, skip, active }: Flashcar
   
   // Animation configuration
   const config = {
-    duration: 500,
+    duration: 300,
     easing: Easing.bezier(0.5, 0.01, 0, 1),
   };
   
@@ -130,7 +130,7 @@ export default function FlashcardNav({ flip, good, bad, skip, active }: Flashcar
 const styles = StyleSheet.create({
   container: {
     position: "relative",
-    marginTop: 40,
+    marginTop: 30,
     width: "100%",
     height: 100,
   },
