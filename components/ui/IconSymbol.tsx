@@ -27,7 +27,8 @@ const MAPPING = {
    "hand.thumbsup" : "thumb-up",
    "hand.thumbsdown" : "thumb-down",
    "arrow.right.arrow.left" : "rotate-right",
-   "repeat": "repeat"
+   "repeat": "repeat",
+    "stopwatch" : "access-time",
 } as Partial<
   Record<
     import('expo-symbols').SymbolViewProps['name'],

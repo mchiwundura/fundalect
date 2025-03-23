@@ -66,11 +66,10 @@ export interface Questions {
         title TEXT,
         definition TEXT,
         lesson_id INTEGER NOT NULL,
-        parent INTEGER,
+        parent TEXT,
         understanding INTEGER,
         easeFactor INTEGER,
-        FOREIGN KEY (lesson_id) REFERENCES lessons (id) ON DELETE CASCADE,
-        FOREIGN KEY (parent) REFERENCES concepts (id) ON DELETE SET NULL
+        FOREIGN KEY (lesson_id) REFERENCES lessons (id) ON DELETE CASCADE
         );
 
         CREATE TABLE IF NOT EXISTS flashcards (
@@ -78,8 +77,7 @@ export interface Questions {
         lesson_id INTEGER NOT NULL,
         front TEXT,
         back TEXT,
-        concept_id INTEGER NOT NULL,
-        FOREIGN KEY (concept_id) REFERENCES concepts (id) ON DELETE CASCADE,
+        concept TEXT,
         FOREIGN KEY (lesson_id) REFERENCES lessons (id) ON DELETE CASCADE
         );
 
@@ -137,47 +135,47 @@ VALUES
   await db.execAsync(`
 INSERT INTO concepts (lesson_id, title, definition, notes, parent, understanding, easeFactor)
 VALUES  
-    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Seminal Vesicle", "A gland that produces a nutrient-rich fluid that provides energy for the sperm cells.", NULL, (SELECT id FROM concepts WHERE title = "Male reproductive system" LIMIT 1), 0, 1),
+    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Seminal Vesicle", "A gland that produces a nutrient-rich fluid that provides energy for the sperm cells.", NULL, "Male reproductive system", 0, 1),
     
-    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Cowper’s Gland", "Produces mucus that helps with the movement of sperm cells.", NULL, (SELECT id FROM concepts WHERE title = "Male reproductive system" LIMIT 1), 0, 1),
+    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Cowper’s Gland", "Produces mucus that helps with the movement of sperm cells.", NULL, "Male reproductive system", 0, 1),
     
-    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Scrotum", "Skin sac that protects the testes and holds them outside the body at a temperature 2°C below 37°C for sperm production.", NULL, (SELECT id FROM concepts WHERE title = "Male reproductive system" LIMIT 1), 0, 1),
+    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Scrotum", "Skin sac that protects the testes and holds them outside the body at a temperature 2°C below 37°C for sperm production.", NULL, "Male reproductive system", 0, 1),
     
-    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Testes", "Produces sperm cells and the hormone testosterone.", NULL, (SELECT id FROM concepts WHERE title = "Male reproductive system" LIMIT 1), 0, 1),
+    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Testes", "Produces sperm cells and the hormone testosterone.", NULL, "Male reproductive system", 0, 1),
     
-    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Prostate Gland", "Produces an alkaline fluid that neutralizes vaginal acidity, protecting sperm cells.", NULL, (SELECT id FROM concepts WHERE title = "Male reproductive system" LIMIT 1), 0, 1),
+    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Prostate Gland", "Produces an alkaline fluid that neutralizes vaginal acidity, protecting sperm cells.", NULL, "Male reproductive system", 0, 1),
     
-    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Sperm Duct", "Transports sperm from the epididymis to the urethra.", NULL, (SELECT id FROM concepts WHERE title = "Male reproductive system" LIMIT 1), 0, 1),
+    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Sperm Duct", "Transports sperm from the epididymis to the urethra.", NULL, "Male reproductive system", 0, 1),
 
-    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Urethra", "Transports semen and urine out of the body.", NULL, (SELECT id FROM concepts WHERE title = "Male reproductive system" LIMIT 1), 0, 1),
+    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Urethra", "Transports semen and urine out of the body.", NULL, "Male reproductive system", 0, 1),
 
-    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Epididymis", "Sperm cells mature and are stored here.", NULL, (SELECT id FROM concepts WHERE title = "Male reproductive system" LIMIT 1), 0, 1),
+    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Epididymis", "Sperm cells mature and are stored here.", NULL, "Male reproductive system", 0, 1),
 
-    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Testosterone", "A hormone produced by the testes.", "Functions of testosterone:\n1) Development of male secondary sexual characteristics.\n2) Stimulates maturation of sperm cells.", (SELECT id FROM concepts WHERE title = "Male reproductive system" LIMIT 1), 0, 1),
+    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Testosterone", "A hormone produced by the testes.", "Functions of testosterone:\n1) Development of male secondary sexual characteristics.\n2) Stimulates maturation of sperm cells.", "Male reproductive system", 0, 1),
 
-    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Acrosome", "Contains enzymes to digest the wall of the egg cell for fertilization.", NULL, (SELECT id FROM concepts WHERE title = "Sperm cell" LIMIT 1), 0, 1),
+    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Acrosome", "Contains enzymes to digest the wall of the egg cell for fertilization.", NULL, "Sperm cell", 0, 1),
 
-    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Nucleus", "Contains 23 chromosomes, which carry genetic information from the father.", NULL, (SELECT id FROM concepts WHERE title = "Sperm cell" LIMIT 1), 0, 1),
+    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Nucleus", "Contains 23 chromosomes, which carry genetic information from the father.", NULL, "Sperm cell", 0, 1),
 
-    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Mitochondria", "Provide energy for swimming, enabling the sperm cell to reach the egg.", NULL, (SELECT id FROM concepts WHERE title = "Sperm cell" LIMIT 1), 0, 1),
+    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Mitochondria", "Provide energy for swimming, enabling the sperm cell to reach the egg.", NULL, "Sperm cell", 0, 1),
 
-    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Tail", "Used for swimming, allowing the sperm cell to move towards the egg.", NULL, (SELECT id FROM concepts WHERE title = "Sperm cell" LIMIT 1), 0, 1),
+    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Tail", "Used for swimming, allowing the sperm cell to move towards the egg.", NULL, "Sperm cell", 0, 1),
 
-    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Fallopian Tube", "Connects the ovaries to the uterus, transports egg cells from the ovary; it is the site of fertilization.", NULL, (SELECT id FROM concepts WHERE title = "Female reproductive system" LIMIT 1), 0, 1),
+    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Fallopian Tube", "Connects the ovaries to the uterus, transports egg cells from the ovary; it is the site of fertilization.", NULL, "Female reproductive system", 0, 1),
 
-    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Ovary", "Produces egg cells, secretes progesterone and oestrogen.", NULL, (SELECT id FROM concepts WHERE title = "Female reproductive system" LIMIT 1), 0, 1),
+    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Ovary", "Produces egg cells, secretes progesterone and oestrogen.", NULL, "Female reproductive system", 0, 1),
 
-    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Uterus", "Carries the embryo and foetus during pregnancy.", NULL, (SELECT id FROM concepts WHERE title = "Female reproductive system" LIMIT 1), 0, 1),
+    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Uterus", "Carries the embryo and foetus during pregnancy.", NULL, "Female reproductive system", 0, 1),
 
-    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Endometrium", "Inner lining of the uterus; place where the embryo implants and the placenta forms.", NULL, (SELECT id FROM concepts WHERE title = "Female reproductive system" LIMIT 1), 0, 1),
+    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Endometrium", "Inner lining of the uterus; place where the embryo implants and the placenta forms.", NULL, "Female reproductive system", 0, 1),
 
-    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Cervix", "Lower, narrow part of the uterus. It stretches to allow the baby through during childbirth.", NULL, (SELECT id FROM concepts WHERE title = "Female reproductive system" LIMIT 1), 0, 1),
+    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Cervix", "Lower, narrow part of the uterus. It stretches to allow the baby through during childbirth.", NULL, "Female reproductive system", 0, 1),
 
-    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Vagina", "Receives the penis and semen during sexual intercourse; it is the passage through which the baby is born.", NULL, (SELECT id FROM concepts WHERE title = "Female reproductive system" LIMIT 1), 0, 1),
+    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Vagina", "Receives the penis and semen during sexual intercourse; it is the passage through which the baby is born.", NULL, "Female reproductive system", 0, 1),
 
-    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Puberty in Males", "Puberty in males is stimulated by testosterone and leads to physical and reproductive changes.", "Growth of male sex organs, start of sperm production, growth of pubic hair, facial hair, and body hair.", (SELECT id FROM concepts WHERE title = "Puberty" LIMIT 1), 0, 1),
+    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Puberty in Males", "Puberty in males is stimulated by testosterone and leads to physical and reproductive changes.", "Growth of male sex organs, start of sperm production, growth of pubic hair, facial hair, and body hair.", "Puberty", 0, 1),
 
-    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Puberty in Females", "Puberty in females is stimulated by oestrogen and leads to physical and reproductive changes.", "Growth of female sex organs, start of the menstrual cycle and production of ova, growth of pubic hair, development of muscles, deepening of voice, growth and development of breasts, and widening of hips.", (SELECT id FROM concepts WHERE title = "Puberty" LIMIT 1), 0, 1),
+    ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Puberty in Females", "Puberty in females is stimulated by oestrogen and leads to physical and reproductive changes.", "Growth of female sex organs, start of the menstrual cycle and production of ova, growth of pubic hair, development of muscles, deepening of voice, growth and development of breasts, and widening of hips.", "Puberty", 0, 1),
 
     ((SELECT id FROM lessons WHERE title = "Reproduction" LIMIT 1), "Puberty", "Puberty is the period in humans in which they experience physical changes in their bodies in order to be capable of sexual reproduction.", NULL, NULL, 0, 1);
 
@@ -186,41 +184,41 @@ VALUES
   console.log("concepts added")
 
   await db.execAsync(`
-INSERT INTO flashcards (lesson_id, front, back, concept_id) VALUES  
+INSERT INTO flashcards (lesson_id, front, back, concept) VALUES  
     ( (SELECT id FROM lessons WHERE title = "Reproduction"), 
       '{"title": "Seminal Vesicle", "image": null, "text": "What is the function of the seminal vesicle?" }', 
       '{"title": "Seminal Vesicle", "image": null, "text": "A gland that produces a nutrient-rich fluid that provides energy for sperm cells." }',
-      (SELECT id FROM concepts WHERE title = "Seminal Vesicle") 
+      "Seminal Vesicle" 
     ), 
 
     ( (SELECT id FROM lessons WHERE title = "Reproduction"), 
       '{"title": "Cowper’s Gland", "image": null, "text": "What does Cowper’s gland secrete?" }', 
       '{"title": "Cowper’s Gland", "image": null, "text": "Produces mucus that helps with the movement of sperm cells." }',
-      (SELECT id FROM concepts WHERE title = "Cowper’s Gland") 
+      "Cowper’s Gland"
     ),
 
     ( (SELECT id FROM lessons WHERE title = "Reproduction"), 
       '{"title": "Testes", "image": null, "text": "What are the two main functions of the testes?" }', 
       '{"title": "Testes", "image": null, "text": "The testes produce sperm cells and the hormone testosterone." }',
-      (SELECT id FROM concepts WHERE title = "Testes") 
+      "Testes"
     ), 
 
     ( (SELECT id FROM lessons WHERE title = "Reproduction"), 
       '{"title": "Fallopian Tube", "image": null, "text": "What is the function of the fallopian tube?" }', 
       '{"title": "Fallopian Tube", "image": null, "text": "Connects the ovaries to the uterus and is the site of fertilization." }',
-      (SELECT id FROM concepts WHERE title = "Fallopian Tube") 
+      "Fallopian Tube" 
     ),
 
     ( (SELECT id FROM lessons WHERE title = "Reproduction"), 
       '{"title": "Urethra", "image": null, "text": "What is the function of the urethra in males?" }', 
       '{"title": "Urethra", "image": null, "text": "Transports semen and urine out of the body." }',
-      (SELECT id FROM concepts WHERE title = "Urethra") 
+      "Urethra"
     ),
 
     ( (SELECT id FROM lessons WHERE title = "Reproduction"), 
       '{"title": "Puberty", "image": null, "text": "What is puberty?" }', 
       '{"title": "Puberty", "image": null, "text": "The period in humans where they develop physical changes to be capable of sexual reproduction." }',
-      (SELECT id FROM concepts WHERE title = "Puberty") 
+      "Puberty"
     );
     `)
 

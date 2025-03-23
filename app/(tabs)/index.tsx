@@ -1,100 +1,64 @@
-import { Image, StyleSheet, Platform, TouchableOpacity } from 'react-native';
-import { HelloWave } from '@/components/HelloWave';
-import ParallaxScrollView from '@/components/ParallaxScrollView';
-import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
-import { Link } from 'expo-router';
-import * as SQLite from 'expo-sqlite';
-import HeaderNavigation from '@/components/HeaderNav';
+import ParallaxScrollView from "@/components/ParallaxScrollView";
+import { useEffect, useState } from "react";
+import { ThemedText } from "@/components/ThemedText";
+import { StyleSheet, ScrollView, useColorScheme } from "react-native";
+import ActivityCard from "@/components/ui/ActivityCard";
+import HeaderNavigation from "@/components/HeaderNav";
+import StreakTracker from "@/components/StreakTracker";
+import ReportStats from "@/components/ReportStats";
+
+export default function Home() {
+    const colorScheme = useColorScheme();
+const completedDays = [
+  { day: "M", status: true, date: 18 },
+  { day: "T", status: false, date: 19 },
+  { day: "W", status: true, date: 20 },
+  { day: "T", status: true, date: 21 },
+  { day: "F", status: false, date: 22 },
+  { day: "S", status: true, date: 23 },
+  { day: "S", status: false, date: 24 },
+];
+    const [activities, setActivities] = useState<any>([]);
+
+    useEffect(() => {
+        setActivities([
+            { id: 1, title: "Central Nervous System", icon: "😰", completion: 55, type: "Flashcards" },
+            { id: 2, title: "Colloidal Systems", icon: "🧴", completion: 35, type: "Quiz" },
+            { id: 3, title: "Arrays", icon: "🧑‍💻", completion: 55, type: "Flashcards" },
+        ]);
+    }, []);
 
 
+    function filterActivities(type: string) {
+        if (type === "All") {
+            setActivities(activities);
+        } else {
+            setActivities(activities.filter((x) => x.type === type));
+        }
+    }
 
-export default function HomeScreen() {
-
-async function initializeDatabase() {
-    const db = await SQLite.openDatabaseAsync('local.db');
-    
-    await db.execAsync(`
-      PRAGMA journal_mode=WAL;
-      CREATE TABLE IF NOT EXISTS Flashcards (id INTEGER PRIMARY KEY AUTOINCREMENT, question TEXT, answer TEXT);
-    `);
-
-    // const adding = await db.runAsync('INSERT INTO Flashcards (question, answer) VALUES (?, ?)', ['What is the capital of France?', 'Paris']);
-    // console.log(adding);
-
-    const flashcards = await db.runAsync('SELECT * FROM Flashcards');
-    console.log(flashcards);
-    console.log("Flashcards table created");
-}
-
-initializeDatabase()
-  return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ light: '#FFFFFF', dark: '#000000' }}
-      headerImage={
-    <HeaderNavigation/> 
-      }>
-      <ThemedView style={styles.titleContainer}> 
-                <ThemedText type="title">Welcome from the other side!</ThemedText>
-        <HelloWave />
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
-        <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({
-              ios: 'cmd + d',
-              android: 'cmd + m',
-              web: 'F12'
-            })}
-          </ThemedText>{' '}
-          to open developer tools.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
-        <ThemedText>
-          Tap the Explore tab to learn more about what's included in this starter app.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
-        <ThemedText>
-          When you're ready, run{' '}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
-        </ThemedText>
-      </ThemedView>
-      <Link href="/course/1">       
-        <TouchableOpacity
-
-                activeOpacity={0.8}>        
-                <ThemedText type="defaultSemiBold">Flashcards</ThemedText>
-        </TouchableOpacity>
-    </Link>
-    </ParallaxScrollView>
-  );
+    return (
+        <ParallaxScrollView headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }} headerImage={<HeaderNavigation />}>
+            <ThemedText type="title">Report</ThemedText>
+            <ReportStats flashcards={20} tests={4} minutes={300} />
+            
+            <ThemedText type="subtitle">Streak</ThemedText>
+            <StreakTracker currentStreak={5} bestStreak={22} completedDays={completedDays}  />
+            
+            <ThemedText type="subtitle">Jump Back In</ThemedText>
+            <ScrollView>
+                {activities.map((x) => (
+                    <ActivityCard key={x.id} activity={x} />
+                ))}
+            </ScrollView>
+        </ParallaxScrollView>
+    );
 }
 
 const styles = StyleSheet.create({
-  titleContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 8,
-  },
-  stepContainer: {
-    gap: 8,
-    marginBottom: 8,
-  },
-  reactLogo: {
-    height: 178,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
-  },
+    statsContainer: {
+        display: "flex",
+        flexDirection: "row",
+        marginBottom: 20,
+    },
 });
