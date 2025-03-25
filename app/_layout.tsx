@@ -6,6 +6,14 @@ import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
 import 'react-native-reanimated';
 import { useColorScheme } from '@/hooks/useColorScheme';
+// import * as Sentry from "@sentry/react-native";
+
+// Sentry.init({
+//   dsn: "https://5f8063918260f19dc2afca0dff97ba58@o4509027272884224.ingest.de.sentry.io/4509027295232080",
+//   // Adds more context data to events (IP address, cookies, user, etc.)
+//   // For more information, visit: https://docs.sentry.io/platforms/react-native/data-management/data-collected/
+//   sendDefaultPii: true,
+// });
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -25,6 +33,8 @@ export default function RootLayout() {
   if (!loaded) {
     return null;
   }
+
+
 
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>

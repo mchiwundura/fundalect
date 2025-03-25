@@ -95,6 +95,7 @@ const colorScheme = useColorScheme()
     useEffect(() => {
         getCourses();
         setActivities(activitiesDB);
+        // throw new Error('My first Sentry error!');
     }  , []);
 
     const [courses, setCourses] = useState<any>([]);
