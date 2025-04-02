@@ -6,7 +6,8 @@ import { ThemedView } from '@/components/ThemedView';
 import HeaderNavigation from '@/components/HeaderNav';
 import SettingSwitchInput from '@/components/settingSwitchInput';
 import { useState } from 'react';
-import { deleteDatabase, runDatabase, syncOnline } from '@/db/database';
+// import { deleteDatabase, runDatabase } from '@/db/database';
+import { syncOnline } from '@/db/syncOnline';
 
 export default function Settings () {
 
@@ -18,7 +19,13 @@ function syncDatabase() {
   syncOnline()
   setSync(!sync)
 }
+function deleteDatabase() {
+  console.log("Deleting database...")
+}
 
+function runDatabase() {
+  console.log("Running database...")
+}
 
 
 

@@ -2,7 +2,6 @@ import { View, StyleSheet, ScrollView, useColorScheme } from "react-native";
 import { ThemedText } from "@/components/ThemedText";
 import ActivityGraph from "@/components/ActivityGraph";
 import CalendarView from "@/components/CalendarView";
-import CourseProgressCard from "@/components/CourseProgressCard";
 import ParallaxScrollView from "@/components/ParallaxScrollView";
 import HeaderNavigation from "@/components/HeaderNav";
 
@@ -15,7 +14,7 @@ interface ProgressPageProps {
 
 export default function ProgressPage() {
 
-const activityData = [3, 5, 2, 4, 3, 6, 2]
+const activityData = [ {value:50}, {value:80}, {value:90}, {value:70} ]
 const courses = [
     { id: 1, title: "Central Nervous System", completion: 68, type: "Flashcards" },
     { id: 2, title: "Colloidal Systems", completion: 45, type: "Quiz" },
@@ -27,17 +26,23 @@ const courses = [
   return (
     <ParallaxScrollView headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }} headerImage={<HeaderNavigation />}> 
       <ThemedText type="title">Progress this week</ThemedText>
-      <ActivityGraph data={activityData} />
 
-      <ThemedText type="subtitle">Calendar</ThemedText>
+      <ThemedText type="subtitle">Weekly Activity</ThemedText>
+      <ActivityGraph
+      showLine
+             lineConfig={{
+            color: '#F29C6E',
+            thickness: 3,
+            curved: true,
+            hideDataPoints: true,
+            shiftY: 20,
+            initialSpacing: -30,
+          }}
+      data={activityData} />
+      <ThemedText type="subtitle">Active Days</ThemedText>
       <CalendarView completedDays={completedDays} />
 
       <ThemedText type="subtitle">Course Progress</ThemedText>
-      {/* <ScrollView>
-        {courses && courses.map((course) => (
-          <CourseProgressCard key={course.id} course={course} />
-        ))}
-      </ScrollView> */}
     </ParallaxScrollView>
   );
 }

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { ThemedView } from "@/components/ThemedView";
 import { ThemedText } from "@/components/ThemedText";
-import * as SQLite from "expo-sqlite";
 import { rules } from '@/hooks/markdownRules';
 import Markdown from 'react-native-markdown-display';
 import IconTextButton from "@/components/ui/IconTextButton";
@@ -9,6 +8,7 @@ import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { StyleSheet, Text} from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { Lessons } from '@/db/database';
+import { useDatabase } from '@/hooks/useDatabase';
 
 interface Lesson extends Lessons {
   course_color: string 
@@ -20,17 +20,12 @@ export default function Lesson() {
 
 const {id} = useLocalSearchParams();
 const [lesson, setLesson] = useState<Lesson | null>(null)
+const {getLesson} = useDatabase()
 
-async function getLesson() {
+async function getContent() {
   try {
-      const db = await SQLite.openDatabaseAsync('local.db');
-      const lesson = await db.getFirstAsync<Lesson>(
-        `SELECT lessons.*, courses.color AS course_color
-         FROM lessons
-         JOIN courses ON lessons.course_id = courses.id
-         WHERE lessons.id = ${id}
-         `
-      );
+      
+      const lesson = await getLesson(id)
         setLesson(lesson)
   } catch (error) {
     console.error(error)
@@ -38,7 +33,7 @@ async function getLesson() {
 }
 
     useEffect(() => {
-        getLesson()
+        getContent()
     }, []);
     
     return (

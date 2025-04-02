@@ -6,15 +6,14 @@ import { StyleSheet, ScrollView, useColorScheme } from "react-native";
 import CourseCard from "@/components/CourseCard";
 import IconTextButton from "@/components/ui/IconTextButton";
 import ActivityCard from "@/components/ui/ActivityCard";
-// import { getCourses } from "@/hooks/database";
-import * as SQLite from 'expo-sqlite';
 import HeaderNavigation from "@/components/HeaderNav";
+import { useDatabase } from "@/hooks/useDatabase";
 
 // Add activities to database and get them from there
 
 
 export default function Courses() {
-
+const { getCourses } = useDatabase()
 const colorScheme = useColorScheme()
 
     // activities db lol
@@ -72,28 +71,22 @@ const colorScheme = useColorScheme()
 ]
 
 
-    async function getCourses() {
-   
+    async function getCoursesList() {
         try {    
-        const db = await SQLite.openDatabaseAsync('local.db');      
-        const courses = await db.getAllAsync('SELECT * FROM courses');
+        const courses = await getCourses()
         for (const row of courses) {
             console.log(row.value);
         }
-
-        console.log(courses);
-        
-        console.log("Courses table created");
         setCourses(courses)
+        console.log(courses)
         return courses 
     } catch (error) {
         console.error(error)
     }
-
     }
 
     useEffect(() => {
-        getCourses();
+        getCoursesList();
         setActivities(activitiesDB);
         // throw new Error('My first Sentry error!');
     }  , []);
@@ -116,6 +109,7 @@ const colorScheme = useColorScheme()
     return (
         <ParallaxScrollView
         headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
+    
         headerImage={
        <HeaderNavigation/> 
         }

@@ -2,15 +2,15 @@ import ParallaxScrollView from "@/components/ParallaxScrollView";
 import IconTextButton from "@/components/ui/IconTextButton";
 import { useLocalSearchParams, useNavigation } from "expo-router";
 import { View, StyleSheet, Text } from "react-native";
-import * as SQLite from "expo-sqlite";
 import { useEffect, useState } from "react";
 import LessonCard from "@/components/ui/LessonCard";
 import { ThemedView } from "@/components/ThemedView";
 import { ThemedText } from "@/components/ThemedText";
+import { useDatabase } from "@/hooks/useDatabase";
 
 
 export default function Course() {
-
+ const { getCourses, getLessons } = useDatabase();
   const {id} = useLocalSearchParams();
   const [course, setCourse] = useState(null);
   const [lessons, setLessons] = useState();
@@ -18,21 +18,14 @@ export default function Course() {
 
   async function runDatabase() {
     try {
-      const db = await SQLite.openDatabaseAsync('local.db');
-
-
-      const courses = await db.getAllAsync(`SELECT * FROM courses WHERE id = ${id}`);
+      const courses = await getCourses()
       
       console.log(courses)
 
-      const lessons = await db.getAllAsync(`
-        SELECT lessons.* FROM lessons 
-        JOIN courses ON lessons.course_id = courses.id
-        WHERE courses.id = ${id};
-        `);
+      const lessons = await getLessons();
  
       setCourse(courses[0])
-      setLessons(lessons);
+      setLessons(lessons.filter(x => x.course_id == id));
 
     } catch (error) {
       console.error('Database error:', error);

@@ -1,14 +1,16 @@
 import ParallaxScrollView from "@/components/ParallaxScrollView";
 import { useEffect, useState } from "react";
 import { ThemedText } from "@/components/ThemedText";
-import { StyleSheet, ScrollView, useColorScheme } from "react-native";
+import { StyleSheet, ScrollView, Platform } from "react-native";
 import ActivityCard from "@/components/ui/ActivityCard";
 import HeaderNavigation from "@/components/HeaderNav";
 import StreakTracker from "@/components/StreakTracker";
 import ReportStats from "@/components/ReportStats";
+import { useDatabase } from "@/hooks/useDatabase";
+
 
 export default function Home() {
-    const colorScheme = useColorScheme();
+
 const completedDays = [
   { day: "M", status: true, date: 18 },
   { day: "T", status: false, date: 19 },
@@ -19,23 +21,22 @@ const completedDays = [
   { day: "S", status: false, date: 24 },
 ];
     const [activities, setActivities] = useState<any>([]);
-
+    const {getLessons} = useDatabase();
+    
     useEffect(() => {
         setActivities([
             { id: 1, title: "Central Nervous System", icon: "😰", completion: 55, type: "Flashcards" },
             { id: 2, title: "Colloidal Systems", icon: "🧴", completion: 35, type: "Quiz" },
             { id: 3, title: "Arrays", icon: "🧑‍💻", completion: 55, type: "Flashcards" },
         ]);
+
+    const fetchLessons = async () => {
+        const data = await getLessons();
+        console.log(data)
+    };
+    fetchLessons();
     }, []);
 
-
-    function filterActivities(type: string) {
-        if (type === "All") {
-            setActivities(activities);
-        } else {
-            setActivities(activities.filter((x) => x.type === type));
-        }
-    }
 
     return (
         <ParallaxScrollView headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }} headerImage={<HeaderNavigation />}>

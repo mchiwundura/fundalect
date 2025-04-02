@@ -31,7 +31,12 @@ export function TabBar({ state, descriptors, navigation }: BottomTabBarProps) {
   })
 
   return (
-    <View onLayout={onTabbarLayout} style={[styles.tabbar, {backgroundColor: colorScheme === "light" ? "#fff" : "#000"}]}>
+    <View onLayout={onTabbarLayout} style={[styles.tabbar, 
+    {
+      backgroundColor: colorScheme === "light" ? "rgba(255, 255, 255, 1)" : "rgba(0,0,0,1)",
+      borderColor: colorScheme === "light" ? "rgba(0,0,0,0.2)" : "rgba(255, 255, 255, 0.1)",
+            boxShadow: colorScheme === "light" ? "0 4px 8px rgba(0, 0, 0, 0.5)" : "0 0 0 rgba(0, 0, 0, 0.1)"
+      }]}>
         <Animated.View style={[animatedStyle, {
             position: "absolute", 
             backgroundColor: "#A294EB",
@@ -102,6 +107,7 @@ const styles = StyleSheet.create({
         shadowOffset: {width: 20, height: 20},
         shadowRadius: 20,
         shadowOpacity: 1,
+        // borderWidth: 2
     }
 
 })

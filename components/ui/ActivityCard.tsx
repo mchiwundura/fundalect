@@ -31,8 +31,8 @@ const activityColors = colorMap[activity.type] || colorMap.Flashcards;
         <TouchableOpacity 
         onPress={() => navigation.navigate("flashcards", {activity})}
         style={[styles.card, {
-            borderColor: colorScheme === "light" ? "rgba(0, 0, 0, 0.1)" : "rgba(255, 255, 255, 0.1)",
-            boxShadow: colorScheme === "light" ? "0 4px 4px rgba(0, 0, 0, 0.25)" : "0 4px 4px rgba(0, 0, 0, 0.9)"
+            backgroundColor: colorScheme === "light" ? "rgba(255, 255, 255, 1)" : "rgba(255, 255, 255, 0.05)",
+            boxShadow: colorScheme === "light" ? "0 4px 4px rgba(0, 0, 0, 0.25)" : "0 0 0 rgba(0, 0, 0, 0.1)"
             }]}>
         
             
@@ -80,7 +80,6 @@ const styles = StyleSheet.create({
         flexDirection: "row",   
         justifyContent: "space-between",
         margin: 10,
-        borderWidth: 1, 
     },
     cardInfo :{
         width: "70%",

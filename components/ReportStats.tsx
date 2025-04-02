@@ -14,13 +14,13 @@ export default function ReportStats({ flashcards, tests, minutes }: ReportStatsP
     const colorScheme = useColorScheme();
   return (
     <ThemedView style={[styles.container, {
-            borderColor: colorScheme === "light" ? "rgba(0, 0, 0, 0.1)" : "rgba(255, 255, 255, 0.1)",
-            boxShadow: colorScheme === "light" ? "0 4px 4px rgba(0, 0, 0, 0.25)" : "0 4px 4px rgba(0, 0, 0, 0.9)"
+            backgroundColor: colorScheme === "light" ? "rgba(255, 255, 255, 1)" : "rgba(255, 255, 255, 0.05)",
+            boxShadow: colorScheme === "light" ? "0 4px 4px rgba(0, 0, 0, 0.25)" : "0 0 0 rgba(0, 0, 0, 0.1)"
     }]}>
       <View style={styles.statsContainer}>
-        <View style={styles.statBox}><IconSymbol name="bolt" size={36} color={"white"}/><ThemedText style={styles.statNumber} type="subtitle">{flashcards}</ThemedText><ThemedText type="subtle">Flashcards</ThemedText></View>
-        <View style={styles.statBox}><IconSymbol name="doc.plaintext" size={36} color={"white"}/><ThemedText style={styles.statNumber} type="subtitle">{tests}</ThemedText><ThemedText type="subtle">Tests</ThemedText></View>
-        <View style={styles.statBox}><IconSymbol name="stopwatch" size={36} color={"white"}/><ThemedText style={styles.statNumber} type="subtitle">{minutes}</ThemedText><ThemedText type="subtle">Minutes</ThemedText></View>
+        <View style={styles.statBox}><IconSymbol name="bolt" size={36} color={colorScheme === "light" ? "rgba(0, 0, 0, 0.6)" : "rgba(255, 255, 255, 0.8)"}/><ThemedText style={styles.statNumber} type="subtitle">{flashcards}</ThemedText><ThemedText type="subtle">Flashcards</ThemedText></View>
+        <View style={styles.statBox}><IconSymbol name="doc.plaintext" size={36} color={colorScheme === "light" ? "rgba(0, 0, 0, 0.6)" : "rgba(255, 255, 255, 0.8)"}/><ThemedText style={styles.statNumber} type="subtitle">{tests}</ThemedText><ThemedText type="subtle">Tests</ThemedText></View>
+        <View style={styles.statBox}><IconSymbol name="stopwatch" size={36} color={colorScheme === "light" ? "rgba(0, 0, 0, 0.6)" : "rgba(255, 255, 255, 0.8)"}/><ThemedText style={styles.statNumber} type="subtitle">{minutes}</ThemedText><ThemedText type="subtle">Minutes</ThemedText></View>
       </View>
     </ThemedView>
   );
@@ -28,7 +28,7 @@ export default function ReportStats({ flashcards, tests, minutes }: ReportStatsP
 
 
 const styles = StyleSheet.create({
-  container: { padding: 20, borderWidth: 2, borderRadius: 15 },
+  container: { padding: 20, borderRadius: 15 },
   title: { fontSize: 18, fontWeight: "bold", marginBottom: 10 },
   streakText: { fontSize: 16, fontWeight: "bold", color: "orange" },
   bestStreakText: { fontSize: 14, color: "gray" },

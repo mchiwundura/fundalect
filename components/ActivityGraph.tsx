@@ -1,20 +1,20 @@
-import { ThemedText } from "./ThemedText";
 import { ThemedView } from "./ThemedView";
-import { StyleSheet } from "react-native";
+import { StyleSheet, useColorScheme } from "react-native";
+import {LineChart} from "react-native-gifted-charts"
 
 interface ActivityGraphProps {
   data: number[]; // Array representing activity levels per day
 }
 
 export default function ActivityGraph({ data }: ActivityGraphProps) {
+const colorScheme = useColorScheme()
   return (
-    <ThemedView style={styles.graphContainer}>
-      <ThemedText type="subtitle">Weekly Activity</ThemedText>
-      <ThemedView style={styles.graph}>
-        {data.map((value, index) => (
-          <ThemedView key={index} style={[styles.bar, { height: value * 2 }]} />
-        ))}
-      </ThemedView>
+    <ThemedView style={[styles.graphContainer, {
+            backgroundColor: colorScheme === "light" ? "rgba(255, 255, 255, 1)" : "rgba(255, 255, 255, 0.05)",
+            boxShadow: colorScheme === "light" ? "0 4px 4px rgba(0, 0, 0, 0.25)" : "0 0 0 rgba(0, 0, 0, 0.1)"
+    }]}>
+
+      <LineChart textColor="#000" width={240} color={"#9584FF"} yAxisColor={colorScheme === "light" ? "#000" : "#fff"} xAxisColor={colorScheme === "light" ? "#000" : "#fff"} dataPointsColor="#9584FF" yAxisTextStyle={{color: colorScheme === "light" ? "#000" : "#fff", marginRight: 10}} isAnimated data={data} />
     </ThemedView>
   );
 }
@@ -22,6 +22,8 @@ export default function ActivityGraph({ data }: ActivityGraphProps) {
 const styles = StyleSheet.create({
   graphContainer: {
     marginVertical: 10,
+    borderRadius: 10,
+    padding: 10
   },
   graph: {
     flexDirection: "row",

@@ -1,9 +1,4 @@
-import * as SQLite from "expo-sqlite";
-
-import { createClient } from '@supabase/supabase-js'
-const supabaseUrl = 'https://urkxjkoluoqekmnhgxnw.supabase.co';
-// const supabaseKey = process.env.SUPABASE_KEY
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVya3hqa29sdW9xZWttbmhneG53Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI3MjI5MzAsImV4cCI6MjA1ODI5ODkzMH0.GtqtWKhxY6yUy02eHzlTZQcXtxZIweLEeLLSzVpApBQ';
+// import * as SQLite from "expo-sqlite";
 
 export interface Course {
   id: number;
@@ -70,9 +65,9 @@ export interface Questions {
 
         CREATE TABLE IF NOT EXISTS concepts (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
+        lesson_id INTEGER NOT NULL,
         title TEXT,
         definition TEXT,
-        lesson_id INTEGER NOT NULL,
         parent TEXT,
         understanding INTEGER,
         easeFactor INTEGER,
@@ -326,109 +321,3 @@ export async function deleteDatabase() {
   }
 }
 
-export async function syncOnline() {
-  try {
-    const db = await SQLite.openDatabaseAsync('local.db');
-    
-    const supabase = createClient(supabaseUrl, supabaseKey);
-
-
-
-      await db.execAsync(`
-        CREATE TABLE IF NOT EXISTS courses (
-          id INTEGER PRIMARY KEY AUTOINCREMENT,
-          title TEXT,
-          description TEXT,
-          color TEXT,
-          completion INTEGER,
-          icon TEXT
-        );
- CREATE TABLE IF NOT EXISTS lessons (
-          id INTEGER PRIMARY KEY AUTOINCREMENT,
-          course_id INTEGER NOT NULL,
-          title TEXT,
-          completion INTEGER,
-          content TEXT,
-          icon TEXT,
-          FOREIGN KEY (course_id) REFERENCES courses (id) ON DELETE CASCADE
-        );
-
-        CREATE TABLE IF NOT EXISTS concepts (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        title TEXT,
-        definition TEXT,
-        lesson_id INTEGER NOT NULL,
-        parent TEXT,
-        understanding INTEGER,
-        easeFactor INTEGER,
-        FOREIGN KEY (lesson_id) REFERENCES lessons (id) ON DELETE CASCADE
-        );
-
-        CREATE TABLE IF NOT EXISTS flashcards (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        lesson_id INTEGER NOT NULL,
-        front TEXT,
-        back TEXT,
-        concept TEXT,
-        FOREIGN KEY (lesson_id) REFERENCES lessons (id) ON DELETE CASCADE
-        );
-
-        CREATE TABLE IF NOT EXISTS questions (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        lesson_id INTEGER NOT NULL,
-        type TEXT,
-        question TEXT,
-        image TEXT,
-        options TEXT,
-        answer TEXT,
-        FOREIGN KEY (lesson_id) REFERENCES lessons (id) ON DELETE CASCADE
-        );`
- 
-      )
-  
-// Get courses from online database
-
-  let { data: courses, error: courseError } = await supabase.from('courses').select('*');
-
-  if (courseError) throw new Error(`Courses fetch failed: ${courseError.message}`);
-
- const courseValues = courses?.map(course => 
-            `("${course.title}", "${course.description}", "${course.color}", "${course.completion}", "${course.icon}")`
-        ).join(",\n");
-
- const courseQuery = `INSERT INTO courses (title, description, color, completion, icon)  VALUES  ${courseValues};`;
- 
- await db.execAsync(courseQuery);
-
- console.log("Courses Added");
-
-//  Get lessons from online database
-let { data: lessons, error: lessonError} = await supabase.from('lessons').select('*')
-
-if (lessonError) throw new Error(`Lesson fetch failed: ${lessonError.message}`)
-
-const lessonValues = lessons?.map(lesson => 
-   `(${lesson.course_id}, "${lesson.title}", "${lesson.completion}", "${lesson.content}", "${lesson.icon}")`
-        ).join(",\n");
-
-const lessonQuery = `INSERT INTO lessons (course_id, title, completion, content, icon)  VALUES ${lessonValues};`;
-
-await db.execAsync(lessonQuery)
-
-// Get Flashcards from online database
-let {data: flashcards, error: flashcardsError} = await supabase.from('flashcards').select('*')
-
-if (flashcardsError) throw new Error(`Flascards fetch failed: ${flashcardsError.message}` )
-
-const flashcardsValues = flashcards?.map(flashcard => 
-   `(${flashcard.lesson_id}, '${flashcard.front}', '${flashcard.back}', "${flashcard.concept}")`
-        ).join(",\n");
-
-const flashcardsQuery = `INSERT INTO flashcards (lesson_id, front, back, concept) VALUES ${flashcardsValues};`;
-
-await db.execAsync(flashcardsQuery)
-
-  } catch (error) {
-    console.error("Supabase Error", error)
-  }
-}

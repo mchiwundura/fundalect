@@ -1,4 +1,4 @@
-import { View, Text, Pressable } from 'react-native'
+import { View, Text, Pressable, useColorScheme } from 'react-native'
 import React, { useEffect } from 'react'
 import { StyleSheet } from 'react-native'
 import { icon } from '@/constants/icon'
@@ -17,7 +17,10 @@ interface TabBarButtonProps {
 
 export default function TabBarButton({onPress, onLongPress, isFocused, routeName, color, label}: TabBarButtonProps) {
     const {colors} = useTheme();
+    const theme = useColorScheme();
     const scale = useSharedValue(0);
+
+
 
     useEffect(() => {
         scale.value = withSpring(typeof isFocused === "boolean" ? (isFocused? 1 : 0) : isFocused, 
@@ -50,10 +53,10 @@ export default function TabBarButton({onPress, onLongPress, isFocused, routeName
             onLongPress={onLongPress}
           >
 <Animated.View style={[animatedIconStyle]}>
-       {icon[routeName]({color: isFocused ? "#9C85FF" : "rgba(255, 255, 255, 0.3)"})}
+       {icon[routeName]({color: isFocused ? "#9C85FF" : (theme === "light"? "rgba(0,0,0,0.5)" : "rgba(255, 255, 255, 0.5)")})}
 </Animated.View>
 
-            <Animated.Text style={[{ color: isFocused ? "#9C85FF" : "rgba(255, 255, 255, 0.3)", fontSize: 12 }, antimatedTextStyle]}>
+            <Animated.Text style={[{ color:  isFocused ? "#9C85FF" : (theme === "light"? "rgba(0,0,0,0.5)" : "rgba(255, 255, 255, 0.5)"), fontSize: 12 }, antimatedTextStyle]}>
               {label}
             </Animated.Text>
           </Pressable>

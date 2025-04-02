@@ -17,8 +17,8 @@ export default function StreakTracker({ currentStreak, bestStreak, completedDays
     const colorScheme = useColorScheme()
   return (
     <View style={[styles.container, {
-            borderColor: colorScheme === "light" ? "rgba(0, 0, 0, 0.1)" : "rgba(255, 255, 255, 0.1)",
-            boxShadow: colorScheme === "light" ? "0 4px 4px rgba(0, 0, 0, 0.25)" : "0 4px 4px rgba(0, 0, 0, 0.9)"
+            backgroundColor: colorScheme === "light" ? "rgba(255, 255, 255, 1)" : "rgba(255, 255, 255, 0.05)",
+            boxShadow: colorScheme === "light" ? "0 4px 4px rgba(0, 0, 0, 0.25)" : "0 0 0 rgba(0, 0, 0, 0.1)"
     }]}>
       <Text style={styles.streakText}>🔥 {currentStreak} Days</Text>
       <Text style={styles.bestStreakText}>Best: {bestStreak} Days</Text>
@@ -38,7 +38,7 @@ export default function StreakTracker({ currentStreak, bestStreak, completedDays
 
 const styles = StyleSheet.create({
     container: { padding: 20,
-        borderWidth:2,
+ 
         borderRadius: 15
      },
 

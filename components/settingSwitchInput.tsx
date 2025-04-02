@@ -16,7 +16,10 @@ export default function SettingSwitchInput({title, icon, radio, state, onPress}:
     const colorScheme = useColorScheme()
 
     return ( 
-        <TouchableOpacity onPress={onPress} style={[styles.container, {backgroundColor: colorScheme === "light" ? "rgba(0, 0, 0, 0.1)" : "rgba(0, 0, 0, 0.9)"}]}>
+        <TouchableOpacity onPress={onPress} style={[styles.container, {
+              backgroundColor: colorScheme === "light" ? "rgba(255, 255, 255, 1)" : "rgba(255, 255, 255, 0.05)",
+            boxShadow: colorScheme === "light" ? "0 4px 4px rgba(0, 0, 0, 0.25)" : "0 0 0 rgba(0, 0, 0, 0.1)"
+            }]}>
             {/* Icon/ text radio, taking state gfrom the top there, radio or not */}
             <View style={styles.textAndIconContainer}>
             <IconSymbol color={colorScheme === "dark"? "white" : "black"} name={icon}/>

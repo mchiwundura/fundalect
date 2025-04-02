@@ -1,7 +1,7 @@
 import { ThemedText } from "@/components/ThemedText";
 import { ThemedView } from "@/components/ThemedView";
 import { StyleSheet, TouchableOpacity, View } from "react-native";
-import * as SQLite from "expo-sqlite";
+
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { useEffect, useState } from "react";
 import FlashcardNav from "@/components/FlashcardNav";
@@ -17,6 +17,7 @@ import Animated, {
 import IconTextButton from "@/components/ui/IconTextButton";
 import { IconSymbol } from "@/components/ui/IconSymbol";
 import { transform } from "@babel/core";
+import { useDatabase } from "@/hooks/useDatabase";
 
 
 // Actual user performance on the cards (a timer if necesarry)
@@ -39,13 +40,13 @@ export default function Flashcards() {
   const [currentCard, setCurrentCard] = useState(0);
   const [flashcards, setFlashcards] = useState<[]>();
   const [front, setFront] = useState(true);
+const {getFlashcards} = useDatabase()
 
-  async function getFlashcards() {
-    const db = await SQLite.openDatabaseAsync('local.db');
-    const fetchedFlashcards = await db.getAllAsync(`
-        SELECT * FROM flashcards
-        WHERE lesson_id = ${id}
-    `);
+  async function getDeck() {
+
+    
+    const fetchedFlashcards = await getFlashcards(id)
+
     setFlashcards(fetchedFlashcards);
   }
 
@@ -107,7 +108,7 @@ export default function Flashcards() {
   }
     
   useEffect(() => {
-    getFlashcards();
+    getDeck();
   }, []);
 
   const handleCardClick = () => {
