@@ -7,6 +7,7 @@ import HeaderNavigation from "@/components/HeaderNav";
 import StreakTracker from "@/components/StreakTracker";
 import ReportStats from "@/components/ReportStats";
 import { useDatabase } from "@/hooks/useDatabase";
+import Onboarding from "@/components/onboarding";
 
 
 export default function Home() {
@@ -21,6 +22,7 @@ const completedDays = [
   { day: "S", status: false, date: 24 },
 ];
     const [activities, setActivities] = useState<any>([]);
+    const [onborded, setOnboarded] = useState(false);
     const {getLessons} = useDatabase();
     
     useEffect(() => {
@@ -39,6 +41,7 @@ const completedDays = [
 
 
     return (
+
         <ParallaxScrollView headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }} headerImage={<HeaderNavigation />}>
             <ThemedText type="title">Report</ThemedText>
             <ReportStats flashcards={20} tests={4} minutes={300} />

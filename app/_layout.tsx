@@ -3,9 +3,10 @@ import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import 'react-native-reanimated';
 import { useColorScheme } from '@/hooks/useColorScheme';
+import Onboarding from '@/components/onboarding';
 // import * as Sentry from "@sentry/react-native";
 
 // Sentry.init({
@@ -23,7 +24,7 @@ export default function RootLayout() {
   const [loaded] = useFonts({
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
   });
-
+const [onboarded, setOnborded] = useState(false)
   useEffect(() => {
     if (loaded) {
       SplashScreen.hideAsync();
@@ -38,14 +39,16 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
+      { onboarded? <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="flashcards/[id]" options={{ headerShown: true, title: "Flashcards" }} />
         <Stack.Screen name="course/[id]" options={{ headerShown: true, title: "Courses" }} />
         <Stack.Screen name="quizes/[id]" options={{ headerShown: true, title: "Quiz" }} />
         <Stack.Screen name="lesson/[id]" options={{ headerShown: true, title: "Lesson" }} />
         <Stack.Screen name="+not-found" />
-      </Stack>
+        </Stack>
+      :
+      <Onboarding deboard={() => setOnborded(true)}/>}
       <StatusBar style="auto" />
     </ThemeProvider>
   );
