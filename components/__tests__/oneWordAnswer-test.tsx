@@ -8,4 +8,4 @@ it(`renders correctly`, () => {
   const tree = renderer.create(<OneWordAnswer/>).toJSON();
 
   expect(tree).toMatchSnapshot(); 
-});
+}); 

@@ -20,7 +20,7 @@ export default function LessonCard(props: LessonCardProps) {
     const colorScheme = useColorScheme()
 
     return (
-        <Link style={styles.link} href={`/lesson/${props.link}`}>
+        <Link style={styles.link} href={props.link} >
         <ThemedView style={[styles.container, {
             borderColor: rgbaColor(props.color, 0.8),
             backgroundColor : rgbaColor(props.color, 0.2),

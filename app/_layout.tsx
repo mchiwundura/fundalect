@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react';
 import 'react-native-reanimated';
 import { useColorScheme } from '@/hooks/useColorScheme';
 import Onboarding from '@/components/onboarding';
+import { LessonContentProvider } from '@/context/lessonContentContext';
 // import * as Sentry from "@sentry/react-native";
 
 // Sentry.init({
@@ -39,6 +40,7 @@ const [onboarded, setOnborded] = useState(false)
 
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+      <LessonContentProvider>
       { onboarded? <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="flashcards/[id]" options={{ headerShown: true, title: "Flashcards" }} />
@@ -50,6 +52,7 @@ const [onboarded, setOnborded] = useState(false)
       :
       <Onboarding deboard={() => setOnborded(true)}/>}
       <StatusBar style="auto" />
+      </LessonContentProvider>
     </ThemeProvider>
   );
 }

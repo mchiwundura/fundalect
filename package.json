@@ -38,6 +38,7 @@
     "expo-symbols": "~0.2.2",
     "expo-system-ui": "~4.0.9",
     "expo-web-browser": "~14.0.2",
+    "gray-matter": "^4.0.3",
     "motion": "^12.5.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
@@ -53,7 +54,8 @@
     "react-native-svg": "15.8.0",
     "react-native-web": "~0.19.13",
     "react-native-webview": "13.12.5",
-    "rive-react-native": "^9.2.0"
+    "rive-react-native": "^9.2.0",
+    "@react-native-async-storage/async-storage": "1.23.1"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

@@ -1,51 +1,60 @@
-import { Platform } from 'react-native';
-import { createClient } from '@supabase/supabase-js';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const supabaseUrl = 'https://urkxjkoluoqekmnhgxnw.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVya3hqa29sdW9xZWttbmhneG53Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI3MjI5MzAsImV4cCI6MjA1ODI5ODkzMH0.GtqtWKhxY6yUy02eHzlTZQcXtxZIweLEeLLSzVpApBQ';
+const CACHE_PREFIX = 'FUNDAL_';
 
-export async function useDatabase() {
-  const supabase = createClient(supabaseUrl, supabaseKey);
-  
-  if (Platform.OS === 'web') {
-    // Fallback for web: Use Supabase or API calls
-    return {
-      getCourses: async () => {
-        const { data, error } = await supabase.from('courses').select('*');
-        if (error) throw new Error(`Courses fetch failed: ${error.message}`);
-        return data;
-      },
-      getLessons: async () => {
-        const { data, error } = await supabase.from('lessons').select('*');
-        if (error) throw new Error(`Lessons fetch failed: ${error.message}`);
-        return data;
-      },
-      // Add more API-based methods as needed
-    };
-  } else {
-    // Use expo-sqlite for supported platforms
+async function getOrFetch<T>(key: string, fetcher: () => Promise<T>): Promise<T> {
+  const cacheKey = `${CACHE_PREFIX}${key}`;
+  try {
+    const cached = await AsyncStorage.getItem(cacheKey);
+    if (cached) {
+      return JSON.parse(cached);
+    }
 
-    const SQLite = require('expo-sqlite')
-    const db = SQLite.openDatabaseAsync('local.db');
-
-    return {
-getCourses: async () => {
-  const courses = (await db).getAllAsync('SELECT * FROM courses');
-  return courses
-},
-getLessons: async () => {
-  const lessons = (await db).getAllAsync('SELECT * FROM lessons');
-return lessons
-},
-getLesson: async (lessonId: number) => {
-const lesson = (await db).getFirstAsync(`SELECT * FROM lessons WHERE id = ${lessonId}`)
-return lesson
-},
-getFlashcards: async (lessonId: number) => {
-  const flashcards = (await db).getAllAsync(`SELECT * FROM flashcards WHERE lesson_id = ${lessonId}`)
-return flashcards
-},
-
-    };
+    const data = await fetcher();
+    await AsyncStorage.setItem(cacheKey, JSON.stringify(data));
+    return data;
+  } catch (error) {
+    console.error('Data fetch/store error:', error);
+    return fetcher(); // fallback to fetch if something fails
   }
+}
+
+export function useDatabase() {
+  return {
+    getCourses: async () => {
+      return await getOrFetch('courses', async () => {
+        const response = await fetch('/api/courses');
+        const data = await response.json();
+        return data.contents;
+      });
+    },
+    getCourse: async (courseId: number) => {
+      return await getOrFetch(`course_${courseId}`, async () => {
+        const response = await fetch(`/api/course?id=${courseId}`);
+        const data = await response.json();
+        return data;
+      });
+    },
+    getLessons: async (courseId: number) => {
+      return await getOrFetch(`lessons_${courseId}`, async () => {
+        const response = await fetch(`/api/lessons?id=${courseId}`);
+        const data = await response.json();
+        return data.contents;
+      });
+    },
+    getLesson: async (lessonId: number, courseId: number) => {
+      return await getOrFetch(`lesson_${courseId}_${lessonId}`, async () => {
+        const response = await fetch(`/api/lesson?id=${lessonId}&courseId=${courseId}`);
+        const data = await response.json();
+        return data.contents;
+      });
+    },
+    getFlashcards: async (lessonId: number, courseId: number) => {
+      return await getOrFetch(`flashcards_${courseId}_${lessonId}`, async () => {
+        const response = await fetch(`/api/flashcards?id=${lessonId}&courseId=${courseId}`);
+        const data = await response.json();
+        return data.contents;
+      });
+    },
+  };
 }

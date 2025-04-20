@@ -17,7 +17,7 @@ export default function CourseCard({ course }: { course: Course }) {
 
 
     return (
-        <TouchableOpacity style={[styles.container, {backgroundColor: rgbaColor(course.color, 0.2), borderColor: course.color}]} onPress={() => navigation.push(`course/${course.id}`, {id: 1})}>
+        <TouchableOpacity style={[styles.container, {backgroundColor: rgbaColor(course.color, 0.2), borderColor: course.color}]} onPress={() => navigation.push(`course/${course.id}`)}>
            <View style={[styles.progression, {height: course.completion * 1.40, backgroundColor: rgbaColor(course.color, 0.8)}]}/>
             <ThemedText type="defaultSemiBold">{course.title}</ThemedText>
             <Text style={styles.icon}>{course.icon}</Text>
