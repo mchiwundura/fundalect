@@ -12,14 +12,26 @@
         {children}
       </ThemedText>,
     heading3: (node, children, parent, styles) =>
-      <Text key={getUniqueID()} style={[styles.heading, styles.heading3]}>
+      <ThemedText key={getUniqueID()} style={[styles.heading, styles.heading3]}>
         {children}
-      </Text>,
+      </ThemedText>,
     blockquote: (node, children, parent, styles) => 
       <ThemedText key={getUniqueID()} style={[styles.blockquote, {backgroundColor: "black", marginVertical: 10}]}>
         {children}
       </ThemedText>,
+    list_item: (node, children, parent, styles) => 
+        <ThemedText key={getUniqueID()} style={[styles]}>
+            {children}
+            </ThemedText>,
     paragraph: (node, children, parent, styles) => 
+        <ThemedText key={getUniqueID()} style={[styles]}>
+            {children}
+            </ThemedText>,
+    table: (node, children, parent, styles) => 
+        <ThemedText key={getUniqueID()} style={[styles]}>
+            {children}
+            </ThemedText>,
+    fence: (node, children, parent, styles) => 
         <ThemedText key={getUniqueID()} style={[styles]}>
             {children}
             </ThemedText>,

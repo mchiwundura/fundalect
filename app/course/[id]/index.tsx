@@ -7,22 +7,21 @@ import LessonCard from "@/components/ui/LessonCard";
 import { ThemedView } from "@/components/ThemedView";
 import { ThemedText } from "@/components/ThemedText";
 import { useDatabase } from "@/hooks/useDatabase";
+import { CourseInterface, LessonInterface } from "@/types/database";
 
 
 export default function Course() {
  const { getCourse, getLessons } = useDatabase();
   const {id} = useLocalSearchParams();
-  const [course, setCourse] = useState(null);
-  const [lessons, setLessons] = useState();
+  const [course, setCourse] = useState<CourseInterface | null>(null);
+  const [lessons, setLessons] = useState<LessonInterface[]>([]);
   console.error("Page Id", id)
   async function runDatabase() {
     try {
-      const course = await getCourse(id)
-  console.log(course.content.data)
+      const course = await getCourse(id);
       const lessons = await getLessons(id);
-console.log(lessons.map((x, y) => x.data))
-      setCourse(course.content.data)
-      setLessons(lessons.map((x)=> x?.data));
+      setCourse(course)
+      setLessons(lessons.map((x: LessonInterface)=> x?.data));
 
     } catch (error) {
       console.error('Database error:', error);

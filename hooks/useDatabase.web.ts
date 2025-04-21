@@ -12,16 +12,16 @@ export function useDatabase() {
             const content = await fetchCourses();
         return content.contents;
                 },
-      getCourse: async (courseId: number) => {
+      getCourse: async (courseId: string | string[]) => {
           async function fetchCourse() {
-            const response = await fetch(`/api/course?id=${courseId}`)
+            const response = await fetch(`/api/courses?id=${courseId}`)
             const data = await response.json()
             return data
           }
           const content = await fetchCourse();
           return content;
       },          
-      getLessons: async (courseId: number) => {
+      getLessons: async (courseId: string | string[]) => {
           async function fetchLessons() {
             const response = await fetch(`/api/lessons?id=${courseId}`)
             const data = await response.json()
@@ -30,18 +30,18 @@ export function useDatabase() {
           const content = await fetchLessons();
           return content.contents;
       },
-      getLesson: async (lessonId: number, courseId: number) => {
+      getLesson: async (lessonId: string | string[], courseId: string | string[]) => {
           async function fetchLesson() {
-            const response = await fetch(`/api/lesson?id=${lessonId}&courseId=${courseId}`)
+            const response = await fetch(`/api/lessons?id=${courseId}&lessonId=${lessonId}`)
             const data = await response.json()
             return data
           }
           const content = await fetchLesson();
           return content.contents;
       },
-      getFlashcards: async (lessonId: number, courseId: number) => {
+      getFlashcards: async (lessonId: string | string[], courseId: string | string[]) => {
           async function fetchLesson() {
-            const response = await fetch(`/api/flashcards?id=${lessonId}&courseId=${courseId}`)
+            const response = await fetch(`/api/flashcards?id=${lessonId}&lessonId=${courseId}`)
             const data = await response.json()
             return data
           }

@@ -37,9 +37,9 @@ async function getContent() {
   try {
       
       const lesson = await getLesson(lessonId, id)
-      console.log(lesson[0].data)
-        setLesson(lesson[0])
-        setFlashcards(lesson[0].data.flashcards)
+      console.log(lesson)
+        setLesson(lesson)
+        setFlashcards(lesson.data.flashcards)
   } catch (error) {
     console.error(error)
   }

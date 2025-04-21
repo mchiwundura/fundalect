@@ -1,32 +1,40 @@
-var fs = require('fs');
-var matter = require('gray-matter');
-
-export function getMarkdownFiles() {
-  const subPaths = fs.readdirSync("./material", { 
-    withFileTypes: true
-  }); 
-  const directories = subPaths.filter((dirent: any) => dirent.isDirectory())
-  const filePaths = []
-  for (let index = 0; index < directories.length; index++) {  
-    filePaths.push(`./material/${directories[index].name}/index.md`)  
-  }
-  return {filePaths, directories}
-}
-
-export function getMarkdownContent(filePath: string) {
-  const file = fs.readFileSync(filePath, 'utf8')
-  const { data, content } = matter(file)
-  return { data, content }
-}
+const data = {
+  "contents": [
+    {
+      "id": 1,
+      "title": "Physical Science",
+      "level": "Grade 11",
+      "description": "Dive into the fascinating world of physics and chemistry. This course covers mechanics, waves, chemical reactions, and more to prepare you for Grade 12 and beyond.",
+      "color": "#FFB785",
+      "completion": 30,
+      "icon": "🧪"
+    },
+    {
+      "id": 4,
+      "title": "Mathematics",
+      "description": "Build a strong foundation in algebra, geometry, and trigonometry to excel in high school mathematics.",
+      "color": "#3498DB",
+      "completion": 25,
+      "icon": "➗",
+      "level": 10
+    }
+  ]
+};
 
 export async function GET(request: Request) {
 
-const response = getMarkdownFiles()
-const filePaths = response.filePaths
-const contents = filePaths.map((filePath) => {
-  const content = getMarkdownContent(filePath)
-  return content.data
-})
+ const url = new URL(request.url);
+  const id = url.searchParams.get("id");
 
-  return Response.json({ contents });
+  if (id) {
+    const courseId = parseInt(id);
+    const course = data.contents.find(c => c.id === courseId);
+    if (course) {
+      return Response.json(course);
+    } else {
+      return new Response("Course not found", { status: 404 });
+    }
+  }
+
+  return Response.json(data);
 }
