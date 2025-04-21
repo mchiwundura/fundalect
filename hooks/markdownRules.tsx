@@ -1,6 +1,7 @@
     import { Text, Image } from "react-native";
     import { ThemedText } from "@/components/ThemedText";
     import { getUniqueID } from "react-native-markdown-display";
+import RemoteSvg from "@/components/svgRenderer";
 
     export const rules = {
     heading1: (node, children, parent, styles) =>
@@ -38,13 +39,17 @@
     image: (node, children, parent, styles) => {
         const { src, alt } = node.attributes;
         return (
-            <Image
-                key={getUniqueID()}
-                style={[styles.image, {width: "100%", height: 200, margin: 10}]}
-                source={{ uri: src }}
-                accessible={true}
-                accessibilityLabel={alt}
-            />
+            // <Image
+            //     key={getUniqueID()}
+            //     style={[styles.image, {width: "100%", height: 200, margin: 10}]}
+            //     source={{ uri: "https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_1126b5eb.svg" }}
+            //     accessible={true}
+            //     accessibilityLabel={alt}
+            // />
+            <>
+            <RemoteSvg uri={src}/>
+            <ThemedText>{src}</ThemedText>
+            </>
         );
     }
 };

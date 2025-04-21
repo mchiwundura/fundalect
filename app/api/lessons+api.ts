@@ -115,7 +115,7 @@ const data = {
             }
           ]
         },
-        "content": "\n## Electromagnetism and Electromagnetic Induction\n\n### Introduction to Electromagnetism\n\nElectromagnetism studies the relationship between electricity and magnetism.  A fundamental principle is that a current flowing through a conductor generates a magnetic field around it. The direction of this field is determined using the Right Hand Rule.\n\n### Electromagnets\n\nElectromagnets are temporary magnets created by passing an electric current through a coil of wire, often wound around a ferromagnetic core.  The magnetic field is present only while the current flows.\n\n### Magnetic Flux\n\nMagnetic flux (Φ) quantifies the amount of magnetic field passing through a given area.  It's calculated using the formula:\n\n![equation](/equations/eq_4ec05b98.svg)\n\nWhere:\n\n*   B is the magnetic field strength (Tesla)\n*   A is the area of the surface (m²)\n*   θ is the angle between the magnetic field and the surface normal (degrees)\n\n\n### Electromagnetic Induction\n\nElectromagnetic induction occurs when a change in magnetic flux through a conductor induces an electromotive force (emf), or voltage. This induced voltage can drive a current.\n\n### Faraday's Law\n\nFaraday's Law of Electromagnetic Induction describes the magnitude of the induced emf:\n\n![equation](/equations/eq_a9bd9f81.svg)\n\nWhere:\n\n*   $\\\\mathcal{E}$ is the induced emf (Volts)\n*   N is the number of turns in the coil\n*   ΔΦ is the change in magnetic flux (Webers)\n*   Δt is the change in time (seconds)\n\nThe negative sign indicates the direction of the induced emf, as given by Lenz's Law (the induced current opposes the change in magnetic flux).\n\n\n### Units in Electromagnetism\n\n| Quantity          | Unit Name | Unit Symbol |\n|-----------------|------------|-------------|\n| Induced emf ($\\\\mathcal{E}$) | Volt       | V           |\n| Magnetic field (B) | Tesla      | T           |\n| Magnetic flux (Φ) | Weber      | Wb          |\n| Time (t)          | Second     | s           |\n\n"
+        "content": "\n## Electromagnetism and Electromagnetic Induction\n\n### Introduction to Electromagnetism\n\nElectromagnetism studies the relationship between electricity and magnetism.  A fundamental principle is that a current flowing through a conductor generates a magnetic field around it. The direction of this field is determined using the Right Hand Rule.\n\n### Electromagnets\n\nElectromagnets are temporary magnets created by passing an electric current through a coil of wire, often wound around a ferromagnetic core.  The magnetic field is present only while the current flows.\n\n### Magnetic Flux\n\nMagnetic flux (Φ) quantifies the amount of magnetic field passing through a given area.  It's calculated using the formula:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nWhere:\n\n*   B is the magnetic field strength (Tesla)\n*   A is the area of the surface (m²)\n*   θ is the angle between the magnetic field and the surface normal (degrees)\n\n\n### Electromagnetic Induction\n\nElectromagnetic induction occurs when a change in magnetic flux through a conductor induces an electromotive force (emf), or voltage. This induced voltage can drive a current.\n\n### Faraday's Law\n\nFaraday's Law of Electromagnetic Induction describes the magnitude of the induced emf:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nWhere:\n\n*   $\\\\mathcal{E}$ is the induced emf (Volts)\n*   N is the number of turns in the coil\n*   ΔΦ is the change in magnetic flux (Webers)\n*   Δt is the change in time (seconds)\n\nThe negative sign indicates the direction of the induced emf, as given by Lenz's Law (the induced current opposes the change in magnetic flux).\n\n\n### Units in Electromagnetism\n\n| Quantity          | Unit Name | Unit Symbol |\n|-----------------|------------|-------------|\n| Induced emf ($\\\\mathcal{E}$) | Volt       | V           |\n| Magnetic field (B) | Tesla      | T           |\n| Magnetic flux (Φ) | Weber      | Wb          |\n| Time (t)          | Second     | s           |\n\n"
       },
       {
         "data": {
@@ -127,7 +127,7 @@ const data = {
                 "title": "Ohm's Law",
                 "question": "What is Ohm's Law and how is it expressed mathematically?"
               },
-              "back": "Ohm's Law states that the current through a conductor between two points is directly proportional to the voltage across the two points, and inversely proportional to the resistance between them.  Mathematically: ![equation](/equations/eq_2cda0614.svg) where I is current, V is voltage, and R is resistance."
+              "back": "Ohm's Law states that the current through a conductor between two points is directly proportional to the voltage across the two points, and inversely proportional to the resistance between them.  Mathematically: ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) where I is current, V is voltage, and R is resistance."
             },
             {
               "front": {
@@ -141,35 +141,35 @@ const data = {
                 "title": "Calculating Resistance",
                 "question": "How do you calculate the resistance of a resistor using Ohm's Law?"
               },
-              "back": "Resistance can be calculated using Ohm's Law rearranged: ![equation](/equations/eq_5590c146.svg) "
+              "back": "Resistance can be calculated using Ohm's Law rearranged: ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) "
             },
             {
               "front": {
                 "title": "Resistors in Series",
                 "question": "How do you calculate the equivalent resistance of resistors in series?"
               },
-              "back": "The equivalent resistance (Rs) of resistors in series is the sum of their individual resistances: ![equation](/equations/eq_88689ded.svg)"
+              "back": "The equivalent resistance (Rs) of resistors in series is the sum of their individual resistances: ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)"
             },
             {
               "front": {
                 "title": "Resistors in Parallel",
                 "question": "How do you calculate the equivalent resistance of resistors in parallel?"
               },
-              "back": "The reciprocal of the equivalent resistance (Rp) of resistors in parallel is the sum of the reciprocals of their individual resistances: ![equation](/equations/eq_5ceabe8b.svg) "
+              "back": "The reciprocal of the equivalent resistance (Rp) of resistors in parallel is the sum of the reciprocals of their individual resistances: ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) "
             },
             {
               "front": {
                 "title": "Electrical Power",
                 "question": "What is electrical power and how is it calculated?"
               },
-              "back": "Electrical power (P) is the rate at which electrical energy is converted. It's calculated as: ![equation](/equations/eq_8a62df46.svg)  This can also be expressed as: ![equation](/equations/eq_7d229228.svg) or ![equation](/equations/eq_5a3e82ef.svg) Power is measured in Watts (W)."
+              "back": "Electrical power (P) is the rate at which electrical energy is converted. It's calculated as: ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)  This can also be expressed as: ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) or ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) Power is measured in Watts (W)."
             },
             {
               "front": {
                 "title": "Electrical Energy",
                 "question": "How is electrical energy calculated?"
               },
-              "back": "Electrical energy (E) is calculated as power multiplied by time:  ![equation](/equations/eq_779d8fe2.svg) Energy is measured in Joules (J)."
+              "back": "Electrical energy (E) is calculated as power multiplied by time:  ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) Energy is measured in Joules (J)."
             },
             {
               "front": {
@@ -180,7 +180,7 @@ const data = {
             }
           ]
         },
-        "content": "\n## Ohm's Law and Electrical Circuits\n\n### Ohm's Law\n\nOhm's Law describes the relationship between voltage, current, and resistance in an electrical circuit. It states that the current through a conductor is directly proportional to the voltage across it and inversely proportional to its resistance.  The mathematical representation is:\n\n![equation](/equations/eq_2cda0614.svg)\n\nWhere:\n\n*   I = Current (Amperes, A)\n*   V = Voltage (Volts, V)\n*   R = Resistance (Ohms, Ω)\n\n\nConductors that obey Ohm's Law are called ohmic conductors, while those that don't are called non-ohmic conductors.  Ohm's Law allows us to calculate the resistance of a resistor using the formula:\n\n![equation](/equations/eq_5590c146.svg)\n\n\n### Resistors in Series and Parallel\n\nWhen resistors are connected in series, the equivalent resistance (Rs) is the sum of their individual resistances:\n\n![equation](/equations/eq_88689ded.svg)\n\nWhen resistors are connected in parallel, the reciprocal of the equivalent resistance (Rp) is the sum of the reciprocals of their individual resistances:\n\n![equation](/equations/eq_5ceabe8b.svg)\n\n\n### Electrical Power and Energy\n\nElectrical power (P) is the rate at which electrical energy is converted into other forms of energy (e.g., heat, light).  It is measured in Watts (W) and can be calculated using the following formulas:\n\n![equation](/equations/eq_8a62df46.svg)\n![equation](/equations/eq_7d229228.svg)\n![equation](/equations/eq_5a3e82ef.svg)\n\n\nElectrical energy (E) is the total amount of energy consumed and is measured in Joules (J).  It's calculated as:\n\n![equation](/equations/eq_779d8fe2.svg)\n\nWhere t is the time in seconds.  A kilowatt-hour (kWh) is a commonly used unit of energy, representing the use of 1 kilowatt of power for 1 hour.\n\n\n### Units Used in Electrical Circuits\n\n| Quantity        | Unit Name | Unit Symbol |\n|-----------------|------------|-------------|\n| Current (I)     | Amperes    | A           |\n| Electrical Energy (E) | Joules     | J           |\n| Power (P)       | Watts      | W           |\n| Resistance (R)  | Ohms       | Ω           |\n| Voltage (V)     | Volts      | V           |\n\n"
+        "content": "\n## Ohm's Law and Electrical Circuits\n\n### Ohm's Law\n\nOhm's Law describes the relationship between voltage, current, and resistance in an electrical circuit. It states that the current through a conductor is directly proportional to the voltage across it and inversely proportional to its resistance.  The mathematical representation is:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nWhere:\n\n*   I = Current (Amperes, A)\n*   V = Voltage (Volts, V)\n*   R = Resistance (Ohms, Ω)\n\n\nConductors that obey Ohm's Law are called ohmic conductors, while those that don't are called non-ohmic conductors.  Ohm's Law allows us to calculate the resistance of a resistor using the formula:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\n\n### Resistors in Series and Parallel\n\nWhen resistors are connected in series, the equivalent resistance (Rs) is the sum of their individual resistances:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nWhen resistors are connected in parallel, the reciprocal of the equivalent resistance (Rp) is the sum of the reciprocals of their individual resistances:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\n\n### Electrical Power and Energy\n\nElectrical power (P) is the rate at which electrical energy is converted into other forms of energy (e.g., heat, light).  It is measured in Watts (W) and can be calculated using the following formulas:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\n\nElectrical energy (E) is the total amount of energy consumed and is measured in Joules (J).  It's calculated as:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nWhere t is the time in seconds.  A kilowatt-hour (kWh) is a commonly used unit of energy, representing the use of 1 kilowatt of power for 1 hour.\n\n\n### Units Used in Electrical Circuits\n\n| Quantity        | Unit Name | Unit Symbol |\n|-----------------|------------|-------------|\n| Current (I)     | Amperes    | A           |\n| Electrical Energy (E) | Joules     | J           |\n| Power (P)       | Watts      | W           |\n| Resistance (R)  | Ohms       | Ω           |\n| Voltage (V)     | Volts      | V           |\n\n"
       },
       {
         "data": {
@@ -238,7 +238,7 @@ const data = {
             }
           ]
         },
-        "content": "\n## Enthalpy and Activation Energy in Chemical Reactions\n\nChemical reactions involve the breaking and formation of chemical bonds, resulting in energy changes.  The strength of a chemical bond is quantified by its **bond energy**, the energy required to break that bond (measured in kJ·mol⁻¹).\n\n**Enthalpy (H)** represents the total energy of a system at constant pressure.  The difference in enthalpy between reactants and products is the **heat of reaction (ΔH)**:\n\n![equation](/equations/eq_a8df2552.svg)\n\nA reaction is **exothermic** if it releases energy (ΔH < 0), meaning the energy of the products is lower than the energy of the reactants.  Examples include combustion and respiration.  Conversely, an **endothermic** reaction absorbs energy (ΔH > 0), resulting in products with higher energy than reactants. Photosynthesis and the thermal decomposition of limestone are examples.\n\nChemical reactions require a minimum energy input to proceed, known as the **activation energy**.  The **activated complex** or **transition state** is a high-energy, short-lived intermediate formed during the reaction, representing the point of maximum energy in the reaction pathway.\n"
+        "content": "\n## Enthalpy and Activation Energy in Chemical Reactions\n\nChemical reactions involve the breaking and formation of chemical bonds, resulting in energy changes.  The strength of a chemical bond is quantified by its **bond energy**, the energy required to break that bond (measured in kJ·mol⁻¹).\n\n**Enthalpy (H)** represents the total energy of a system at constant pressure.  The difference in enthalpy between reactants and products is the **heat of reaction (ΔH)**:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nA reaction is **exothermic** if it releases energy (ΔH < 0), meaning the energy of the products is lower than the energy of the reactants.  Examples include combustion and respiration.  Conversely, an **endothermic** reaction absorbs energy (ΔH > 0), resulting in products with higher energy than reactants. Photosynthesis and the thermal decomposition of limestone are examples.\n\nChemical reactions require a minimum energy input to proceed, known as the **activation energy**.  The **activated complex** or **transition state** is a high-energy, short-lived intermediate formed during the reaction, representing the point of maximum energy in the reaction pathway.\n"
       },
       {
         "data": {
@@ -601,7 +601,7 @@ const data = {
                 "title": "Snell's Law",
                 "question": "State Snell's Law and explain the variables."
               },
-              "back": "![equation](/equations/eq_c976cd43.svg) where $n_1$ and $n_2$ are the refractive indices of the two media, and $\theta_1$ and $\theta_2$ are the angles of incidence and refraction respectively."
+              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) where $n_1$ and $n_2$ are the refractive indices of the two media, and $\theta_1$ and $\theta_2$ are the angles of incidence and refraction respectively."
             },
             {
               "front": {
@@ -612,7 +612,7 @@ const data = {
             }
           ]
         },
-        "content": "\n## Geometrical Optics\n\nThis chapter introduces geometrical optics, revisiting reflection and the law of reflection.  It explores the speed of light, refraction, refractive index, and techniques for sketching ray diagrams.  Snell's Law and total internal reflection are also covered.\n\n### Reflection and the Law of Reflection\n\nA light ray is an imaginary line representing the path of light. The law of reflection states that the angle of incidence equals the angle of reflection, and all rays lie in the same plane.\n\n### The Speed of Light\n\nLight travels at its maximum speed in a vacuum.  Its speed is slightly slower in other media. This difference in speed causes refraction.\n\n### Refraction and Refractive Index\n\nRefraction is the bending of light as it passes from one medium to another.  Each medium has a refractive index (n), indicating how much light bends upon entering that medium.  The refractive index is related to the optical density of the medium.\n\n### Sketching Ray Diagrams\n\nRay diagrams show the path of light through different media, illustrating the effects of refractive indices on light bending.\n\n### Snell's Law\n\nSnell's Law allows for the precise calculation of light bending:  ![equation](/equations/eq_c976cd43.svg).  This equation relates refractive indices ($n_1$, $n_2$) to angles of incidence ($\\theta_1$) and refraction ($\\theta_2$).\n\n### Total Internal Reflection\n\nWhen light travels from a denser to a less dense medium, at an angle exceeding the critical angle, total internal reflection occurs.  All light is reflected back into the denser medium. This phenomenon has applications in various fields.\n"
+        "content": "\n## Geometrical Optics\n\nThis chapter introduces geometrical optics, revisiting reflection and the law of reflection.  It explores the speed of light, refraction, refractive index, and techniques for sketching ray diagrams.  Snell's Law and total internal reflection are also covered.\n\n### Reflection and the Law of Reflection\n\nA light ray is an imaginary line representing the path of light. The law of reflection states that the angle of incidence equals the angle of reflection, and all rays lie in the same plane.\n\n### The Speed of Light\n\nLight travels at its maximum speed in a vacuum.  Its speed is slightly slower in other media. This difference in speed causes refraction.\n\n### Refraction and Refractive Index\n\nRefraction is the bending of light as it passes from one medium to another.  Each medium has a refractive index (n), indicating how much light bends upon entering that medium.  The refractive index is related to the optical density of the medium.\n\n### Sketching Ray Diagrams\n\nRay diagrams show the path of light through different media, illustrating the effects of refractive indices on light bending.\n\n### Snell's Law\n\nSnell's Law allows for the precise calculation of light bending:  ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg).  This equation relates refractive indices ($n_1$, $n_2$) to angles of incidence ($\\theta_1$) and refraction ($\\theta_2$).\n\n### Total Internal Reflection\n\nWhen light travels from a denser to a less dense medium, at an angle exceeding the critical angle, total internal reflection occurs.  All light is reflected back into the denser medium. This phenomenon has applications in various fields.\n"
       },
       {
         "data": {
@@ -631,14 +631,14 @@ const data = {
                 "title": "Refractive Index",
                 "question": "Define refractive index and provide the formula."
               },
-              "back": "The refractive index (n) of a material is the ratio of the speed of light in a vacuum (c) to its speed in the material (v).  ![equation](/equations/eq_15056a10.svg) "
+              "back": "The refractive index (n) of a material is the ratio of the speed of light in a vacuum (c) to its speed in the material (v).  ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) "
             },
             {
               "front": {
                 "title": "Snell's Law",
                 "question": "State Snell's Law."
               },
-              "back": "![equation](/equations/eq_c838ad8f.svg) where  $n_1$ and $n_2$ are the refractive indices of the two media, and $\\theta_1$ and $\\theta_2$ are the angles of incidence and refraction respectively."
+              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) where  $n_1$ and $n_2$ are the refractive indices of the two media, and $\\theta_1$ and $\\theta_2$ are the angles of incidence and refraction respectively."
             },
             {
               "front": {
@@ -656,7 +656,7 @@ const data = {
             }
           ]
         },
-        "content": "\n## Geometrical Optics\n\n### Light Rays and Reflection\n\nLight rays are lines perpendicular to light wavefronts.  In geometrical optics, they are represented as straight arrows.  Light rays reflect off surfaces. The incident ray strikes the surface, and the reflected ray bounces off. The normal is the line perpendicular to the surface at the point of incidence.  The angle of incidence ($\\\\theta_i$) is the angle between the incident ray and the normal. The angle of reflection ($\\\\theta_r$) is the angle between the reflected ray and the normal.\n\n\n### Refraction\n\nLight can be absorbed and transmitted. The speed of light (c) is constant in a given medium, with a maximum speed in a vacuum of approximately $3 \\times 10^8 \\, m/s$. Refraction occurs when light passes from one medium to another, causing a change in speed but not frequency.  If the light ray hits the boundary at an angle (not perpendicular or parallel), it changes direction, appearing to \"bend\".\n\nOptical density measures a medium's refracting power.  The angle of refraction is the angle between the normal and the refracted ray.\n\n### Snell's Law and Refraction\n\nSnell's Law describes the relationship between refractive indices and angles:\n\n![equation](/equations/eq_d68b112f.svg)\n\nLight traveling from a denser to a less dense medium refracts away from the normal; from a less dense to a denser medium, it refracts towards the normal.\n\n### Total Internal Reflection\n\nThe critical angle is the angle of incidence where the angle of refraction is 90°. Total internal reflection occurs when light travels from a denser to a less dense medium and the angle of incidence is greater than the critical angle. This phenomenon is used in optical fibers and endoscopes.\n"
+        "content": "\n## Geometrical Optics\n\n### Light Rays and Reflection\n\nLight rays are lines perpendicular to light wavefronts.  In geometrical optics, they are represented as straight arrows.  Light rays reflect off surfaces. The incident ray strikes the surface, and the reflected ray bounces off. The normal is the line perpendicular to the surface at the point of incidence.  The angle of incidence ($\\\\theta_i$) is the angle between the incident ray and the normal. The angle of reflection ($\\\\theta_r$) is the angle between the reflected ray and the normal.\n\n\n### Refraction\n\nLight can be absorbed and transmitted. The speed of light (c) is constant in a given medium, with a maximum speed in a vacuum of approximately $3 \\times 10^8 \\, m/s$. Refraction occurs when light passes from one medium to another, causing a change in speed but not frequency.  If the light ray hits the boundary at an angle (not perpendicular or parallel), it changes direction, appearing to \"bend\".\n\nOptical density measures a medium's refracting power.  The angle of refraction is the angle between the normal and the refracted ray.\n\n### Snell's Law and Refraction\n\nSnell's Law describes the relationship between refractive indices and angles:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nLight traveling from a denser to a less dense medium refracts away from the normal; from a less dense to a denser medium, it refracts towards the normal.\n\n### Total Internal Reflection\n\nThe critical angle is the angle of incidence where the angle of refraction is 90°. Total internal reflection occurs when light travels from a denser to a less dense medium and the angle of incidence is greater than the critical angle. This phenomenon is used in optical fibers and endoscopes.\n"
       },
       {
         "data": {
@@ -761,7 +761,7 @@ const data = {
                 "title": "Kelvin Temperature",
                 "question": "How do you convert Celsius to Kelvin?"
               },
-              "back": "![equation](/equations/eq_6bdee8ee.svg)"
+              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)"
             },
             {
               "front": {
@@ -789,11 +789,11 @@ const data = {
                 "title": "Ideal Gas Equation",
                 "question": "State the ideal gas equation and define its terms."
               },
-              "back": "![equation](/equations/eq_71e26a13.svg) where p=pressure, V=volume, n=number of moles, R=universal gas constant, T=temperature (Kelvin)."
+              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) where p=pressure, V=volume, n=number of moles, R=universal gas constant, T=temperature (Kelvin)."
             }
           ]
         },
-        "content": "\n## Kinetic Theory of Gases and Gas Laws\n\nThe kinetic theory of gases explains the behavior of gases based on the motion of their constituent particles.  Key tenets include: gases are composed of constantly moving particles with negligible volume compared to the space they occupy; particles have negligible intermolecular forces except during collisions; and the average kinetic energy of the particles is directly proportional to temperature.\n\n### Pressure and Temperature\n\nThe pressure of a gas is a measure of the force exerted by gas particles per unit area, resulting from their collisions with the container walls and each other.  Temperature, on the other hand, is a measure of the average kinetic energy of these particles.\n\n### Ideal vs. Real Gases\n\nAn ideal gas is a theoretical model where particles have negligible volume and no intermolecular forces.  In contrast, real gases exhibit deviations from ideal behavior, particularly at high pressures (where particle volume becomes significant) and low temperatures (where intermolecular forces become important).\n\n### Gas Laws\n\nSeveral laws describe the relationships between the properties of gases:\n\n* **Boyle's Law:**  At constant temperature, the pressure of a fixed amount of gas is inversely proportional to its volume ($p_1V_1 = p_2V_2$).\n\n* **Charles' Law:** At constant pressure, the volume of a fixed amount of gas is directly proportional to its Kelvin temperature ($V_1/T_1 = V_2/T_2$).\n\n* **Pressure-Temperature Relationship:** At constant volume, the pressure of a fixed amount of gas is directly proportional to its Kelvin temperature ($p_1/T_1 = p_2/T_2$).  Note that temperature must be in Kelvin ($T_K = T_C + 273$).\n\n* **General Gas Equation:** Combines Boyle's Law and the pressure-temperature relationship: $p_1V_1/T_1 = p_2V_2/T_2$. This applies when the amount of gas remains constant.\n\n* **Avogadro's Law:** Equal volumes of gases at the same temperature and pressure contain the same number of molecules.\n\n### The Ideal Gas Equation\n\nThe ideal gas equation integrates these relationships:\n\n![equation](/equations/eq_71e26a13.svg)\n\nwhere:\n\n* p = pressure (Pa)\n* V = volume (m³)\n* n = number of moles (mol)\n* R = universal gas constant (8.314 J·K⁻¹·mol⁻¹)\n* T = temperature (K)\n\nThis equation uses SI units for all parameters.\n\n\n### Table of Units\n\n| Quantity | Unit Name   | Unit Symbol |\n| --------- | ----------- | ----------- |\n| Moles (n) | moles       | mol         |\n| Pressure (p) | pascals     | Pa          |\n| Temperature (T) | kelvin      | K           |\n| Volume (V)  | cubic meters | m³          |\n\n"
+        "content": "\n## Kinetic Theory of Gases and Gas Laws\n\nThe kinetic theory of gases explains the behavior of gases based on the motion of their constituent particles.  Key tenets include: gases are composed of constantly moving particles with negligible volume compared to the space they occupy; particles have negligible intermolecular forces except during collisions; and the average kinetic energy of the particles is directly proportional to temperature.\n\n### Pressure and Temperature\n\nThe pressure of a gas is a measure of the force exerted by gas particles per unit area, resulting from their collisions with the container walls and each other.  Temperature, on the other hand, is a measure of the average kinetic energy of these particles.\n\n### Ideal vs. Real Gases\n\nAn ideal gas is a theoretical model where particles have negligible volume and no intermolecular forces.  In contrast, real gases exhibit deviations from ideal behavior, particularly at high pressures (where particle volume becomes significant) and low temperatures (where intermolecular forces become important).\n\n### Gas Laws\n\nSeveral laws describe the relationships between the properties of gases:\n\n* **Boyle's Law:**  At constant temperature, the pressure of a fixed amount of gas is inversely proportional to its volume ($p_1V_1 = p_2V_2$).\n\n* **Charles' Law:** At constant pressure, the volume of a fixed amount of gas is directly proportional to its Kelvin temperature ($V_1/T_1 = V_2/T_2$).\n\n* **Pressure-Temperature Relationship:** At constant volume, the pressure of a fixed amount of gas is directly proportional to its Kelvin temperature ($p_1/T_1 = p_2/T_2$).  Note that temperature must be in Kelvin ($T_K = T_C + 273$).\n\n* **General Gas Equation:** Combines Boyle's Law and the pressure-temperature relationship: $p_1V_1/T_1 = p_2V_2/T_2$. This applies when the amount of gas remains constant.\n\n* **Avogadro's Law:** Equal volumes of gases at the same temperature and pressure contain the same number of molecules.\n\n### The Ideal Gas Equation\n\nThe ideal gas equation integrates these relationships:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nwhere:\n\n* p = pressure (Pa)\n* V = volume (m³)\n* n = number of moles (mol)\n* R = universal gas constant (8.314 J·K⁻¹·mol⁻¹)\n* T = temperature (K)\n\nThis equation uses SI units for all parameters.\n\n\n### Table of Units\n\n| Quantity | Unit Name   | Unit Symbol |\n| --------- | ----------- | ----------- |\n| Moles (n) | moles       | mol         |\n| Pressure (p) | pascals     | Pa          |\n| Temperature (T) | kelvin      | K           |\n| Volume (V)  | cubic meters | m³          |\n\n"
       },
       {
         "data": {
@@ -886,7 +886,7 @@ const data = {
             }
           ]
         },
-        "content": "\n## Quantitative Aspects of Chemical Change\n\nThis section covers essential calculations in chemistry, focusing on the quantitative relationships between reactants and products in chemical reactions.\n\n### Molar Volume of Gases\n\nAt Standard Temperature and Pressure (STP), one mole of any gas occupies a volume of 22.4 dm³.  This allows us to calculate the volume of any number of moles of gas at STP using the formula:\n\n![equation](/equations/eq_6982134b.svg)\n\nwhere:\n\n* $V_g$ is the volume of the gas (in dm³)\n* $n_g$ is the number of moles of the gas\n\n\n### Gas Volume Relationships in Reactions\n\nThe volumes of reacting gases are directly proportional to their stoichiometric coefficients in a balanced chemical equation.  For two gases A and B, the relationship is:\n\n![equation](/equations/eq_e5423f3b.svg)\n\nwhere:\n\n* $V_A$ is the volume of gas A\n* $V_B$ is the volume of gas B\n* $a$ and $b$ are the stoichiometric coefficients of A and B, respectively.\n\n### Concentration Calculations\n\nThe concentration (c) of a solution is defined as the number of moles (n) of solute per unit volume (V) of solution:\n\n![equation](/equations/eq_4e750542.svg)\n\nwhere:\n\n* c is the concentration (mol·dm⁻³)\n* n is the number of moles of solute\n* V is the volume of the solution (dm³)\n\nA standard solution has a precisely known concentration.\n\n### Titration Calculations\n\nTitration is a technique to determine the concentration of an unknown solution.  The calculation uses the following relationship:\n\n![equation](/equations/eq_5101bd62.svg)\n\nwhere:\n\n* $c_A$ and $c_B$ are the concentrations of solutions A and B\n* $V_A$ and $V_B$ are the volumes of solutions A and B\n* $a$ and $b$ are the stoichiometric coefficients of A and B in the balanced equation\n\n\n### Limiting and Excess Reagents\n\nThe limiting reagent is completely consumed in a reaction, determining the maximum amount of product formed.  The excess reagent is the reactant left over after the reaction is complete.\n\n### Percent Yield\n\nPercent yield represents the efficiency of a reaction:\n\n![equation](/equations/eq_88b968d9.svg)\n\n### Empirical and Molecular Formulas\n\nThe empirical formula shows the simplest whole-number ratio of atoms in a compound. The molecular formula represents the actual number of atoms of each element in a molecule.\n\n### Percent Purity\n\nPercent purity indicates the proportion of a desired compound in a sample:\n\n![equation](/equations/eq_f4349810.svg)\n\n\n### Units Used in Calculations\n\n| Quantity       | Unit Name             | Unit Symbol |\n|-----------------|-----------------------|-------------|\n| Concentration (c) | moles per cubic decimetre | mol·dm⁻³     |\n| Mass (m)        | kilogram              | kg           |\n| Moles (n)       | moles                 | mol          |\n| Volume (V)      | cubic decimetres       | dm³          |\n\n\n"
+        "content": "\n## Quantitative Aspects of Chemical Change\n\nThis section covers essential calculations in chemistry, focusing on the quantitative relationships between reactants and products in chemical reactions.\n\n### Molar Volume of Gases\n\nAt Standard Temperature and Pressure (STP), one mole of any gas occupies a volume of 22.4 dm³.  This allows us to calculate the volume of any number of moles of gas at STP using the formula:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nwhere:\n\n* $V_g$ is the volume of the gas (in dm³)\n* $n_g$ is the number of moles of the gas\n\n\n### Gas Volume Relationships in Reactions\n\nThe volumes of reacting gases are directly proportional to their stoichiometric coefficients in a balanced chemical equation.  For two gases A and B, the relationship is:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nwhere:\n\n* $V_A$ is the volume of gas A\n* $V_B$ is the volume of gas B\n* $a$ and $b$ are the stoichiometric coefficients of A and B, respectively.\n\n### Concentration Calculations\n\nThe concentration (c) of a solution is defined as the number of moles (n) of solute per unit volume (V) of solution:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nwhere:\n\n* c is the concentration (mol·dm⁻³)\n* n is the number of moles of solute\n* V is the volume of the solution (dm³)\n\nA standard solution has a precisely known concentration.\n\n### Titration Calculations\n\nTitration is a technique to determine the concentration of an unknown solution.  The calculation uses the following relationship:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nwhere:\n\n* $c_A$ and $c_B$ are the concentrations of solutions A and B\n* $V_A$ and $V_B$ are the volumes of solutions A and B\n* $a$ and $b$ are the stoichiometric coefficients of A and B in the balanced equation\n\n\n### Limiting and Excess Reagents\n\nThe limiting reagent is completely consumed in a reaction, determining the maximum amount of product formed.  The excess reagent is the reactant left over after the reaction is complete.\n\n### Percent Yield\n\nPercent yield represents the efficiency of a reaction:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\n### Empirical and Molecular Formulas\n\nThe empirical formula shows the simplest whole-number ratio of atoms in a compound. The molecular formula represents the actual number of atoms of each element in a molecule.\n\n### Percent Purity\n\nPercent purity indicates the proportion of a desired compound in a sample:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\n\n### Units Used in Calculations\n\n| Quantity       | Unit Name             | Unit Symbol |\n|-----------------|-----------------------|-------------|\n| Concentration (c) | moles per cubic decimetre | mol·dm⁻³     |\n| Mass (m)        | kilogram              | kg           |\n| Moles (n)       | moles                 | mol          |\n| Volume (V)      | cubic decimetres       | dm³          |\n\n\n"
       },
       {
         "data": {
@@ -905,7 +905,7 @@ const data = {
                 "title": "Coulomb's Law",
                 "question": "State Coulomb's Law and write the formula."
               },
-              "back": "The magnitude of the electrostatic force between two point charges is directly proportional to the product of the magnitudes of the charges and inversely proportional to the square of the distance between them.  ![equation](/equations/eq_be005013.svg) where F is force, k is Coulomb's constant, Q1 and Q2 are the charges, and r is the distance between them."
+              "back": "The magnitude of the electrostatic force between two point charges is directly proportional to the product of the magnitudes of the charges and inversely proportional to the square of the distance between them.  ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) where F is force, k is Coulomb's constant, Q1 and Q2 are the charges, and r is the distance between them."
             },
             {
               "front": {
@@ -926,14 +926,14 @@ const data = {
                 "title": "Electric Field Strength",
                 "question": "Define electric field strength (E) and give its formula and units."
               },
-              "back": "The magnitude of the electric field (E) at a point is the force per unit charge: ![equation](/equations/eq_c48ae8c1.svg). The units are Newtons per Coulomb (N·C⁻¹)."
+              "back": "The magnitude of the electric field (E) at a point is the force per unit charge: ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg). The units are Newtons per Coulomb (N·C⁻¹)."
             },
             {
               "front": {
                 "title": "Electric Field due to a Point Charge",
                 "question": "What is the formula for the electric field due to a point charge Q?"
               },
-              "back": "![equation](/equations/eq_dd3bc34e.svg) where k is Coulomb's constant, Q is the charge, and r is the distance from the charge."
+              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) where k is Coulomb's constant, Q is the charge, and r is the distance from the charge."
             },
             {
               "front": {
@@ -944,7 +944,7 @@ const data = {
             }
           ]
         },
-        "content": "\n## Electrostatics\n\n### Electric Charge\n\nObjects can be positively charged, negatively charged, or neutral.\n\n### Coulomb's Law\n\nCoulomb's Law describes the electrostatic force between two point charges:  The magnitude of the electrostatic force is directly proportional to the product of the magnitudes of the charges and inversely proportional to the square of the distance between them.\n\n![equation](/equations/eq_be005013.svg)\n\nwhere:\n\n*   F = electrostatic force (N)\n*   k = Coulomb's constant\n*   Q₁, Q₂ = magnitudes of the charges (C)\n*   r = distance between the charges (m)\n\n### Electric Field\n\nAn electric field is a region of space where an electric charge experiences a force. The direction of the electric field at a point is the direction a positive test charge would move if placed at that point.\n\n### Electric Field Lines\n\nElectric field lines are a visual representation of the electric field.  They point away from positive charges and towards negative charges.\n\n### Electric Field Strength\n\nThe magnitude of the electric field (E) at a point is defined as the force per unit charge:\n\n![equation](/equations/eq_c48ae8c1.svg)\n\nThe units of electric field strength are Newtons per Coulomb (N·C⁻¹).\n\n### Electric Field due to a Point Charge\n\nThe electric field due to a point charge Q is given by:\n\n![equation](/equations/eq_d0f0244a.svg)\n\n### Electrostatic Force\n\nThe electrostatic force is attractive between unlike charges (positive and negative) and repulsive between like charges (positive and positive, or negative and negative).\n\n\n### Units Used in Electrostatics\n\n| Quantity | Unit Name     | Unit Symbol |\n| --------- | ------------- | ------------ |\n| Charge (q) | Coulomb       | C           |\n| Distance (r) | meter         | m           |\n| Electric Field (E) | Newtons per Coulomb | N·C⁻¹       |\n| Force (F)  | Newton        | N           |\n\n"
+        "content": "\n## Electrostatics\n\n### Electric Charge\n\nObjects can be positively charged, negatively charged, or neutral.\n\n### Coulomb's Law\n\nCoulomb's Law describes the electrostatic force between two point charges:  The magnitude of the electrostatic force is directly proportional to the product of the magnitudes of the charges and inversely proportional to the square of the distance between them.\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nwhere:\n\n*   F = electrostatic force (N)\n*   k = Coulomb's constant\n*   Q₁, Q₂ = magnitudes of the charges (C)\n*   r = distance between the charges (m)\n\n### Electric Field\n\nAn electric field is a region of space where an electric charge experiences a force. The direction of the electric field at a point is the direction a positive test charge would move if placed at that point.\n\n### Electric Field Lines\n\nElectric field lines are a visual representation of the electric field.  They point away from positive charges and towards negative charges.\n\n### Electric Field Strength\n\nThe magnitude of the electric field (E) at a point is defined as the force per unit charge:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nThe units of electric field strength are Newtons per Coulomb (N·C⁻¹).\n\n### Electric Field due to a Point Charge\n\nThe electric field due to a point charge Q is given by:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\n### Electrostatic Force\n\nThe electrostatic force is attractive between unlike charges (positive and negative) and repulsive between like charges (positive and positive, or negative and negative).\n\n\n### Units Used in Electrostatics\n\n| Quantity | Unit Name     | Unit Symbol |\n| --------- | ------------- | ------------ |\n| Charge (q) | Coulomb       | C           |\n| Distance (r) | meter         | m           |\n| Electric Field (E) | Newtons per Coulomb | N·C⁻¹       |\n| Force (F)  | Newton        | N           |\n\n"
       }
     ],
     "4": [
@@ -1065,7 +1065,7 @@ const data = {
                 "title": "Mean",
                 "question": "How is the mean calculated?"
               },
-              "back": "The sum of a set of values divided by the number of values.  ![equation](/equations/eq_7206c9d2.svg) "
+              "back": "The sum of a set of values divided by the number of values.  ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) "
             },
             {
               "front": {
@@ -1114,7 +1114,7 @@ const data = {
                 "title": "Percentile",
                 "question": "What is the pth percentile?"
               },
-              "back": "The value v such that p% of the data is less than v, and (100-p)% is greater than v.  The formula for the pth percentile in a data set of n values is: ![equation](/equations/eq_dab44d23.svg)"
+              "back": "The value v such that p% of the data is less than v, and (100-p)% is greater than v.  The formula for the pth percentile in a data set of n values is: ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)"
             },
             {
               "front": {
@@ -1153,7 +1153,7 @@ const data = {
             }
           ]
         },
-        "content": "\n## Descriptive Statistics\n\n### Types of Data\n\n* **Data:** Pieces of information observed and recorded.\n* **Quantitative Data:** Numerical data (discrete or continuous).\n* **Qualitative Data:** Non-numerical data (categorical or anecdotal).\n\n### Measures of Central Tendency\n\n* **Mean:** The average value.  ![equation](/equations/eq_7206c9d2.svg)\n* **Median:** The middle value in an ordered data set.\n* **Mode:** The most frequent value.\n\n### Measures of Dispersion\n\n* **Outlier:** A value significantly different from the rest of the data.\n* **Range:** The difference between the maximum and minimum values.\n* **Percentile:** The value below which a given percentage of data falls.  Formula: ![equation](/equations/eq_dab44d23.svg) where r is the rank, p is the percentile, and n is the number of data points.\n* **Quartiles:** Q1, Q2 (median), Q3 divide the data into four equal parts.\n* **Interquartile Range (IQR):** Q3 - Q1.\n* **Semi-Interquartile Range:** IQR / 2.\n* **Five-Number Summary:** Minimum, Q1, Median, Q3, Maximum.\n* **Box-and-Whisker Plot:** A graphical representation of the five-number summary.\n\n### Working with Continuous Data\n\nContinuous quantitative data can be grouped into classes to create discrete data.\n"
+        "content": "\n## Descriptive Statistics\n\n### Types of Data\n\n* **Data:** Pieces of information observed and recorded.\n* **Quantitative Data:** Numerical data (discrete or continuous).\n* **Qualitative Data:** Non-numerical data (categorical or anecdotal).\n\n### Measures of Central Tendency\n\n* **Mean:** The average value.  ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n* **Median:** The middle value in an ordered data set.\n* **Mode:** The most frequent value.\n\n### Measures of Dispersion\n\n* **Outlier:** A value significantly different from the rest of the data.\n* **Range:** The difference between the maximum and minimum values.\n* **Percentile:** The value below which a given percentage of data falls.  Formula: ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) where r is the rank, p is the percentile, and n is the number of data points.\n* **Quartiles:** Q1, Q2 (median), Q3 divide the data into four equal parts.\n* **Interquartile Range (IQR):** Q3 - Q1.\n* **Semi-Interquartile Range:** IQR / 2.\n* **Five-Number Summary:** Minimum, Q1, Median, Q3, Maximum.\n* **Box-and-Whisker Plot:** A graphical representation of the five-number summary.\n\n### Working with Continuous Data\n\nContinuous quantitative data can be grouped into classes to create discrete data.\n"
       },
       {
         "data": {
@@ -1190,7 +1190,7 @@ const data = {
             }
           ]
         },
-        "content": "\n## Trigonometry Basics\n\n### Introduction to Trigonometric Ratios\n\nWe define three trigonometric ratios for right-angled triangles:\n\n*   **Sine (sin):**  The ratio of the length of the side opposite the angle to the length of the hypotenuse.  ![equation](/equations/eq_1126b5eb.svg)\n*   **Cosine (cos):** The ratio of the length of the side adjacent to the angle to the length of the hypotenuse. ![equation](/equations/eq_fa480cb7.svg)\n*   **Tangent (tan):** The ratio of the length of the side opposite the angle to the length of the side adjacent to the angle. ![equation](/equations/eq_5539ae9a.svg)\n\n\n### Applications of Trigonometry\n\nTrigonometry is a valuable tool for solving problems involving right-angled triangles in two dimensions.  Common applications include:\n\n*   Calculating heights of objects (e.g., buildings, trees).\n*   Determining distances across obstacles (e.g., rivers, canyons).\n*   Solving surveying and navigation problems.\n\n\n### Angles of Elevation and Depression\n\n*   **Angle of Elevation:** The angle formed between the line of sight to an object *above* the horizontal and the horizontal plane.\n\n*   **Angle of Depression:** The angle formed between the line of sight to an object *below* the horizontal and the horizontal plane.\n\n"
+        "content": "\n## Trigonometry Basics\n\n### Introduction to Trigonometric Ratios\n\nWe define three trigonometric ratios for right-angled triangles:\n\n*   **Sine (sin):**  The ratio of the length of the side opposite the angle to the length of the hypotenuse.  ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n*   **Cosine (cos):** The ratio of the length of the side adjacent to the angle to the length of the hypotenuse. ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n*   **Tangent (tan):** The ratio of the length of the side opposite the angle to the length of the side adjacent to the angle. ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\n\n### Applications of Trigonometry\n\nTrigonometry is a valuable tool for solving problems involving right-angled triangles in two dimensions.  Common applications include:\n\n*   Calculating heights of objects (e.g., buildings, trees).\n*   Determining distances across obstacles (e.g., rivers, canyons).\n*   Solving surveying and navigation problems.\n\n\n### Angles of Elevation and Depression\n\n*   **Angle of Elevation:** The angle formed between the line of sight to an object *above* the horizontal and the horizontal plane.\n\n*   **Angle of Depression:** The angle formed between the line of sight to an object *below* the horizontal and the horizontal plane.\n\n"
       },
       {
         "data": {
@@ -1267,102 +1267,102 @@ const data = {
                 "title": "Area of a Square",
                 "question": "What is the formula for the area of a square?"
               },
-              "back": "![equation](/equations/eq_1bb47.svg), where s is the length of a side."
+              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg), where s is the length of a side."
             },
             {
               "front": {
                 "title": "Area of a Rectangle",
                 "question": "How do you calculate the area of a rectangle?"
               },
-              "back": "![equation](/equations/eq_1346a030.svg), where b is the base and h is the height."
+              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg), where b is the base and h is the height."
             },
             {
               "front": {
                 "title": "Area of a Triangle",
                 "question": "What's the formula for the area of a triangle?"
               },
-              "back": "![equation](/equations/eq_2a527d9d.svg), where b is the base and h is the height."
+              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg), where b is the base and h is the height."
             },
             {
               "front": {
                 "title": "Area of a Trapezium",
                 "question": "Give the formula for the area of a trapezium."
               },
-              "back": "![equation](/equations/eq_6d71fbc6.svg), where a and b are the lengths of the parallel sides and h is the height."
+              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg), where a and b are the lengths of the parallel sides and h is the height."
             },
             {
               "front": {
                 "title": "Area of a Parallelogram",
                 "question": "How do you find the area of a parallelogram?"
               },
-              "back": "![equation](/equations/eq_1346a030.svg), where b is the base and h is the height."
+              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg), where b is the base and h is the height."
             },
             {
               "front": {
                 "title": "Area of a Circle",
                 "question": "What is the formula for the area of a circle?"
               },
-              "back": "![equation](/equations/eq_1ca0185f.svg), where r is the radius."
+              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg), where r is the radius."
             },
             {
               "front": {
                 "title": "Volume of a Rectangular Prism",
                 "question": "How do you calculate the volume of a rectangular prism?"
               },
-              "back": "![equation](/equations/eq_ce0b12f2.svg), where l is the length, b is the breadth, and h is the height."
+              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg), where l is the length, b is the breadth, and h is the height."
             },
             {
               "front": {
                 "title": "Volume of a Triangular Prism",
                 "question": "What is the formula for the volume of a triangular prism?"
               },
-              "back": "![equation](/equations/eq_3ffdadae.svg), where b and h are the base and height of the triangle, and H is the prism's height."
+              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg), where b and h are the base and height of the triangle, and H is the prism's height."
             },
             {
               "front": {
                 "title": "Volume of a Cube",
                 "question": "How do you calculate the volume of a cube?"
               },
-              "back": "![equation](/equations/eq_1bb48.svg), where s is the length of a side."
+              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg), where s is the length of a side."
             },
             {
               "front": {
                 "title": "Volume of a Cylinder",
                 "question": "What's the formula for the volume of a cylinder?"
               },
-              "back": "![equation](/equations/eq_306534d3.svg), where r is the radius and h is the height."
+              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg), where r is the radius and h is the height."
             },
             {
               "front": {
                 "title": "Volume of a Square Pyramid",
                 "question": "Give the formula for the volume of a square pyramid."
               },
-              "back": "![equation](/equations/eq_de9071e.svg), where b is the base side length and H is the height."
+              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg), where b is the base side length and H is the height."
             },
             {
               "front": {
                 "title": "Volume of a Triangular Pyramid",
                 "question": "How do you calculate the volume of a triangular pyramid?"
               },
-              "back": "![equation](/equations/eq_78f09ffd.svg), where b and h are the base and height of the triangle, and H is the pyramid's height."
+              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg), where b and h are the base and height of the triangle, and H is the pyramid's height."
             },
             {
               "front": {
                 "title": "Volume of a Cone",
                 "question": "What is the formula for the volume of a cone?"
               },
-              "back": "![equation](/equations/eq_8a9c7e51.svg), where r is the radius and H is the height."
+              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg), where r is the radius and H is the height."
             },
             {
               "front": {
                 "title": "Volume of a Sphere",
                 "question": "How do you find the volume of a sphere?"
               },
-              "back": "![equation](/equations/eq_dc0f1af.svg), where r is the radius."
+              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg), where r is the radius."
             }
           ]
         },
-        "content": "\n## Area, Volume, and Surface Area of Geometric Solids\n\n### Area\n\nArea is the two-dimensional space enclosed within a flat object's boundary.  It is measured in square units.  Formulas for common shapes include:\n\n* **Square:** ![equation](/equations/eq_1bb47.svg) (s = side length)\n* **Rectangle:** ![equation](/equations/eq_1346a030.svg) (b = base, h = height)\n* **Triangle:** ![equation](/equations/eq_2a527d9d.svg) (b = base, h = height)\n* **Trapezium:** ![equation](/equations/eq_6d71fbc6.svg) (a and b are parallel side lengths, h = height)\n* **Parallelogram:** ![equation](/equations/eq_1346a030.svg) (b = base, h = height)\n* **Circle:** ![equation](/equations/eq_1ca0185f.svg) (r = radius)\n\n\n### Volume\n\nVolume is the three-dimensional space occupied by an object. It's measured in cubic units. Formulas for prisms and cylinders:\n\n* **Rectangular Prism:** ![equation](/equations/eq_ce0b12f2.svg) (l = length, b = breadth, h = height)\n* **Triangular Prism:** ![equation](/equations/eq_e3f6318e.svg) (b and h are base and height of the triangle, H = prism height)\n* **Cube:** ![equation](/equations/eq_1bb48.svg) (s = side length)\n* **Cylinder:** ![equation](/equations/eq_306534d3.svg) (r = radius, h = height)\n\nFormulas for pyramids, cones, and spheres:\n\n* **Square Pyramid:** ![equation](/equations/eq_de9071e.svg) (b = base side length, H = height)\n* **Triangular Pyramid:** ![equation](/equations/eq_78f09ffd.svg) (b and h are base and height of the triangle, H = pyramid height)\n* **Cone:** ![equation](/equations/eq_8a9c7e51.svg) (r = radius, H = height)\n* **Sphere:** ![equation](/equations/eq_dc0f1af.svg) (r = radius)\n\n\n### Surface Area\n\nSurface area is the total area of the outer surfaces of a solid.  We will not be covering the formulas for surface area in this document.\n\n### Prisms and Pyramids\n\nA right prism has a polygon base and vertical sides perpendicular to the base.  A pyramid has a polygon base and sides converging at a point (apex).  The sides are not perpendicular to the base.  A cone is similar to a pyramid but with a circular base. A sphere is a perfectly round solid.\n\n### Scaling\n\nMultiplying one or more dimensions of a prism or cylinder by a constant k affects the surface area and volume.  The exact relationship depends on which dimension is scaled.\n"
+        "content": "\n## Area, Volume, and Surface Area of Geometric Solids\n\n### Area\n\nArea is the two-dimensional space enclosed within a flat object's boundary.  It is measured in square units.  Formulas for common shapes include:\n\n* **Square:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) (s = side length)\n* **Rectangle:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) (b = base, h = height)\n* **Triangle:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) (b = base, h = height)\n* **Trapezium:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) (a and b are parallel side lengths, h = height)\n* **Parallelogram:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) (b = base, h = height)\n* **Circle:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) (r = radius)\n\n\n### Volume\n\nVolume is the three-dimensional space occupied by an object. It's measured in cubic units. Formulas for prisms and cylinders:\n\n* **Rectangular Prism:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) (l = length, b = breadth, h = height)\n* **Triangular Prism:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) (b and h are base and height of the triangle, H = prism height)\n* **Cube:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) (s = side length)\n* **Cylinder:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) (r = radius, h = height)\n\nFormulas for pyramids, cones, and spheres:\n\n* **Square Pyramid:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) (b = base side length, H = height)\n* **Triangular Pyramid:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) (b and h are base and height of the triangle, H = pyramid height)\n* **Cone:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) (r = radius, H = height)\n* **Sphere:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) (r = radius)\n\n\n### Surface Area\n\nSurface area is the total area of the outer surfaces of a solid.  We will not be covering the formulas for surface area in this document.\n\n### Prisms and Pyramids\n\nA right prism has a polygon base and vertical sides perpendicular to the base.  A pyramid has a polygon base and sides converging at a point (apex).  The sides are not perpendicular to the base.  A cone is similar to a pyramid but with a circular base. A sphere is a perfectly round solid.\n\n### Scaling\n\nMultiplying one or more dimensions of a prism or cylinder by a constant k affects the surface area and volume.  The exact relationship depends on which dimension is scaled.\n"
       },
       {
         "data": {
@@ -1409,14 +1409,14 @@ const data = {
                 "title": "Theoretical Probability",
                 "question": "How do you calculate theoretical probability?"
               },
-              "back": "![equation](/equations/eq_f7778e39.svg) where n(E) is the number of outcomes in the event and n(S) is the total number of possible outcomes (assuming all outcomes are equally likely)."
+              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) where n(E) is the number of outcomes in the event and n(S) is the total number of possible outcomes (assuming all outcomes are equally likely)."
             },
             {
               "front": {
                 "title": "Relative Frequency",
                 "question": "Define relative frequency."
               },
-              "back": "![equation](/equations/eq_35f761b3.svg)  The ratio of the number of times an event occurs to the total number of trials."
+              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)  The ratio of the number of times an event occurs to the total number of trials."
             },
             {
               "front": {
@@ -1444,7 +1444,7 @@ const data = {
                 "title": "Probability of the Union of Two Events",
                 "question": "How do you calculate P(A ∪ B)?"
               },
-              "back": "![equation](/equations/eq_3935563.svg)"
+              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)"
             },
             {
               "front": {
@@ -1469,7 +1469,7 @@ const data = {
             }
           ]
         },
-        "content": "\n## Probability Fundamentals\n\n### Basic Concepts\n\n*   An **experiment** is an uncertain process.\n*   An **outcome** is a single result of an experiment.\n*   The **sample space (S)** is the set of all possible outcomes.  The number of outcomes is denoted as n(S).\n*   An **event (E)** is a specific set of outcomes of interest. The number of outcomes in the event is denoted as n(E).\n*   **Probability** is a number between 0 and 1 representing the likelihood of an event occurring.  A probability of 0 indicates impossibility, while a probability of 1 indicates certainty.\n\n\n### Calculating Probability\n\n*   The **theoretical probability** of an event E, when all outcomes are equally likely, is:\n    ![equation](/equations/eq_f7778e39.svg)\n\n*   The **relative frequency** of an event is the ratio of the number of times the event occurs to the total number of trials:\n    ![equation](/equations/eq_35f761b3.svg)\n\n\n### Set Operations and Probability\n\n*   The **union (A ∪ B)** of two sets A and B is a set containing all elements in either A or B (or both).\n*   The **intersection (A ∩ B)** of two sets A and B is a set containing only the elements present in both A and B.\n*   The probability of the entire sample space is 1:  P(S) = 1\n*   The probability of the union of two events A and B is:\n    ![equation](/equations/eq_3935563.svg)\n\n### Mutually Exclusive and Complementary Events\n\n*   **Mutually exclusive events** are events that cannot occur simultaneously.\n*   The **complement (A')** of a set A is the set of all elements not in A.\n*   **Complementary events** are mutually exclusive and their union equals the sample space (A ∪ A' = S).  Their probabilities sum to 1: P(A) + P(A') = 1.\n\n"
+        "content": "\n## Probability Fundamentals\n\n### Basic Concepts\n\n*   An **experiment** is an uncertain process.\n*   An **outcome** is a single result of an experiment.\n*   The **sample space (S)** is the set of all possible outcomes.  The number of outcomes is denoted as n(S).\n*   An **event (E)** is a specific set of outcomes of interest. The number of outcomes in the event is denoted as n(E).\n*   **Probability** is a number between 0 and 1 representing the likelihood of an event occurring.  A probability of 0 indicates impossibility, while a probability of 1 indicates certainty.\n\n\n### Calculating Probability\n\n*   The **theoretical probability** of an event E, when all outcomes are equally likely, is:\n    ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\n*   The **relative frequency** of an event is the ratio of the number of times the event occurs to the total number of trials:\n    ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\n\n### Set Operations and Probability\n\n*   The **union (A ∪ B)** of two sets A and B is a set containing all elements in either A or B (or both).\n*   The **intersection (A ∩ B)** of two sets A and B is a set containing only the elements present in both A and B.\n*   The probability of the entire sample space is 1:  P(S) = 1\n*   The probability of the union of two events A and B is:\n    ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\n### Mutually Exclusive and Complementary Events\n\n*   **Mutually exclusive events** are events that cannot occur simultaneously.\n*   The **complement (A')** of a set A is the set of all elements not in A.\n*   **Complementary events** are mutually exclusive and their union equals the sample space (A ∪ A' = S).  Their probabilities sum to 1: P(A) + P(A') = 1.\n\n"
       },
       {
         "data": {
@@ -1499,7 +1499,7 @@ const data = {
             }
           ]
         },
-        "content": "\n## Arithmetic Sequences\n\nArithmetic sequences are number patterns where the difference between consecutive terms is constant. This constant difference is called the common difference, denoted as *d*.\n\n### Defining an Arithmetic Sequence\n\nAn arithmetic sequence is defined by a consistent difference between successive terms.  For example: 2, 5, 8, 11... is an arithmetic sequence because the common difference is 3 (5-2 = 3, 8-5 = 3, 11-8 = 3).\n\n### Common Difference (d)\n\nThe common difference (*d*) is calculated by subtracting any term from the term that immediately follows it:\n\n![equation](/equations/eq_bc25b8c.svg)\n\nWhere:\n\n*   $T_n$ represents the nth term in the sequence.\n*   $T_{n-1}$ represents the term before the nth term.\n\n\n### General Formula for the nth Term\n\nWe can find any term in an arithmetic sequence using the following formula:\n\n![equation](/equations/eq_1e424039.svg)\n\nWhere:\n\n*   $T_n$ is the nth term.\n*   *a* is the first term of the sequence.\n*   *d* is the common difference.\n*   *n* is the position of the term in the sequence.\n\n\nThis formula allows us to determine any term in the sequence without having to list all the preceding terms.\n"
+        "content": "\n## Arithmetic Sequences\n\nArithmetic sequences are number patterns where the difference between consecutive terms is constant. This constant difference is called the common difference, denoted as *d*.\n\n### Defining an Arithmetic Sequence\n\nAn arithmetic sequence is defined by a consistent difference between successive terms.  For example: 2, 5, 8, 11... is an arithmetic sequence because the common difference is 3 (5-2 = 3, 8-5 = 3, 11-8 = 3).\n\n### Common Difference (d)\n\nThe common difference (*d*) is calculated by subtracting any term from the term that immediately follows it:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nWhere:\n\n*   $T_n$ represents the nth term in the sequence.\n*   $T_{n-1}$ represents the term before the nth term.\n\n\n### General Formula for the nth Term\n\nWe can find any term in an arithmetic sequence using the following formula:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nWhere:\n\n*   $T_n$ is the nth term.\n*   *a* is the first term of the sequence.\n*   *d* is the common difference.\n*   *n* is the position of the term in the sequence.\n\n\nThis formula allows us to determine any term in the sequence without having to list all the preceding terms.\n"
       },
       {
         "data": {
@@ -1671,14 +1671,14 @@ const data = {
                 "title": "Simple Interest",
                 "question": "What is the formula for simple interest and what do the variables represent?"
               },
-              "back": "The formula for simple interest is:  ![equation](/equations/eq_72d24326.svg) where:\n* A = accumulated amount\n* P = principal amount\n* i = interest rate (as a decimal)\n* n = number of years"
+              "back": "The formula for simple interest is:  ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) where:\n* A = accumulated amount\n* P = principal amount\n* i = interest rate (as a decimal)\n* n = number of years"
             },
             {
               "front": {
                 "title": "Compound Interest",
                 "question": "How is compound interest calculated, and what is the formula?"
               },
-              "back": "Compound interest is calculated on the principal amount plus any accumulated interest. The formula is: ![equation](/equations/eq_e775256e.svg) where the variables are the same as in simple interest."
+              "back": "Compound interest is calculated on the principal amount plus any accumulated interest. The formula is: ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) where the variables are the same as in simple interest."
             },
             {
               "front": {
@@ -1703,7 +1703,7 @@ const data = {
             }
           ]
         },
-        "content": "\n## Simple and Compound Interest\n\nThis section summarizes simple and compound interest, along with their applications.\n\n### Interest Rates\n\nThere are two main types of interest rates:\n\n*   **Simple Interest:** Interest is calculated only on the principal amount.\n*   **Compound Interest:** Interest is calculated on the principal amount plus any accumulated interest.\n\n### Formulas\n\nThe formulas for calculating the accumulated amount (A) are:\n\n*   **Simple Interest:** ![equation](/equations/eq_72d24326.svg)\n*   **Compound Interest:** ![equation](/equations/eq_e775256e.svg)\n\nWhere:\n\n*   A = Accumulated amount\n*   P = Principal amount\n*   i = Interest rate (decimal)\n*   n = Number of years\n\n\n### Applications\n\n*   **Hire Purchase:** Loan repayments are calculated using the simple interest formula applied to the cash price minus any deposit. Monthly repayments are then determined by dividing the total accumulated amount by the number of months in the repayment period.\n\n*   **Population Growth and Inflation:** These are modeled using the compound interest formula, as the growth/increase is calculated on the previous year's total.\n\n*   **Foreign Exchange Rates:**  This is the value of one currency relative to another.\n"
+        "content": "\n## Simple and Compound Interest\n\nThis section summarizes simple and compound interest, along with their applications.\n\n### Interest Rates\n\nThere are two main types of interest rates:\n\n*   **Simple Interest:** Interest is calculated only on the principal amount.\n*   **Compound Interest:** Interest is calculated on the principal amount plus any accumulated interest.\n\n### Formulas\n\nThe formulas for calculating the accumulated amount (A) are:\n\n*   **Simple Interest:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n*   **Compound Interest:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nWhere:\n\n*   A = Accumulated amount\n*   P = Principal amount\n*   i = Interest rate (decimal)\n*   n = Number of years\n\n\n### Applications\n\n*   **Hire Purchase:** Loan repayments are calculated using the simple interest formula applied to the cash price minus any deposit. Monthly repayments are then determined by dividing the total accumulated amount by the number of months in the repayment period.\n\n*   **Population Growth and Inflation:** These are modeled using the compound interest formula, as the growth/increase is calculated on the previous year's total.\n\n*   **Foreign Exchange Rates:**  This is the value of one currency relative to another.\n"
       },
       {
         "data": {
