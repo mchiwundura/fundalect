@@ -3,36 +3,36 @@ const data = {
     "1": [
       {
         "data": {
-          "Title": "Newton's Laws and Forces",
+          "Title": "Newton's Laws and Friction",
           "icon": "🍎",
           "flashcards": [
             {
               "front": {
                 "title": "Normal Force",
-                "question": "What is the normal force and how does it act?"
+                "question": "What is the normal force and its direction relative to the surface?"
               },
-              "back": "The normal force (\\(\\vec{N}\\)) is the force exerted by a surface on an object in contact with it. It's perpendicular to the surface."
+              "back": "The force exerted by a surface on an object in contact with it.  It's perpendicular to the surface."
             },
             {
               "front": {
                 "title": "Frictional Force",
                 "question": "Describe frictional force and its relationship to the normal force."
               },
-              "back": "Frictional force opposes the motion of an object on a surface. It acts parallel to the surface. Its magnitude is proportional to the normal force."
+              "back": "A force opposing motion between surfaces in contact. Its magnitude is proportional to the normal force."
             },
             {
               "front": {
                 "title": "Coefficients of Friction",
-                "question": "What are \\(\\mu_s\\) and \\(\\mu_k\\)?"
+                "question": "What are μs and μk, and how are they used?"
               },
-              "back": "\\(\\mu_s\\) is the coefficient of static friction, and \\(\\mu_k\\) is the coefficient of kinetic friction.  They are constants that relate frictional force to normal force."
+              "back": "μs (coefficient of static friction) and μk (coefficient of kinetic friction) are constants determining the magnitude of frictional force given the normal force.  μs applies when objects are at rest, μk when they're moving."
             },
             {
               "front": {
                 "title": "Force Components on a Slope",
-                "question": "How do you resolve the force of gravity into components parallel and perpendicular to a slope?"
+                "question": "How are the components of gravity (Fg) resolved parallel and perpendicular to a slope?"
               },
-              "back": "Given an angle \\(\\theta\\) of a slope, the parallel component is \\(F_{gx} = F_g\\sin(\\theta)\\) and the perpendicular component is \\(F_{gy} = F_g\\cos(\\theta)\\)."
+              "back": "```math\n      Fg sin(θ)\n Fgx = ──────\n           1\n```\n\n```math\n      Fg cos(θ)\n Fgy = ──────\n           1\n```"
             },
             {
               "front": {
@@ -44,9 +44,9 @@ const data = {
             {
               "front": {
                 "title": "Newton's Second Law",
-                "question": "State Newton's Second Law and give its equation."
+                "question": "State Newton's Second Law and give its formula."
               },
-              "back": "The acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass.  Equation: \\(\\vec{F}_{net} = m\\vec{a}\\)"
+              "back": "The acceleration of an object is directly proportional to the net force acting on the object, is in the same direction as the net force, and is inversely proportional to the mass of the object.\n\n`Fnet = ma`"
             },
             {
               "front": {
@@ -58,17 +58,17 @@ const data = {
             {
               "front": {
                 "title": "Newton's Law of Universal Gravitation",
-                "question": "State Newton's Law of Universal Gravitation and give its equation."
+                "question": "State Newton's Law of Universal Gravitation and provide its formula."
               },
-              "back": "Every particle attracts every other particle in the universe with a force which is directly proportional to the product of their masses and inversely proportional to the square of the distance between their centers. Equation: \\(F=G\\frac{m_1m_2}{d^2}\\)"
+              "back": "Every particle attracts every other particle in the universe with a force which is directly proportional to the product of their masses and inversely proportional to the square of the distance between their centers.\n\n```math\n      Gm1m2\n F = ──────\n       d^2\n```"
             }
           ]
         },
-        "content": "\n## Newton's Laws and Forces\n\nThis document summarizes Newton's Laws of Motion and introduces related concepts like normal force, frictional force, and gravitational force.\n\n### Forces\n\n* **Normal Force (\\\\(\\\\vec{N}\\\\)):** The force exerted by a surface on an object in contact with it, perpendicular to the surface.\n\n* **Frictional Force:** The force opposing motion between surfaces in contact. It acts parallel to the surface.  The magnitude is proportional to the normal force.\n\n    * **Coefficient of Static Friction (\\\\(\\\\mu_s\\\\)):**  Relates static frictional force to normal force.\n    * **Coefficient of Kinetic Friction (\\\\(\\\\mu_k\\\\)):** Relates kinetic frictional force to normal force.\n\n* **Force Components on a Slope:** The force of gravity (\\\\(\\\\vec{F}_g\\\\)) on an inclined plane can be resolved into components parallel and perpendicular to the slope:\n\n    \\\\(F_{gx} = F_g\\\\sin(\\\\theta)\\\\) (parallel)\n\n    \\\\(F_{gy} = F_g\\\\cos(\\\\theta)\\\\) (perpendicular)\n\n### Newton's Laws of Motion\n\n* **Newton's First Law (Inertia):** An object at rest stays at rest and an object in motion stays in motion with the same speed and in the same direction unless acted upon by an unbalanced force.\n\n* **Newton's Second Law (F=ma):** The acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass.  The equation is:  \\\\(\\\\vec{F}_{net} = m\\\\vec{a}\\\\)\n\n* **Newton's Third Law (Action-Reaction):** For every action, there is an equal and opposite reaction.\n\n### Newton's Law of Universal Gravitation\n\nEvery particle attracts every other particle in the universe with a force proportional to the product of their masses and inversely proportional to the square of the distance between their centers.\n\n\\\\(F=G\\\\frac{m_1m_2}{d^2}\\\\)\n\nWhere:\n\n* \\\\(F\\\\) is the gravitational force\n* \\\\(G\\\\) is the gravitational constant\n* \\\\(m_1\\\\) and \\\\(m_2\\\\) are the masses of the two objects\n* \\\\(d\\\\) is the distance between their centers\n\n\n### Units of Measurement\n\n| Quantity        | Unit Name           | Unit Symbol |\n|-----------------|----------------------|-------------|\n| Acceleration (\\\\(a\\\\)) | metres per second squared | \\\\(m \\cdot s^{-2}\\\\) |\n| Distance (\\\\(d\\\\))  | metre                | \\\\(m\\\\)       |\n| Force (\\\\(F\\\\))    | Newton                | \\\\(N\\\\)       |\n| Mass (\\\\(m\\\\))     | kilogram              | \\\\(kg\\\\)      |\n| Tension (\\\\(T\\\\))   | Newton                | \\\\(N\\\\)       |\n| Weight (\\\\(W\\\\))   | Newton                | \\\\(N\\\\)       |\n\n"
+        "content": "\n# Newton's Laws and Friction\n\n## Forces and Motion\n\nThe **normal force** (N⃗) is the force exerted by a surface on an object in contact with it. This force is always perpendicular to the surface.\n\n**Frictional force** opposes the motion of an object in contact with a surface and acts parallel to the surface.  Its magnitude is proportional to the normal force.\n\nThe **coefficient of friction** (μ) is a constant factor relating frictional force to the normal force.  There are two types:\n\n*   **μs:** coefficient of static friction (objects at rest)\n*   **μk:** coefficient of kinetic friction (objects in motion)\n\nOn a slope with angle θ, the components of the force due to gravity (Fg) are:\n\n```math\n      Fg sin(θ)\n Fgx = ──────\n           1\n```\n\n```math\n      Fg cos(θ)\n Fgy = ──────\n           1\n```\n\n\n## Newton's Laws of Motion\n\n*   **Newton's First Law (Inertia):** An object continues in a state of rest or uniform motion unless acted upon by an unbalanced force.\n\n*   **Newton's Second Law:**  The acceleration of an object is directly proportional to the net force acting on it, in the same direction as the net force, and inversely proportional to its mass.  This is represented by the formula:  `Fnet = ma`\n\n*   **Newton's Third Law:** For every action, there is an equal and opposite reaction.\n\n\n## Newton's Law of Universal Gravitation\n\nEvery point mass attracts every other point mass by a force proportional to the product of their masses and inversely proportional to the square of the distance between them:\n\n```math\n      Gm1m2\n F = ──────\n       d^2\n```\n\n## Physical Quantities and Units\n\n| Quantity        | Unit Name             | Unit Symbol |\n|-----------------|-----------------------|-------------|\n| Acceleration (a) | metres per second²    | m·s⁻²       |\n| Distance (d)     | metre                 | m           |\n| Force (F)       | Newton                | N           |\n| Mass (m)        | kilogram              | kg          |\n| Tension (T)     | Newton                | N           |\n| Weight (W)      | Newton                | N           |\n\n"
       },
       {
         "data": {
-          "Title": "Electromagnetism and Electromagnetic Induction",
+          "Title": "Electromagnetism Fundamentals",
           "icon": "🧲",
           "flashcards": [
             {
@@ -76,46 +76,60 @@ const data = {
                 "title": "Electromagnetism",
                 "question": "What is electromagnetism?"
               },
-              "back": "Electromagnetism is the study of the relationship between electricity and magnetism. A current-carrying conductor produces a magnetic field."
+              "back": "The study of the properties and relationship between electric currents and magnetism."
+            },
+            {
+              "front": {
+                "title": "Magnetic Field around a Conductor",
+                "question": "What happens when a current flows through a conductor?"
+              },
+              "back": "A magnetic field is produced around the conductor."
             },
             {
               "front": {
                 "title": "Right Hand Rule",
-                "question": "What is the Right Hand Rule used for in electromagnetism?"
+                "question": "How do you determine the direction of the magnetic field around a current-carrying conductor?"
               },
-              "back": "The Right Hand Rule determines the direction of the magnetic field produced by a current-carrying conductor."
+              "back": "Use the Right Hand Rule."
             },
             {
               "front": {
                 "title": "Electromagnet",
                 "question": "What is an electromagnet?"
               },
-              "back": "An electromagnet is a temporary magnet created by a current-carrying conductor."
+              "back": "A temporary magnet created by a current-carrying conductor."
             },
             {
               "front": {
                 "title": "Magnetic Flux",
                 "question": "How is magnetic flux calculated?"
               },
-              "back": "Magnetic flux (Φ) is calculated as Φ = BAcos(θ), where B is the magnetic field strength, A is the surface area, and θ is the angle between the magnetic field and the surface normal."
+              "back": "Magnetic flux (Φ) = BAcos(θ), where B is the magnetic field, A is the surface area, and θ is the angle between the field and the surface normal."
             },
             {
               "front": {
                 "title": "Electromagnetic Induction",
                 "question": "What is electromagnetic induction?"
               },
-              "back": "Electromagnetic induction is the process where a changing magnetic field induces a voltage in a conductor."
+              "back": "The generation of a voltage in a conductor due to a changing magnetic field."
             },
             {
               "front": {
                 "title": "Faraday's Law of Electromagnetic Induction",
                 "question": "State Faraday's Law of Electromagnetic Induction."
               },
-              "back": "Faraday's Law states that the induced electromotive force (emf) is equal to the negative rate of change of magnetic flux:  $\\mathcal{E} = -N\\frac{ΔΦ}{Δt}$ where N is the number of turns in a coil."
+              "back": "The magnitude of the induced emf (ε) is given by: ε = -N(ΔΦ/Δt), where N is the number of turns, and ΔΦ/Δt is the rate of change of magnetic flux."
+            },
+            {
+              "front": {
+                "title": "Units in Electromagnetism",
+                "question": "What are the units for induced emf, magnetic field, and magnetic flux?"
+              },
+              "back": "| Quantity | Unit Name | Unit Symbol |\n|---|---|---|\n| Induced emf (ε) | Volt | V |\n| Magnetic field (B) | Tesla | T |\n| Magnetic flux (Φ) | Weber | Wb |\n| Time (t) | seconds | s |"
             }
           ]
         },
-        "content": "\n## Electromagnetism and Electromagnetic Induction\n\n### Introduction to Electromagnetism\n\nElectromagnetism studies the relationship between electricity and magnetism.  A fundamental principle is that a current flowing through a conductor generates a magnetic field around it. The direction of this field is determined using the Right Hand Rule.\n\n### Electromagnets\n\nElectromagnets are temporary magnets created by passing an electric current through a coil of wire, often wound around a ferromagnetic core.  The magnetic field is present only while the current flows.\n\n### Magnetic Flux\n\nMagnetic flux (Φ) quantifies the amount of magnetic field passing through a given area.  It's calculated using the formula:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nWhere:\n\n*   B is the magnetic field strength (Tesla)\n*   A is the area of the surface (m²)\n*   θ is the angle between the magnetic field and the surface normal (degrees)\n\n\n### Electromagnetic Induction\n\nElectromagnetic induction occurs when a change in magnetic flux through a conductor induces an electromotive force (emf), or voltage. This induced voltage can drive a current.\n\n### Faraday's Law\n\nFaraday's Law of Electromagnetic Induction describes the magnitude of the induced emf:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nWhere:\n\n*   $\\\\mathcal{E}$ is the induced emf (Volts)\n*   N is the number of turns in the coil\n*   ΔΦ is the change in magnetic flux (Webers)\n*   Δt is the change in time (seconds)\n\nThe negative sign indicates the direction of the induced emf, as given by Lenz's Law (the induced current opposes the change in magnetic flux).\n\n\n### Units in Electromagnetism\n\n| Quantity          | Unit Name | Unit Symbol |\n|-----------------|------------|-------------|\n| Induced emf ($\\\\mathcal{E}$) | Volt       | V           |\n| Magnetic field (B) | Tesla      | T           |\n| Magnetic flux (Φ) | Weber      | Wb          |\n| Time (t)          | Second     | s           |\n\n"
+        "content": "\n## Electromagnetism Fundamentals\n\n### Introduction\n\nElectromagnetism studies the relationship between electric currents and magnetism.  A key principle is that a current-carrying conductor generates a magnetic field around it. The direction of this field is determined using the Right Hand Rule.\n\n### Electromagnets\n\nElectromagnets are temporary magnets created by passing an electric current through a conductor, often coiled around a ferromagnetic core.  Their magnetic properties exist only while the current is flowing.\n\n\n### Magnetic Flux and Electromagnetic Induction\n\n*   **Magnetic Flux (Φ):**  The magnetic flux through a surface is the product of the magnetic field component perpendicular to the surface and the surface area.  It's calculated as:\n\n```math\n      B * A * cos(θ)\nΦ =  ────────────\n            1\n```\n\nwhere:\n    * B = magnetic field strength\n    * A = surface area\n    * θ = angle between the magnetic field and the surface normal\n\n*   **Electromagnetic Induction:** A changing magnetic field induces a voltage (electromotive force or emf) in a conductor.\n\n*   **Faraday's Law:**  Quantifies the induced emf:\n\n```math\n           -N * ΔΦ\nε =  ─────────────\n            Δt\n```\n\nWhere:\n    * ε = induced electromotive force\n    * N = number of turns in the coil\n    * ΔΦ = change in magnetic flux\n    * Δt = change in time\n\n### Units of Measurement\n\n| Quantity          | Unit Name | Unit Symbol |\n|-----------------|------------|-------------|\n| Induced emf (ε)   | Volt       | V           |\n| Magnetic Field (B) | Tesla      | T           |\n| Magnetic Flux (Φ) | Weber      | Wb          |\n| Time (t)          | Second     | s           |\n\n"
       },
       {
         "data": {
@@ -125,120 +139,120 @@ const data = {
             {
               "front": {
                 "title": "Ohm's Law",
-                "question": "What is Ohm's Law and how is it expressed mathematically?"
+                "question": "State Ohm's Law and write its formula."
               },
-              "back": "Ohm's Law states that the current through a conductor between two points is directly proportional to the voltage across the two points, and inversely proportional to the resistance between them.  Mathematically: ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) where I is current, V is voltage, and R is resistance."
+              "back": "Ohm's Law states that the current through a conductor is proportional to the voltage across it, at constant temperature.  Formula:  `I = V/R`"
             },
             {
               "front": {
                 "title": "Ohmic vs. Non-Ohmic Conductors",
-                "question": "What's the difference between ohmic and non-ohmic conductors?"
+                "question": "What is the difference between ohmic and non-ohmic conductors?"
               },
-              "back": "Ohmic conductors obey Ohm's Law (resistance is constant regardless of voltage). Non-ohmic conductors do not (resistance changes with voltage)."
+              "back": "Ohmic conductors obey Ohm's Law; their resistance is constant. Non-ohmic conductors do not obey Ohm's Law; their resistance changes with voltage or current."
             },
             {
               "front": {
                 "title": "Calculating Resistance",
                 "question": "How do you calculate the resistance of a resistor using Ohm's Law?"
               },
-              "back": "Resistance can be calculated using Ohm's Law rearranged: ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) "
+              "back": "Formula: `R = V/I`"
             },
             {
               "front": {
                 "title": "Resistors in Series",
-                "question": "How do you calculate the equivalent resistance of resistors in series?"
+                "question": "How do you calculate the equivalent resistance of resistors connected in series?"
               },
-              "back": "The equivalent resistance (Rs) of resistors in series is the sum of their individual resistances: ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)"
+              "back": "Formula: `Rs = R1 + R2 + R3 + ... + Rn`"
             },
             {
               "front": {
                 "title": "Resistors in Parallel",
-                "question": "How do you calculate the equivalent resistance of resistors in parallel?"
+                "question": "How do you calculate the equivalent resistance of resistors connected in parallel?"
               },
-              "back": "The reciprocal of the equivalent resistance (Rp) of resistors in parallel is the sum of the reciprocals of their individual resistances: ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) "
+              "back": "Formula: `1/Rp = 1/R1 + 1/R2 + 1/R3 + ... + 1/Rn`"
             },
             {
               "front": {
                 "title": "Electrical Power",
-                "question": "What is electrical power and how is it calculated?"
+                "question": "Define electrical power and give three formulas for calculating it."
               },
-              "back": "Electrical power (P) is the rate at which electrical energy is converted. It's calculated as: ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)  This can also be expressed as: ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) or ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) Power is measured in Watts (W)."
+              "back": "Electrical power is the rate of electrical energy conversion. Formulas: `P = VI`, `P = I²R`, `P = V²/R`"
             },
             {
               "front": {
                 "title": "Electrical Energy",
-                "question": "How is electrical energy calculated?"
+                "question": "How do you calculate electrical energy dissipated in a circuit?"
               },
-              "back": "Electrical energy (E) is calculated as power multiplied by time:  ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) Energy is measured in Joules (J)."
+              "back": "Formula: `E = Pt`"
             },
             {
               "front": {
-                "title": "Kilowatt-hour",
-                "question": "What is a kilowatt-hour?"
+                "title": "Kilowatt Hour",
+                "question": "What is a kilowatt-hour (kWh)?"
               },
-              "back": "A kilowatt-hour (kWh) is a unit of energy equivalent to using 1 kilowatt of power for 1 hour."
+              "back": "A kilowatt-hour is the energy used by a 1 kW device operating for one hour."
             }
           ]
         },
-        "content": "\n## Ohm's Law and Electrical Circuits\n\n### Ohm's Law\n\nOhm's Law describes the relationship between voltage, current, and resistance in an electrical circuit. It states that the current through a conductor is directly proportional to the voltage across it and inversely proportional to its resistance.  The mathematical representation is:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nWhere:\n\n*   I = Current (Amperes, A)\n*   V = Voltage (Volts, V)\n*   R = Resistance (Ohms, Ω)\n\n\nConductors that obey Ohm's Law are called ohmic conductors, while those that don't are called non-ohmic conductors.  Ohm's Law allows us to calculate the resistance of a resistor using the formula:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\n\n### Resistors in Series and Parallel\n\nWhen resistors are connected in series, the equivalent resistance (Rs) is the sum of their individual resistances:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nWhen resistors are connected in parallel, the reciprocal of the equivalent resistance (Rp) is the sum of the reciprocals of their individual resistances:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\n\n### Electrical Power and Energy\n\nElectrical power (P) is the rate at which electrical energy is converted into other forms of energy (e.g., heat, light).  It is measured in Watts (W) and can be calculated using the following formulas:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\n\nElectrical energy (E) is the total amount of energy consumed and is measured in Joules (J).  It's calculated as:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nWhere t is the time in seconds.  A kilowatt-hour (kWh) is a commonly used unit of energy, representing the use of 1 kilowatt of power for 1 hour.\n\n\n### Units Used in Electrical Circuits\n\n| Quantity        | Unit Name | Unit Symbol |\n|-----------------|------------|-------------|\n| Current (I)     | Amperes    | A           |\n| Electrical Energy (E) | Joules     | J           |\n| Power (P)       | Watts      | W           |\n| Resistance (R)  | Ohms       | Ω           |\n| Voltage (V)     | Volts      | V           |\n\n"
+        "content": "\nOhm's Law and Electrical Circuits 💡\n\n# Ohm's Law and Electrical Circuits\n\nOhm's Law describes the relationship between voltage, current, and resistance in an electrical circuit.  It states that the current through a conductor between two points is directly proportional to the voltage across the two points and inversely proportional to the resistance between them, provided the temperature remains constant.\n\n## Key Concepts\n\n* **Ohm's Law:**  `I = V/R` where:\n    * `I` is current (Amperes, A)\n    * `V` is voltage (Volts, V)\n    * `R` is resistance (Ohms, Ω)\n\n* **Ohmic Conductors:** Conductors that obey Ohm's Law.  Their resistance remains constant regardless of the applied voltage.\n\n* **Non-Ohmic Conductors:** Conductors that do not obey Ohm's Law. Their resistance changes with voltage or current.\n\n* **Calculating Resistance:**  Using Ohm's Law, we can calculate resistance: `R = V/I`\n\n## Series and Parallel Circuits\n\n### Resistors in Series\n\nThe equivalent resistance (Rs) of resistors connected in series is the sum of their individual resistances:\n\n```math\nRs = R1 + R2 + R3 + ... + Rn\n```\n\n### Resistors in Parallel\n\nThe reciprocal of the equivalent resistance (Rp) of resistors connected in parallel is the sum of the reciprocals of their individual resistances:\n\n```math\n      1\n1/Rp = ─────\n     1/R1 + 1/R2 + 1/R3 + ... + 1/Rn\n```\n\n\n## Electrical Power and Energy\n\n* **Electrical Power (P):** The rate at which electrical energy is converted. It is measured in Watts (W).  Formulas:\n\n    * `P = VI`\n    * `P = I²R`\n    * `P = V²/R`\n\n* **Electrical Energy (E):** The total amount of electrical energy converted. It is measured in Joules (J). Formula:\n\n    * `E = Pt`\n\n\n## Units\n\n| Quantity           | Unit Name | Unit Symbol |\n|--------------------|------------|-------------|\n| Current (I)        | Amperes    | A           |\n| Electrical Energy (E) | Joules     | J           |\n| Power (P)          | Watts      | W           |\n| Resistance (R)     | Ohms       | Ω           |\n| Voltage (V)        | Volts      | V           |\n\n"
       },
       {
         "data": {
-          "Title": "Enthalpy and Activation Energy in Chemical Reactions",
-          "icon": "🧪",
+          "Title": "Energy Changes in Chemical Reactions",
+          "icon": "⚛️",
           "flashcards": [
             {
               "front": {
                 "title": "Bond Energy",
                 "question": "What is bond energy and how is it measured?"
               },
-              "back": "Bond energy is the energy required to break a chemical bond between two atoms. It's measured in kJ·mol⁻¹."
+              "back": "Bond energy is the amount of energy required to break a chemical bond between two atoms. It's measured in kJ·mol⁻¹."
             },
             {
               "front": {
-                "title": "Enthalpy (H)",
-                "question": "What does enthalpy represent in a chemical system?"
+                "title": "Enthalpy",
+                "question": "What does enthalpy (H) represent?"
               },
-              "back": "Enthalpy (H) represents the total energy of a chemical system at constant pressure."
+              "back": "Enthalpy is a measure of the total energy of a chemical system at constant pressure."
             },
             {
               "front": {
                 "title": "Exothermic Reaction",
-                "question": "What characterizes an exothermic reaction in terms of energy change and ΔH?"
+                "question": "Describe an exothermic reaction and its enthalpy change (ΔH)."
               },
-              "back": "In an exothermic reaction, energy is released, the energy of products is less than reactants, and ΔH is negative (ΔH < 0)."
+              "back": "An exothermic reaction releases energy as heat or light.  The energy of the products is less than the energy of the reactants, resulting in a negative ΔH (ΔH < 0)."
             },
             {
               "front": {
                 "title": "Endothermic Reaction",
-                "question": "Describe an endothermic reaction regarding energy change and ΔH."
+                "question": "Describe an endothermic reaction and its enthalpy change (ΔH)."
               },
-              "back": "In an endothermic reaction, energy is absorbed, the energy of products is greater than reactants, and ΔH is positive (ΔH > 0)."
+              "back": "An endothermic reaction absorbs energy as heat or light. The energy of the products is greater than the energy of the reactants, resulting in a positive ΔH (ΔH > 0)."
             },
             {
               "front": {
                 "title": "Heat of Reaction (ΔH)",
                 "question": "How is the heat of reaction calculated?"
               },
-              "back": "The heat of reaction (ΔH) is calculated as: ΔH = E<sub>prod</sub> - E<sub>react</sub>, where E<sub>prod</sub> is the energy of products and E<sub>react</sub> is the energy of reactants."
+              "back": "ΔH = E<sub>prod</sub> - E<sub>react</sub>, where E<sub>prod</sub> is the energy of the products and E<sub>react</sub> is the energy of the reactants."
             },
             {
               "front": {
                 "title": "Activation Energy",
                 "question": "What is activation energy?"
               },
-              "back": "Activation energy is the minimum energy required to initiate a chemical reaction."
+              "back": "Activation energy is the minimum amount of energy needed to start a chemical reaction."
             },
             {
               "front": {
                 "title": "Activated Complex",
                 "question": "What is an activated complex?"
               },
-              "back": "An activated complex (or transition state) is a high-energy, short-lived intermediate formed during a reaction where reactant bonds are breaking and product bonds are forming."
+              "back": "The activated complex (or transition state) is a high-energy, short-lived intermediate state formed during a reaction, where bonds in reactants are breaking and bonds in products are forming."
             }
           ]
         },
-        "content": "\n## Enthalpy and Activation Energy in Chemical Reactions\n\nChemical reactions involve the breaking and formation of chemical bonds, resulting in energy changes.  The strength of a chemical bond is quantified by its **bond energy**, the energy required to break that bond (measured in kJ·mol⁻¹).\n\n**Enthalpy (H)** represents the total energy of a system at constant pressure.  The difference in enthalpy between reactants and products is the **heat of reaction (ΔH)**:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nA reaction is **exothermic** if it releases energy (ΔH < 0), meaning the energy of the products is lower than the energy of the reactants.  Examples include combustion and respiration.  Conversely, an **endothermic** reaction absorbs energy (ΔH > 0), resulting in products with higher energy than reactants. Photosynthesis and the thermal decomposition of limestone are examples.\n\nChemical reactions require a minimum energy input to proceed, known as the **activation energy**.  The **activated complex** or **transition state** is a high-energy, short-lived intermediate formed during the reaction, representing the point of maximum energy in the reaction pathway.\n"
+        "content": "\n## Energy Changes in Chemical Reactions\n\nChemical reactions involve the breaking and forming of bonds, which always involve energy changes.  When bonds break, energy is absorbed; when new bonds form, energy is released.\n\n### Bond Energy and Enthalpy\n\n* **Bond energy:**  The amount of energy required to break one mole of a specific type of bond. Measured in kJ·mol⁻¹.\n* **Enthalpy (H):** The total energy content of a system at constant pressure.\n\n### Exothermic and Endothermic Reactions\n\n* **Exothermic Reactions:** Release energy to the surroundings. ΔH is negative (ΔH < 0). Examples include combustion and respiration.\n* **Endothermic Reactions:** Absorb energy from the surroundings. ΔH is positive (ΔH > 0). Examples include photosynthesis and the thermal decomposition of limestone.\n\nThe difference in energy between reactants and products is the **heat of reaction (ΔH)**.  It's calculated as:\n\n```math\n      E_prod\nΔH = ──────\n      E_react\n```\n\nWhere E<sub>prod</sub> is the total energy of the products and E<sub>react</sub> is the total energy of the reactants.\n\n### Activation Energy\n\nAll reactions require a minimum amount of energy to start, called the **activation energy**.  This energy is needed to overcome the energy barrier and form the **activated complex**, a temporary, high-energy intermediate state during the reaction.\n"
       },
       {
         "data": {
@@ -247,112 +261,112 @@ const data = {
           "flashcards": [
             {
               "front": {
-                "title": "Arrhenius Acid-Base Definition",
-                "question": "Define acids and bases according to Arrhenius."
+                "title": "Arrhenius Acids and Bases",
+                "question": "Define Arrhenius acids and bases."
               },
-              "back": "Arrhenius acids increase the concentration of hydronium ions ($H_3O^+$) in solution, while Arrhenius bases increase the concentration of hydroxide ions ($OH^-$) in solution. This definition is limited to aqueous solutions."
+              "back": "Arrhenius acid: Increases the concentration of hydronium ions (H₃O⁺) in solution. Arrhenius base: Increases the concentration of hydroxide ions (OH⁻) in solution.  This definition is limited to aqueous solutions."
             },
             {
               "front": {
-                "title": "Brønsted-Lowry Acid-Base Definition",
-                "question": "Define acids and bases according to Brønsted-Lowry."
+                "title": "Brønsted-Lowry Acids and Bases",
+                "question": "Define Brønsted-Lowry acids and bases."
               },
-              "back": "A Brønsted-Lowry acid is a proton ($H^+$) donor, while a Brønsted-Lowry base is a proton acceptor."
+              "back": "Brønsted-Lowry acid: Proton (H⁺) donor. Brønsted-Lowry base: Proton (H⁺) acceptor."
             },
             {
               "front": {
                 "title": "Amphoteric Substance",
                 "question": "What is an amphoteric substance?"
               },
-              "back": "An amphoteric substance can act as both an acid and a base. Water ($H_2O$) is an example."
+              "back": "A substance that can act as both an acid and a base. Water (H₂O) is an example."
             },
             {
               "front": {
                 "title": "Amphiprotic Substance",
                 "question": "What is an amphiprotic substance?"
               },
-              "back": "An amphiprotic substance can act as both a proton donor and a proton acceptor.  $HCO_3^-$ and $HSO_4^-$ are examples."
+              "back": "A substance that can act as both a proton donor and a proton acceptor. HCO₃⁻ and HSO₄⁻ are examples."
             },
             {
               "front": {
                 "title": "Conjugate Acid-Base Pair",
                 "question": "What is a conjugate acid-base pair?"
               },
-              "back": "A conjugate acid-base pair consists of two species that differ by a single proton ($H^+$). One is the acid (proton donor), the other is its conjugate base (proton acceptor)."
+              "back": "Two species that differ by a single proton (H⁺). One is an acid, the other its conjugate base (or vice versa)."
             },
             {
               "front": {
                 "title": "Neutralization Reaction",
                 "question": "What is a neutralization reaction?"
               },
-              "back": "A neutralization reaction is a reaction between an acid and a base."
+              "back": "A reaction between an acid and a base."
             },
             {
               "front": {
                 "title": "Acid-Metal Hydroxide Reaction",
-                "question": "What are the products of a reaction between an acid and a metal hydroxide?"
+                "question": "What are the products of an acid reacting with a metal hydroxide?"
               },
-              "back": "A salt and water are formed."
+              "back": "A salt and water."
             },
             {
               "front": {
                 "title": "Acid-Metal Oxide Reaction",
-                "question": "What are the products of a reaction between an acid and a metal oxide?"
+                "question": "What are the products of an acid reacting with a metal oxide?"
               },
-              "back": "A salt and water are formed."
+              "back": "A salt and water."
             },
             {
               "front": {
                 "title": "Acid-Metal Carbonate Reaction",
-                "question": "What are the products of a reaction between an acid and a metal carbonate?"
+                "question": "What are the products of an acid reacting with a metal carbonate?"
               },
-              "back": "A salt, water, and carbon dioxide are formed."
+              "back": "A salt, water, and carbon dioxide."
             },
             {
               "front": {
                 "title": "Oxidation",
                 "question": "Define oxidation."
               },
-              "back": "Oxidation is the loss of electrons."
+              "back": "Loss of electrons."
             },
             {
               "front": {
                 "title": "Reduction",
                 "question": "Define reduction."
               },
-              "back": "Reduction is the gain of electrons."
+              "back": "Gain of electrons."
             },
             {
               "front": {
                 "title": "Redox Reaction",
                 "question": "What is a redox reaction?"
               },
-              "back": "A redox reaction involves both oxidation and reduction.  There is a transfer of electrons between species."
+              "back": "A reaction involving both oxidation and reduction; a transfer of electrons."
             },
             {
               "front": {
                 "title": "Oxidation Number",
                 "question": "What is an oxidation number?"
               },
-              "back": "The oxidation number is the charge an atom would have if the compound was composed entirely of ions."
+              "back": "The charge an atom would have if the compound were composed entirely of ions."
             },
             {
               "front": {
                 "title": "Oxidizing and Reducing Agents",
                 "question": "Define oxidizing and reducing agents."
               },
-              "back": "A reducing agent is oxidized (loses electrons), while an oxidizing agent is reduced (gains electrons)."
+              "back": "Oxidizing agent: The species that is reduced (gains electrons). Reducing agent: The species that is oxidized (loses electrons)."
             },
             {
               "front": {
                 "title": "Half-Reaction",
                 "question": "What is a half-reaction?"
               },
-              "back": "A half-reaction represents either the oxidation or reduction portion of a redox reaction."
+              "back": "Either the oxidation or reduction portion of a redox reaction."
             }
           ]
         },
-        "content": "\n## Acid-Base and Redox Reactions\n\n### Acid-Base Reactions\n\nThere are various definitions of acids and bases.  The Arrhenius definition describes acids as substances increasing hydronium ion ($H_3O^+$) concentration and bases as substances increasing hydroxide ion ($OH^-$) concentration in aqueous solutions.  The Brønsted-Lowry definition is more general, defining acids as proton ($H^+$) donors and bases as proton acceptors.\n\nAn amphoteric substance can act as both an acid and a base, while an amphiprotic substance can both donate and accept protons.  A conjugate acid-base pair differs by a single proton.  The reaction between an acid and a base is a neutralization reaction.  Acids and bases have many applications in domestic, biological, and industrial settings. Indicators change color depending on the acidity or basicity of a solution.\n\nReactions between acids and metal hydroxides, metal oxides, and metal carbonates produce salts and water (and carbon dioxide in the carbonate case).\n\n\n### Redox Reactions\n\nOxidation is the loss of electrons, and reduction is the gain of electrons.  A redox reaction involves both oxidation and reduction, with a transfer of electrons between species.  The oxidation number represents the charge an atom would have if the compound were ionic.  An increase in oxidation number indicates oxidation, while a decrease indicates reduction.  A reducing agent is oxidized, while an oxidizing agent is reduced.  Redox reactions can be analyzed using half-reactions, which represent the oxidation or reduction processes separately.  In a balanced redox reaction, the number of electrons lost in the oxidation half-reaction equals the number of electrons gained in the reduction half-reaction.\n"
+        "content": "\n## Acid-Base and Redox Reactions\n\n### Acid-Base Reactions\n\nSeveral definitions describe acids and bases:\n\n*   **Arrhenius:** Acids increase H₃O⁺ concentration; bases increase OH⁻ concentration (in water).\n*   **Brønsted-Lowry:** Acids donate protons (H⁺); bases accept protons.\n\nAn **amphoteric** substance can act as both an acid and a base (e.g., water). An **amphiprotic** substance can donate or accept protons (e.g., HCO₃⁻, HSO₄⁻). A **conjugate acid-base pair** differs by one proton.  Acid-base reactions are **neutralization** reactions.  They have various applications in domestic settings, biology, and industry. Indicators change color depending on the pH.  Reactions of acids with metal hydroxides, oxides, and carbonates produce salts and water (and carbon dioxide in the carbonate case).\n\n### Redox Reactions\n\n*   **Oxidation:** Loss of electrons.\n*   **Reduction:** Gain of electrons.\n*   **Redox reaction:** Involves both oxidation and reduction, with a change in oxidation numbers.  Electrons are transferred between species.\n*   **Oxidation number:** The charge an atom would have if the compound were ionic.  An increase in oxidation number signifies oxidation; a decrease signifies reduction.\n*   A **half-reaction** shows either oxidation or reduction.  In a complete redox reaction, the number of electrons lost equals the number of electrons gained.\n*   An **oxidizing agent** is reduced; a **reducing agent** is oxidized.\n\n"
       },
       {
         "data": {
@@ -371,37 +385,37 @@ const data = {
                 "title": "Mineral Resources",
                 "question": "What are some examples of mineral resources found in the lithosphere?"
               },
-              "back": "The lithosphere is a rich source of various minerals, which can be extracted through mining."
+              "back": "The lithosphere is a rich source of many minerals, which can be extracted through mining."
             },
             {
               "front": {
-                "title": "Mining and Environmental Impact",
-                "question": "How does mining affect the environment?"
+                "title": "Environmental Impact of Mining",
+                "question": "What is the environmental impact of mining and mineral use?"
               },
-              "back": "Mining and the use of mineral resources have significant environmental impacts."
+              "back": "Mining and mineral use have a significant impact on the environment."
             },
             {
               "front": {
-                "title": "Fuel Resources in the Lithosphere",
+                "title": "Other Lithosphere Resources",
                 "question": "Besides minerals, what other resources are found in the lithosphere?"
               },
               "back": "Fuels are another important resource found within the lithosphere."
             }
           ]
         },
-        "content": "\n## Earth's Lithosphere and Mineral Resources\n\n### Introduction\n\nThe Earth's lithosphere is a significant source of various minerals and fuels.  It comprises the Earth's crust and the uppermost part of the mantle.  Humanity has long utilized these resources, but this exploitation has considerable environmental consequences.\n\n### Composition and Resources\n\nThe lithosphere is rich in minerals, which are extracted through mining techniques.  These minerals are used in numerous applications, impacting various aspects of society.  In addition to minerals, the lithosphere also contains substantial fuel resources.\n\n### Environmental Impact\n\nThe extraction and utilization of lithospheric resources have notable environmental effects.  These impacts need to be considered and mitigated to ensure sustainable practices.  Responsible resource management is crucial to minimize negative consequences on the environment.\n"
+        "content": "\n## Earth's Lithosphere and Mineral Resources\n\nThe Earth's lithosphere is a significant source of various minerals and fuels.  This rigid outer layer comprises the crust and the upper mantle.\n\n### Mineral Extraction and Use\n\nHumans have utilized the Earth's mineral resources for centuries.  Mining techniques are employed to extract these minerals.  The process involves removing minerals from the Earth's crust.\n\n### Environmental Considerations\n\nIt is crucial to acknowledge that mining and the utilization of mineral resources have considerable environmental consequences. These impacts must be carefully considered and mitigated to ensure sustainable practices.\n\n### Types of Resources\n\nThe lithosphere provides a variety of resources including:\n\n* **Minerals:**  A wide range of minerals are extracted for various uses.\n* **Fuels:**  Fossil fuels, such as coal and oil, are also found within the lithosphere.\n\nThe extraction and use of these resources must be balanced with the need for environmental protection.\n"
       },
       {
         "data": {
           "Title": "Chemical Bonding and Molecular Structure",
-          "icon": "🧪",
+          "icon": "⚛️",
           "flashcards": [
             {
               "front": {
                 "title": "Chemical Bond",
                 "question": "What is a chemical bond?"
               },
-              "back": "A physical process causing atoms to be attracted and bound in new compounds. Atoms bond to fill their outer valence shell."
+              "back": "A physical process causing atoms to attract and bind in new compounds. Atoms bond to fill their outer valence shell."
             },
             {
               "front": {
@@ -413,23 +427,23 @@ const data = {
             {
               "front": {
                 "title": "Lewis Diagrams",
-                "question": "What are Lewis diagrams used for?"
+                "question": "What are Lewis diagrams?"
               },
-              "back": "Representing molecular structure using dots or crosses to show valence electrons around the central atom."
+              "back": "Representations of molecular structure using dots or crosses for valence electrons around a central atom."
             },
             {
               "front": {
-                "title": "Covalent Bonds",
-                "question": "Describe single, double, and triple covalent bonds."
+                "title": "Covalent Bond",
+                "question": "What is a covalent bond?"
               },
-              "back": "Single bond: one shared electron pair; Double bond: two shared electron pairs; Triple bond: three shared electron pairs."
+              "back": "A bond where pairs of electrons are shared between two atoms. Single, double, and triple bonds exist depending on the number of shared electron pairs."
             },
             {
               "front": {
                 "title": "Dative Covalent Bond",
                 "question": "What is a dative covalent bond?"
               },
-              "back": "A covalent bond where both shared electrons come from the same atom. Examples: hydronium ion (H₃O⁺) and ammonium ion (NH₄⁺)."
+              "back": "A covalent bond where both shared electrons come from the same atom. Examples: hydronium (H₃O⁺) and ammonium (NH₄⁺) ions."
             },
             {
               "front": {
@@ -443,72 +457,107 @@ const data = {
                 "title": "Electronegativity",
                 "question": "What is electronegativity?"
               },
-              "back": "An atom's power to attract electrons in a chemical bond."
+              "back": "An atom's power to attract electrons towards itself in a chemical bond."
             },
             {
               "front": {
                 "title": "Polar vs. Non-polar Covalent Bonds",
                 "question": "What's the difference between polar and non-polar covalent bonds?"
               },
-              "back": "Polar: between non-identical atoms with different electronegativities; Non-polar: between identical atoms or atoms with the same electronegativity."
+              "back": "Polar bonds are between non-identical atoms (different electronegativity); non-polar bonds are between identical atoms or atoms with the same electronegativity."
             },
             {
               "front": {
                 "title": "Polar vs. Non-polar Molecules",
-                "question": "What's the difference between polar and non-polar molecules?"
+                "question": "What is the difference between polar and non-polar molecules?"
               },
-              "back": "Polar: uneven charge distribution, one end slightly positive, one end slightly negative (e.g., water, ammonia, hydrogen chloride); Non-polar: even charge distribution or symmetrical molecule with polar bonds."
+              "back": "Polar molecules have uneven charge distribution; non-polar molecules have even charge distribution or symmetrical polar bonds."
             },
             {
               "front": {
                 "title": "Bond Length and Energy",
                 "question": "Define bond length and bond energy."
               },
-              "back": "Bond length: distance between bonded atomic nuclei; Bond energy: energy needed to break a bond."
+              "back": "Bond length: distance between nuclei of bonded atoms. Bond energy: energy needed to break a bond."
             },
             {
               "front": {
                 "title": "Bond Strength",
-                "question": "What factors influence bond strength?"
+                "question": "What factors affect bond strength?"
               },
               "back": "Bond length, atom size, and number of bonds between atoms."
             }
           ]
         },
-        "content": "\n## Chemical Bonding and Molecular Structure\n\n### Introduction\n\nA chemical bond is the force that holds atoms together in molecules and compounds.  Atoms bond to achieve a more stable electron configuration, usually by filling their outer valence electron shell.  Several forces are involved: attraction between positive nuclei and negative electrons, and repulsion between like charges (electrons and nuclei).  The balance of these forces determines the stability and energy of the bond.\n\n### Representing Molecular Structure\n\nLewis diagrams use dots or crosses to represent valence electrons, helping visualize bonding.\n\n### Types of Covalent Bonds\n\nCovalent bonds involve the sharing of electron pairs between atoms.  These can be single (one shared pair), double (two shared pairs), or triple (three shared pairs) bonds.  A dative covalent bond is a special type of covalent bond where both shared electrons originate from the same atom. Examples include the hydronium ion ($H_3O^+$) and the ammonium ion ($NH_4^+$).\n\n\n### Molecular Geometry\n\nThe Valence Shell Electron Pair Repulsion (VSEPR) theory predicts molecular shapes by minimizing repulsion between electron pairs around the central atom.\n\n### Electronegativity and Bond Polarity\n\nElectronegativity measures an atom's ability to attract electrons in a bond.  The difference in electronegativity between atoms determines bond polarity:\n\n*   **Non-polar covalent bonds:** Occur between identical atoms or atoms with similar electronegativities.\n*   **Polar covalent bonds:** Occur between atoms with different electronegativities, resulting in a slightly positive and slightly negative end of the bond.\n\nA molecule's overall polarity depends on the polarity of its bonds and its molecular geometry.  Symmetrical molecules with polar bonds can be non-polar if the bond dipoles cancel each other out.\n\n### Bond Properties\n\n*   **Bond length:** The distance between the nuclei of two bonded atoms.\n*   **Bond energy:** The energy required to break a bond.\n*   **Bond strength:**  How strongly atoms are held together. This is influenced by bond length, atom size, and the number of bonds between atoms.\n"
+        "content": "\n## Chemical Bonding and Molecular Structure\n\nChemical bonding is the physical process responsible for the attraction and binding of atoms to form new compounds.  Noble gases, with their full valence shells, serve as a reference point; other atoms bond to achieve a similar stable electron configuration.\n\nThree main forces are at play: attraction between the positive nucleus of one atom and the negative electrons of another, and repulsion between like-charged electrons and like-charged nuclei.  The balance between these attractive and repulsive forces determines the overall energy of the system; the minimum energy state corresponds to a stable bond.\n\nLewis diagrams are a useful tool for visualizing molecular structure.  These diagrams represent valence electrons as dots or crosses surrounding the central atom.\n\nCovalent bonds involve the sharing of electron pairs between atoms.  Single, double, and triple bonds represent the sharing of one, two, and three electron pairs, respectively.\n\nA dative covalent bond (or coordinate bond) is a special type of covalent bond where both shared electrons originate from the same atom.  Examples include the hydronium ion (H₃O⁺) and the ammonium ion (NH₄⁺).\n\nThe shapes of molecules can be predicted using the Valence Shell Electron Pair Repulsion (VSEPR) theory.  This theory minimizes electron-pair repulsion around the central atom to determine the most stable molecular geometry.\n\nElectronegativity is a measure of an atom's ability to attract electrons towards itself in a chemical bond.  This property explains the difference between polar and non-polar covalent bonds. Polar covalent bonds form between atoms with differing electronegativities, resulting in an uneven distribution of charge. Non-polar covalent bonds occur between identical atoms or atoms with very similar electronegativities.\n\nPolar molecules possess a slightly positive end and a slightly negative end due to uneven charge distribution.  Examples include water (H₂O), ammonia (NH₃), and hydrogen chloride (HCl). Non-polar molecules have an even charge distribution, often due to molecular symmetry.\n\nBond length is the distance between the nuclei of two bonded atoms. Bond energy is the amount of energy required to break a bond. Bond strength depends on bond length, atom size, and the number of bonds between the atoms.\n"
       },
       {
         "data": {
-          "Title": "Intermolecular Forces and Properties of Substances",
+          "Title": "Intermolecular Forces and Their Effects",
           "icon": "🧪",
           "flashcards": [
             {
               "front": {
                 "title": "Intermolecular Forces",
-                "question": "What are intermolecular forces, and what determines their type?"
+                "question": "What are intermolecular forces?"
               },
-              "back": "Forces acting between molecules. The type depends on the nature of the molecules (polar or non-polar)."
+              "back": "Forces of attraction between molecules.  Their strength influences a substance's properties."
             },
             {
               "front": {
-                "title": "Polar vs. Non-polar Molecules",
-                "question": "What's the difference between polar and non-polar molecules?"
+                "title": "Polar Molecules",
+                "question": "What characterizes a polar molecule?"
               },
-              "back": "Polar molecules have an unequal charge distribution (a dipole), while non-polar molecules have an equal charge distribution."
+              "back": "Unequal distribution of charge; one part is slightly positive, the other slightly negative (a dipole)."
+            },
+            {
+              "front": {
+                "title": "Non-polar Molecules",
+                "question": "What characterizes a non-polar molecule?"
+              },
+              "back": "Equal distribution of charge."
             },
             {
               "front": {
                 "title": "Types of Intermolecular Forces",
-                "question": "List the five types of intermolecular forces."
+                "question": "List the five main types of intermolecular forces."
               },
-              "back": "Ion-dipole, ion-induced dipole, dipole-dipole, dipole-induced dipole, and induced dipole forces."
+              "back": "Ion-dipole, ion-induced dipole, dipole-dipole, dipole-induced dipole, induced dipole (London dispersion)."
             },
             {
               "front": {
                 "title": "Ion-Dipole Forces",
                 "question": "Describe ion-dipole forces."
               },
-              "back": "Forces between ions and polar molecules. The ion is attracted to the oppositely charged part of the molecule."
+              "back": "Attraction between an ion and a polar molecule."
+            },
+            {
+              "front": {
+                "title": "Ion-Induced Dipole Forces",
+                "question": "Describe ion-induced dipole forces."
+              },
+              "back": "An ion induces a temporary dipole in a non-polar molecule."
+            },
+            {
+              "front": {
+                "title": "Dipole-Dipole Forces",
+                "question": "Describe dipole-dipole forces."
+              },
+              "back": "Attraction between two polar molecules."
+            },
+            {
+              "front": {
+                "title": "Dipole-Induced Dipole Forces",
+                "question": "Describe dipole-induced dipole forces."
+              },
+              "back": "A polar molecule induces a temporary dipole in a non-polar molecule."
+            },
+            {
+              "front": {
+                "title": "Induced Dipole Forces (London Dispersion Forces)",
+                "question": "Describe induced dipole forces."
+              },
+              "back": "Temporary dipoles induced in non-polar molecules due to fluctuating electron distribution."
             },
             {
               "front": {
@@ -536,83 +585,76 @@ const data = {
                 "title": "Water's Properties",
                 "question": "What unique properties does water possess due to its strong hydrogen bonds?"
               },
-              "back": "High specific heat, absorption of infrared radiation, large liquid range, high heat of vaporization, less dense solid phase."
+              "back": "High specific heat, infrared radiation absorption, wide liquid range, high heat of vaporization, less dense solid phase."
             },
             {
               "front": {
                 "title": "Specific Heat",
-                "question": "Define specific heat."
+                "question": "What is specific heat?"
               },
-              "back": "The amount of heat needed to raise the temperature of a unit mass of a substance by one degree."
+              "back": "The amount of heat needed to raise the temperature of a unit mass by one degree."
             },
             {
               "front": {
                 "title": "Heat of Vaporization",
-                "question": "Define heat of vaporization."
+                "question": "What is heat of vaporization?"
               },
               "back": "The energy needed to change a given quantity of a substance into a gas."
             }
           ]
         },
-        "content": "\n## Intermolecular Forces and Properties of Substances\n\n### Intermolecular Forces\n\nIntermolecular forces are the forces that act between molecules.  The type of intermolecular force present depends on the nature of the molecules involved.\n\n* **Polar molecules:** Have an unequal distribution of charge, resulting in a dipole (slightly positive and slightly negative regions).\n* **Non-polar molecules:** Have an equal distribution of charge.\n\nThere are five main types of intermolecular forces:\n\n1. **Ion-dipole forces:** Exist between ions and polar molecules. The ion is attracted to the oppositely charged part of the dipole.\n2. **Ion-induced dipole forces:** Exist between ions and non-polar molecules. The ion induces a temporary dipole in the non-polar molecule.\n3. **Dipole-dipole forces:** Exist between two polar molecules.\n4. **Dipole-induced dipole forces:** Exist between a polar and a non-polar molecule. The polar molecule induces a temporary dipole in the non-polar molecule.\n5. **Induced dipole forces:** Exist between two non-polar molecules due to temporary, fluctuating dipoles.\n\n\nDipole-dipole forces, dipole-induced dipole forces, and induced dipole forces are collectively known as **van der Waals forces**.\n\n**Hydrogen bonds** are a special type of strong dipole-dipole force that occurs when a hydrogen atom is bonded to a highly electronegative atom (oxygen, fluorine, or nitrogen).  The hydrogen atom is attracted to the electronegative atom on a neighboring molecule.\n\n\n### Properties of Substances and Intermolecular Forces\n\nIntermolecular forces significantly influence the properties of substances:\n\n* **Stronger intermolecular forces** generally lead to:\n    * Higher melting and boiling points\n    * Higher viscosity (resistance to flow)\n    * Higher density\n    * Lower thermal expansion (less expansion upon heating)\n    * Lower thermal conductivity (less efficient heat transfer)\n\n* **Weaker intermolecular forces** generally lead to the opposite of the above.\n\n**Water**, with its strong hydrogen bonds, exhibits unique properties:\n\n* High specific heat capacity\n* Absorption of infrared radiation\n* Large liquid range\n* High heat of vaporization\n* Less dense solid phase (ice floats on water)\n\n\n**Specific heat:** The amount of heat energy required to raise the temperature of one unit mass of a substance by one degree.\n\n**Heat of vaporization:** The energy required to change a given quantity of a substance from liquid to gas.\n"
+        "content": "\n## Intermolecular Forces and Their Effects\n\n### Intermolecular Forces\n\nIntermolecular forces are the attractive forces between molecules. The type and strength of these forces significantly impact a substance's physical properties like melting point, boiling point, viscosity, and density.\n\n### Types of Intermolecular Forces\n\nThere are several types of intermolecular forces:\n\n*   **Ion-dipole forces:** Attractions between ions and polar molecules.\n*   **Ion-induced dipole forces:** An ion induces a temporary dipole in a non-polar molecule.\n*   **Dipole-dipole forces:** Attractions between two polar molecules.\n*   **Dipole-induced dipole forces:** A polar molecule induces a temporary dipole in a non-polar molecule.\n*   **Induced dipole forces (London Dispersion Forces):** Weak attractions due to temporary, fluctuating electron distributions in non-polar molecules.  These are present in all molecules, but are the only intermolecular force in non-polar molecules.\n*   **Hydrogen bonds:** A special type of dipole-dipole force; exceptionally strong attractions between molecules containing hydrogen bonded to highly electronegative atoms (oxygen, fluorine, or nitrogen).\n\n**Van der Waals forces** is a general term encompassing dipole-dipole, dipole-induced dipole, and induced dipole forces.\n\n### Effects of Intermolecular Forces on Properties\n\nThe strength of intermolecular forces influences several physical properties:\n\n*   **Melting and Boiling Points:** Stronger forces lead to higher melting and boiling points.\n*   **Viscosity:**  Stronger forces result in higher viscosity (resistance to flow).\n*   **Density:** Stronger forces generally lead to higher density (more molecules packed into a given volume).\n*   **Thermal Expansion:** Substances with weaker intermolecular forces tend to exhibit greater thermal expansion.\n*   **Thermal Conductivity:**  The ability to conduct heat can be influenced by the strength and type of intermolecular forces.\n\n### Water: A Unique Case\n\nWater's strong hydrogen bonds give it unusual properties:\n\n*   High specific heat (requires a lot of energy to change temperature)\n*   High heat of vaporization (requires a lot of energy to evaporate)\n*   Relatively high boiling point\n*   Less dense as a solid (ice floats)\n*   Excellent solvent for polar substances\n\n### Definitions\n\n*   **Specific heat:** The amount of heat required to raise the temperature of 1 gram of a substance by 1 degree Celsius.\n*   **Heat of vaporization:** The amount of heat required to convert 1 gram of a liquid to a gas at its boiling point.\n\n\n"
       },
       {
         "data": {
           "Title": "Geometrical Optics",
-          "icon": "🔬",
+          "icon": "💡",
           "flashcards": [
             {
               "front": {
-                "title": "Reflection",
-                "question": "What is the law of reflection?"
+                "title": "Reflection and the Law of Reflection",
+                "question": "Describe the law of reflection."
               },
-              "back": "The angle of incidence equals the angle of reflection.  The incident ray, reflected ray, and normal all lie in the same plane."
+              "back": "The angle of incidence equals the angle of reflection.  These angles are measured relative to the normal (a line perpendicular to the reflecting surface)."
             },
             {
               "front": {
                 "title": "Speed of Light",
                 "question": "Where does light travel fastest?"
               },
-              "back": "Light travels fastest in a vacuum. Its speed is slower in other mediums."
+              "back": "Light travels fastest in a vacuum. It travels slower in other media."
             },
             {
               "front": {
-                "title": "Refraction",
-                "question": "What causes refraction?"
+                "title": "Refraction and Refractive Index",
+                "question": "What is refraction, and what influences it?"
               },
-              "back": "Refraction is the bending of light as it passes from one medium to another due to a change in the speed of light."
+              "back": "Refraction is the bending of light as it passes from one medium to another. The refractive index of a medium determines the degree of bending.  A higher refractive index indicates greater bending."
             },
             {
               "front": {
-                "title": "Refractive Index",
-                "question": "What is the refractive index, and what does it indicate?"
+                "title": "Sketching Ray Diagrams",
+                "question": "How do ray diagrams depict light's path through different media?"
               },
-              "back": "The refractive index (n) is a measure of how much light bends when entering a medium.  A higher refractive index indicates a greater degree of bending."
-            },
-            {
-              "front": {
-                "title": "Ray Diagrams",
-                "question": "How are ray diagrams used in geometrical optics?"
-              },
-              "back": "Ray diagrams visually represent the path of light through different media, illustrating reflection and refraction."
+              "back": "Ray diagrams use lines to show the path of light. The bending of these lines at the interface between media illustrates refraction, with the degree of bending determined by the refractive indices."
             },
             {
               "front": {
                 "title": "Snell's Law",
-                "question": "State Snell's Law and explain the variables."
+                "question": "State Snell's Law and explain its use."
               },
-              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) where $n_1$ and $n_2$ are the refractive indices of the two media, and $\theta_1$ and $\theta_2$ are the angles of incidence and refraction respectively."
+              "back": "Snell's Law:  ```math\n n₁sinθ₁ = n₂sinθ₂ ```\nwhere n₁ and n₂ are the refractive indices of the two media, and θ₁ and θ₂ are the angles of incidence and refraction, respectively.  It allows calculation of the angle of refraction or the refractive index of a medium."
             },
             {
               "front": {
                 "title": "Total Internal Reflection",
                 "question": "What conditions are necessary for total internal reflection?"
               },
-              "back": "Total internal reflection occurs when light travels from a denser medium to a less dense medium at an angle of incidence greater than the critical angle.  No light is refracted; all light is reflected internally."
+              "back": "Total internal reflection occurs when light travels from a denser medium to a less dense medium, and the angle of incidence exceeds the critical angle.  No light is refracted; all light is reflected back into the denser medium."
             }
           ]
         },
-        "content": "\n## Geometrical Optics\n\nThis chapter introduces geometrical optics, revisiting reflection and the law of reflection.  It explores the speed of light, refraction, refractive index, and techniques for sketching ray diagrams.  Snell's Law and total internal reflection are also covered.\n\n### Reflection and the Law of Reflection\n\nA light ray is an imaginary line representing the path of light. The law of reflection states that the angle of incidence equals the angle of reflection, and all rays lie in the same plane.\n\n### The Speed of Light\n\nLight travels at its maximum speed in a vacuum.  Its speed is slightly slower in other media. This difference in speed causes refraction.\n\n### Refraction and Refractive Index\n\nRefraction is the bending of light as it passes from one medium to another.  Each medium has a refractive index (n), indicating how much light bends upon entering that medium.  The refractive index is related to the optical density of the medium.\n\n### Sketching Ray Diagrams\n\nRay diagrams show the path of light through different media, illustrating the effects of refractive indices on light bending.\n\n### Snell's Law\n\nSnell's Law allows for the precise calculation of light bending:  ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg).  This equation relates refractive indices ($n_1$, $n_2$) to angles of incidence ($\\theta_1$) and refraction ($\\theta_2$).\n\n### Total Internal Reflection\n\nWhen light travels from a denser to a less dense medium, at an angle exceeding the critical angle, total internal reflection occurs.  All light is reflected back into the denser medium. This phenomenon has applications in various fields.\n"
+        "content": "\n## Geometrical Optics\n\nThis chapter introduces geometrical optics, building upon prior knowledge of reflection and the law of reflection.  We will explore the concept of a light ray, the speed of light in different media, and how to sketch ray diagrams.  We will also cover Snell's law and the phenomenon of total internal reflection.\n\n\n### Key Concepts\n\n*   **Reflection and the Law of Reflection:** A light ray is an imaginary line representing the path of light. The law of reflection states that the angle of incidence equals the angle of reflection, measured from the normal to the surface.\n\n*   **The Speed of Light:** Light travels fastest in a vacuum. Its speed is reduced when passing through other media. This change in speed causes refraction.\n\n*   **Refraction and Refractive Index:** Refraction is the bending of light as it passes from one medium to another. The refractive index of a medium quantifies how much light bends when entering that medium.  A higher refractive index indicates a greater degree of bending.\n\n*   **Sketching Ray Diagrams:** Ray diagrams illustrate the path of light through different media, showing how light bends depending on the refractive indices of the media involved.\n\n*   **Snell's Law:** Snell's Law precisely describes the relationship between the angles of incidence and refraction, and the refractive indices of the two media:\n\n```math\n      n₁ sinθ₁\n  =  ────────\n      n₂ sinθ₂ \n```\n\n*   **Total Internal Reflection:** When light travels from a denser to a less dense medium and the angle of incidence exceeds the critical angle, total internal reflection occurs. All light is reflected back into the denser medium.  This phenomenon has applications in various fields, including communications and medicine.\n"
       },
       {
         "data": {
@@ -622,41 +664,41 @@ const data = {
             {
               "front": {
                 "title": "Law of Reflection",
-                "question": "State the Law of Reflection."
+                "question": "What is the relationship between the angle of incidence and the angle of reflection?"
               },
-              "back": "The angle of incidence equals the angle of reflection.  The incident ray, reflected ray, and the normal all lie in the same plane."
+              "back": "The angle of incidence (θᵢ) equals the angle of reflection (θᵣ).  The incident ray, reflected ray, and normal all lie in the same plane."
             },
             {
               "front": {
                 "title": "Refractive Index",
-                "question": "Define refractive index and provide the formula."
+                "question": "Define refractive index and provide its formula."
               },
-              "back": "The refractive index (n) of a material is the ratio of the speed of light in a vacuum (c) to its speed in the material (v).  ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) "
+              "back": "The refractive index (n) is the ratio of the speed of light in a vacuum (c) to its speed in a material (v).  Formula:  `n = c/v`"
             },
             {
               "front": {
                 "title": "Snell's Law",
-                "question": "State Snell's Law."
+                "question": "State Snell's Law and explain what it describes."
               },
-              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) where  $n_1$ and $n_2$ are the refractive indices of the two media, and $\\theta_1$ and $\\theta_2$ are the angles of incidence and refraction respectively."
+              "back": "Snell's Law describes the relationship between refractive indices and angles in refraction: `n₁ sin θ₁ = n₂ sin θ₂` where n₁ and n₂ are the refractive indices of the two media, and θ₁ and θ₂ are the angles of incidence and refraction respectively."
             },
             {
               "front": {
                 "title": "Critical Angle",
-                "question": "What is the critical angle?"
+                "question": "What is the critical angle, and what phenomenon does it relate to?"
               },
-              "back": "The angle of incidence at which the angle of refraction is 90°.  Beyond this angle, total internal reflection occurs."
+              "back": "The critical angle is the angle of incidence at which the angle of refraction is 90°. It's the angle at which total internal reflection begins."
             },
             {
               "front": {
                 "title": "Total Internal Reflection",
                 "question": "When does total internal reflection occur?"
               },
-              "back": "Total internal reflection occurs when light travels from a denser medium to a less dense medium, and the angle of incidence exceeds the critical angle. No refraction occurs; all light is reflected back into the denser medium."
+              "back": "Total internal reflection occurs when light travels from a denser medium to a less dense medium, and the angle of incidence is greater than the critical angle.  No light is refracted; all light is reflected internally."
             }
           ]
         },
-        "content": "\n## Geometrical Optics\n\n### Light Rays and Reflection\n\nLight rays are lines perpendicular to light wavefronts.  In geometrical optics, they are represented as straight arrows.  Light rays reflect off surfaces. The incident ray strikes the surface, and the reflected ray bounces off. The normal is the line perpendicular to the surface at the point of incidence.  The angle of incidence ($\\\\theta_i$) is the angle between the incident ray and the normal. The angle of reflection ($\\\\theta_r$) is the angle between the reflected ray and the normal.\n\n\n### Refraction\n\nLight can be absorbed and transmitted. The speed of light (c) is constant in a given medium, with a maximum speed in a vacuum of approximately $3 \\times 10^8 \\, m/s$. Refraction occurs when light passes from one medium to another, causing a change in speed but not frequency.  If the light ray hits the boundary at an angle (not perpendicular or parallel), it changes direction, appearing to \"bend\".\n\nOptical density measures a medium's refracting power.  The angle of refraction is the angle between the normal and the refracted ray.\n\n### Snell's Law and Refraction\n\nSnell's Law describes the relationship between refractive indices and angles:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nLight traveling from a denser to a less dense medium refracts away from the normal; from a less dense to a denser medium, it refracts towards the normal.\n\n### Total Internal Reflection\n\nThe critical angle is the angle of incidence where the angle of refraction is 90°. Total internal reflection occurs when light travels from a denser to a less dense medium and the angle of incidence is greater than the critical angle. This phenomenon is used in optical fibers and endoscopes.\n"
+        "content": "\n## Geometrical Optics\n\n### Light Rays and Reflection\n\nLight rays are lines perpendicular to light wavefronts. In geometrical optics, we represent them as straight arrows.  Light rays reflect off surfaces. The incident ray strikes the surface, and the reflected ray bounces off. The normal is a line perpendicular to the surface at the point of incidence. The angle of incidence (θᵢ) is the angle between the incident ray and the normal; the angle of reflection (θᵣ) is the angle between the reflected ray and the normal.\n\nThe **Law of Reflection** states: θᵢ = θᵣ, and the incident ray, reflected ray, and normal lie in the same plane.\n\nLight can also be absorbed and transmitted. The speed of light (c) is constant in a given medium, with a maximum speed in a vacuum of 3 × 10⁸ m·s⁻¹.\n\n\n### Refraction\n\nRefraction occurs when light passes from one medium to another, changing speed but maintaining its frequency.  If the light hits the boundary at an angle (other than perpendicular or parallel), it changes direction (bends).\n\nThe **refractive index** (n) of a material indicates how difficult it is for light to pass through:\n\n```math\n      c\n n =  ─────\n      v\n```\n\nwhere *c* is the speed of light in a vacuum and *v* is the speed of light in the material.  Optical density measures a medium's refracting power. The normal is perpendicular to the surface. The angle of incidence is between the normal and the incident ray; the angle of refraction is between the normal and the refracted ray.\n\n**Snell's Law** describes refraction:\n\n```math\n n₁ sin θ₁ = n₂ sin θ₂\n```\n\nLight bends towards the normal when moving into a denser medium and away from the normal when moving into a less dense medium.\n\n\n### Critical Angle and Total Internal Reflection\n\nThe **critical angle** is the angle of incidence where the angle of refraction is 90°.  **Total internal reflection** happens when light travels from a denser to a less dense medium and the angle of incidence exceeds the critical angle. All light is reflected back into the denser medium; no refraction occurs.  This is used in optical fibers and endoscopes.\n"
       },
       {
         "data": {
@@ -668,32 +710,32 @@ const data = {
                 "title": "Wavefront",
                 "question": "What is a wavefront?"
               },
-              "back": "An imaginary line connecting points on a wave that are in the same phase."
+              "back": "An imaginary line connecting points on a wave that are in phase."
             },
             {
               "front": {
                 "title": "Huygens' Principle",
-                "question": "Describe Huygens' Principle."
+                "question": "State Huygens' Principle."
               },
-              "back": "Every point on a wavefront acts as a source of secondary spherical wavelets.  The new wavefront is the surface tangent to all these wavelets."
+              "back": "Every point on a wavefront acts as a source of secondary spherical wavelets.  The new wavefront is the surface tangent to these wavelets."
             },
             {
               "front": {
                 "title": "Diffraction",
                 "question": "What is diffraction?"
               },
-              "back": "The bending of waves around obstacles or spreading of waves as they pass through an aperture."
+              "back": "The bending of waves as they pass through an aperture or around an obstacle."
             },
             {
               "front": {
                 "title": "Diffraction and Wavelength/Slit Width",
                 "question": "How does the degree of diffraction relate to wavelength and slit width?"
               },
-              "back": "The degree of diffraction is proportional to the ratio of the wavelength (λ) to the slit width (w):  Diffraction ∝ λ/w"
+              "back": "Diffraction is proportional to the ratio of wavelength (λ) to slit width (w):  Diffraction ∝ λ/w"
             }
           ]
         },
-        "content": "\n## Wavefronts, Huygens' Principle, and Diffraction\n\n### Wavefronts\n\nA wavefront is an imaginary line connecting points on a wave that are in the same phase.  This means the points are all at the same stage of their oscillation (e.g., all at a crest or all at a trough).\n\n### Huygens' Principle\n\nHuygens' Principle states that every point on a wavefront can be considered as a source of secondary spherical wavelets.  The new wavefront after a time interval is the surface tangent to all these secondary wavelets. This principle helps explain the propagation of waves and phenomena like diffraction.\n\n\n### Diffraction\n\nDiffraction is the bending of waves as they pass around obstacles or through apertures (openings).  When a wave encounters an obstacle or passes through a slit, it spreads out or bends.\n\nThe degree of diffraction depends on the relationship between the wavelength (λ) of the wave and the size of the aperture (or obstacle)  Specifically:\n\nDiffraction ∝ λ/w\n\nwhere:\n\n* λ = wavelength of the wave\n* w = width of the slit (or aperture)\n\nA larger wavelength or a smaller aperture leads to greater diffraction.\n"
+        "content": "\n## Wavefronts, Huygens' Principle, and Diffraction\n\n### Wavefronts\n\nA wavefront is an imaginary line connecting points on a wave that are in phase.  This means the points are at the same stage of their oscillation (e.g., all at their crests or all at their troughs).\n\n### Huygens' Principle\n\nHuygens' Principle describes how wavefronts propagate.  It states that every point on a wavefront can be considered as a source of secondary spherical wavelets.  The new position of the wavefront after a time interval is the surface that is tangent to all of these secondary wavelets.\n\n### Diffraction\n\nDiffraction is the phenomenon where waves spread out as they pass through an aperture (opening) or around obstacles.  The amount of bending or spreading depends on the size of the aperture or obstacle relative to the wavelength of the wave.\n\n### Diffraction and Wavelength/Slit Width\n\nThe degree of diffraction is directly proportional to the wavelength (λ) of the wave and inversely proportional to the width (w) of the slit or aperture. This relationship can be expressed as:\n\n```math\nDiffraction ∝ λ\n─────────────\n       w\n```\n\nIn simpler terms:  Longer wavelengths diffract more, and narrower slits cause more diffraction.\n"
       },
       {
         "data": {
@@ -703,72 +745,58 @@ const data = {
             {
               "front": {
                 "title": "Kinetic Theory of Gases",
-                "question": "What are the main tenets of the kinetic theory of gases?"
+                "question": "What are the main tenets of the Kinetic Theory of Gases?"
               },
-              "back": "Gases are composed of constantly moving particles with negligible volume compared to the space they occupy.  Particles have negligible intermolecular forces except during collisions.  The average kinetic energy of the particles is directly proportional to temperature."
-            },
-            {
-              "front": {
-                "title": "Pressure of a Gas",
-                "question": "How is the pressure of a gas defined?"
-              },
-              "back": "Pressure is a measure of the force exerted by gas particles per unit area due to collisions with the container walls and each other."
-            },
-            {
-              "front": {
-                "title": "Temperature of a Gas",
-                "question": "What does the temperature of a gas measure?"
-              },
-              "back": "Temperature is a measure of the average kinetic energy of the gas particles."
+              "back": "Gases are composed of constantly moving particles with negligible volume and intermolecular forces.  Pressure results from particle collisions, and temperature reflects average kinetic energy."
             },
             {
               "front": {
                 "title": "Ideal Gas",
-                "question": "What are the characteristics of an ideal gas?"
+                "question": "What defines an ideal gas?"
               },
-              "back": "An ideal gas is a theoretical model where particles have negligible volume and no intermolecular forces.  Particles move at random speeds, and collisions are perfectly elastic."
+              "back": "An ideal gas consists of identical particles with zero volume and no intermolecular forces.  Particles move at the same speed."
             },
             {
               "front": {
                 "title": "Real Gas",
-                "question": "How do real gases differ from ideal gases?"
+                "question": "How do real gases deviate from ideal gas behavior?"
               },
               "back": "Real gases deviate from ideal behavior at high pressures (particle volume becomes significant) and low temperatures (intermolecular forces become significant)."
             },
             {
               "front": {
                 "title": "Boyle's Law",
-                "question": "State Boyle's Law and give its equation."
+                "question": "State Boyle's Law and write the formula."
               },
-              "back": "At constant temperature, the pressure of a fixed amount of gas is inversely proportional to its volume.  Equation: $p_1V_1 = p_2V_2$"
+              "back": "At constant temperature, the pressure of a fixed amount of gas is inversely proportional to its volume.  `p₁V₁ = p₂V₂`"
             },
             {
               "front": {
                 "title": "Charles' Law",
-                "question": "State Charles' Law and give its equation."
+                "question": "State Charles' Law and write the formula."
               },
-              "back": "At constant pressure, the volume of a fixed amount of gas is directly proportional to its Kelvin temperature. Equation: $V_1/T_1 = V_2/T_2$"
+              "back": "At constant pressure, the volume of a fixed amount of gas is directly proportional to its Kelvin temperature. `V₁/T₁ = V₂/T₂`"
             },
             {
               "front": {
                 "title": "Pressure-Temperature Relationship",
                 "question": "Describe the relationship between pressure and temperature for a fixed volume of gas."
               },
-              "back": "At constant volume, the pressure of a fixed amount of gas is directly proportional to its Kelvin temperature. Equation: $p_1/T_1 = p_2/T_2$"
+              "back": "At constant volume, the pressure of a fixed amount of gas is directly proportional to its Kelvin temperature. `p₁/T₁ = p₂/T₂`"
             },
             {
               "front": {
-                "title": "Kelvin Temperature",
+                "title": "Kelvin Temperature Conversion",
                 "question": "How do you convert Celsius to Kelvin?"
               },
-              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)"
+              "back": "T<sub>K</sub> = T<sub>C</sub> + 273"
             },
             {
               "front": {
                 "title": "General Gas Equation",
-                "question": "State the general gas equation and explain its use."
+                "question": "State the general gas equation."
               },
-              "back": "Combines Boyle's Law and the pressure-temperature relationship: $p_1V_1/T_1 = p_2V_2/T_2$.  Applies when the amount of gas is constant."
+              "back": "`p₁V₁/T₁ = p₂V₂/T₂`"
             },
             {
               "front": {
@@ -779,21 +807,21 @@ const data = {
             },
             {
               "front": {
-                "title": "Universal Gas Constant (R)",
-                "question": "What is the value of the universal gas constant and its units?"
+                "title": "Ideal Gas Equation",
+                "question": "State the ideal gas equation and define each variable."
               },
-              "back": "R = 8.314 J·K⁻¹·mol⁻¹"
+              "back": "pV = nRT, where p = pressure, V = volume, n = number of moles, R = universal gas constant, T = Kelvin temperature."
             },
             {
               "front": {
-                "title": "Ideal Gas Equation",
-                "question": "State the ideal gas equation and define its terms."
+                "title": "Universal Gas Constant (R)",
+                "question": "What is the value of the universal gas constant (R) and its units?"
               },
-              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) where p=pressure, V=volume, n=number of moles, R=universal gas constant, T=temperature (Kelvin)."
+              "back": "R = 8.314 J·K⁻¹·mol⁻¹"
             }
           ]
         },
-        "content": "\n## Kinetic Theory of Gases and Gas Laws\n\nThe kinetic theory of gases explains the behavior of gases based on the motion of their constituent particles.  Key tenets include: gases are composed of constantly moving particles with negligible volume compared to the space they occupy; particles have negligible intermolecular forces except during collisions; and the average kinetic energy of the particles is directly proportional to temperature.\n\n### Pressure and Temperature\n\nThe pressure of a gas is a measure of the force exerted by gas particles per unit area, resulting from their collisions with the container walls and each other.  Temperature, on the other hand, is a measure of the average kinetic energy of these particles.\n\n### Ideal vs. Real Gases\n\nAn ideal gas is a theoretical model where particles have negligible volume and no intermolecular forces.  In contrast, real gases exhibit deviations from ideal behavior, particularly at high pressures (where particle volume becomes significant) and low temperatures (where intermolecular forces become important).\n\n### Gas Laws\n\nSeveral laws describe the relationships between the properties of gases:\n\n* **Boyle's Law:**  At constant temperature, the pressure of a fixed amount of gas is inversely proportional to its volume ($p_1V_1 = p_2V_2$).\n\n* **Charles' Law:** At constant pressure, the volume of a fixed amount of gas is directly proportional to its Kelvin temperature ($V_1/T_1 = V_2/T_2$).\n\n* **Pressure-Temperature Relationship:** At constant volume, the pressure of a fixed amount of gas is directly proportional to its Kelvin temperature ($p_1/T_1 = p_2/T_2$).  Note that temperature must be in Kelvin ($T_K = T_C + 273$).\n\n* **General Gas Equation:** Combines Boyle's Law and the pressure-temperature relationship: $p_1V_1/T_1 = p_2V_2/T_2$. This applies when the amount of gas remains constant.\n\n* **Avogadro's Law:** Equal volumes of gases at the same temperature and pressure contain the same number of molecules.\n\n### The Ideal Gas Equation\n\nThe ideal gas equation integrates these relationships:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nwhere:\n\n* p = pressure (Pa)\n* V = volume (m³)\n* n = number of moles (mol)\n* R = universal gas constant (8.314 J·K⁻¹·mol⁻¹)\n* T = temperature (K)\n\nThis equation uses SI units for all parameters.\n\n\n### Table of Units\n\n| Quantity | Unit Name   | Unit Symbol |\n| --------- | ----------- | ----------- |\n| Moles (n) | moles       | mol         |\n| Pressure (p) | pascals     | Pa          |\n| Temperature (T) | kelvin      | K           |\n| Volume (V)  | cubic meters | m³          |\n\n"
+        "content": "\n## Kinetic Theory of Gases and Gas Laws\n\nThe kinetic theory of gases explains gas behavior.  Gases are composed of particles in constant motion, with negligible volume and intermolecular forces. Pressure arises from particle collisions, and temperature reflects the average kinetic energy.\n\n### Ideal and Real Gases\n\nAn **ideal gas** is a theoretical model where particles have zero volume and no intermolecular forces.  Real gases deviate from this ideal behavior, particularly at high pressures (particle volume becomes significant) and low temperatures (intermolecular forces become important).\n\n### Gas Laws\n\nSeveral laws describe the relationships between pressure (p), volume (V), temperature (T), and amount (n) of a gas:\n\n* **Boyle's Law:**  At constant temperature,  `p₁V₁ = p₂V₂` (pressure and volume are inversely proportional).\n\n* **Charles' Law:** At constant pressure, `V₁/T₁ = V₂/T₂` (volume and Kelvin temperature are directly proportional).\n\n* **Pressure-Temperature Relationship:** At constant volume, `p₁/T₁ = p₂/T₂` (pressure and Kelvin temperature are directly proportional).\n\nTo use Charles' Law and the pressure-temperature relationship, temperature must be in Kelvin (K):  T<sub>K</sub> = T<sub>C</sub> + 273.\n\n* **General Gas Equation:** Combining Boyle's Law and the pressure-temperature relationship, `p₁V₁/T₁ = p₂V₂/T₂`.\n\n* **Avogadro's Law:** Equal volumes of gases at the same temperature and pressure contain the same number of molecules.\n\n* **Ideal Gas Equation:**  Extending these concepts to include the amount of gas (n), the ideal gas equation is `pV = nRT`, where R is the universal gas constant (R = 8.314 J·K⁻¹·mol⁻¹).  SI units (m³ for volume, Pa for pressure, K for temperature) must be used.\n\n\n### Units in the Ideal Gas Equation\n\n| Quantity | Unit Name  | Unit Symbol |\n|---|---|---|\n| Moles (n) | moles      | mol         |\n| Pressure (p) | pascals    | Pa          |\n| Temperature (T) | kelvin     | K           |\n| Volume (V) | meters cubed | m³          |\n\n\n"
       },
       {
         "data": {
@@ -812,21 +840,21 @@ const data = {
                 "title": "Volume of Gas at STP",
                 "question": "How do you calculate the volume of 'n' moles of gas at STP?"
               },
-              "back": "V<sub>g</sub> = 22.4n<sub>g</sub>"
+              "back": "V<sub>g</sub> = 22.4n<sub>g</sub>, where V<sub>g</sub> is the volume in dm³ and n<sub>g</sub> is the number of moles."
             },
             {
               "front": {
-                "title": "Gas Volume Relationship in Reactions",
-                "question": "How are the volumes of two gases (A and B) related in a chemical reaction?"
+                "title": "Volume Relationship in Gas Reactions",
+                "question": "What is the formula describing the volume relationship between two gases (A and B) in a reaction?"
               },
-              "back": "V<sub>A</sub> = (a/b)V<sub>B</sub>, where 'a' and 'b' are the stoichiometric coefficients of gases A and B respectively."
+              "back": "V<sub>A</sub> = (a/b)V<sub>B</sub>, where V<sub>A</sub> and V<sub>B</sub> are the volumes of gases A and B, and 'a' and 'b' are their stoichiometric coefficients."
             },
             {
               "front": {
                 "title": "Concentration of a Solution",
-                "question": "What is the formula for calculating the concentration of a solution?"
+                "question": "How is the concentration (c) of a solution calculated?"
               },
-              "back": "c = n/V, where 'c' is concentration (mol·dm⁻³), 'n' is moles of solute, and 'V' is volume (dm³)."
+              "back": "c = n/V, where c is the concentration in mol·dm⁻³, n is the number of moles of solute, and V is the volume of the solution in dm³."
             },
             {
               "front": {
@@ -838,9 +866,9 @@ const data = {
             {
               "front": {
                 "title": "Titration Calculation",
-                "question": "Write the formula used to calculate the unknown concentration in a titration."
+                "question": "What formula relates the concentrations and volumes of two solutions in a titration?"
               },
-              "back": " (c<sub>A</sub>V<sub>A</sub>)/a = (c<sub>B</sub>V<sub>B</sub>)/b, where c represents concentration, V represents volume, and a and b are stoichiometric coefficients."
+              "back": "```math\n(c<sub>A</sub>V<sub>A</sub>)/a = (c<sub>B</sub>V<sub>B</sub>)/b\n```\nwhere c<sub>A</sub> and c<sub>B</sub> are the concentrations, V<sub>A</sub> and V<sub>B</sub> are the volumes, and a and b are the stoichiometric coefficients of reactants A and B."
             },
             {
               "front": {
@@ -861,7 +889,7 @@ const data = {
                 "title": "Percent Yield",
                 "question": "How is percent yield calculated?"
               },
-              "back": "% Yield = (Actual Yield / Theoretical Yield) × 100"
+              "back": "```math\n% yield = (actual yield / theoretical yield) * 100\n```"
             },
             {
               "front": {
@@ -882,15 +910,15 @@ const data = {
                 "title": "Percent Purity",
                 "question": "How is percent purity calculated?"
               },
-              "back": "% Purity = (Mass of compound / Mass of sample) × 100"
+              "back": "```math\n% purity = (mass of compound / mass of sample) * 100\n```"
             }
           ]
         },
-        "content": "\n## Quantitative Aspects of Chemical Change\n\nThis section covers essential calculations in chemistry, focusing on the quantitative relationships between reactants and products in chemical reactions.\n\n### Molar Volume of Gases\n\nAt Standard Temperature and Pressure (STP), one mole of any gas occupies a volume of 22.4 dm³.  This allows us to calculate the volume of any number of moles of gas at STP using the formula:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nwhere:\n\n* $V_g$ is the volume of the gas (in dm³)\n* $n_g$ is the number of moles of the gas\n\n\n### Gas Volume Relationships in Reactions\n\nThe volumes of reacting gases are directly proportional to their stoichiometric coefficients in a balanced chemical equation.  For two gases A and B, the relationship is:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nwhere:\n\n* $V_A$ is the volume of gas A\n* $V_B$ is the volume of gas B\n* $a$ and $b$ are the stoichiometric coefficients of A and B, respectively.\n\n### Concentration Calculations\n\nThe concentration (c) of a solution is defined as the number of moles (n) of solute per unit volume (V) of solution:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nwhere:\n\n* c is the concentration (mol·dm⁻³)\n* n is the number of moles of solute\n* V is the volume of the solution (dm³)\n\nA standard solution has a precisely known concentration.\n\n### Titration Calculations\n\nTitration is a technique to determine the concentration of an unknown solution.  The calculation uses the following relationship:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nwhere:\n\n* $c_A$ and $c_B$ are the concentrations of solutions A and B\n* $V_A$ and $V_B$ are the volumes of solutions A and B\n* $a$ and $b$ are the stoichiometric coefficients of A and B in the balanced equation\n\n\n### Limiting and Excess Reagents\n\nThe limiting reagent is completely consumed in a reaction, determining the maximum amount of product formed.  The excess reagent is the reactant left over after the reaction is complete.\n\n### Percent Yield\n\nPercent yield represents the efficiency of a reaction:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\n### Empirical and Molecular Formulas\n\nThe empirical formula shows the simplest whole-number ratio of atoms in a compound. The molecular formula represents the actual number of atoms of each element in a molecule.\n\n### Percent Purity\n\nPercent purity indicates the proportion of a desired compound in a sample:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\n\n### Units Used in Calculations\n\n| Quantity       | Unit Name             | Unit Symbol |\n|-----------------|-----------------------|-------------|\n| Concentration (c) | moles per cubic decimetre | mol·dm⁻³     |\n| Mass (m)        | kilogram              | kg           |\n| Moles (n)       | moles                 | mol          |\n| Volume (V)      | cubic decimetres       | dm³          |\n\n\n"
+        "content": "\n## Quantitative Aspects of Chemical Change\n\nThis section covers calculations involving chemical reactions and solutions.\n\n### Molar Volume and Gas Laws\n\nAt Standard Temperature and Pressure (STP), one mole of any gas occupies a volume of 22.4 dm³.  This allows us to calculate the volume of any number of moles of gas at STP using the formula:\n\n```math\nV<sub>g</sub> = 22.4n<sub>g</sub>\n```\n\nwhere V<sub>g</sub> is the volume in dm³ and n<sub>g</sub> is the number of moles.\n\nThe volume relationship between two gases (A and B) in a reaction is given by:\n\n```math\n      a\nV<sub>A</sub> = ― V<sub>B</sub>\n      b\n```\n\nwhere V<sub>A</sub> and V<sub>B</sub> are the volumes of gases A and B, and *a* and *b* are their stoichiometric coefficients.\n\n\n### Solution Concentration and Titrations\n\nThe concentration (c) of a solution is calculated as:\n\n```math\n      n\nc =  ─────\n      V\n```\n\nwhere *c* is the concentration in mol·dm⁻³, *n* is the number of moles of solute, and *V* is the volume of the solution in dm³.\n\nA standard solution has a precisely known concentration.  Titration is a technique to determine the unknown concentration of a solution. The following formula can be used:\n\n\n```math\n(c<sub>A</sub>V<sub>A</sub>)/a = (c<sub>B</sub>V<sub>B</sub>)/b\n```\n\nwhere c<sub>A</sub> and c<sub>B</sub> are the concentrations, V<sub>A</sub> and V<sub>B</sub> are the volumes, and *a* and *b* are the stoichiometric coefficients of reactants A and B.\n\n### Limiting and Excess Reagents, and Yield\n\nA limiting reagent is completely consumed in a reaction, limiting the amount of product. An excess reagent is not fully consumed.\n\nPercent yield is calculated as:\n\n```math\n% yield = (actual yield / theoretical yield) * 100\n```\n\n### Empirical and Molecular Formulas, and Purity\n\nThe empirical formula shows the simplest whole-number ratio of atoms in a compound.  The molecular formula shows the actual number of atoms of each element in a molecule.\n\nPercent purity is calculated as:\n\n```math\n% purity = (mass of compound / mass of sample) * 100\n```\n\n### Units Used in Calculations\n\n| Quantity      | Unit Name                | Unit Symbol |\n|---------------|--------------------------|-------------|\n| Concentration (c) | moles per cubic decimetre | mol·dm⁻³     |\n| Mass (m)       | kilogram                 | kg          |\n| Moles (n)      | moles                    | mol         |\n| Volume (V)     | cubic decimetres         | dm³         |\n\n\n"
       },
       {
         "data": {
-          "Title": "Electrostatics",
+          "Title": "Electrostatics Fundamentals",
           "icon": "⚡️",
           "flashcards": [
             {
@@ -903,48 +931,538 @@ const data = {
             {
               "front": {
                 "title": "Coulomb's Law",
-                "question": "State Coulomb's Law and write the formula."
+                "question": "State Coulomb's Law."
               },
-              "back": "The magnitude of the electrostatic force between two point charges is directly proportional to the product of the magnitudes of the charges and inversely proportional to the square of the distance between them.  ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) where F is force, k is Coulomb's constant, Q1 and Q2 are the charges, and r is the distance between them."
+              "back": "The magnitude of the electrostatic force between two point charges is directly proportional to the product of the magnitudes of the charges and inversely proportional to the square of the distance between them.  ```math\nF = \\frac{kQ_1Q_2}{r^2}\n```"
             },
             {
               "front": {
                 "title": "Electric Field",
-                "question": "What is an electric field, and how is its direction defined?"
+                "question": "What is an electric field?"
               },
-              "back": "An electric field is a region of space where an electric charge experiences a force. The direction of the field at a point is the direction a positive test charge would move if placed at that point."
+              "back": "A region of space where an electric charge experiences a force. The direction of the field at a point is the direction a positive test charge would move if placed at that point."
             },
             {
               "front": {
                 "title": "Electric Field Lines",
-                "question": "How do electric field lines represent the electric field around positive and negative charges?"
+                "question": "How are electric field lines represented?"
               },
-              "back": "Electric field lines point away from positive charges and towards negative charges."
+              "back": "Electric field lines point away from positive charges and towards negative charges.  This illustrates that like charges repel and unlike charges attract."
             },
             {
               "front": {
                 "title": "Electric Field Strength",
-                "question": "Define electric field strength (E) and give its formula and units."
+                "question": "Define electric field strength (E)."
               },
-              "back": "The magnitude of the electric field (E) at a point is the force per unit charge: ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg). The units are Newtons per Coulomb (N·C⁻¹)."
+              "back": "Electric field strength (E) is the force per unit charge: ```math\nE = \\frac{F}{q}\n```  The units are N·C⁻¹."
             },
             {
               "front": {
                 "title": "Electric Field due to a Point Charge",
                 "question": "What is the formula for the electric field due to a point charge Q?"
               },
-              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) where k is Coulomb's constant, Q is the charge, and r is the distance from the charge."
+              "back": "```math\nE = \\frac{F}{q} = \\frac{kQ}{r^2}\n```"
             },
             {
               "front": {
                 "title": "Electrostatic Force",
-                "question": "Describe the nature of the electrostatic force between like and unlike charges."
+                "question": "Describe the nature of the electrostatic force."
               },
               "back": "The electrostatic force is attractive between unlike charges and repulsive between like charges."
             }
           ]
         },
-        "content": "\n## Electrostatics\n\n### Electric Charge\n\nObjects can be positively charged, negatively charged, or neutral.\n\n### Coulomb's Law\n\nCoulomb's Law describes the electrostatic force between two point charges:  The magnitude of the electrostatic force is directly proportional to the product of the magnitudes of the charges and inversely proportional to the square of the distance between them.\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nwhere:\n\n*   F = electrostatic force (N)\n*   k = Coulomb's constant\n*   Q₁, Q₂ = magnitudes of the charges (C)\n*   r = distance between the charges (m)\n\n### Electric Field\n\nAn electric field is a region of space where an electric charge experiences a force. The direction of the electric field at a point is the direction a positive test charge would move if placed at that point.\n\n### Electric Field Lines\n\nElectric field lines are a visual representation of the electric field.  They point away from positive charges and towards negative charges.\n\n### Electric Field Strength\n\nThe magnitude of the electric field (E) at a point is defined as the force per unit charge:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nThe units of electric field strength are Newtons per Coulomb (N·C⁻¹).\n\n### Electric Field due to a Point Charge\n\nThe electric field due to a point charge Q is given by:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\n### Electrostatic Force\n\nThe electrostatic force is attractive between unlike charges (positive and negative) and repulsive between like charges (positive and positive, or negative and negative).\n\n\n### Units Used in Electrostatics\n\n| Quantity | Unit Name     | Unit Symbol |\n| --------- | ------------- | ------------ |\n| Charge (q) | Coulomb       | C           |\n| Distance (r) | meter         | m           |\n| Electric Field (E) | Newtons per Coulomb | N·C⁻¹       |\n| Force (F)  | Newton        | N           |\n\n"
+        "content": "\n## Electrostatics Fundamentals\n\n### Electric Charge\n\nObjects can be positively charged, negatively charged, or neutral.\n\n### Coulomb's Law\n\nCoulomb's Law describes the electrostatic force between two point charges:\n\n```math\nF = \\frac{kQ_1Q_2}{r^2}\n```\n\nwhere:\n\n*   `F` is the electrostatic force\n*   `k` is Coulomb's constant\n*   `Q₁` and `Q₂` are the magnitudes of the charges\n*   `r` is the distance between the charges\n\n### Electric Field\n\nAn electric field is a region of space where an electric charge experiences a force.  The direction of the field at a point is the direction a positive test charge would move if placed at that point.\n\n### Electric Field Lines\n\nElectric field lines are a visual representation of the electric field.  They point away from positive charges and towards negative charges, illustrating that like charges repel and unlike charges attract.\n\n### Electric Field Strength\n\nThe electric field strength (E) is defined as the force per unit charge:\n\n```math\nE = \\frac{F}{q}\n```\n\nThe units of electric field strength are Newtons per Coulomb (N·C⁻¹).\n\n### Electric Field due to a Point Charge\n\nThe electric field strength (E) at a distance r from a point charge Q is:\n\n```math\nE = \\frac{F}{q} = \\frac{kQ}{r^2}\n```\n\n### Electrostatic Force\n\nThe electrostatic force is attractive for unlike charges (positive and negative) and repulsive for like charges (positive and positive, or negative and negative).\n\n\n### Physical Quantities\n\n| Quantity        | Unit Name    | Unit Symbol |\n|-----------------|---------------|-------------|\n| Charge (q)      | Coulomb       | C           |\n| Distance (r)    | meter         | m           |\n| Electric Field (E) | Newtons per Coulomb | N·C⁻¹       |\n| Force (F)       | Newton        | N           |\n\n\n"
+      }
+    ],
+    "3": [
+      {
+        "data": {
+          "Title": "Meiosis",
+          "icon": "🧬",
+          "flashcards": [
+            {
+              "front": {
+                "title": "Definition of Meiosis",
+                "question": "What is meiosis?"
+              },
+              "back": "Meiosis is a type of cell division where a diploid cell divides to form four genetically different haploid cells (sex cells)."
+            },
+            {
+              "front": {
+                "title": "Purpose of Meiosis",
+                "question": "What is the significance of meiosis?"
+              },
+              "back": "It halves the number of chromosomes (from diploid to haploid), ensuring the correct number in the zygote after fertilization, and it introduces genetic variation through crossing over."
+            },
+            {
+              "front": {
+                "title": "Meiosis I",
+                "question": "What happens during Meiosis I?"
+              },
+              "back": "Homologous chromosomes separate, resulting in two haploid cells with duplicated chromosomes."
+            },
+            {
+              "front": {
+                "title": "Meiosis II",
+                "question": "What happens during Meiosis II?"
+              },
+              "back": "Sister chromatids separate, forming four genetically different haploid cells."
+            },
+            {
+              "front": {
+                "title": "Crossing Over",
+                "question": "What is crossing over?"
+              },
+              "back": "During Prophase I, chromatids of homologous chromosomes exchange segments at the chiasma, leading to genetic variation."
+            },
+            {
+              "front": {
+                "title": "Non-Disjunction",
+                "question": "What is non-disjunction?"
+              },
+              "back": "It is the failure of chromosomes to separate properly during Anaphase I or II, which can lead to disorders like Down syndrome."
+            },
+            {
+              "front": {
+                "title": "Meiosis vs Mitosis",
+                "question": "How is meiosis different from mitosis?"
+              },
+              "back": "Meiosis produces four haploid, genetically different cells; mitosis produces two diploid, genetically identical cells."
+            }
+          ]
+        },
+        "content": "\n## Meiosis\n\n### Chapter Summary\n\nMeiosis is a special form of cell division that produces gametes — sperm and egg cells — each with half the number of chromosomes. A diploid cell (2n) undergoes two successive divisions: Meiosis I and Meiosis II.\n\n**Key Stages:**\n\n**Meiosis I:**\n\n- *Prophase I*: Chromosomes become visible; homologous chromosomes pair and crossing over occurs at chiasmata.\n- *Metaphase I*: Homologous pairs line up at the equator.\n- *Anaphase I*: Homologous chromosomes are pulled to opposite poles.\n- *Telophase I*: Two haploid cells form, each with half the number of chromosomes.\n\n**Meiosis II:**\n\n- *Prophase II*: New spindles form in each haploid cell.\n- *Metaphase II*: Chromosomes line up individually at the equator.\n- *Anaphase II*: Sister chromatids are pulled apart.\n- *Telophase II*: Four genetically distinct haploid cells result.\n\n**Importance of Meiosis:**\n\n1. **Genetic variation** through crossing over and independent assortment.\n2. **Maintains chromosome number** across generations.\n\n**Abnormal Meiosis:**\n\nWhen chromosomes fail to separate (non-disjunction), gametes may have an abnormal number of chromosomes. If such a gamete is involved in fertilization, it may result in conditions like **Down syndrome**, where there is an extra copy of chromosome 21.\n\n---\n\n\n"
+      },
+      {
+        "data": {
+          "Title": "Evolution",
+          "icon": "🧬",
+          "flashcards": [
+            {
+              "front": {
+                "title": "What is Evolution?",
+                "question": "Define evolution in biological terms."
+              },
+              "back": "Evolution is the change in the characteristics of a species over generations through natural selection and other processes."
+            },
+            {
+              "front": {
+                "title": "Natural Selection",
+                "question": "What is natural selection?"
+              },
+              "back": "Natural selection is the process by which organisms better adapted to their environment survive and reproduce, passing on advantageous traits."
+            },
+            {
+              "front": {
+                "title": "Variation",
+                "question": "What causes variation in a population?"
+              },
+              "back": "Variation is caused by mutations, genetic recombination, and random fertilisation."
+            },
+            {
+              "front": {
+                "title": "Speciation",
+                "question": "How does speciation occur?"
+              },
+              "back": "Speciation occurs when populations become reproductively isolated and evolve independently into new species."
+            },
+            {
+              "front": {
+                "title": "Evidence for Evolution",
+                "question": "What evidence supports the theory of evolution?"
+              },
+              "back": "Fossil records, comparative anatomy, DNA similarities, and embryology all support evolution."
+            }
+          ]
+        },
+        "content": "\n## Evolution\n\n**Evolution** refers to the process by which species change over time. These changes are passed on genetically and can lead to the development of new species.\n\n### Key Concepts\n\n#### 1. **Variation**\n- Differences in traits among individuals in a population.\n- Caused by mutations, meiosis (crossing over and independent assortment), and fertilisation.\n\n#### 2. **Natural Selection**\n- Proposed by **Charles Darwin**\n- Individuals with favorable traits are more likely to survive and reproduce.\n- These traits become more common in the population over generations.\n\n#### 3. **Speciation**\n- Formation of a new species.\n- Occurs when a population becomes reproductively isolated (geographically or behaviorally) and evolves independently.\n\n### Types of Evidence for Evolution\n\n- **Fossil Record:** Shows gradual changes in species over time.\n- **Comparative Anatomy:** Similar body structures (e.g., homologous limbs) in different species suggest common ancestry.\n- **Embryology:** Similar embryonic development patterns indicate evolutionary relationships.\n- **Molecular Evidence:** Similarities in DNA and proteins.\n\n### Human Evolution\n\n- Humans share a common ancestor with other primates.\n- Fossils like *Australopithecus*, *Homo habilis*, and *Homo erectus* show the evolutionary path leading to *Homo sapiens*.\n\n---\n\n"
+      },
+      {
+        "data": {
+          "Title": "Human Impact on the Environment",
+          "icon": "🌍",
+          "flashcards": [
+            {
+              "front": {
+                "title": "Biodiversity",
+                "question": "What is biodiversity and why is it important?"
+              },
+              "back": "Biodiversity refers to the variety of life in all its forms. It ensures ecosystem stability and resilience."
+            },
+            {
+              "front": {
+                "title": "Deforestation",
+                "question": "How does deforestation affect the environment?"
+              },
+              "back": "It leads to habitat loss, reduced biodiversity, soil erosion, and contributes to climate change."
+            },
+            {
+              "front": {
+                "title": "Greenhouse Effect",
+                "question": "What causes the enhanced greenhouse effect?"
+              },
+              "back": "Human activities like burning fossil fuels increase greenhouse gases (CO₂, CH₄), leading to global warming."
+            },
+            {
+              "front": {
+                "title": "Eutrophication",
+                "question": "What is eutrophication and what causes it?"
+              },
+              "back": "Excess nutrients from fertilizers enter water bodies, causing algae blooms that deplete oxygen and kill aquatic life."
+            },
+            {
+              "front": {
+                "title": "Sustainable Living",
+                "question": "How can we reduce our impact on the environment?"
+              },
+              "back": "By conserving resources, reducing waste, recycling, and using renewable energy sources."
+            }
+          ]
+        },
+        "content": "\n## Human Impact on the Environment\n\nHuman activities have drastically changed natural ecosystems, often leading to negative consequences for biodiversity, climate, and human health.\n\n### Major Environmental Issues\n\n#### 1. **Loss of Biodiversity**\n- Caused by habitat destruction, overexploitation, invasive species, pollution, and climate change.\n- Loss of species reduces ecosystem stability and potential benefits like medicine and food.\n\n#### 2. **Deforestation**\n- Forests are cleared for agriculture, logging, and development.\n- Leads to:\n  - Soil erosion\n  - Loss of carbon sinks\n  - Reduced rainfall\n\n#### 3. **Pollution**\n- **Air pollution:** From vehicles and factories\n- **Water pollution:** Industrial waste, sewage, and agricultural runoff\n- **Land pollution:** Littering and dumping of waste\n\n#### 4. **Global Warming and Climate Change**\n- Greenhouse gases trap heat in the atmosphere.\n- Caused by CO₂ from fossil fuels and CH₄ from agriculture.\n- Leads to:\n  - Rising temperatures\n  - Melting ice caps\n  - Extreme weather events\n\n#### 5. **Eutrophication**\n- Excess fertilizers enter lakes/rivers\n- Causes algae blooms → blocks sunlight → kills aquatic life\n\n### Solutions\n\n- **Conservation:** Protecting habitats and endangered species\n- **Recycling:** Reduces landfill waste and conserves resources\n- **Sustainable practices:** Renewable energy, organic farming, reforestation\n\n---\n\n"
+      },
+      {
+        "data": {
+          "Title": "Scientific Skills",
+          "icon": "📊",
+          "flashcards": [
+            {
+              "front": {
+                "title": "Scientific Method",
+                "question": "What are the steps of the scientific method?"
+              },
+              "back": "Identify a problem, formulate a hypothesis, conduct an experiment, collect data, analyze results, and draw a conclusion."
+            },
+            {
+              "front": {
+                "title": "Controlled Variables",
+                "question": "What are controlled variables?"
+              },
+              "back": "Controlled variables are factors kept constant to ensure a fair test in an experiment."
+            },
+            {
+              "front": {
+                "title": "Graph Interpretation",
+                "question": "What should you include when drawing a graph?"
+              },
+              "back": "A title, labeled axes with units, appropriate scale, and a key if necessary."
+            },
+            {
+              "front": {
+                "title": "Accuracy vs Precision",
+                "question": "What is the difference between accuracy and precision?"
+              },
+              "back": "Accuracy is how close a result is to the true value; precision is how consistently results can be repeated."
+            },
+            {
+              "front": {
+                "title": "Essay Writing in Science",
+                "question": "What is the basic structure for writing a scientific essay?"
+              },
+              "back": "Introduction, body (with logical arguments and evidence), and conclusion."
+            }
+          ]
+        },
+        "content": "\n## Scientific Skills\n\nUnderstanding and applying scientific skills is essential for practical work, investigations, and interpreting data in Life Sciences.\n\n### The Scientific Method\n\n1. **Identify a Problem:** Ask a question based on observations.\n2. **Formulate a Hypothesis:** Predict what will happen.\n3. **Experiment:** Design a method to test the hypothesis, controlling variables.\n4. **Collect and Record Data:** Use tables or charts.\n5. **Analyze Results:** Identify patterns and trends.\n6. **Draw a Conclusion:** Accept or reject the hypothesis.\n\n### Variables in Experiments\n\n- **Independent variable:** What you change\n- **Dependent variable:** What you measure\n- **Controlled variables:** Kept constant\n\n### Drawing and Interpreting Graphs\n\nWhen drawing a graph:\n- Use correct axes (X for independent, Y for dependent)\n- Choose an appropriate scale\n- Label axes with units\n- Add a descriptive title\n\n### Accuracy, Precision & Reliability\n\n- **Accuracy:** Correctness of measurements\n- **Precision:** Consistency of repeated results\n- **Reliability:** Consistency across different conditions or repeats\n\n### Writing Scientific Essays\n\nUse this structure:\n- **Introduction:** Define key terms, state the topic\n- **Body:** Use logical arguments with scientific facts\n- **Conclusion:** Summarize key points and answer the question\n\n---\n\n"
+      },
+      {
+        "data": {
+          "Title": "Nucleic Acids",
+          "icon": "🧬",
+          "flashcards": [
+            {
+              "front": {
+                "title": "What are nucleic acids?",
+                "question": "What are the two types of nucleic acids found in cells?"
+              },
+              "back": "The two types of nucleic acids are DNA (deoxyribonucleic acid) and RNA (ribonucleic acid)."
+            },
+            {
+              "front": {
+                "title": "DNA vs RNA",
+                "question": "What is the main difference between DNA and RNA?"
+              },
+              "back": "DNA is double-stranded and contains thymine; RNA is single-stranded and contains uracil instead of thymine."
+            },
+            {
+              "front": {
+                "title": "Structure of DNA",
+                "question": "What are the building blocks of DNA?"
+              },
+              "back": "DNA is made up of nucleotides, which consist of a phosphate group, a deoxyribose sugar, and a nitrogenous base."
+            },
+            {
+              "front": {
+                "title": "Nitrogenous Bases",
+                "question": "Which bases pair in DNA and RNA?"
+              },
+              "back": "In DNA: A pairs with T, and G pairs with C. In RNA: A pairs with U, and G pairs with C."
+            },
+            {
+              "front": {
+                "title": "DNA Replication",
+                "question": "Why is DNA replication important?"
+              },
+              "back": "DNA replication ensures that each new cell has an exact copy of the DNA, preserving genetic information."
+            },
+            {
+              "front": {
+                "title": "Protein Synthesis",
+                "question": "What are the two main stages of protein synthesis?"
+              },
+              "back": "Transcription (in the nucleus) and translation (in the cytoplasm at the ribosome)."
+            },
+            {
+              "front": {
+                "title": "mRNA and tRNA",
+                "question": "What are the roles of mRNA and tRNA in protein synthesis?"
+              },
+              "back": "mRNA carries the genetic code from DNA to the ribosome; tRNA brings amino acids and matches codons with anticodons."
+            },
+            {
+              "front": {
+                "title": "Codons",
+                "question": "What is a codon?"
+              },
+              "back": "A codon is a sequence of three bases on mRNA that codes for a specific amino acid."
+            },
+            {
+              "front": {
+                "title": "DNA Profiling",
+                "question": "What is DNA profiling used for?"
+              },
+              "back": "DNA profiling is used to identify individuals in criminal cases, paternity tests, and identifying remains."
+            }
+          ]
+        },
+        "content": "\n## Nucleic Acids\n\n### Chapter Summary\n\nNucleic acids are large molecules essential for life. They store genetic information and are responsible for passing traits from one generation to the next. There are two types: **DNA** and **RNA**.\n\n---\n\n### Structure of DNA and RNA\n\nEach nucleic acid is made of building blocks called **nucleotides**, which consist of:\n- A phosphate group\n- A sugar (deoxyribose in DNA, ribose in RNA)\n- A nitrogenous base\n\n**DNA** has the bases: adenine (A), thymine (T), guanine (G), cytosine (C)  \n**RNA** has uracil (U) instead of thymine.\n\n---\n\n### DNA Replication\n\nBefore a cell divides, DNA makes an exact copy of itself:\n1. The double helix unwinds and unzips.\n2. Free nucleotides attach to the exposed bases.\n3. Two identical DNA molecules are formed.\n\n---\n\n### Protein Synthesis\n\nProtein synthesis occurs in two steps:\n\n**1. Transcription (in the nucleus):**\n- DNA unzips.\n- mRNA is formed from the DNA template and exits the nucleus.\n\n**2. Translation (at the ribosome):**\n- mRNA binds to a ribosome.\n- tRNA brings amino acids based on mRNA codons.\n- Amino acids are joined to form a protein.\n\n---\n\n### DNA Profiling\n\nEvery person has a unique DNA profile. This technique is used in:\n- Criminal investigations\n- Paternity testing\n- Identifying bodies\n\n---\n\n\n"
+      },
+      {
+        "data": {
+          "Title": "Reproduction in Vertebrates",
+          "icon": "🐣",
+          "flashcards": [
+            {
+              "front": {
+                "title": "External Fertilisation",
+                "question": "What is external fertilisation?"
+              },
+              "back": "It is when sperm fertilises the egg outside the body, usually in water, allowing sperm to swim to the egg."
+            },
+            {
+              "front": {
+                "title": "Internal Fertilisation",
+                "question": "Why is internal fertilisation advantageous?"
+              },
+              "back": "It allows fertilisation in dry environments and increases the likelihood of successful reproduction."
+            },
+            {
+              "front": {
+                "title": "Ovipary vs Vivipary",
+                "question": "What is the difference between ovipary and vivipary?"
+              },
+              "back": "Ovipary involves laying eggs; vivipary involves live birth after internal development of the embryo."
+            }
+          ]
+        },
+        "content": "\n## Reproduction in Vertebrates\n\nVertebrates have developed various reproductive strategies to adapt to their environments.\n\n**Strategies include:**\n\n- **External Fertilisation:** Takes place in water. E.g., amphibians.\n- **Internal Fertilisation:** Sperm is deposited inside the female body.\n- **Ovipary:** Eggs are laid and hatch outside the body.\n- **Vivipary:** Young develop inside the uterus and are born live.\n- **Ovovivipary:** Fertilised eggs develop inside the mother but nourishment comes from the yolk.\n- **Parental Care:** Increases chances of offspring survival.\n\nThese strategies maximize reproductive success and survival of the young.\n\n"
+      },
+      {
+        "data": {
+          "Title": "Human Reproduction",
+          "icon": "👶",
+          "flashcards": [
+            {
+              "front": {
+                "title": "Function of Testes",
+                "question": "What do the testes produce?"
+              },
+              "back": "Sperm cells and the hormone testosterone."
+            },
+            {
+              "front": {
+                "title": "Structure of Sperm",
+                "question": "What are the parts of a sperm cell and their functions?"
+              },
+              "back": "Acrosome (enzymes), nucleus (DNA), mitochondria (energy), tail (movement)."
+            },
+            {
+              "front": {
+                "title": "Menstrual Cycle",
+                "question": "What are the main phases of the menstrual cycle?"
+              },
+              "back": "Menstruation, follicular phase, ovulation, luteal phase."
+            }
+          ]
+        },
+        "content": "\n## Human Reproduction\n\n### Male Reproductive System\n\n- Testes produce sperm and testosterone.\n- Accessory glands (prostate, seminal vesicle, Cowper’s gland) contribute to semen.\n- Sperm cells are adapted for motility and fertilisation.\n\n### Female Reproductive System\n\n- Ovaries produce eggs and hormones (oestrogen, progesterone).\n- The menstrual cycle prepares the uterus for pregnancy.\n\n### Fertilisation and Development\n\n- Fertilisation occurs in the fallopian tube.\n- A zygote forms, implants in the uterus and develops into a fetus.\n\nHormonal control ensures coordination of reproduction.\n\n"
+      },
+      {
+        "data": {
+          "Title": "Genetics and Inheritance",
+          "icon": "🧬",
+          "flashcards": [
+            {
+              "front": {
+                "title": "Phenotype vs Genotype",
+                "question": "What is the difference between genotype and phenotype?"
+              },
+              "back": "Genotype is the genetic makeup, phenotype is the observable trait."
+            },
+            {
+              "front": {
+                "title": "Types of Dominance",
+                "question": "What are three types of dominance in inheritance?"
+              },
+              "back": "Complete dominance, incomplete dominance, and co-dominance."
+            },
+            {
+              "front": {
+                "title": "Sex-linked Traits",
+                "question": "What are sex-linked traits?"
+              },
+              "back": "Traits controlled by genes on sex chromosomes, usually X-linked."
+            }
+          ]
+        },
+        "content": "\n## Genetics and Inheritance\n\nGenetics is the study of heredity — how traits are passed from one generation to another.\n\n**Key Concepts:**\n\n- **Alleles:** Different forms of a gene.\n- **Dominance:** Alleles may be dominant, recessive, or show co-dominance.\n- **Genetic Crosses:** Punnett squares predict inheritance patterns.\n- **Sex Determination:** XX = female, XY = male.\n- **Mutations:** Changes in DNA that may lead to new traits or diseases.\n- **Pedigree Diagrams:** Trace inheritance in families.\n\nDNA is the molecular basis of inheritance.\n\n"
+      },
+      {
+        "data": {
+          "Title": "Responding to the Environment (Humans)",
+          "icon": "🧠",
+          "flashcards": [
+            {
+              "front": {
+                "title": "Central Nervous System",
+                "question": "What are the two main parts of the central nervous system?"
+              },
+              "back": "The brain and the spinal cord."
+            },
+            {
+              "front": {
+                "title": "Reflex Arc",
+                "question": "What is a reflex arc?"
+              },
+              "back": "A pathway that controls an involuntary response to a stimulus, involving a sensory neuron, interneuron, and motor neuron."
+            },
+            {
+              "front": {
+                "title": "Function of the Cerebellum",
+                "question": "What is the role of the cerebellum in the brain?"
+              },
+              "back": "The cerebellum coordinates voluntary movements and helps maintain posture and balance."
+            },
+            {
+              "front": {
+                "title": "Sense Organs",
+                "question": "What are the five main sense organs?"
+              },
+              "back": "Eyes, ears, skin, tongue, and nose."
+            },
+            {
+              "front": {
+                "title": "Homeostasis Link",
+                "question": "How is the nervous system linked to homeostasis?"
+              },
+              "back": "It detects changes in the environment and sends signals to organs to maintain stable internal conditions."
+            }
+          ]
+        },
+        "content": "\n## Responding to the Environment (Humans)\n\nHumans respond to their environment through a complex network of nerves and sense organs that detect stimuli and coordinate responses.\n\n### Nervous System\n\n**Two main parts:**\n- **Central Nervous System (CNS):** Brain and spinal cord\n- **Peripheral Nervous System (PNS):** Nerves that connect the CNS to the body\n\n### Neurons\n\nThree types:\n- **Sensory neurons:** Detect stimuli and send signals to the CNS\n- **Interneurons:** Process information in the CNS\n- **Motor neurons:** Send instructions to effectors (muscles/glands)\n\n### Reflex Arc\n\nAn automatic, fast response to stimuli that bypasses conscious brain input. It includes:\n1. Receptor → 2. Sensory neuron → 3. Interneuron → 4. Motor neuron → 5. Effector\n\n### Brain Functions\n\n- **Cerebrum:** Thinking, memory, and voluntary movement\n- **Cerebellum:** Balance and coordination\n- **Medulla oblongata:** Involuntary actions (e.g., heartbeat, breathing)\n\n### Sense Organs\n\nEach sense organ contains **receptors** that detect specific types of stimuli:\n- Eyes (light)\n- Ears (sound and balance)\n- Skin (touch, pressure, pain, temperature)\n- Tongue (taste)\n- Nose (smell)\n\n---\n\n"
+      },
+      {
+        "data": {
+          "Title": "Endocrine System",
+          "icon": "🕹️",
+          "flashcards": [
+            {
+              "front": {
+                "title": "What is the endocrine system?",
+                "question": "What is the primary function of the endocrine system?"
+              },
+              "back": "The endocrine system regulates body functions by releasing hormones into the bloodstream."
+            },
+            {
+              "front": {
+                "title": "Hormones",
+                "question": "What are hormones?"
+              },
+              "back": "Hormones are chemical messengers secreted by endocrine glands that affect target organs."
+            },
+            {
+              "front": {
+                "title": "Glands of the Endocrine System",
+                "question": "Which are the major endocrine glands?"
+              },
+              "back": "Pituitary gland, thyroid gland, adrenal glands, pancreas, ovaries, and testes."
+            },
+            {
+              "front": {
+                "title": "Pancreas",
+                "question": "What hormones are produced by the pancreas and what do they regulate?"
+              },
+              "back": "Insulin and glucagon; they regulate blood glucose levels."
+            },
+            {
+              "front": {
+                "title": "Negative Feedback",
+                "question": "What is negative feedback in the endocrine system?"
+              },
+              "back": "A process where the body detects a change and responds to reverse that change, maintaining balance (homeostasis)."
+            }
+          ]
+        },
+        "content": "\n## Endocrine System\n\nThe **endocrine system** consists of glands that release hormones into the blood to control various body functions like growth, metabolism, and reproduction.\n\n### Characteristics of the Endocrine System\n\n- Works more slowly than the nervous system\n- Uses **hormones**, which are chemical messengers\n- Hormones travel through the **bloodstream**\n- Effects are longer-lasting than nerve impulses\n\n### Major Endocrine Glands and Their Functions\n\n- **Pituitary gland:** The \"master gland\" that regulates other glands and growth hormone\n- **Thyroid gland:** Regulates metabolism through thyroxine\n- **Adrenal glands:** Produces adrenaline for fight or flight response\n- **Pancreas:** Produces insulin (lowers blood sugar) and glucagon (raises blood sugar)\n- **Ovaries:** Produce oestrogen and progesterone\n- **Testes:** Produce testosterone\n\n### Hormonal Control and Homeostasis\n\nHormones work through **negative feedback mechanisms**. For example, when blood sugar rises:\n1. Pancreas releases **insulin**\n2. Cells absorb glucose, lowering blood sugar\n3. Pancreas stops insulin release\n\n---\n\n"
+      },
+      {
+        "data": {
+          "Title": "Homeostasis in Humans",
+          "icon": "🌡️",
+          "flashcards": [
+            {
+              "front": {
+                "title": "Definition of Homeostasis",
+                "question": "What is homeostasis?"
+              },
+              "back": "Homeostasis is the maintenance of a constant internal environment in the body."
+            },
+            {
+              "front": {
+                "title": "Importance of Homeostasis",
+                "question": "Why is homeostasis important?"
+              },
+              "back": "It ensures that enzymes and cells function optimally by maintaining stable internal conditions."
+            },
+            {
+              "front": {
+                "title": "Body Temperature Regulation",
+                "question": "How does the body regulate temperature when it is too hot?"
+              },
+              "back": "By sweating and vasodilation to release heat through the skin."
+            },
+            {
+              "front": {
+                "title": "Glucose Regulation",
+                "question": "Which hormones regulate blood sugar levels?"
+              },
+              "back": "Insulin lowers blood glucose; glucagon raises it."
+            },
+            {
+              "front": {
+                "title": "Negative Feedback in Homeostasis",
+                "question": "What is the role of negative feedback in homeostasis?"
+              },
+              "back": "It reverses changes to bring internal conditions back to normal."
+            }
+          ]
+        },
+        "content": "\n## Homeostasis in Humans\n\n**Homeostasis** is the process by which the body maintains a stable internal environment despite external changes. This is crucial for proper cell function and enzyme activity.\n\n### Key Examples of Homeostasis\n\n#### 1. **Temperature Regulation**\n- Normal body temperature: ~37°C\n- Controlled by the **hypothalamus**\n- If too hot:\n  - Sweat glands release sweat (evaporation cools the body)\n  - Vasodilation: blood vessels widen to increase heat loss\n- If too cold:\n  - Shivering generates heat\n  - Vasoconstriction: blood vessels narrow to retain heat\n\n#### 2. **Blood Glucose Regulation**\n- Controlled by the **pancreas**\n- **Insulin** lowers high blood glucose by promoting glucose uptake by cells and storage as glycogen in the liver\n- **Glucagon** raises low blood glucose by converting glycogen back to glucose\n\n#### 3. **Water Balance**\n- Regulated by the **kidneys** and **ADH (antidiuretic hormone)**\n- ADH controls how much water is reabsorbed by the kidneys\n\n### Negative Feedback Mechanism\n\nA **negative feedback loop** is when a change triggers a response that reverses the change to maintain balance.\n\n> Example: If body temperature rises, mechanisms reduce it. Once it's normal, the response stops.\n\n---\n\n"
+      },
+      {
+        "data": {},
+        "content": "Here is the markdown lesson for **Topic 9: Responding to the Environment (Plants)**:\n\n---\n\n### 📘 **9. Responding to the Environment (Plants)**\n```markdown\n---\nTitle: Responding to the Environment (Plants)\nicon: 🌱\nflashcards: [\n  {\n    front: {\n      title: \"Plant Hormones\",\n      question: \"What are auxins?\"\n    },\n    back: \"Auxins are plant hormones that promote cell elongation and are responsible for growth responses like phototropism and geotropism.\"\n  },\n  {\n    front: {\n      title: \"Phototropism\",\n      question: \"What is phototropism?\"\n    },\n    back: \"Phototropism is the growth of a plant towards light. It is a positive tropism controlled by auxins.\"\n  },\n  {\n    front: {\n      title: \"Geotropism\",\n      question: \"What is geotropism (gravitropism)?\"\n    },\n    back: \"Geotropism is a plant's growth response to gravity. Roots grow downward (positive), and shoots grow upward (negative).\"\n  },\n  {\n    front: {\n      title: \"Tropisms\",\n      question: \"What are tropisms?\"\n    },\n    back: \"Tropisms are directional growth responses in plants toward or away from environmental stimuli like light, gravity, or touch.\"\n  },\n  {\n    front: {\n      title: \"Apical Dominance\",\n      question: \"What is apical dominance?\"\n    },\n    back: \"Apical dominance is when the main central stem grows more strongly than the side branches due to the concentration of auxins at the tip.\"\n  }\n]\n---\n\n## Responding to the Environment (Plants)\n\nPlants respond to environmental stimuli in ways that help them survive and grow. These responses are controlled by **plant hormones**, especially **auxins**.\n\n### Plant Hormones\n\n- **Auxins:** Stimulate elongation of cells, primarily found in shoot tips.\n- Distributed unevenly in response to light and gravity.\n- Other hormones include gibberellins, cytokinins, abscisic acid, and ethylene.\n\n### Types of Tropisms\n\n- **Phototropism:** Growth towards light (positive phototropism in shoots).\n- **Geotropism (Gravitropism):** \n  - Positive in roots (growing downward).\n  - Negative in shoots (growing upward).\n- **Thigmotropism:** Response to touch (e.g., tendrils coiling around objects).\n\n### How Auxins Work\n\n- In shoots, auxins accumulate on the shaded side → cells elongate → shoot bends toward light.\n- In roots, auxins inhibit cell elongation on the lower side → root grows downward.\n\n### Apical Dominance\n\n- The apical bud suppresses the growth of lateral buds.\n- Cutting the apical bud allows lateral branches to grow.\n\n---\n"
       }
     ],
     "4": [
@@ -958,40 +1476,40 @@ const data = {
                 "title": "Exponential Notation",
                 "question": "How is a number written in exponential notation?"
               },
-              "back": "A number is written as aⁿ, where 'a' is the base and 'n' is the exponent (or index).  It represents 'a' multiplied by itself 'n' times."
+              "back": "A number is written as aⁿ, where n is any natural number and a is any real number.  'a' is the base and 'n' is the exponent or index."
             },
             {
               "front": {
-                "title": "Zero Exponent",
-                "question": "What is the value of a⁰?"
+                "title": "Definition of a⁰",
+                "question": "What is a⁰ equal to?"
               },
-              "back": "a⁰ = 1,  where a ≠ 0"
+              "back": "a⁰ = 1, if a ≠ 0"
             },
             {
               "front": {
-                "title": "Negative Exponent",
-                "question": "How is a⁻ⁿ expressed?"
+                "title": "Definition of a⁻ⁿ",
+                "question": "How is a⁻ⁿ defined?"
               },
-              "back": "a⁻ⁿ = 1/aⁿ, where a ≠ 0"
+              "back": "a⁻ⁿ = 1/aⁿ, if a ≠ 0"
             },
             {
               "front": {
-                "title": "Reciprocal with Negative Exponent",
-                "question": "What is the value of 1/a⁻ⁿ?"
+                "title": "Definition of 1/a⁻ⁿ",
+                "question": "What is 1/a⁻ⁿ equal to?"
               },
-              "back": "1/a⁻ⁿ = aⁿ, where a ≠ 0"
+              "back": "1/a⁻ⁿ = aⁿ, if a ≠ 0"
             },
             {
               "front": {
                 "title": "Product of Powers",
-                "question": "What is the rule for multiplying exponents with the same base?"
+                "question": "What is the rule for multiplying powers with the same base?"
               },
               "back": "aᵐ × aⁿ = aᵐ⁺ⁿ"
             },
             {
               "front": {
                 "title": "Quotient of Powers",
-                "question": "What is the rule for dividing exponents with the same base?"
+                "question": "What is the rule for dividing powers with the same base?"
               },
               "back": "aᵐ / aⁿ = aᵐ⁻ⁿ"
             },
@@ -1021,18 +1539,18 @@ const data = {
                 "title": "Simplifying Exponential Expressions",
                 "question": "How do you simplify expressions with exponents?"
               },
-              "back": "Simplify by reducing bases to prime factors or factoring expressions.  Apply the laws of exponents to combine terms."
+              "back": "Reduce bases to prime bases or factorize."
             },
             {
               "front": {
                 "title": "Solving Exponential Equations",
                 "question": "How do you solve equations with exponents?"
               },
-              "back": "If aˣ = aʸ, then x = y.  Alternatively, factorize the expressions."
+              "back": "If aˣ = aʸ, then x = y; or factorize the expressions."
             }
           ]
         },
-        "content": "\n## Laws of Exponents\n\n### Chapter Summary\n\nExponential notation represents a number in the form aⁿ, where 'a' is the base and 'n' is the exponent (or index).  This represents 'a' multiplied by itself 'n' times.\n\n#### Definitions:\n\n*   aⁿ = a × a × ... × a  (n times)\n*   a⁰ = 1, if a ≠ 0\n*   a⁻ⁿ = 1/aⁿ, if a ≠ 0\n*   1/a⁻ⁿ = aⁿ, if a ≠ 0\n\n#### Laws of Exponents:\n\n*   **Product of Powers:** aᵐ × aⁿ = aᵐ⁺ⁿ\n*   **Quotient of Powers:** aᵐ / aⁿ = aᵐ⁻ⁿ\n*   **Power of a Product:** (ab)ⁿ = aⁿbⁿ\n*   **Power of a Quotient:** (a/b)ⁿ = aⁿ/bⁿ\n*   **Power of a Power:** (aᵐ)ⁿ = aᵐⁿ\n\n#### Simplifying and Solving\n\nWhen simplifying expressions with exponents, reduce bases to prime bases or factorize. When solving equations, use the rule that if aˣ = aʸ, then x = y; or factorize the expressions.\n"
+        "content": "\n## Laws of Exponents\n\n### Chapter Summary\n\nExponential notation represents a number as *aⁿ*, where *n* is any natural number and *a* is any real number.  *a* is the base, and *n* is the exponent or index.\n\n**Definitions:**\n\n*   *aⁿ* = a × a × ... × a (*n* times)\n*   *a⁰* = 1, if *a* ≠ 0\n*   *a⁻ⁿ* = 1/*aⁿ*, if *a* ≠ 0\n*   1/*a⁻ⁿ* = *aⁿ*, if *a* ≠ 0\n\n\n**Laws of Exponents:**\n\n*   *aᵐ* × *aⁿ* = *aᵐ⁺ⁿ*\n*   *aᵐ* / *aⁿ* = *aᵐ⁻ⁿ*\n*   (*ab*)ⁿ = *aⁿbⁿ*\n*   (*a*/b*)ⁿ = *aⁿ*/bⁿ*\n*   (*aᵐ*)ⁿ = *aᵐⁿ*\n\nWhen simplifying expressions with exponents, reduce the bases to prime bases or factorize.  When solving equations with exponents, if *aˣ* = *aʸ*, then *x* = *y*; alternatively, factorize the expressions.\n"
       },
       {
         "data": {
@@ -1051,28 +1569,28 @@ const data = {
                 "title": "Quantitative Data",
                 "question": "What are quantitative data?"
               },
-              "back": "Data that can be represented as numbers.  Can be discrete or continuous."
+              "back": "Data that can be expressed numerically.  Can be discrete or continuous."
             },
             {
               "front": {
                 "title": "Qualitative Data",
                 "question": "What are qualitative data?"
               },
-              "back": "Data that cannot be represented as numbers. Examples include categorical and anecdotal data."
+              "back": "Data that cannot be expressed numerically.  Includes categorical and anecdotal data."
             },
             {
               "front": {
                 "title": "Mean",
                 "question": "How is the mean calculated?"
               },
-              "back": "The sum of a set of values divided by the number of values.  ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) "
+              "back": "The sum of a set of values divided by the number of values.\n```math\n      ∑ xi\n x̄ = ─────\n       n\n```"
             },
             {
               "front": {
                 "title": "Median",
                 "question": "How is the median determined?"
               },
-              "back": "The central value in an ordered data set.  If there's an even number of values, it's the average of the two central values."
+              "back": "The middle value in an ordered data set.  If there's an even number of values, it's the average of the two middle values."
             },
             {
               "front": {
@@ -1086,21 +1604,21 @@ const data = {
                 "title": "Outlier",
                 "question": "What is an outlier?"
               },
-              "back": "A value significantly different from the rest of the data set."
+              "back": "A value significantly different from the other values in a data set."
             },
             {
               "front": {
                 "title": "Grouping Continuous Data",
                 "question": "How can continuous data be made discrete?"
               },
-              "back": "By dividing the range of values into sub-ranges (classes) and assigning each value to its corresponding class."
+              "back": "By dividing the range of values into sub-ranges (classes) and assigning each value to its respective class."
             },
             {
               "front": {
                 "title": "Dispersion",
-                "question": "What is dispersion in statistics?"
+                "question": "What does dispersion refer to in statistics?"
               },
-              "back": "A general term for statistics describing how values are distributed around the center."
+              "back": "Statistics that describe how values are distributed around the center (mean, median)."
             },
             {
               "front": {
@@ -1114,7 +1632,7 @@ const data = {
                 "title": "Percentile",
                 "question": "What is the pth percentile?"
               },
-              "back": "The value v such that p% of the data is less than v, and (100-p)% is greater than v.  The formula for the pth percentile in a data set of n values is: ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)"
+              "back": "The value, v, below which p% of the data falls.  Calculated using:\n```math\nr = (p/100)(n - 1) + 1\n``` where n is the number of values."
             },
             {
               "front": {
@@ -1128,12 +1646,12 @@ const data = {
                 "title": "Interquartile Range (IQR)",
                 "question": "How is the IQR calculated?"
               },
-              "back": "The difference between the upper quartile (Q3) and the lower quartile (Q1). Represents the range of the middle 50% of the data."
+              "back": "The difference between the upper quartile (Q3) and the lower quartile (Q1). Represents the range of the middle 50% of data."
             },
             {
               "front": {
                 "title": "Semi-Interquartile Range",
-                "question": "How is the semi-interquartile range calculated?"
+                "question": "How is the semi-IQR calculated?"
               },
               "back": "Half of the interquartile range."
             },
@@ -1142,7 +1660,7 @@ const data = {
                 "title": "Five-Number Summary",
                 "question": "What constitutes the five-number summary?"
               },
-              "back": "Minimum, Q1, Median (Q2), Q3, Maximum"
+              "back": "Minimum value, Q1, Q2 (median), Q3, Maximum value."
             },
             {
               "front": {
@@ -1153,11 +1671,11 @@ const data = {
             }
           ]
         },
-        "content": "\n## Descriptive Statistics\n\n### Types of Data\n\n* **Data:** Pieces of information observed and recorded.\n* **Quantitative Data:** Numerical data (discrete or continuous).\n* **Qualitative Data:** Non-numerical data (categorical or anecdotal).\n\n### Measures of Central Tendency\n\n* **Mean:** The average value.  ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n* **Median:** The middle value in an ordered data set.\n* **Mode:** The most frequent value.\n\n### Measures of Dispersion\n\n* **Outlier:** A value significantly different from the rest of the data.\n* **Range:** The difference between the maximum and minimum values.\n* **Percentile:** The value below which a given percentage of data falls.  Formula: ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) where r is the rank, p is the percentile, and n is the number of data points.\n* **Quartiles:** Q1, Q2 (median), Q3 divide the data into four equal parts.\n* **Interquartile Range (IQR):** Q3 - Q1.\n* **Semi-Interquartile Range:** IQR / 2.\n* **Five-Number Summary:** Minimum, Q1, Median, Q3, Maximum.\n* **Box-and-Whisker Plot:** A graphical representation of the five-number summary.\n\n### Working with Continuous Data\n\nContinuous quantitative data can be grouped into classes to create discrete data.\n"
+        "content": "\n# Descriptive Statistics\n\n## Data Types\n\n* **Data:** Pieces of information observed and recorded.\n* **Quantitative Data:** Numerical data (discrete or continuous).\n* **Qualitative Data:** Non-numerical data (categorical or anecdotal).\n\n\n## Measures of Central Tendency\n\n* **Mean (Average):**  The sum of values divided by the number of values.\n    ```math\n          ∑ xi\n    x̄ = ─────\n         n\n    ```\n* **Median:** The middle value in an ordered data set.\n* **Mode:** The most frequent value.\n\n\n## Measures of Dispersion\n\n* **Outlier:** A value significantly different from others.\n* **Range:** The difference between the maximum and minimum values.\n* **Percentile:** The value below which a given percentage of data falls.  The formula for the pth percentile is:\n    ```math\n    r = (p/100)(n - 1) + 1\n    ```\n* **Quartiles:** Q1, Q2 (median), Q3 divide data into four equal parts.\n* **Interquartile Range (IQR):** Q3 - Q1.\n* **Semi-Interquartile Range:** IQR / 2.\n* **Five-Number Summary:** Minimum, Q1, Median, Q3, Maximum.\n* **Box-and-Whisker Plot:** A visual representation of the five-number summary.\n\n##  Working with Continuous Data\n\nContinuous quantitative data can be made discrete by grouping values into classes or sub-ranges.\n"
       },
       {
         "data": {
-          "Title": "Trigonometry Basics",
+          "Title": "Trigonometry of Right-Angled Triangles",
           "icon": "📐",
           "flashcards": [
             {
@@ -1165,14 +1683,7 @@ const data = {
                 "title": "Trigonometric Ratios",
                 "question": "What are the three basic trigonometric ratios?"
               },
-              "back": "The three basic trigonometric ratios for right-angled triangles are sine (sin), cosine (cos), and tangent (tan)."
-            },
-            {
-              "front": {
-                "title": "Applications of Trigonometry",
-                "question": "Give an example of a real-world problem that can be solved using trigonometry."
-              },
-              "back": "Trigonometry is used to solve problems involving right-angled triangles, such as finding the height of a building or the distance across a river."
+              "back": "The three basic trigonometric ratios for a right-angled triangle are: \n\n* sine (sin):  opposite/hypotenuse\n* cosine (cos): adjacent/hypotenuse\n* tangent (tan): opposite/adjacent"
             },
             {
               "front": {
@@ -1187,50 +1698,57 @@ const data = {
                 "question": "Define the angle of depression."
               },
               "back": "The angle of depression is the angle between the line of sight to an object below the horizontal and the horizontal plane."
+            },
+            {
+              "front": {
+                "title": "Applications of Trigonometry",
+                "question": "Give an example of how trigonometry is used to solve problems."
+              },
+              "back": "Trigonometry is used to solve problems involving right-angled triangles in two dimensions. For example, finding the height of a building given the angle of elevation and distance from the base."
             }
           ]
         },
-        "content": "\n## Trigonometry Basics\n\n### Introduction to Trigonometric Ratios\n\nWe define three trigonometric ratios for right-angled triangles:\n\n*   **Sine (sin):**  The ratio of the length of the side opposite the angle to the length of the hypotenuse.  ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n*   **Cosine (cos):** The ratio of the length of the side adjacent to the angle to the length of the hypotenuse. ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n*   **Tangent (tan):** The ratio of the length of the side opposite the angle to the length of the side adjacent to the angle. ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\n\n### Applications of Trigonometry\n\nTrigonometry is a valuable tool for solving problems involving right-angled triangles in two dimensions.  Common applications include:\n\n*   Calculating heights of objects (e.g., buildings, trees).\n*   Determining distances across obstacles (e.g., rivers, canyons).\n*   Solving surveying and navigation problems.\n\n\n### Angles of Elevation and Depression\n\n*   **Angle of Elevation:** The angle formed between the line of sight to an object *above* the horizontal and the horizontal plane.\n\n*   **Angle of Depression:** The angle formed between the line of sight to an object *below* the horizontal and the horizontal plane.\n\n"
+        "content": "\n# Trigonometry of Right-Angled Triangles\n\n## Trigonometric Ratios\n\nWe can define three trigonometric ratios for right-angled triangles:\n\n*   **Sine (sin):**  `opposite/hypotenuse`\n*   **Cosine (cos):** `adjacent/hypotenuse`\n*   **Tangent (tan):** `opposite/adjacent`\n\n\n## Angles of Elevation and Depression\n\n*   **Angle of elevation:** The angle formed by the line of sight and the horizontal plane when looking *up* at an object.\n\n*   **Angle of depression:** The angle formed by the line of sight and the horizontal plane when looking *down* at an object.\n\n\n## Applications\n\nTrigonometry is used to solve problems in two dimensions involving right-angled triangles.  A common application is calculating heights or distances that are difficult to measure directly, such as finding the height of a building or the width of a river.\n"
       },
       {
         "data": {
-          "Title": "Quadrilaterals and the Mid-point Theorem",
-          "icon": "🫗",
+          "Title": "Quadrilaterals and the Mid-Point Theorem",
+          "icon": "⬜",
           "flashcards": [
             {
               "front": {
                 "title": "Quadrilateral",
                 "question": "What is a quadrilateral?"
               },
-              "back": "A closed shape consisting of four straight line segments."
+              "back": "A closed shape with four straight line segments."
             },
             {
               "front": {
                 "title": "Parallelogram",
-                "question": "What are the properties of a parallelogram?"
+                "question": "List three properties of a parallelogram."
               },
-              "back": "Both pairs of opposite sides are parallel and equal in length. Both pairs of opposite angles are equal. The diagonals bisect each other."
+              "back": "• Both pairs of opposite sides are parallel and equal.\n• Both pairs of opposite angles are equal.\n• Diagonals bisect each other."
             },
             {
               "front": {
                 "title": "Rectangle",
-                "question": "What is a rectangle?"
+                "question": "What makes a rectangle different from a parallelogram?"
               },
-              "back": "A parallelogram with all four angles equal to 90°.  Opposite sides are parallel and equal. Diagonals bisect each other and are equal in length."
+              "back": "All four angles are 90°.  Diagonals are equal in length."
             },
             {
               "front": {
                 "title": "Rhombus",
                 "question": "What is a rhombus?"
               },
-              "back": "A parallelogram with all four sides equal in length. Opposite angles are equal. Diagonals bisect each other at 90° and bisect the opposite angles."
+              "back": "A parallelogram with all four sides equal in length. Diagonals bisect each other at 90° and bisect the opposite angles."
             },
             {
               "front": {
                 "title": "Square",
                 "question": "What is a square?"
               },
-              "back": "A rhombus with all four angles equal to 90°. Opposite sides are parallel. Diagonals bisect each other at 90° and are equal in length. All interior angles are 90°, and diagonals bisect opposite angles at 45°."
+              "back": "A rhombus with all four angles equal to 90°."
             },
             {
               "front": {
@@ -1242,9 +1760,9 @@ const data = {
             {
               "front": {
                 "title": "Kite",
-                "question": "What is a kite?"
+                "question": "Describe a kite and one of its properties."
               },
-              "back": "A quadrilateral with two pairs of adjacent sides equal. One pair of opposite angles are equal. The diagonal between equal sides bisects the other diagonal and bisects the interior angles. The diagonals intersect at 90°."
+              "back": "A quadrilateral with two pairs of adjacent sides equal. One pair of opposite angles are equal (the angles between unequal sides)."
             },
             {
               "front": {
@@ -1255,7 +1773,7 @@ const data = {
             }
           ]
         },
-        "content": "\n## Quadrilaterals and the Mid-point Theorem\n\n### Quadrilaterals\n\nA quadrilateral is a closed shape with four straight sides.  Several special types of quadrilaterals exist:\n\n#### Parallelogram\n\n*   Both pairs of opposite sides are parallel and equal in length.\n*   Both pairs of opposite angles are equal.\n*   Diagonals bisect each other.\n\n#### Rectangle\n\n*   All properties of a parallelogram.\n*   All four angles are 90°.\n*   Diagonals are equal in length.\n\n#### Rhombus\n\n*   All properties of a parallelogram.\n*   All four sides are equal in length.\n*   Diagonals bisect each other at 90°.\n*   Diagonals bisect the opposite angles.\n\n\n#### Square\n\n*   All properties of a rectangle and a rhombus.\n\n\n#### Trapezium\n\n*   One pair of opposite sides is parallel.\n\n#### Kite\n\n*   Two pairs of adjacent sides are equal.\n*   One pair of opposite angles are equal.\n*   The diagonal connecting the equal sides bisects the other diagonal and the angles it connects.\n*   Diagonals intersect at 90°.\n\n\n### Mid-point Theorem\n\nThe line segment joining the midpoints of two sides of a triangle is parallel to the third side and is half its length.\n"
+        "content": "\n## Quadrilaterals and the Mid-Point Theorem\n\n### Quadrilaterals\n\nA quadrilateral is a closed shape with four straight line segments.  Several special types of quadrilaterals exist:\n\n#### Parallelogram\n\n*   Both pairs of opposite sides are parallel and equal in length.\n*   Both pairs of opposite angles are equal.\n*   The diagonals bisect each other.\n\n#### Rectangle\n\n*   All properties of a parallelogram.\n*   All four angles are 90°.\n*   Diagonals are equal in length.\n\n#### Rhombus\n\n*   All properties of a parallelogram.\n*   All four sides are equal in length.\n*   Diagonals bisect each other at 90°.\n*   Diagonals bisect the opposite angles.\n\n#### Square\n\n*   All properties of a rectangle and a rhombus.\n\n\n#### Trapezium\n\n*   One pair of opposite sides is parallel.\n\n#### Kite\n\n*   Two pairs of adjacent sides are equal.\n*   One pair of opposite angles are equal (the angles between unequal sides).\n*   The diagonal connecting the equal sides bisects the other diagonal.\n*   The diagonal connecting the equal sides bisects the angles it connects.\n*   The diagonals intersect at 90°.\n\n\n### Mid-Point Theorem\n\nThe line segment joining the mid-points of two sides of a triangle is parallel to the third side and is half the length of the third side.\n"
       },
       {
         "data": {
@@ -1267,102 +1785,130 @@ const data = {
                 "title": "Area of a Square",
                 "question": "What is the formula for the area of a square?"
               },
-              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg), where s is the length of a side."
+              "back": "Area = s² where s is the side length"
             },
             {
               "front": {
                 "title": "Area of a Rectangle",
                 "question": "How do you calculate the area of a rectangle?"
               },
-              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg), where b is the base and h is the height."
+              "back": "Area = b × h where b is the base and h is the height"
             },
             {
               "front": {
                 "title": "Area of a Triangle",
                 "question": "What's the formula for the area of a triangle?"
               },
-              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg), where b is the base and h is the height."
+              "back": "Area = (1/2) × b × h where b is the base and h is the height"
             },
             {
               "front": {
                 "title": "Area of a Trapezium",
-                "question": "Give the formula for the area of a trapezium."
+                "question": "How do you find the area of a trapezium?"
               },
-              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg), where a and b are the lengths of the parallel sides and h is the height."
+              "back": "Area = (1/2)(a + b) × h where a and b are the parallel sides and h is the height"
             },
             {
               "front": {
                 "title": "Area of a Parallelogram",
-                "question": "How do you find the area of a parallelogram?"
+                "question": "What is the area formula for a parallelogram?"
               },
-              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg), where b is the base and h is the height."
+              "back": "Area = b × h where b is the base and h is the height"
             },
             {
               "front": {
                 "title": "Area of a Circle",
-                "question": "What is the formula for the area of a circle?"
+                "question": "Give the formula for the area of a circle."
               },
-              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg), where r is the radius."
+              "back": "Area = πr² where r is the radius"
             },
             {
               "front": {
                 "title": "Volume of a Rectangular Prism",
                 "question": "How do you calculate the volume of a rectangular prism?"
               },
-              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg), where l is the length, b is the breadth, and h is the height."
+              "back": "Volume = l × b × h where l is length, b is width, and h is height"
             },
             {
               "front": {
                 "title": "Volume of a Triangular Prism",
                 "question": "What is the formula for the volume of a triangular prism?"
               },
-              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg), where b and h are the base and height of the triangle, and H is the prism's height."
+              "back": "Volume = (1/2 × b × h) × H where b and h are the base and height of the triangle, and H is the prism's height"
             },
             {
               "front": {
                 "title": "Volume of a Cube",
-                "question": "How do you calculate the volume of a cube?"
+                "question": "What is the volume of a cube with side length s?"
               },
-              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg), where s is the length of a side."
+              "back": "Volume = s³"
             },
             {
               "front": {
                 "title": "Volume of a Cylinder",
-                "question": "What's the formula for the volume of a cylinder?"
+                "question": "Give the formula for the volume of a cylinder."
               },
-              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg), where r is the radius and h is the height."
+              "back": "Volume = πr² × h where r is the radius and h is the height"
+            },
+            {
+              "front": {
+                "title": "Surface Area of a Square Pyramid",
+                "question": "What is the formula for the surface area of a square pyramid?"
+              },
+              "back": "Surface Area = b(b + 2h) where b is the base side and h is the slant height"
+            },
+            {
+              "front": {
+                "title": "Surface Area of a Triangular Pyramid",
+                "question": "How do you calculate the surface area of a triangular pyramid?"
+              },
+              "back": "Surface Area = (1/2)b(hb + 3hs) where b is the base, hb is the base height, and hs is the slant height"
+            },
+            {
+              "front": {
+                "title": "Surface Area of a Right Cone",
+                "question": "Give the formula for the surface area of a right cone."
+              },
+              "back": "Surface Area = πr(r + hs) where r is the radius and hs is the slant height"
+            },
+            {
+              "front": {
+                "title": "Surface Area of a Sphere",
+                "question": "What is the formula for the surface area of a sphere?"
+              },
+              "back": "Surface Area = 4πr² where r is the radius"
             },
             {
               "front": {
                 "title": "Volume of a Square Pyramid",
-                "question": "Give the formula for the volume of a square pyramid."
+                "question": "What is the volume of a square pyramid?"
               },
-              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg), where b is the base side length and H is the height."
+              "back": "Volume = (1/3) × b² × H where b is the base side and H is the height"
             },
             {
               "front": {
                 "title": "Volume of a Triangular Pyramid",
                 "question": "How do you calculate the volume of a triangular pyramid?"
               },
-              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg), where b and h are the base and height of the triangle, and H is the pyramid's height."
+              "back": "Volume = (1/3) × (1/2 × b × h) × H where b and h are the base and height of the triangle, and H is the pyramid's height"
             },
             {
               "front": {
-                "title": "Volume of a Cone",
-                "question": "What is the formula for the volume of a cone?"
+                "title": "Volume of a Right Cone",
+                "question": "Give the formula for the volume of a right cone."
               },
-              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg), where r is the radius and H is the height."
+              "back": "Volume = (1/3) × πr² × H where r is the radius and H is the height"
             },
             {
               "front": {
                 "title": "Volume of a Sphere",
-                "question": "How do you find the volume of a sphere?"
+                "question": "What is the formula for the volume of a sphere?"
               },
-              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg), where r is the radius."
+              "back": "Volume = (4/3)πr³ where r is the radius"
             }
           ]
         },
-        "content": "\n## Area, Volume, and Surface Area of Geometric Solids\n\n### Area\n\nArea is the two-dimensional space enclosed within a flat object's boundary.  It is measured in square units.  Formulas for common shapes include:\n\n* **Square:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) (s = side length)\n* **Rectangle:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) (b = base, h = height)\n* **Triangle:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) (b = base, h = height)\n* **Trapezium:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) (a and b are parallel side lengths, h = height)\n* **Parallelogram:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) (b = base, h = height)\n* **Circle:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) (r = radius)\n\n\n### Volume\n\nVolume is the three-dimensional space occupied by an object. It's measured in cubic units. Formulas for prisms and cylinders:\n\n* **Rectangular Prism:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) (l = length, b = breadth, h = height)\n* **Triangular Prism:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) (b and h are base and height of the triangle, H = prism height)\n* **Cube:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) (s = side length)\n* **Cylinder:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) (r = radius, h = height)\n\nFormulas for pyramids, cones, and spheres:\n\n* **Square Pyramid:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) (b = base side length, H = height)\n* **Triangular Pyramid:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) (b and h are base and height of the triangle, H = pyramid height)\n* **Cone:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) (r = radius, H = height)\n* **Sphere:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) (r = radius)\n\n\n### Surface Area\n\nSurface area is the total area of the outer surfaces of a solid.  We will not be covering the formulas for surface area in this document.\n\n### Prisms and Pyramids\n\nA right prism has a polygon base and vertical sides perpendicular to the base.  A pyramid has a polygon base and sides converging at a point (apex).  The sides are not perpendicular to the base.  A cone is similar to a pyramid but with a circular base. A sphere is a perfectly round solid.\n\n### Scaling\n\nMultiplying one or more dimensions of a prism or cylinder by a constant k affects the surface area and volume.  The exact relationship depends on which dimension is scaled.\n"
+        "content": "\n## Area, Volume, and Surface Area of Geometric Solids\n\nThis document summarizes formulas for calculating the area, volume, and surface area of various geometric solids.\n\n### Area\n\nArea is the two-dimensional space enclosed within a flat object's boundary. It is measured in square units.  Formulas for common shapes include:\n\n* **Square:** Area = s² (where s is the side length)\n* **Rectangle:** Area = b × h (where b is the base and h is the height)\n* **Triangle:** Area = (1/2) × b × h (where b is the base and h is the height)\n* **Trapezium:** Area = (1/2)(a + b) × h (where a and b are the parallel sides and h is the height)\n* **Parallelogram:** Area = b × h (where b is the base and h is the height)\n* **Circle:** Area = πr² (where r is the radius)\n\n\n### Prisms and Cylinders\n\nA right prism has a polygon base, vertical sides perpendicular to the base, and identical top and bottom surfaces.  A cylinder is a right prism with a circular base.\n\n* **Surface Area:** The total area of the exposed surfaces.  (Specific formulas depend on the shape of the prism).\n* **Volume:** The three-dimensional space occupied. Formulas include:\n    * **Rectangular Prism:** Volume = l × b × h (where l is length, b is width, and h is height)\n    * **Triangular Prism:** Volume = (1/2 × b × h) × H (where b and h are the base and height of the triangle, and H is the prism's height)\n    * **Cube (Square Prism):** Volume = s³ (where s is the side length)\n    * **Cylinder:** Volume = πr² × h (where r is the radius and h is the height)\n\n\n### Pyramids, Cones, and Spheres\n\n* **Pyramid:** A geometric solid with a polygon base and sides converging at a point (the apex).  A right pyramid has an apex directly above the center of the base.\n* **Cone:** Similar to a pyramid, but with a circular base.  A right cone has its apex directly above the center of the base.\n* **Sphere:** A perfectly round solid.\n\nSurface area and volume formulas for these shapes are:\n\n**Surface Area:**\n\n* **Square Pyramid:**  Area = b(b + 2h) (where b is base side and h is slant height)\n* **Triangular Pyramid:** Area = (1/2)b(hb + 3hs) (where b is base length, hb is base height, hs is slant height)\n* **Right Cone:** Area = πr(r + hs) (where r is the radius and hs is the slant height)\n* **Sphere:** Area = 4πr² (where r is the radius)\n\n**Volume:**\n\n* **Square Pyramid:** Volume = (1/3) × b² × H (where b is the base side and H is the height)\n* **Triangular Pyramid:** Volume = (1/3) × (1/2 × b × h) × H (where b and h are the base and height of the triangle, and H is the pyramid's height)\n* **Right Cone:** Volume = (1/3) × πr² × H (where r is the radius and H is the height)\n* **Sphere:** Volume = (4/3)πr³ (where r is the radius)\n\n\n### Scaling\n\nMultiplying one or more dimensions of a prism or cylinder by a constant *k* will affect the surface area and volume.  The exact effect depends on which dimensions are scaled.\n"
       },
       {
         "data": {
@@ -1379,97 +1925,97 @@ const data = {
             {
               "front": {
                 "title": "Outcome",
-                "question": "Define an outcome in a probability experiment."
+                "question": "What is an outcome in probability?"
               },
               "back": "A single result of an experiment."
             },
             {
               "front": {
-                "title": "Sample Space (S)",
-                "question": "What is the sample space of an experiment?"
+                "title": "Sample Space",
+                "question": "Define sample space and its notation."
               },
-              "back": "The set of all possible outcomes.  Its size is denoted as n(S)."
+              "back": "The set of all possible outcomes of an experiment.  Denoted by S, with size n(S)."
             },
             {
               "front": {
-                "title": "Event (E)",
+                "title": "Event",
                 "question": "What is an event in probability?"
               },
-              "back": "A specific set of outcomes you're interested in. The number of outcomes in the event is denoted as n(E)."
+              "back": "A specific set of outcomes of an experiment. Denoted by E, with size n(E)."
             },
             {
               "front": {
                 "title": "Probability",
-                "question": "What is a probability?"
+                "question": "Define probability and its range."
               },
-              "back": "A real number between 0 and 1 describing the likelihood of an event occurring. 0 means it will never occur, 1 means it will always occur."
+              "back": "A real number between 0 and 1 describing the likelihood of an event occurring. 0 means it never occurs, 1 means it always occurs."
             },
             {
               "front": {
                 "title": "Theoretical Probability",
                 "question": "How do you calculate theoretical probability?"
               },
-              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) where n(E) is the number of outcomes in the event and n(S) is the total number of possible outcomes (assuming all outcomes are equally likely)."
+              "back": "When all outcomes are equally likely, it's the ratio of the number of favorable outcomes to the total number of possible outcomes:  P(E) = n(E) / n(S)"
             },
             {
               "front": {
                 "title": "Relative Frequency",
-                "question": "Define relative frequency."
+                "question": "How do you calculate relative frequency?"
               },
-              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)  The ratio of the number of times an event occurs to the total number of trials."
+              "back": "The number of times an event occurs divided by the total number of trials: f = p/n (where p is positive trials and n is total trials)."
             },
             {
               "front": {
-                "title": "Union of Sets (A ∪ B)",
-                "question": "What is the union of two sets A and B?"
+                "title": "Union of Events",
+                "question": "What is the union of two events?"
               },
-              "back": "A new set containing all elements in at least one of the sets A or B."
+              "back": "A new set containing all elements in at least one of the two sets (A∪B or A or B)."
             },
             {
               "front": {
-                "title": "Intersection of Sets (A ∩ B)",
-                "question": "What is the intersection of two sets A and B?"
+                "title": "Intersection of Events",
+                "question": "What is the intersection of two events?"
               },
-              "back": "A new set containing all elements present in both sets A and B."
+              "back": "A new set containing all elements in both sets (A∩B or A and B)."
             },
             {
               "front": {
                 "title": "Probability of the Sample Space",
-                "question": "What is the probability of the entire sample space?"
+                "question": "What is the probability of the sample space?"
               },
               "back": "P(S) = 1"
             },
             {
               "front": {
                 "title": "Probability of the Union of Two Events",
-                "question": "How do you calculate P(A ∪ B)?"
+                "question": "Give the formula for the probability of the union of two events."
               },
-              "back": "![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)"
+              "back": "P(A∪B) = P(A) + P(B) - P(A∩B)"
             },
             {
               "front": {
                 "title": "Mutually Exclusive Events",
-                "question": "What are mutually exclusive events?"
+                "question": "Define mutually exclusive events."
               },
               "back": "Two events that cannot occur at the same time."
             },
             {
               "front": {
-                "title": "Complement of a Set (A')",
+                "title": "Complement of a Set",
                 "question": "What is the complement of a set A?"
               },
-              "back": "The set of all elements NOT in A."
+              "back": "A set containing all elements not in A (A' or not(A))."
             },
             {
               "front": {
                 "title": "Complementary Events",
-                "question": "Describe the relationship between complementary events."
+                "question": "What are the characteristics of complementary events?"
               },
-              "back": "They are mutually exclusive (A ∩ A' = Ø) and their union covers the sample space (A ∪ A' = S). Their probabilities add up to 1: P(A) + P(A') = 1"
+              "back": "They are mutually exclusive (A∩A' = Ø) and their union covers the sample space (A∪A' = S). Their probabilities sum to 1: P(A) + P(A') = 1."
             }
           ]
         },
-        "content": "\n## Probability Fundamentals\n\n### Basic Concepts\n\n*   An **experiment** is an uncertain process.\n*   An **outcome** is a single result of an experiment.\n*   The **sample space (S)** is the set of all possible outcomes.  The number of outcomes is denoted as n(S).\n*   An **event (E)** is a specific set of outcomes of interest. The number of outcomes in the event is denoted as n(E).\n*   **Probability** is a number between 0 and 1 representing the likelihood of an event occurring.  A probability of 0 indicates impossibility, while a probability of 1 indicates certainty.\n\n\n### Calculating Probability\n\n*   The **theoretical probability** of an event E, when all outcomes are equally likely, is:\n    ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\n*   The **relative frequency** of an event is the ratio of the number of times the event occurs to the total number of trials:\n    ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\n\n### Set Operations and Probability\n\n*   The **union (A ∪ B)** of two sets A and B is a set containing all elements in either A or B (or both).\n*   The **intersection (A ∩ B)** of two sets A and B is a set containing only the elements present in both A and B.\n*   The probability of the entire sample space is 1:  P(S) = 1\n*   The probability of the union of two events A and B is:\n    ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\n### Mutually Exclusive and Complementary Events\n\n*   **Mutually exclusive events** are events that cannot occur simultaneously.\n*   The **complement (A')** of a set A is the set of all elements not in A.\n*   **Complementary events** are mutually exclusive and their union equals the sample space (A ∪ A' = S).  Their probabilities sum to 1: P(A) + P(A') = 1.\n\n"
+        "content": "\n## Probability Fundamentals\n\n### Basic Concepts\n\n*   An **experiment** is an uncertain process.\n*   An **outcome** is a single result of an experiment.\n*   The **sample space (S)** is the set of all possible outcomes, with size n(S).\n*   An **event (E)** is a specific set of outcomes, with size n(E).\n*   **Probability** is a number between 0 and 1 representing the likelihood of an event.  A probability of 0 means the event will never occur, and a probability of 1 means it will always occur.\n\n### Calculating Probabilities\n\n*   The **theoretical probability** of an event E, when all outcomes are equally likely, is:\n\n```math\n      n(E)\nP(E) = ─────\n      n(S)\n```\n\n*   The **relative frequency** of an event is:\n\n```math\n      p\nf = ─────\n      n\n```\n\nwhere *p* is the number of positive trials and *n* is the total number of trials.\n\n\n### Set Operations and Probabilities\n\n*   The **union (A∪B or A or B)** of two sets contains all elements in at least one set.\n*   The **intersection (A∩B or A and B)** of two sets contains all elements in both sets.\n*   **Mutually exclusive events** cannot occur at the same time.\n*   The **complement (A')** of a set A contains all elements not in A.\n*   For complementary events:\n    *   A ∩ A' = Ø (empty set)\n    *   A ∪ A' = S\n    *   P(A) + P(A') = 1\n\n* The probability of the union of two events A and B is:\n\n```math\n      P(A) + P(B) - P(A ∩ B)\nP(A ∪ B) = ─────────────────\n                    1\n```\n\n"
       },
       {
         "data": {
@@ -1478,54 +2024,54 @@ const data = {
           "flashcards": [
             {
               "front": {
-                "title": "Arithmetic Sequence",
-                "question": "What defines an arithmetic sequence?"
+                "title": "General Term of an Arithmetic Sequence",
+                "question": "How do you express the nth term of an arithmetic sequence?"
               },
-              "back": "An arithmetic sequence is a sequence where the difference between any two consecutive terms is constant. This constant difference is called the common difference."
+              "back": "The nth term, T<sub>n</sub>, represents the general term of an arithmetic sequence."
             },
             {
               "front": {
                 "title": "Common Difference",
-                "question": "How do you find the common difference (d) in an arithmetic sequence?"
+                "question": "How is the common difference (d) of an arithmetic sequence defined?"
               },
-              "back": "The common difference (d) is found by subtracting any term from the term that follows it:  d = T<sub>n</sub> - T<sub>n-1</sub>, where T<sub>n</sub> represents the nth term."
+              "back": "The common difference, d, is the difference between any two consecutive terms:  d = T<sub>n</sub> - T<sub>n-1</sub>"
             },
             {
               "front": {
-                "title": "General Term of an Arithmetic Sequence",
-                "question": "What is the formula for the nth term of an arithmetic sequence?"
+                "title": "Formula for the nth term",
+                "question": "What is the general formula to find any term in an arithmetic sequence?"
               },
-              "back": "The general formula for the nth term (T<sub>n</sub>) of an arithmetic sequence is: T<sub>n</sub> = a + (n-1)d, where 'a' is the first term and 'd' is the common difference."
+              "back": "While a specific formula isn't provided in the notes,  you can derive one using the common difference. For example, if you know the first term (T<sub>1</sub>) and the common difference (d), the nth term can be calculated as T<sub>n</sub> = T<sub>1</sub> + (n-1)d"
             }
           ]
         },
-        "content": "\n## Arithmetic Sequences\n\nArithmetic sequences are number patterns where the difference between consecutive terms is constant. This constant difference is called the common difference, denoted as *d*.\n\n### Defining an Arithmetic Sequence\n\nAn arithmetic sequence is defined by a consistent difference between successive terms.  For example: 2, 5, 8, 11... is an arithmetic sequence because the common difference is 3 (5-2 = 3, 8-5 = 3, 11-8 = 3).\n\n### Common Difference (d)\n\nThe common difference (*d*) is calculated by subtracting any term from the term that immediately follows it:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nWhere:\n\n*   $T_n$ represents the nth term in the sequence.\n*   $T_{n-1}$ represents the term before the nth term.\n\n\n### General Formula for the nth Term\n\nWe can find any term in an arithmetic sequence using the following formula:\n\n![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nWhere:\n\n*   $T_n$ is the nth term.\n*   *a* is the first term of the sequence.\n*   *d* is the common difference.\n*   *n* is the position of the term in the sequence.\n\n\nThis formula allows us to determine any term in the sequence without having to list all the preceding terms.\n"
+        "content": "\n## Arithmetic Sequences\n\n### General Term\n\nThe general term of an arithmetic sequence is denoted as T<sub>n</sub>, representing the nth term in the sequence.\n\n### Common Difference\n\nThe common difference, *d*, is the constant difference between consecutive terms in the sequence.  It's calculated as:\n\n```math\n      T<sub>n</sub>\nd =  ───────\n      T<sub>n-1</sub>\n```\n\nThis means you subtract any term from the term immediately following it to find the common difference.\n\n### Determining Any Term\n\nA general formula can be derived to determine any term in an arithmetic sequence.  This formula allows you to calculate any term directly, given the first term and the common difference.\n"
       },
       {
         "data": {
-          "Title": "Linear and Quadratic Equations & Inequalities",
+          "Title": "Linear and Quadratic Equations and Inequalities",
           "icon": "🧮",
           "flashcards": [
             {
               "front": {
                 "title": "Linear Equation",
-                "question": "What defines a linear equation and how many solutions does it have?"
+                "question": "What is a linear equation and how many solutions does it have?"
               },
               "back": "A linear equation has a variable with an exponent of 1. It has at most one solution."
             },
             {
               "front": {
                 "title": "Quadratic Equation",
-                "question": "What defines a quadratic equation and how many solutions can it have?"
+                "question": "What is a quadratic equation and how many solutions does it have?"
               },
               "back": "A quadratic equation has a variable with an exponent of at most 2. It has at most two solutions."
             },
             {
               "front": {
-                "title": "Simultaneous Equations",
-                "question": "How many equations are needed to solve for two unknowns, and what are the common solution methods?"
+                "title": "System of Simultaneous Equations",
+                "question": "How many equations are needed to solve for two unknown variables, and what are the methods to solve them?"
               },
-              "back": "Two equations are needed (a system of simultaneous equations).  Solutions methods include algebraic methods (substitution and elimination) and graphical methods (finding the point of intersection)."
+              "back": "Two equations are required.  Methods include algebraic solutions (substitution or elimination) and graphical solutions (finding the point of intersection)."
             },
             {
               "front": {
@@ -1537,20 +2083,13 @@ const data = {
             {
               "front": {
                 "title": "Linear Inequality",
-                "question": "How does a linear inequality compare to a linear equation, and what happens when multiplying/dividing by a negative number?"
+                "question": "How is a linear inequality similar to a linear equation, and what happens when multiplying/dividing by a negative number?"
               },
-              "back": "Similar to a linear equation (variable exponent of 1). When multiplying or dividing by a negative number, the inequality sign reverses."
-            },
-            {
-              "front": {
-                "title": "Solving Word Problems",
-                "question": "How are word problems approached mathematically?"
-              },
-              "back": "Word problems are solved by translating the problem into a set of mathematical equations."
+              "back": "Similar to a linear equation, but uses inequality symbols (<, >, ≤, ≥).  When multiplying or dividing both sides by a negative number, the inequality sign reverses."
             }
           ]
         },
-        "content": "\n## Linear and Quadratic Equations & Inequalities\n\nThis section summarizes key concepts related to linear and quadratic equations and inequalities.\n\n### Linear Equations\n\nA linear equation is an equation where the highest power of the variable is 1.  It has at most one solution.  For example,  `2x + 3 = 7` is a linear equation.\n\n### Quadratic Equations\n\nA quadratic equation is an equation where the highest power of the variable is 2. It has at most two solutions. For example,  `x² + 2x - 3 = 0` is a quadratic equation.\n\n### Simultaneous Equations\n\nSolving for two unknown variables requires a system of two simultaneous equations. These can be solved using algebraic methods (substitution or elimination) or graphically by finding the point of intersection of the graphs of each equation.\n\n### Literal Equations\n\nLiteral equations contain multiple letters and variables.  They are solved by manipulating the equation to isolate the desired variable.\n\n### Word Problems\n\nWord problems are solved by translating the real-world scenario into a set of mathematical equations.  This involves identifying the unknowns, setting up appropriate equations based on the given information, and solving the resulting equations.\n\n### Linear Inequalities\n\nA linear inequality is similar to a linear equation, but instead of an equals sign (=), it uses inequality symbols (<, >, ≤, ≥).  Remember that when multiplying or dividing both sides of an inequality by a negative number, the direction of the inequality sign reverses.\n"
+        "content": "\n## Linear and Quadratic Equations and Inequalities\n\n### Linear Equations\n\nA linear equation is an equation where the exponent of the variable is 1.  A linear equation has at most one solution.\n\n### Quadratic Equations\n\nA quadratic equation is an equation where the exponent of the variable is at most 2. A quadratic equation has at most two solutions.\n\n### Systems of Simultaneous Equations\n\nTo solve for two unknown variables, two equations are required.  These equations form a system of simultaneous equations.  These can be solved using:\n\n*   **Algebraic methods:** Substitution or elimination.\n*   **Graphical methods:** Graphing each equation and finding the coordinates of their intersection point.\n\n### Literal Equations\n\nLiteral equations contain several letters and variables.\n\n### Word Problems\n\nWord problems require translating the problem into a set of mathematical equations.\n\n### Linear Inequalities\n\nA linear inequality is similar to a linear equation, with the variable having an exponent of 1, but uses inequality symbols (<, >, ≤, ≥) instead of an equals sign.  Remember that if you multiply or divide both sides of an inequality by a negative number, you must reverse the direction of the inequality sign.\n"
       },
       {
         "data": {
@@ -1559,54 +2098,58 @@ const data = {
           "flashcards": [
             {
               "front": {
-                "title": "Trigonometric Ratios",
-                "question": "Define sine, cosine, and tangent."
+                "title": "Sine, Cosine, Tangent",
+                "question": "Define the trigonometric ratios sin θ, cos θ, and tan θ for a right-angled triangle."
               },
-              "back": "In a right-angled triangle:\n* $\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{y}{r}$\n* $\\cos \\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}} = \\frac{x}{r}$\n* $\\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}} = \\frac{y}{x}$"
+              "back": "In a right-angled triangle:\n\n* sin θ = opposite / hypotenuse = y / r\n* cos θ = adjacent / hypotenuse = x / r\n* tan θ = opposite / adjacent = y / x"
             },
             {
               "front": {
                 "title": "Reciprocal Trigonometric Ratios",
                 "question": "What are the reciprocal trigonometric ratios and how are they defined?"
               },
-              "back": "The reciprocal trigonometric ratios are:\n* $\\csc \\theta = \\frac{1}{\\sin \\theta} = \\frac{\\text{hypotenuse}}{\\text{opposite}} = \\frac{r}{y}$\n* $\\sec \\theta = \\frac{1}{\\cos \\theta} = \\frac{\\text{hypotenuse}}{\\text{adjacent}} = \\frac{r}{x}$\n* $\\cot \\theta = \\frac{1}{\\tan \\theta} = \\frac{\\text{adjacent}}{\\text{opposite}} = \\frac{x}{y}$"
+              "back": "The reciprocal ratios are:\n\n* cosec θ = 1 / sin θ = hypotenuse / opposite = r / y\n* sec θ = 1 / cos θ = hypotenuse / adjacent = r / x\n* cot θ = 1 / tan θ = adjacent / opposite = x / y"
             },
             {
               "front": {
                 "title": "Solving Trigonometric Equations",
-                "question": "How are trigonometric ratios used to solve equations?"
+                "question": "How can we solve simple trigonometric equations?"
               },
-              "back": "Trigonometric ratios and principles of solving equations are used to find unknown angles or sides in right-angled triangles."
+              "back": "We can use the principles of solving equations and the trigonometric ratios to solve simple trigonometric equations."
             },
             {
               "front": {
                 "title": "Special Angles",
-                "question": "What are the values of sine, cosine, and tangent for special angles?"
+                "question": "For which angles can we easily find the values of sin, cos, and tan without a calculator?"
               },
-              "back": "The values of sine, cosine, and tangent for special angles (0°, 30°, 45°, 60°, and 90°) can be easily determined and are often memorized."
+              "back": "We can easily find the values of sin, cos, and tan for 0°, 30°, 45°, 60°, and 90° without a calculator."
             },
             {
               "front": {
-                "title": "Extended Trigonometric Ratios",
-                "question": "How are trigonometric ratios extended beyond right-angled triangles?"
+                "title": "Extending Trigonometric Ratios",
+                "question": "How can the definitions of trigonometric ratios be extended?"
               },
-              "back": "The definitions of trigonometric ratios can be extended to apply to any angle, not just those in right-angled triangles."
+              "back": "The definitions of the trigonometric ratios can be extended to any angle."
             }
           ]
         },
-        "content": "\n## Trigonometric Ratios and Equations\n\n### Trigonometric Ratios\n\nWe define three primary trigonometric ratios for right-angled triangles: sine (sin), cosine (cos), and tangent (tan).  These are defined as follows:\n\n* $\\sin \\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{y}{r}$\n* $\\cos \\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}} = \\frac{x}{r}$\n* $\\tan \\theta = \\frac{\\text{opposite}}{\\text{adjacent}} = \\frac{y}{x}$\n\nwhere *y* represents the length of the side opposite angle θ, *x* represents the length of the side adjacent to angle θ, and *r* represents the length of the hypotenuse.\n\n\n### Reciprocal Trigonometric Ratios\n\nEach of the primary trigonometric ratios has a reciprocal:\n\n* $\\csc \\theta = \\frac{1}{\\sin \\theta} = \\frac{\\text{hypotenuse}}{\\text{opposite}} = \\frac{r}{y}$\n* $\\sec \\theta = \\frac{1}{\\cos \\theta} = \\frac{\\text{hypotenuse}}{\\text{adjacent}} = \\frac{r}{x}$\n* $\\cot \\theta = \\frac{1}{\\tan \\theta} = \\frac{\\text{adjacent}}{\\text{opposite}} = \\frac{x}{y}$\n\n\n### Solving Trigonometric Equations\n\nWe can use the trigonometric ratios and principles of equation solving to find unknown angles or sides in right-angled triangles.\n\n\n### Special Angles\n\nFor specific angles (0°, 30°, 45°, 60°, and 90°), the values of sin, cos, and tan can be easily calculated or memorized.\n\n\n### Extending Trigonometric Ratios\n\nThe definitions of trigonometric ratios can be extended to encompass any angle, not just those found within right-angled triangles.\n"
+        "content": "\n## Trigonometric Ratios and Equations\n\n### Trigonometric Ratios\n\nWe can define three basic trigonometric ratios for right-angled triangles: sine (sin), cosine (cos), and tangent (tan).  These are defined as follows:\n\n*   ```math\n      opposite\nsin θ = ───────\n    hypotenuse\n    ```\n*   ```math\n      adjacent\ncos θ = ───────\n    hypotenuse\n    ```\n*   ```math\n      opposite\ntan θ = ───────\n     adjacent\n    ```\n\nWhere θ represents the angle.  We often use a coordinate system where the hypotenuse has length *r*, the opposite side has length *y*, and the adjacent side has length *x*.\n\n\n### Reciprocal Trigonometric Ratios\n\nEach of the basic trigonometric ratios has a reciprocal:\n\n*   cosecant (cosec) = 1 / sin θ = hypotenuse / opposite =  ```math\n                            r\n                       ─────\n                         y\n                       ```\n*   secant (sec) = 1 / cos θ = hypotenuse / adjacent = ```math\n                            r\n                       ─────\n                         x\n                       ```\n*   cotangent (cot) = 1 / tan θ = adjacent / opposite = ```math\n                             x\n                        ─────\n                         y\n                       ```\n\n### Solving Trigonometric Equations\n\nWe can use our knowledge of solving equations and trigonometric ratios to solve simple trigonometric equations.\n\n### Special Angles\n\nFor certain angles (0°, 30°, 45°, 60°, and 90°), the values of sin, cos, and tan can be easily determined without a calculator.\n\n### Extending Trigonometric Ratios\n\nThe definitions of trigonometric ratios can be extended to include any angle, not just those in right-angled triangles.\n"
+      },
+      {
+        "data": {},
+        "content": "```json\n{\n  \"Title\": \"Characteristics and Properties of Functions\",\n  \"icon\": \"📈\",\n  \"flashcards\": [\n    {\n      \"front\": {\n        \"title\": \"Independent and Dependent Variables\",\n        \"question\": \"What are independent and dependent variables in a function?\"\n      },\n      \"back\": \"The independent variable (x) is freely chosen, while the dependent variable (y) is calculated based on the x-value.\"\n    },\n    {\n      \"front\": {\n        \"title\": \"Domain and Range\",\n        \"question\": \"Define the domain and range of a function.\"\n      },\n      \"back\": \"The domain is the set of all possible x-values. The range is the set of all resulting y-values.\"\n    },\n    {\n      \"front\": {\n        \"title\": \"Asymptote\",\n        \"question\": \"What is an asymptote?\"\n      },\n      \"back\": \"An asymptote is a line that a function's graph approaches but never touches.\"\n    },\n    {\n      \"front\": {\n        \"title\": \"Linear Function\",\n        \"question\": \"What is the general form of a linear function?\"\n      },\n      \"back\": \"y = ax + q\"\n    },\n    {\n      \"front\": {\n        \"title\": \"Parabolic Function\",\n        \"question\": \"What is the general form of a parabolic function?\"\n      },\n      \"back\": \"y = ax² + q\"\n    },\n    {\n      \"front\": {\n        \"title\": \"Hyperbolic Function\",\n        \"question\": \"What is the general form of a hyperbolic function?\"\n      },\n      \"back\": \"y = a/x + q\"\n    },\n    {\n      \"front\": {\n        \"title\": \"Exponential Function\",\n        \"question\": \"What is the general form of an exponential function?\"\n      },\n      \"back\": \"y = abˣ + q\"\n    },\n    {\n      \"front\": {\n        \"title\": \"Trigonometric Functions\",\n        \"question\": \"Give examples of general forms for trigonometric functions.\"\n      },\n      \"back\": \"y = a sin θ + q\\ny = a cos θ + q\\ny = a tan θ + q\"\n    }\n  ]\n}\n```\n\n## Characteristics and Properties of Functions\n\n📈\n\n### Characteristics of Functions\n\n* **Independent and Dependent Variables:** The x-value is the independent variable (freely chosen), and the y-value is the dependent variable (calculated based on x).\n\n* **Domain and Range:** The domain is the set of all possible x-values for which the function is defined.  The range is the set of all resulting y-values.\n\n* **Asymptote:** An asymptote is a line that the graph of a function approaches but never touches.\n\n\n### Special Functions and Their Properties\n\nThe following outlines the general forms of several common functions:\n\n| Function Type      | General Form       |\n|----------------------|--------------------|\n| Linear              | `y = ax + q`       |\n| Parabolic           | `y = ax² + q`      |\n| Hyperbolic          | `y = a/x + q`      |\n| Exponential         | `y = abˣ + q`      |\n| Trigonometric (Sine)| `y = a sin θ + q`  |\n| Trigonometric (Cosine)| `y = a cos θ + q` |\n| Trigonometric (Tangent)| `y = a tan θ + q` |\n\n"
       },
       {
         "data": {
-          "Title": "Quadrilaterals and the Mid-point Theorem",
-          "icon": "🫙",
+          "Title": "Quadrilaterals and the Mid-Point Theorem",
+          "icon": "🫗",
           "flashcards": [
             {
               "front": {
                 "title": "Quadrilateral",
                 "question": "What is a quadrilateral?"
               },
-              "back": "A closed shape consisting of four straight line segments."
+              "back": "A closed shape with four straight line segments."
             },
             {
               "front": {
@@ -1627,14 +2170,14 @@ const data = {
                 "title": "Rhombus",
                 "question": "What are the properties of a rhombus?"
               },
-              "back": "A parallelogram with all four sides equal in length. Opposite angles are equal. Diagonals bisect each other at 90° and bisect opposite angles."
+              "back": "A parallelogram with all four sides equal in length. Opposite angles are equal. Diagonals bisect each other at 90° and bisect the opposite angles."
             },
             {
               "front": {
                 "title": "Square",
                 "question": "What are the properties of a square?"
               },
-              "back": "A rhombus with all four angles equal to 90°.  Opposite sides are parallel. Diagonals bisect each other at 90° and are equal in length. All interior angles are 90°."
+              "back": "A rhombus with all four angles equal to 90°.  Opposite sides are parallel. Diagonals bisect each other at 90° and are equal in length. All interior angles are 90° and diagonals bisect opposite angles into 45° angles."
             },
             {
               "front": {
@@ -1648,18 +2191,97 @@ const data = {
                 "title": "Kite",
                 "question": "What are the properties of a kite?"
               },
-              "back": "A quadrilateral with two pairs of adjacent sides equal. One pair of opposite angles are equal. The diagonal between equal sides bisects the other diagonal and bisects the interior angles.  Diagonals intersect at 90°."
+              "back": "A quadrilateral with two pairs of adjacent sides equal. One pair of opposite angles are equal. The diagonal between equal sides bisects the other diagonal and bisects the interior angles. Diagonals intersect at 90°."
             },
             {
               "front": {
                 "title": "Mid-point Theorem",
                 "question": "State the mid-point theorem."
               },
-              "back": "The line joining the mid-points of two sides of a triangle is parallel to the third side and is half its length."
+              "back": "The line joining the mid-points of two sides of a triangle is parallel to the third side and half its length."
             }
           ]
         },
-        "content": "\n## Quadrilaterals and the Mid-point Theorem\n\n### Quadrilaterals\n\nA quadrilateral is a closed shape with four straight sides.  Several special types of quadrilaterals exist:\n\n* **Parallelogram:**  A quadrilateral with both pairs of opposite sides parallel.  These sides are also equal in length.  Opposite angles are equal, and the diagonals bisect each other.\n\n* **Rectangle:** A parallelogram with all four angles equal to 90°.\n\n* **Rhombus:** A parallelogram with all four sides equal in length. The diagonals bisect each other at 90° and also bisect the opposite angles.\n\n* **Square:** A rhombus with all four angles equal to 90°.\n\n* **Trapezium:** A quadrilateral with only one pair of parallel opposite sides.\n\n* **Kite:** A quadrilateral with two pairs of adjacent sides equal. One pair of opposite angles are equal (the angles between the unequal sides). The diagonal connecting the equal sides bisects the other diagonal and bisects the angles it connects. The diagonals intersect at 90°.\n\n\n### Mid-point Theorem\n\nThe mid-point theorem states that the line segment connecting the midpoints of two sides of a triangle is parallel to the third side and half its length.\n"
+        "content": "\n## Quadrilaterals and the Mid-Point Theorem\n\n### Quadrilaterals\n\nA quadrilateral is a closed shape with four straight sides.  Several special types of quadrilaterals exist, each with unique properties:\n\n* **Parallelogram:**  A quadrilateral with both pairs of opposite sides parallel.  These sides are also equal in length. Opposite angles are equal, and the diagonals bisect each other.\n\n* **Rectangle:** A parallelogram with all four angles equal to 90°.  All properties of a parallelogram apply, plus diagonals are equal in length.\n\n* **Rhombus:** A parallelogram with all four sides equal in length. All properties of a parallelogram apply, plus the diagonals bisect each other at 90° and bisect the opposite angles.\n\n* **Square:** A rhombus with all four angles equal to 90°.  It possesses all properties of a parallelogram, rhombus, and rectangle.  Diagonals are equal in length and bisect opposite angles, creating 45° angles.\n\n\n* **Trapezium:** A quadrilateral with only one pair of opposite sides parallel.\n\n* **Kite:** A quadrilateral with two pairs of adjacent sides equal. One pair of opposite angles are equal. The diagonal connecting the equal sides bisects the other diagonal and the angles it connects.  The diagonals intersect at 90°.\n\n\n### Mid-Point Theorem\n\nThe mid-point theorem states that the line segment connecting the midpoints of two sides of a triangle is parallel to the third side and is half its length.\n"
+      },
+      {
+        "data": {
+          "Title": "Analytical Geometry",
+          "icon": "📍",
+          "flashcards": [
+            {
+              "front": {
+                "title": "Point",
+                "question": "How is a point represented?"
+              },
+              "back": "A point is an ordered pair of numbers written as (x, y)."
+            },
+            {
+              "front": {
+                "title": "Distance Formula",
+                "question": "What is the formula for calculating the distance between two points?"
+              },
+              "back": "```math\nd = √((x₁ - x₂)² + (y₁ - y₂)²)\n```"
+            },
+            {
+              "front": {
+                "title": "Gradient",
+                "question": "How is the gradient of a line calculated?"
+              },
+              "back": "The gradient (m) is the ratio of vertical change to horizontal change between two points:\n```math\nm = (y₂ - y₁) / (x₂ - x₁)\n```"
+            },
+            {
+              "front": {
+                "title": "Equation of a Straight Line",
+                "question": "What is the standard form of the equation of a straight line?"
+              },
+              "back": "y = mx + c, where m is the gradient and c is the y-intercept."
+            },
+            {
+              "front": {
+                "title": "Equation of a Straight Line (Two-Point Form)",
+                "question": "What is the two-point form of the equation of a straight line?"
+              },
+              "back": "```math\n(y - y₁) / (x - x₁) = (y₂ - y₁) / (x₂ - x₁)\n```"
+            },
+            {
+              "front": {
+                "title": "Parallel Lines",
+                "question": "What is the relationship between the gradients of parallel lines?"
+              },
+              "back": "Parallel lines have equal gradients."
+            },
+            {
+              "front": {
+                "title": "Perpendicular Lines",
+                "question": "What is the relationship between the gradients of perpendicular lines?"
+              },
+              "back": "The product of the gradients of perpendicular lines is -1."
+            },
+            {
+              "front": {
+                "title": "Horizontal Line Gradient",
+                "question": "What is the gradient of a horizontal line?"
+              },
+              "back": "The gradient of a horizontal line is 0."
+            },
+            {
+              "front": {
+                "title": "Vertical Line Gradient",
+                "question": "What is the gradient of a vertical line?"
+              },
+              "back": "The gradient of a vertical line is undefined."
+            },
+            {
+              "front": {
+                "title": "Midpoint Formula",
+                "question": "What is the formula for finding the midpoint between two points?"
+              },
+              "back": "```math\nM(x, y) = ((x₁ + x₂) / 2, (y₁ + y₂) / 2)\n```"
+            }
+          ]
+        },
+        "content": "\n## Analytical Geometry\n\n### Points and Distance\n\nA point is represented by an ordered pair of numbers (x, y).  The distance (d) between two points (x₁, y₁) and (x₂, y₂) is calculated using the distance formula:\n\n```math\nd = √((x₁ - x₂)² + (y₁ - y₂)² )\n```\n\n### Gradient and Straight Lines\n\nThe gradient (m) of a line represents its steepness and is calculated as:\n\n```math\nm = (y₂ - y₁) / (x₂ - x₁)\n```\n\nA straight line has a constant gradient between any two points.  The equation of a straight line can be written in the standard form:\n\ny = mx + c\n\nwhere m is the gradient and c is the y-intercept.  Alternatively, the two-point form can be used:\n\n```math\n(y - y₁) / (x - x₁) = (y₂ - y₁) / (x₂ - x₁)\n```\n\n### Parallel and Perpendicular Lines\n\nParallel lines have equal gradients.  For perpendicular lines, the product of their gradients is -1.\n\nHorizontal lines have a gradient of 0, while the gradient of a vertical line is undefined.\n\n### Midpoint\n\nThe midpoint M(x, y) between two points (x₁, y₁) and (x₂, y₂) is calculated using:\n\n```math\nM(x, y) = ((x₁ + x₂) / 2, (y₁ + y₂) / 2)\n```\n"
       },
       {
         "data": {
@@ -1669,28 +2291,28 @@ const data = {
             {
               "front": {
                 "title": "Simple Interest",
-                "question": "What is the formula for simple interest and what do the variables represent?"
+                "question": "What is the formula for calculating simple interest?"
               },
-              "back": "The formula for simple interest is:  ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) where:\n* A = accumulated amount\n* P = principal amount\n* i = interest rate (as a decimal)\n* n = number of years"
+              "back": "The formula for simple interest is:\n```math\n A = P(1 + in)\n```\nWhere:\n* A = accumulated amount\n* P = principal amount\n* i = interest rate (as a decimal)\n* n = number of years"
             },
             {
               "front": {
                 "title": "Compound Interest",
-                "question": "How is compound interest calculated, and what is the formula?"
+                "question": "How is compound interest calculated?"
               },
-              "back": "Compound interest is calculated on the principal amount plus any accumulated interest. The formula is: ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg) where the variables are the same as in simple interest."
+              "back": "The formula for compound interest is:\n```math\n A = P(1 + i)^n\n```\nWhere:\n* A = accumulated amount\n* P = principal amount\n* i = interest rate (as a decimal)\n* n = number of years"
             },
             {
               "front": {
                 "title": "Hire Purchase Repayments",
                 "question": "How are hire purchase loan repayments calculated?"
               },
-              "back": "Hire purchase loan repayments use the simple interest formula on the cash price minus the deposit. Monthly repayments are found by dividing the accumulated amount by the number of months."
+              "back": "Hire purchase loan repayments are calculated using the simple interest formula on the cash price minus the deposit.  Monthly repayments are found by dividing the accumulated amount by the number of months."
             },
             {
               "front": {
-                "title": "Population Growth and Inflation",
-                "question": "Which type of interest is used to model population growth and inflation?"
+                "title": "Population Growth/Inflation",
+                "question": "What formula is used to calculate population growth or inflation?"
               },
               "back": "Population growth and inflation are calculated using the compound interest formula."
             },
@@ -1703,7 +2325,7 @@ const data = {
             }
           ]
         },
-        "content": "\n## Simple and Compound Interest\n\nThis section summarizes simple and compound interest, along with their applications.\n\n### Interest Rates\n\nThere are two main types of interest rates:\n\n*   **Simple Interest:** Interest is calculated only on the principal amount.\n*   **Compound Interest:** Interest is calculated on the principal amount plus any accumulated interest.\n\n### Formulas\n\nThe formulas for calculating the accumulated amount (A) are:\n\n*   **Simple Interest:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n*   **Compound Interest:** ![equation](https://raw.githubusercontent.com/mchiwundura/fundalect/main/assets/equations/eq_0.svg)\n\nWhere:\n\n*   A = Accumulated amount\n*   P = Principal amount\n*   i = Interest rate (decimal)\n*   n = Number of years\n\n\n### Applications\n\n*   **Hire Purchase:** Loan repayments are calculated using the simple interest formula applied to the cash price minus any deposit. Monthly repayments are then determined by dividing the total accumulated amount by the number of months in the repayment period.\n\n*   **Population Growth and Inflation:** These are modeled using the compound interest formula, as the growth/increase is calculated on the previous year's total.\n\n*   **Foreign Exchange Rates:**  This is the value of one currency relative to another.\n"
+        "content": "\n# Simple and Compound Interest\n\n## Types of Interest Rates\n\nThere are two main types of interest rates:\n\n* **Simple Interest:**  Calculated only on the principal amount.\n* **Compound Interest:** Calculated on the principal amount plus accumulated interest.\n\n### Formulas\n\n* **Simple Interest:**\n\n```math\n      A = P(1 + in)\n```\n\nWhere:\n\n* A = accumulated amount\n* P = principal amount\n* i = interest rate (decimal)\n* n = number of years\n\n\n* **Compound Interest:**\n\n```math\n      A = P(1 + i)^n\n```\n\nWhere:\n\n* A = accumulated amount\n* P = principal amount\n* i = interest rate (decimal)\n* n = number of years\n\n\n## Applications\n\n* **Hire Purchase Loan Repayments:**  These are calculated using the simple interest formula applied to the cash price less any deposit. Monthly repayments are then determined by dividing the total accumulated amount by the number of months in the repayment period.\n\n* **Population Growth and Inflation:**  These are calculated using the compound interest formula.\n\n\n## Foreign Exchange Rates\n\nA foreign exchange rate is the value of one currency in relation to another.\n"
       },
       {
         "data": {
@@ -1713,7 +2335,7 @@ const data = {
             {
               "front": {
                 "title": "Five Number Summary",
-                "question": "What are the five components of a five number summary?"
+                "question": "What are the five values in a five number summary?"
               },
               "back": "Minimum, First Quartile (Q1), Median (Q2), Third Quartile (Q3), Maximum"
             },
@@ -1722,14 +2344,14 @@ const data = {
                 "title": "Box-and-Whisker Plot",
                 "question": "What does a box-and-whisker plot visually represent?"
               },
-              "back": "It visually represents the five number summary: minimum, Q1, median, Q3, and maximum. The box represents the interquartile range (IQR), and the whiskers extend to the minimum and maximum values."
+              "back": "The five number summary: minimum, Q1, median, Q3, and maximum.  The box represents the interquartile range (IQR = Q3 - Q1), and the whiskers extend to the minimum and maximum values."
             },
             {
               "front": {
                 "title": "Calculating Quartiles",
-                "question": "How do you calculate the quartiles for a data set?"
+                "question": "How do you calculate the quartiles in a data set?"
               },
-              "back": "Order the data. For Q1, find the median of the lower half. For Q3, find the median of the upper half.  If the number of data points is even, the median is the average of the two middle values. If odd, it is the middle value.  The same method is used for the quartiles."
+              "back": "Sort the data.  The median is Q2. Q1 is the median of the lower half of the data, and Q3 is the median of the upper half. If the number of data points is even, the median is the average of the two middle values. For quartiles, use the average of the two surrounding values if necessary."
             },
             {
               "front": {
@@ -1740,7 +2362,7 @@ const data = {
             }
           ]
         },
-        "content": "\n## Five Number Summary and Box-and-Whisker Plots\n\nThe five-number summary and the box-and-whisker plot are two ways to represent the same data.  Both display the minimum value, maximum value, and three quartiles (25th percentile, 50th percentile (median), and 75th percentile).\n\n### Five Number Summary\n\nThe five-number summary consists of:\n\n* Minimum value\n* First Quartile (Q1): The median of the lower half of the data.\n* Median (Q2): The middle value of the data set.\n* Third Quartile (Q3): The median of the upper half of the data.\n* Maximum value\n\n\n### Box-and-Whisker Plot\n\nA box-and-whisker plot visually represents the five-number summary:\n\n* The box shows the interquartile range (IQR), the distance between Q1 and Q3.\n* A line inside the box indicates the median (Q2).\n* Whiskers extend from the box to the minimum and maximum values.\n\nThe plot can be drawn horizontally or vertically.\n\n\n### Worked Examples\n\n**Example 1:**\n\nData set: {1.25, 1.5, 2.5, 2.5, 3.1, 3.2, 4.1, 4.25, 4.75, 4.8, 4.95, 5.1}\n\n* **Minimum:** 1.25\n* **Q1:** (2.5 + 2.5) / 2 = 2.5\n* **Median:** (3.2 + 4.1) / 2 = 3.65\n* **Q3:** (4.75 + 4.8) / 2 = 4.775\n* **Maximum:** 5.1\n\n\n**Example 2:**\n\nData set: {3, 15, 16, 19, 23, 27, 27, 39, 43, 45, 54, 65}\n\n* **Minimum:** 3\n* **Q1:** (16 + 19) / 2 = 17.5\n* **Median:** (27 + 27) / 2 = 27\n* **Q3:** (43 + 45) / 2 = 44\n* **Maximum:** 65\n\n\n**Example 3:**\n\nData set: {1, 2, 12, 12, 19, 22, 35, 43, 45, 48, 49, 60}\n\n* **Minimum:** 1\n* **Q1:** (12 + 12) / 2 = 12\n* **Median:** (22 + 35) / 2 = 28.5\n* **Q3:** (45 + 48) / 2 = 46.5\n* **Maximum:** 60\n\n**Example 4:**\n\nData set: {3, 5, 5, 6, 7, 8, 12, 14, 16}\n\n* **Minimum:** 3\n* **Q1:** 5\n* **Median:** 7\n* **Q3:** 12\n* **Maximum:** 16\n\nRemember to order the data set before calculating the five-number summary.  The box-and-whisker plot is a visual representation of this summary.\n"
+        "content": "\n# Five Number Summary and Box-and-Whisker Plots\n\nThe five number summary is a concise way to summarize a dataset.  It consists of five key values:\n\n* **Minimum:** The smallest value in the dataset.\n* **First Quartile (Q1):** The value that separates the bottom 25% of the data from the top 75%.\n* **Median (Q2):** The middle value of the dataset (or the average of the two middle values if the dataset has an even number of values).\n* **Third Quartile (Q3):** The value that separates the bottom 75% of the data from the top 25%.\n* **Maximum:** The largest value in the dataset.\n\nThese five values can be visually represented using a box-and-whisker plot.  The box represents the interquartile range (IQR), which is the difference between Q3 and Q1 (IQR = Q3 - Q1).  A line inside the box indicates the median.  Whiskers extend from the box to the minimum and maximum values.\n\n\n**Worked Example:**\n\nLet's find the five number summary for the dataset: {1.25, 1.5, 2.5, 2.5, 3.1, 3.2, 4.1, 4.25, 4.75, 4.8, 4.95, 5.1}\n\n1. **Sort the data:** The data is already sorted.\n2. **Minimum:** 1.25\n3. **Maximum:** 5.1\n4. **Median (Q2):**  There are 12 values, so the median is the average of the 6th and 7th values: (3.2 + 4.1) / 2 = 3.65\n5. **First Quartile (Q1):** The median of the lower half (1.25, 1.5, 2.5, 2.5, 3.1, 3.2): (2.5 + 2.5) / 2 = 2.5\n6. **Third Quartile (Q3):** The median of the upper half (4.1, 4.25, 4.75, 4.8, 4.95, 5.1): (4.75 + 4.8) / 2 = 4.775\n\nTherefore, the five number summary is: Minimum = 1.25, Q1 = 2.5, Median = 3.65, Q3 = 4.775, Maximum = 5.1\n\n\n**Additional Examples:**\n\nSeveral additional examples of calculating five-number summaries and constructing box-and-whisker plots from different datasets are omitted for brevity.  The process remains consistent: sort the data, find the minimum, maximum, median, Q1, and Q3.  Then, represent these values graphically in a box-and-whisker plot.\n"
       }
     ]
   }

@@ -5,18 +5,18 @@ import { rules } from '@/hooks/markdownRules';
 import Markdown from 'react-native-markdown-display';
 import IconTextButton from "@/components/ui/IconTextButton";
 import ParallaxScrollView from '@/components/ParallaxScrollView';
-import { StyleSheet, Text} from 'react-native';
+import { StyleSheet, Text, View} from 'react-native';
 import { Link, useLocalSearchParams, useRouter } from 'expo-router';
 import { Lessons } from '@/db/database';
 import { useDatabase } from '@/hooks/useDatabase';
-import { useLessonContent } from '@/context/lessonContentContext';
+import { useAppContext } from '@/context/appContext';
 
 interface Lesson extends Lessons {
   course_color: string 
 }
 
 export default function Lesson() {
-const {setFlashcards, setQuizzes} = useLessonContent()
+const {setFlashcards, setQuizzes} = useAppContext()
   const router = useRouter()
 
 const {lessonId} = useLocalSearchParams();
@@ -50,7 +50,7 @@ async function getContent() {
     }, []);
     
     return (
-        <ParallaxScrollView headerBackgroundColor={{ light: '#FFFFFF', dark: '#000000' }} headerImage={
+        <ParallaxScrollView headerBackgroundColor={{ light: '#9584FF', dark: '#9584FF' }} headerImage={
             <ThemedView style={[styles.header, {backgroundColor: lesson? lesson.course_color : "#fff"}]}>
   <ThemedText type="title">
     {lesson && lesson.data.Title}
@@ -60,14 +60,14 @@ async function getContent() {
 </ThemedView>
         }>
             
-        <ThemedView>
-                  <ThemedView style={styles.activityTypeContainer}>
+        <View>
+                  <View style={styles.activityTypeContainer}>
          <IconTextButton onPress={() => router.push(`/course/${id}/lesson/${lessonId}/flashcards`)} textColor="rgba(128, 184, 147, 1)" color="rgba(128, 184, 147, 0.2)"  title="Flashcards" icon="bolt" />
         <IconTextButton onPress={() => router.push(`/quizes/${id}`)} textColor="rgba(149, 132, 255, 1 )" color="rgba(149, 132, 255, 0.2 )" title="Quizes" icon="doc.plaintext"  />     
 
-     </ThemedView>
+     </View>
             {lesson && <Markdown rules={rules}>{lesson.content}</Markdown>}
-        </ThemedView>
+        </View>
           <IconTextButton large onPress={() => router.push(`/course/${id}/lesson/${lessonId}/flashcards`)} textColor="rgba(128, 184, 147, 1)" color="rgba(128, 184, 147, 0.2)"  title="Flashcards" icon="bolt" />
         <IconTextButton large onPress={() => router.push(`/quizes/${id}`)} textColor="rgba(149, 132, 255, 1 )" color="rgba(149, 132, 255, 0.2 )" title="Quizes" icon="doc.plaintext"  />     
 <Link asChild href={'/'}>

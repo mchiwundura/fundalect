@@ -10,6 +10,15 @@ const data = {
       "icon": "🧪"
     },
     {
+      "id": 3,
+      "title": "Life Science",
+      "level": "Grade 12",
+      "description": "Explore the intricate details of biology, from genetics to human physiology. This course prepares you for further studies in the life sciences with a focus on cellular biology, ecology, and evolution.",
+      "color": "#A0D6A0",
+      "completion": 50,
+      "icon": "🧬"
+    },
+    {
       "id": 4,
       "title": "Mathematics",
       "description": "Build a strong foundation in algebra, geometry, and trigonometry to excel in high school mathematics.",

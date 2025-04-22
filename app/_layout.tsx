@@ -7,7 +7,9 @@ import { useEffect, useState } from 'react';
 import 'react-native-reanimated';
 import { useColorScheme } from '@/hooks/useColorScheme';
 import Onboarding from '@/components/onboarding';
-import { LessonContentProvider } from '@/context/lessonContentContext';
+import { AppContextProvider } from '@/context/appContext';
+import { View } from 'react-native';
+import { Svg, Defs, Filter, FeGaussianBlur, Rect } from 'react-native-svg';
 // import * as Sentry from "@sentry/react-native";
 
 // Sentry.init({
@@ -40,11 +42,21 @@ const [onboarded, setOnborded] = useState(false)
 
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <LessonContentProvider>
+      <AppContextProvider>
       { onboarded? <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="flashcards/[id]" options={{ headerShown: true, title: "Flashcards" }} />
         <Stack.Screen name="course/[id]" options={{ headerShown: true, title: "Courses" }} />
+        <Stack.Screen 
+          name="course/[id]/index" 
+          options={{ 
+            headerShown: true, 
+            title: "Course",
+            headerSearchBarOptions: {
+              placeholder: "Search",
+
+            }
+           }} />
         <Stack.Screen name="quizes/[id]" options={{ headerShown: true, title: "Quiz" }} />
         <Stack.Screen name="lesson/[id]" options={{ headerShown: true, title: "Lesson" }} />
         <Stack.Screen name="+not-found" />
@@ -52,7 +64,7 @@ const [onboarded, setOnborded] = useState(false)
       :
       <Onboarding deboard={() => setOnborded(true)}/>}
       <StatusBar style="auto" />
-      </LessonContentProvider>
+      </AppContextProvider>
     </ThemeProvider>
   );
 }

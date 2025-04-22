@@ -18,7 +18,7 @@ import IconTextButton from "@/components/ui/IconTextButton";
 import { IconSymbol } from "@/components/ui/IconSymbol";
 import { transform } from "@babel/core";
 import { useDatabase } from "@/hooks/useDatabase";
-import { useLessonContent } from "@/context/lessonContentContext";
+import { useAppContext } from "@/context/appContext";
 
 
 // Actual user performance on the cards (a timer if necesarry)
@@ -43,7 +43,7 @@ export default function Flashcards() {
   const [flashcardz, setFlashcards] = useState<[]>();
   const [front, setFront] = useState(true);
 const {getFlashcards} = useDatabase()
-const { flashcards } = useLessonContent()
+const { flashcards } = useAppContext()
 
   async function getDeck() {
 

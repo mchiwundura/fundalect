@@ -23,7 +23,7 @@ export function useDatabase() {
   return {
     getCourses: async () => {
       return await getOrFetch('courses', async () => {
-        const response = await fetch('https://dzoro--qcg3mu3wkn.expo.app/api/courses');
+        const response = await fetch('https://dzoro--tp5ugwvf4q.expo.app/api/courses');
         const data = await response.json();
         return data.contents;
       });
@@ -31,7 +31,7 @@ export function useDatabase() {
 
     getCourse: async (courseId: string | string[]) => {
       return await getOrFetch(`course_${courseId}`, async () => {
-        const response = await fetch(`https://dzoro--qcg3mu3wkn.expo.app/api/courses?id=${courseId}`);
+        const response = await fetch(`https://dzoro--tp5ugwvf4q.expo.app/api/courses?id=${courseId}`);
         const data = await response.json();
         return data;
       });
@@ -39,7 +39,7 @@ export function useDatabase() {
 
     getLessons: async (courseId: string | string[]) => {
       return await getOrFetch(`lessons_${courseId}`, async () => {
-        const response = await fetch(`https://dzoro--qcg3mu3wkn.expo.app/api/lessons?id=${courseId}`);
+        const response = await fetch(`https://dzoro--tp5ugwvf4q.expo.app/api/lessons?id=${courseId}`);
         const data = await response.json();
         return data.contents;
       });
@@ -47,7 +47,7 @@ export function useDatabase() {
 
     getLesson: async (lessonId: string | string[], courseId: string | string[]) => {
       return await getOrFetch(`lesson_${courseId}_${lessonId}`, async () => {
-        const response = await fetch(`https://dzoro--qcg3mu3wkn.expo.app/api/lessons?id=${courseId}&lessonId=${lessonId}`);
+        const response = await fetch(`https://dzoro--tp5ugwvf4q.expo.app/api/lessons?id=${courseId}&lessonId=${lessonId}`);
         const data = await response.json();
         return data.contents;
       });
@@ -61,4 +61,19 @@ export function useDatabase() {
       });
     },
   };
+}
+
+export async function resetAllCache() {
+  try {
+    const allKeys = await AsyncStorage.getAllKeys();
+    const cacheKeys = allKeys.filter((key) => key.startsWith(CACHE_PREFIX));
+
+    for (const cacheKey of cacheKeys) {
+      await AsyncStorage.removeItem(cacheKey);
+    }
+
+    console.log('All cache entries with prefix removed.');
+  } catch (error) {
+    console.error('Error resetting all cache:', error);
+  }
 }

@@ -8,6 +8,7 @@ import SettingSwitchInput from '@/components/settingSwitchInput';
 import { useState } from 'react';
 // import { deleteDatabase, runDatabase } from '@/db/database';
 import { syncOnline } from '@/db/syncOnline';
+import { resetAllCache } from '@/hooks/useDatabase.native';
 
 export default function Settings () {
 
@@ -45,7 +46,7 @@ function runDatabase() {
 
 <ThemedText type='subtitle'>Help</ThemedText>
 
-<SettingSwitchInput onPress={() => runDatabase()} icon={"questionmark.circle"} title='Help'/>
+<SettingSwitchInput onPress={() => resetAllCache()} icon={"questionmark.circle"} title='Help'/>
       </ParallaxScrollView>
     )
 

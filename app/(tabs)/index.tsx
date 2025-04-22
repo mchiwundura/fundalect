@@ -7,7 +7,7 @@ import HeaderNavigation from "@/components/HeaderNav";
 import StreakTracker from "@/components/StreakTracker";
 import ReportStats from "@/components/ReportStats";
 import { useDatabase } from "@/hooks/useDatabase";
-import Onboarding from "@/components/onboarding";
+
 
 
 export default function Home() {
@@ -22,7 +22,7 @@ const completedDays = [
   { day: "S", status: false, date: 24 },
 ];
     const [activities, setActivities] = useState<any>([]);
-    const [onborded, setOnboarded] = useState(false);
+
     const {getLessons} = useDatabase();
     
     useEffect(() => {

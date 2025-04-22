@@ -16,7 +16,7 @@ const RemoteSvg = ({ uri }: { uri: string }) => {
     return <ActivityIndicator />;
   }
 
-  return <SvgXml xml={svgXmlData} width={2000} height={2000} />;
+  return <SvgXml xml={svgXmlData} width={200} height={200} />;
 };
 
 export default RemoteSvg;

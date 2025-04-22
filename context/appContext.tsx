@@ -12,28 +12,31 @@ export type QuizQuestion = {
   answer: string;
 };
 
-type LessonContentContextType = {
+type appContextType = {
   flashcards: Flashcard[];
   quizzes: QuizQuestion[];
+  lessonColor: string;
+  setLessonColor: (color: string) => void;
   setFlashcards: (cards: Flashcard[]) => void;
   setQuizzes: (quizzes: QuizQuestion[]) => void;
 };
 
-const LessonContentContext = createContext<LessonContentContextType | undefined>(undefined);
+const appContext = createContext<appContextType | undefined>(undefined);
 
-export const LessonContentProvider = ({ children }: { children: React.ReactNode }) => {
+export const AppContextProvider = ({ children }: { children: React.ReactNode }) => {
   const [flashcards, setFlashcards] = useState<Flashcard[]>([]);
   const [quizzes, setQuizzes] = useState<QuizQuestion[]>([]);
+  const [lessonColor, setLessonColor] = useState<string>("");
 
   return (
-    <LessonContentContext.Provider value={{ flashcards, quizzes, setFlashcards, setQuizzes }}>
+    <appContext.Provider value={{ flashcards, quizzes, lessonColor, setFlashcards, setQuizzes, setLessonColor }}>
       {children}
-    </LessonContentContext.Provider>
+    </appContext.Provider>
   );
 };
 
-export const useLessonContent = () => {
-  const context = useContext(LessonContentContext);
+export const useAppContext = () => {
+  const context = useContext(appContext);
   if (!context) throw new Error("useLessonContent must be used within a LessonContentProvider");
   return context;
 };

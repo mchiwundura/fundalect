@@ -10,8 +10,10 @@ import { useDatabase } from "@/hooks/useDatabase";
 import { CourseInterface, LessonInterface } from "@/types/database";
 
 
+
 export default function Course() {
  const { getCourse, getLessons } = useDatabase();
+
   const {id} = useLocalSearchParams();
   const [course, setCourse] = useState<CourseInterface | null>(null);
   const [lessons, setLessons] = useState<LessonInterface[]>([]);
@@ -35,7 +37,7 @@ export default function Course() {
   const navigation = useNavigation();
 
   return (
-    <ParallaxScrollView
+    <ParallaxScrollView 
       headerBackgroundColor={{ light: '#FFFFFF', dark: '#000000' }}
       headerImage={
 <ThemedView style={[styles.header, {backgroundColor: course? course.color : "#fff"}]}>
