@@ -1,14 +1,57 @@
-import React from 'react';
-import { ScrollView,StyleSheet, useWindowDimensions, Platform, View } from 'react-native';
+import React, { useEffect } from 'react';
+import { ScrollView,StyleSheet, useWindowDimensions, Platform, View, Image } from 'react-native';
 import OnboardingSection from './ui/OnboardingSection';
 import LandingNavigation from './LandingNavigation';
+import Animated, { useAnimatedStyle, useSharedValue, withRepeat, withTiming } from 'react-native-reanimated'
 
 const Onboarding = (props) => {
 
   const {width} = useWindowDimensions();
+   const translateX = useSharedValue(0);
+  const translateY = useSharedValue(0);
+
+  useEffect(() => {
+    translateX.value = withRepeat(
+      withTiming(20, { duration: 1000 }), // move 10px over 5s
+      -1, // infinite
+      true // reverse back and forth
+    );
+    translateY.value = withRepeat(
+      withTiming(20, { duration: 1000 }),
+      -1,
+      true
+    );
+  }, []);
+
+  const animatedStyle = useAnimatedStyle(() => ({
+    transform: [
+      { translateX: translateX.value },
+      { translateY: translateY.value },
+    ]
+  }));
 
   return (
     <View style={[styles.container, {width, position: 'relative'}]}>
+<Animated.View style={[
+        {
+          position: 'absolute',
+          top: -20,
+          left: -20,
+          width: '110%',
+          height: '110%',
+          zIndex: -1,
+        },
+        animatedStyle
+      ]}>
+        <Image 
+          source={width < 600 ? require('./img/gaus.png') : require('./img/gauslg.png')} 
+          style={{
+            width: '100%',
+            height: '100%',
+            resizeMode: 'cover',
+          }} 
+        />
+      </Animated.View>
       {Platform.OS === 'web' && <LandingNavigation/>}
     <ScrollView horizontal pagingEnabled style={styles.container}>
     <OnboardingSection 
@@ -49,7 +92,7 @@ const Onboarding = (props) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#121212',
+
     position: 'relative',
   },
 });
