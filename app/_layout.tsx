@@ -8,18 +8,8 @@ import 'react-native-reanimated';
 import { useColorScheme } from '@/hooks/useColorScheme';
 import Onboarding from '@/components/onboarding';
 import { AppContextProvider } from '@/context/appContext';
-import { View } from 'react-native';
-import { Svg, Defs, Filter, FeGaussianBlur, Rect } from 'react-native-svg';
-// import * as Sentry from "@sentry/react-native";
+import { AuthProvider } from '@/context/authProvider';
 
-// Sentry.init({
-//   dsn: "https://5f8063918260f19dc2afca0dff97ba58@o4509027272884224.ingest.de.sentry.io/4509027295232080",
-//   // Adds more context data to events (IP address, cookies, user, etc.)
-//   // For more information, visit: https://docs.sentry.io/platforms/react-native/data-management/data-collected/
-//   sendDefaultPii: true,
-// });
-
-// Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
@@ -27,7 +17,7 @@ export default function RootLayout() {
   const [loaded] = useFonts({
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
   });
-const [onboarded, setOnborded] = useState(false)
+const [onboarded, setOnborded] = useState(true)
   useEffect(() => {
     if (loaded) {
       SplashScreen.hideAsync();
@@ -43,9 +33,13 @@ const [onboarded, setOnborded] = useState(false)
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <AppContextProvider>
+        <AuthProvider>
+
       { onboarded? <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="flashcards/[id]" options={{ headerShown: true, title: "Flashcards" }} />
+        <Stack.Screen name="notificationsScreen" options={{ headerShown: true, title: "Notifications" }} />
+        <Stack.Screen name="search" options={{ headerShown: true, title: "Discover", presentation: 'modal'}}   />
         <Stack.Screen name="course/[id]" options={{ headerShown: true, title: "Courses" }} />
         <Stack.Screen 
           name="course/[id]/index" 
@@ -56,7 +50,7 @@ const [onboarded, setOnborded] = useState(false)
               placeholder: "Search",
 
             }
-           }} />
+          }} />
         <Stack.Screen name="quizes/[id]" options={{ headerShown: true, title: "Quiz" }} />
         <Stack.Screen name="lesson/[id]" options={{ headerShown: true, title: "Lesson" }} />
         <Stack.Screen name="+not-found" />
@@ -64,6 +58,7 @@ const [onboarded, setOnborded] = useState(false)
       :
       <Onboarding deboard={() => setOnborded(true)}/>}
       <StatusBar style="auto" />
+      </AuthProvider>
       </AppContextProvider>
     </ThemeProvider>
   );

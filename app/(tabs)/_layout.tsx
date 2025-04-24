@@ -1,13 +1,17 @@
+import { HeaderButtons } from '@/components/headerButtons';
 import { Tabs } from 'expo-router';
 
 import React from 'react';
-import { Platform } from 'react-native';
+import { Button, Platform } from 'react-native';
 import { HapticTab } from '@/components/HapticTab';
 import { IconSymbol } from '@/components/ui/IconSymbol';
 import TabBarBackground from '@/components/ui/TabBarBackground';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
 import { TabBar } from '@/components/TabBar';
+import { View } from 'react-native';
+import NavigationButton from '@/components/ui/NavButton';
+
 
 
 // https://www.youtube.com/watch?v=GrLCS5ww030
@@ -19,8 +23,8 @@ export default function TabLayout() {
     tabBar={props => <TabBar {...props}/>}
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-        headerShown: false,
-      }}>
+        // headerShown: false,
+        headerRight: () => <HeaderButtons />}}>
 
       <Tabs.Screen
         name="index"

@@ -34,13 +34,13 @@ useEffect(() => {
         <Image source={props.image} style={styles.image} />
         </View>
         <View style={{maxWidth: large? 600 : "100%"}}>
-        <Text style={[styles.title, {
-            fontSize: large? 46 : 24,
+        <ThemedText type='title'  style={[styles.title, {
+            fontSize: large? 44 : 32,
             textAlign: large? 'left' : 'center',
-        }]}>{props.title}</Text>
-        <Text style={[styles.description,{
+        }]}>{props.title}</ThemedText>
+        <ThemedText type='defaultSemiBold' style={[styles.description,{
             textAlign: large? 'left' : 'center',
-        }]}>{props.description}</Text>
+        }]}>{props.description}</ThemedText>
         {props.callToAction &&
         <Pressable style={[styles.cta, {marginHorizontal: large? 0 : "auto"}]} onPress={() => props.callToAction?.()} >
           <Text style={{color: "#FFF", fontSize: 22}} >{props.callToActionText}</Text>
@@ -66,15 +66,15 @@ const styles = StyleSheet.create({
     height: 500,
   },
   title: {
-    color: 'white',
+    color: '#9584FF',
     fontWeight: 'bold',
-    marginTop: 20,
+    marginTop: 30,
   },
   description: {
     color: 'white',
     textAlign: 'center',
-    fontSize: 16,
-    marginTop: 10,
+    fontSize: 18,
+    marginVertical: 24,
   },
   cta: {
     backgroundColor: "#9584FF",
@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
     display: "flex",
     alignItems: 'center',
     padding: 10,
-    marginTop: 25,
+
     borderRadius: 25
   }
 });

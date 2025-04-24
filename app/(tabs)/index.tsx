@@ -30,6 +30,8 @@ const completedDays = [
             { id: 1, title: "Central Nervous System", icon: "😰", completion: 55, type: "Flashcards" },
             { id: 2, title: "Colloidal Systems", icon: "🧴", completion: 35, type: "Quiz" },
             { id: 3, title: "Arrays", icon: "🧑‍💻", completion: 55, type: "Flashcards" },
+            { id: 3, title: "Arrays", icon: "🧑‍💻", completion: 55, type: "Flashcards" },
+            { id: 3, title: "Arrays", icon: "🧑‍💻", completion: 55, type: "Flashcards" },
         ]);
 
     const fetchLessons = async () => {
@@ -42,7 +44,7 @@ const completedDays = [
 
     return (
 
-        <ParallaxScrollView headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }} headerImage={<HeaderNavigation />}>
+        <ScrollView  style={{ padding: 32 }}>
             <ThemedText type="title">Report</ThemedText>
             <ReportStats flashcards={20} tests={4} minutes={300} />
             
@@ -55,7 +57,7 @@ const completedDays = [
                     <ActivityCard key={x.id} activity={x} />
                 ))}
             </ScrollView>
-        </ParallaxScrollView>
+        </ScrollView>
     );
 }
 
