@@ -1,17 +1,22 @@
 import ParallaxScrollView from "@/components/ParallaxScrollView";
 import { useEffect, useState } from "react";
 import { ThemedText } from "@/components/ThemedText";
-import { StyleSheet, ScrollView, Platform } from "react-native";
+import { StyleSheet, ScrollView, Platform, useWindowDimensions, View } from "react-native";
 import ActivityCard from "@/components/ui/ActivityCard";
-import HeaderNavigation from "@/components/HeaderNav";
 import StreakTracker from "@/components/StreakTracker";
 import ReportStats from "@/components/ReportStats";
 import { useDatabase } from "@/hooks/useDatabase";
+import FlashcardDeck from "@/components/FlashcardDeck";
 
 
 
 export default function Home() {
+const {width, height} = useWindowDimensions();
+const [large, setLarge] = useState(width > 600);
 
+useEffect(() => {
+ setLarge(width > 600);
+}, [width])
 const completedDays = [
   { day: "M", status: true, date: 18 },
   { day: "T", status: false, date: 19 },
@@ -44,19 +49,28 @@ const completedDays = [
 
     return (
 
-        <ScrollView  style={{ padding: 32 }}>
-            <ThemedText type="title">Report</ThemedText>
-            <ReportStats flashcards={20} tests={4} minutes={300} />
-            
+        <ScrollView  style={{ padding: 32, paddingLeft: large ? 100 : 32 }}>
+            <ThemedText type="title">Welcome Back</ThemedText>
             <ThemedText type="subtitle">Streak</ThemedText>
             <StreakTracker currentStreak={5} bestStreak={22} completedDays={completedDays}  />
+            
+            <ScrollView horizontal={large} 
+            // style={{display: 'flex', flexDirection: large ? 'row' : 'column', justifyContent: 'flex-start', alignItems: 'center'}}
+            >
+
+            <FlashcardDeck title={"Reproduction"} color={'rgb(160, 214, 160)'} link={'/course/1/lesson/0/flashcards'} completion={50} courseTitle={'Natural Science'}/>
+            <FlashcardDeck title={"Reproduction"} color={'rgb(160, 214, 160)'} link={'/course/1/lesson/0/flashcards'} completion={50} courseTitle={'Natural Science'}/>
+            <FlashcardDeck title={"Reproduction"} color={'rgb(160, 214, 160)'} link={'/course/1/lesson/0/flashcards'} completion={50} courseTitle={'Natural Science'}/>
+            <FlashcardDeck title={"Reproduction"} color={'rgb(160, 214, 160)'} link={'/course/1/lesson/0/flashcards'} completion={50} courseTitle={'Natural Science'}/>
+            </ScrollView>
+            {/* <ReportStats flashcards={20} tests={4} minutes={300} />
             
             <ThemedText type="subtitle">Jump Back In</ThemedText>
             <ScrollView>
                 {activities.map((x) => (
                     <ActivityCard key={x.id} activity={x} />
                 ))}
-            </ScrollView>
+            </ScrollView> */}
         </ScrollView>
     );
 }

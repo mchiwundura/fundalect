@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Platform } from 'react-native';
+import { Image, StyleSheet, Platform, ScrollView } from 'react-native';
 
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
@@ -31,11 +31,8 @@ function runDatabase() {
 
 
     return (
-<ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
-      headerImage={
-<HeaderNavigation/>
-      }>
+<ScrollView style={{padding: 32}}>
+
 
 <SettingSwitchInput onPress={() => deleteDatabase()} icon={"rectangle.portrait.and.arrow.right"} title='Sign Out'/>
 <ThemedText   type='subtitle'>Settings</ThemedText>
@@ -47,7 +44,7 @@ function runDatabase() {
 <ThemedText type='subtitle'>Help</ThemedText>
 
 <SettingSwitchInput onPress={() => resetAllCache()} icon={"questionmark.circle"} title='Help'/>
-      </ParallaxScrollView>
+      </ScrollView>
     )
 
 }

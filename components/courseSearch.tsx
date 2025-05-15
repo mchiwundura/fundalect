@@ -228,11 +228,11 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
     alignItems: 'center',
+    position: 'relative',
     padding: 20,
   },
   container: {
-    position: 'relative',
-    height: '100%',
+    height: '80%',
   },
   input: {
     width: '100%',
@@ -254,15 +254,15 @@ const styles = StyleSheet.create({
   },
   cta: {
     backgroundColor: '#9584FF',
-    minWidth: '90%',
-    maxWidth: 300,
+width: '100%',
+left: 0,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     height: 44,
     position: 'absolute',
     borderRadius: 25,
-    bottom: 100,
+    bottom: 20,
     marginHorizontal: 'auto',
   },
   syncNote: {

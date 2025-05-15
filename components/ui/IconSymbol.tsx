@@ -29,6 +29,7 @@ const MAPPING = {
    "arrow.right.arrow.left" : "rotate-right",
    "repeat": "repeat",
     "stopwatch" : "access-time",
+    'checkmark.circle.fill' : 'check-circle-outline',
 } as Partial<
   Record<
     import('expo-symbols').SymbolViewProps['name'],

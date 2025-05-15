@@ -1,127 +1,83 @@
-import { StyleSheet, TouchableOpacity, useColorScheme, View } from "react-native";
+import { StyleSheet, Pressable, useColorScheme, View } from "react-native";
 import { IconSymbol } from "./ui/IconSymbol";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import Animated, {
   useSharedValue,
   withTiming,
   useAnimatedStyle,
   Easing,
-} from 'react-native-reanimated';
+} from "react-native-reanimated";
 
 interface FlashcardNavProps {
   flip: () => void;
   good: () => void;
   bad: () => void;
-  skip: () => void;
+  skip?: () => void;
   active: boolean;
 }
 
 export default function FlashcardNav({ flip, good, bad, skip, active }: FlashcardNavProps) {
   const colorScheme = useColorScheme();
-  
-  // Create shared values for button positions
+  const isLight = colorScheme === "light";
+
   const goodButtonPosition = useSharedValue("44%");
   const badButtonPosition = useSharedValue("44%");
-  
-  // Animation configuration
-  const config = {
+
+  const animationConfig = {
     duration: 300,
     easing: Easing.bezier(0.5, 0.01, 0, 1),
-  };
-  
-  // Animated styles for Good button
-  const goodButtonStyle = useAnimatedStyle(() => {
-    return {
-      left: withTiming(goodButtonPosition.value, config),
-    };
-  });
-  
-  // Animated styles for Bad button
-  const badButtonStyle = useAnimatedStyle(() => {
-    return {
-      left: withTiming(badButtonPosition.value, config),
-    };
-  });
-  
-  // Update button positions when active state changes
+  } as const;
+
+  const goodButtonStyle = useAnimatedStyle(() => ({
+    left: withTiming(goodButtonPosition.value, animationConfig),
+  }));
+
+  const badButtonStyle = useAnimatedStyle(() => ({
+    left: withTiming(badButtonPosition.value, animationConfig),
+  }));
+
   useEffect(() => {
-    if (active) {
-      goodButtonPosition.value = "70%";
-      badButtonPosition.value = "18%";
-    } else {
-      goodButtonPosition.value = "44%";
-      badButtonPosition.value = "44%";
-    }
+    goodButtonPosition.value = active ? "70%" : "44%";
+    badButtonPosition.value = active ? "18%" : "44%";
   }, [active]);
-  
-  // Handle flip event
-  function flipEvent() {
-    flip();
-  }
-  
+
+  const buttonBg = isLight ? "rgba(244, 244, 244, 1)" : "rgba(0, 0, 0, 1)";
+
   return (
     <View style={styles.container}>
-      {/* Good button */}
-      <TouchableOpacity onPress={good}>
-        <Animated.View
-          style={[
-            styles.button,
-            goodButtonStyle, styles.sideButton,
-            {
-              backgroundColor: colorScheme === "light" ? "rgba(0, 0, 0, 0.1)" : "rgba(0, 0, 0, 1)",
-            },
-          ]}
-        >
-          <IconSymbol name="hand.thumbsup" color={"#80B893"} />
-        </Animated.View>
-      </TouchableOpacity>
-      
-      {/* Bad button */}
-      <TouchableOpacity onPress={bad}>
-        <Animated.View
-          style={[
-            styles.button,
-            badButtonStyle, styles.sideButton,
-            {
-              backgroundColor: colorScheme === "light" ? "rgba(0, 0, 0, 0.1)" : "rgba(0, 0, 0, 1)",
-            },
-          ]}
-        >
-          <IconSymbol name="hand.thumbsdown" color={"#CD6C87"} />
-        </Animated.View>
-      </TouchableOpacity>
-      
-      {/* Flip Button */}
-      <TouchableOpacity
-        onPress={flipEvent}
-        style={[
-          styles.button,
-          {
-            backgroundColor: colorScheme === "light" ? "rgba(0, 0, 0, 0.1)" : "rgba(0, 0, 0, 1)",
-            height: 80,
-            width: 80,
-            left: "40%",
-            top: 0,
-            zIndex: 10,
-          },
-        ]}
-      >
-        <IconSymbol name="repeat" size={40} color={"#9584ff"} />
-      </TouchableOpacity>
+      <View style={styles.buttonRow}>
+        <View style={styles.buttonContainer}>
+          <Pressable onPress={good}>
+            <Animated.View style={[styles.button, styles.sideButton, goodButtonStyle, { backgroundColor: buttonBg }]}>
+              <IconSymbol name="hand.thumbsup" color="#80B893" />
+            </Animated.View>
+          </Pressable>
 
-      {/* Skip Button (optional) */}
+          <Pressable onPress={bad}>
+            <Animated.View style={[styles.button, styles.sideButton, badButtonStyle, { backgroundColor: buttonBg }]}>
+              <IconSymbol name="hand.thumbsdown" color="#CD6C87" />
+            </Animated.View>
+          </Pressable>
+
+          <Pressable
+            onPress={flip}
+            style={[
+              styles.button,
+              styles.centerButton,
+              { backgroundColor: buttonBg },
+            ]}
+          >
+            <IconSymbol name="repeat" size={40} color="#9584ff" />
+          </Pressable>
+        </View>
+      </View>
+
       {skip && (
-        <TouchableOpacity
-          onPress={skip}
-          style={[
-            styles.skipButton,
-            {
-              backgroundColor: colorScheme === "light" ? "rgba(0, 0, 0, 0.1)" : "rgba(0, 0, 0, 1)",
-            },
-          ]}
-        >
-          <IconSymbol name="arrow.right.arrow.left" color={"gray"} />
-        </TouchableOpacity>
+        <View style={styles.skipButtonContainer}>
+          <Pressable style={[styles.skipButton, { backgroundColor: buttonBg }]} onPress={skip}>
+            <IconSymbol name="arrow.right.arrow.left" color="gray" />
+          </Pressable>
+        </View>
       )}
     </View>
   );
@@ -129,33 +85,51 @@ export default function FlashcardNav({ flip, good, bad, skip, active }: Flashcar
 
 const styles = StyleSheet.create({
   container: {
-    position: "relative",
     marginTop: 30,
     width: "100%",
+    height: 200,
+    flexDirection: "column",
+  },
+  buttonRow: {
+    width: "100%",
     height: 100,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  buttonContainer: {
+    width: 360,
+    height: 50,
+    position: "relative",
+    left: -6,
   },
   button: {
     position: "absolute",
     width: 50,
     height: 50,
-    display: "flex",
     alignItems: "center",
     justifyContent: "center",
     borderRadius: 40,
-    top: 50,
-  },
-  skipButton: {
-    position: "absolute",
-    width: 40,
-    height: 40,
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    borderRadius: 20,
-    top: 110,
-    left: "45%",
   },
   sideButton: {
-    top: 25
-  }
+    top: 25,
+  },
+  centerButton: {
+    height: 80,
+    width: 80,
+    left: "40%",
+    top: 0,
+    zIndex: 10,
+  },
+  skipButtonContainer: {
+    width: "100%",
+    alignItems: "center",
+    marginTop: 20,
+  },
+  skipButton: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    alignItems: "center",
+    justifyContent: "center",
+  },
 });

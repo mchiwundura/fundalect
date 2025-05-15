@@ -24,7 +24,7 @@ const courses = [
   const colorScheme = useColorScheme();
 
   return (
-    <ParallaxScrollView headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }} headerImage={<HeaderNavigation />}> 
+    <ScrollView style={{padding: 32}} > 
       <ThemedText type="title">Progress this week</ThemedText>
 
       <ThemedText type="subtitle">Weekly Activity</ThemedText>
@@ -43,7 +43,7 @@ const courses = [
       <CalendarView completedDays={completedDays} />
 
       <ThemedText type="subtitle">Course Progress</ThemedText>
-    </ParallaxScrollView>
+    </ScrollView>
   );
 }
 

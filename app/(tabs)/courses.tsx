@@ -107,13 +107,7 @@ const colorScheme = useColorScheme()
         
 
     return (
-        <ParallaxScrollView
-        headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
-    
-        headerImage={
-       <HeaderNavigation/> 
-        }
-        >
+        <ScrollView style={{ padding: 32 }}>
             <ThemedText type="title">My Courses</ThemedText>
             <ScrollView horizontal style={styles.coursesContainer}>
             {
@@ -122,7 +116,7 @@ const colorScheme = useColorScheme()
                 ))
             }
             </ScrollView>
-        <ThemedText type="subtitle">Continue learning</ThemedText>
+        <ThemedText style={{marginBottom: 20}} type="subtitle">Continue learning</ThemedText>
         <ScrollView horizontal>
         <IconTextButton onPress={() => filterActivities("All")}  
         color={colorScheme === "light"? "rgba( 0, 0, 0, 0.3)" : "rgba(255, 255, 255, 0.3)"} 
@@ -141,7 +135,7 @@ const colorScheme = useColorScheme()
             })}
  
         </ScrollView>
-        </ParallaxScrollView>
+        </ScrollView>
     )
 }
 
@@ -152,5 +146,6 @@ const styles = StyleSheet.create({
     coursesContainer: {
         display: 'flex',
         flexDirection: 'row',
+        marginTop: 20,
     }
 })
