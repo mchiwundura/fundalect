@@ -32,7 +32,7 @@ const data = {
                 "title": "Force Components on a Slope",
                 "question": "How are the components of gravity (Fg) resolved parallel and perpendicular to a slope?"
               },
-              "back": "```math\n      Fg sin(θ)\n Fgx = ──────\n           1\n```\n\n```math\n      Fg cos(θ)\n Fgy = ──────\n           1\n```"
+              "back": "\n      Fg sin(θ)\n Fgx = ──────\n           1\n\n      Fg cos(θ)\n Fgy = ──────\n           1\n"
             },
             {
               "front": {
@@ -60,7 +60,7 @@ const data = {
                 "title": "Newton's Law of Universal Gravitation",
                 "question": "State Newton's Law of Universal Gravitation and provide its formula."
               },
-              "back": "Every particle attracts every other particle in the universe with a force which is directly proportional to the product of their masses and inversely proportional to the square of the distance between their centers.\n\n```math\n      Gm1m2\n F = ──────\n       d^2\n```"
+              "back": "Every particle attracts every other particle in the universe with a force which is directly proportional to the product of their masses and inversely proportional to the square of the distance between their centers.\n\n      Gm1m2\n F = ──────\n       d^2\n"
             }
           ]
         },
@@ -972,7 +972,102 @@ const data = {
             }
           ]
         },
-        "content": "\n## Electrostatics Fundamentals\n\n### Electric Charge\n\nObjects can be positively charged, negatively charged, or neutral.\n\n### Coulomb's Law\n\nCoulomb's Law describes the electrostatic force between two point charges:\n\n```math\nF = \\frac{kQ_1Q_2}{r^2}\n```\n\nwhere:\n\n*   `F` is the electrostatic force\n*   `k` is Coulomb's constant\n*   `Q₁` and `Q₂` are the magnitudes of the charges\n*   `r` is the distance between the charges\n\n### Electric Field\n\nAn electric field is a region of space where an electric charge experiences a force.  The direction of the field at a point is the direction a positive test charge would move if placed at that point.\n\n### Electric Field Lines\n\nElectric field lines are a visual representation of the electric field.  They point away from positive charges and towards negative charges, illustrating that like charges repel and unlike charges attract.\n\n### Electric Field Strength\n\nThe electric field strength (E) is defined as the force per unit charge:\n\n```math\nE = \\frac{F}{q}\n```\n\nThe units of electric field strength are Newtons per Coulomb (N·C⁻¹).\n\n### Electric Field due to a Point Charge\n\nThe electric field strength (E) at a distance r from a point charge Q is:\n\n```math\nE = \\frac{F}{q} = \\frac{kQ}{r^2}\n```\n\n### Electrostatic Force\n\nThe electrostatic force is attractive for unlike charges (positive and negative) and repulsive for like charges (positive and positive, or negative and negative).\n\n\n### Physical Quantities\n\n| Quantity        | Unit Name    | Unit Symbol |\n|-----------------|---------------|-------------|\n| Charge (q)      | Coulomb       | C           |\n| Distance (r)    | meter         | m           |\n| Electric Field (E) | Newtons per Coulomb | N·C⁻¹       |\n| Force (F)       | Newton        | N           |\n\n\n"
+        "content": "\n## Electrostatics Fundamentals\n\n### Electric Charge\n\nObjects can be positively charged, negatively charged, or neutral.\n\n### Coulomb's Law\n\nCoulomb's Law describes the electrostatic force between two point charges:\n\n```math\n    k Q₁ × Q₂  \nF = ───────  \n        r²    \n```\n\nwhere:\n\n*   F is the electrostatic force\n*   k is Coulomb's constant\n*   Q₁ and Q₂ are the magnitudes of the charges\n*   r is the distance between the charges\n\n### Electric Field\n\nAn electric field is a region of space where an electric charge experiences a force.  The direction of the field at a point is the direction a positive test charge would move if placed at that point.\n\n### Electric Field Lines\n\nElectric field lines are a visual representation of the electric field.  They point away from positive charges and towards negative charges, illustrating that like charges repel and unlike charges attract.\n\n### Electric Field Strength\n\nThe electric field strength (E) is defined as the force per unit charge:\n\n```math\n      F\nE = ────\n      Q\n```\n\nThe units of electric field strength are Newtons per Coulomb (N·C⁻¹).\n\n### Electric Field due to a Point Charge\n\nThe electric field strength (E) at a distance r from a point charge Q is:\n\n```math\n      F          kQ  \nE = ────  =  ───── \n      q           r²\n\n```\n\n### Electrostatic Force\n\nThe electrostatic force is attractive for unlike charges (positive and negative) and repulsive for like charges (positive and positive, or negative and negative).\n\n\n### Physical Quantities\n\n| Quantity        | Unit Name    | Unit Symbol |\n|-----------------|---------------|-------------|\n| Charge (q)      | Coulomb       | C           |\n| Distance (r)    | meter         | m           |\n| Electric Field (E) | Newtons per Coulomb | N·C⁻¹       |\n| Force (F)       | Newton        | N           |\n\n\n"
+      }
+    ],
+    "2": [
+      {
+        "data": {
+          "Title": "Definitions",
+          "icon": "📔",
+          "flashcards": [
+            {
+              "front": {
+                "title": "Medicines",
+                "question": "How is a medicine defined in terms of its purpose and claims?"
+              },
+              "back": "Any substance or mixture of substances used, manufactured, sold, or represented as suitable for diagnosing, treating, mitigating, or preventing disease, or modifying any physical, mental, or organic function in humans or animals. It includes substances that claim medicinal effects even without making explicit claims."
+            },
+            {
+              "front": {
+                "title": "Advertisement",
+                "question": "What qualifies as an advertisement for a medicine?"
+              },
+              "back": "Any written, pictorial, visual, verbal, or descriptive material that appears in publications, TV, cinema, or is distributed to the public in any way to promote the sale of the medicine."
+            },
+            {
+              "front": {
+                "title": "Clinical Trial",
+                "question": "What is a clinical trial and what does it involve?"
+              },
+              "back": "A systematic study in humans or animals to establish the efficacy of medicines, verify effects or adverse reactions, and study absorption, distribution, metabolism, and excretion."
+            },
+            {
+              "front": {
+                "title": "Sell",
+                "question": "What actions are included in the definition of 'sell'?"
+              },
+              "back": "Includes wholesale, retail, import, export, advertise, label, prepare, expose, possess for sale, smuggle, administer, hawk, supply, barter, deliver, transmit as gift or sample, or dispose of in any way."
+            },
+            {
+              "front": {
+                "title": "Possess",
+                "question": "What does 'possess' mean in the legal context of medicines?"
+              },
+              "back": "To keep, store, or have in custody, control, or supervision. Liability may extend to individuals responsible for those flouting the law under their control."
+            },
+            {
+              "front": {
+                "title": "Deal In",
+                "question": "What does 'deal in' prohibited drugs involve?"
+              },
+              "back": "Selling or performing any act (as principal, agent, messenger, etc.) related to delivery, collection, import/export, administration, manufacture, or transmission of a prohibited drug."
+            },
+            {
+              "front": {
+                "title": "Manufacture",
+                "question": "What is considered 'manufacture' of medicine, and who is allowed to compound?"
+              },
+              "back": "Includes compounding, processing, or packing for sale. Excludes compounding by a licensed practitioner or pharmacist for a specific patient or for sale from the premises. MCAZ approval is required for general sale. Prohibited substances cannot be compounded."
+            },
+            {
+              "front": {
+                "title": "Dispense",
+                "question": "What does it mean to 'dispense' a medicine?"
+              },
+              "back": "To prepare, measure, mix, dissolve, or count out a drug for the treatment of a specific person or animal. Does not include the actual administration of the drug."
+            },
+            {
+              "front": {
+                "title": "Prescription",
+                "question": "What is a prescription and who is it intended for?"
+              },
+              "back": "An order made by a prescriber, written or verbal, for supplying a medicine to a specific person or animal. It must not be made out to groups like families or clinics. Dangerous Drugs prescriptions must be handwritten."
+            },
+            {
+              "front": {
+                "title": "Prescriber",
+                "question": "Who is legally allowed to prescribe medicine?"
+              },
+              "back": "Only medical, dental, and veterinary practitioners. Pharmacists and nurses cannot prescribe but may supply certain medicines as permitted by law."
+            },
+            {
+              "front": {
+                "title": "Dangerous Drugs Register",
+                "question": "What are the requirements for a Dangerous Drugs Register?"
+              },
+              "back": "Must be a bound book, not loose-leaf or card index. Records must comply with Sections 9, 28, and 33 of the Dangerous Drugs Regulations."
+            },
+            {
+              "front": {
+                "title": "Continuous and Personal Supervision",
+                "question": "What is required under continuous and personal supervision?"
+              },
+              "back": "All regulated activities must occur under the presence and active supervision of a person with a valid Persons Licence issued by MCAZ, who is authorized to dispense medicines."
+            }
+          ]
+        },
+        "content": "\n# General Evolution Of The Regulatory System\n\n## THE CHLOROFORM CASE\n\n> In the UK the use of chloroform as an anesthetic had been suspected of Adverse Reactions  (Depression of respiration, cardiac arrest and sudden death)  \n\nAfter a study and a Committee report in 1914 recommendations were made that there should be more controls on advertising and sale of medicines. \n\nIt was also recommended that \n- A register of manufacturers be established\n- The name of the manufacturer was to be stated on the product label\n- Ingredients and therapeutic claims had been declared on the label\n- Manufacturing sites for medicines were to be inspected \n\n## Control of Medicines\n\nThis is through Acts of Parliament which empower Ministers and their Departments to introduce rules and regulations (the nuts and bolts of legislation)\n\nThese are commonly known as Statutory Instruments.\n\n## Zimbabwe Context \nLegislation effectively started in in 1969 only a few years after  the United Kingdom Medicines Act.  The control of medicines in Zimbabwe is provided for under\n- The Medicines and Allied Substances Control Act (MASCA) [Chapter 15:03] (and its Regulations (Including Statutory Instruments) passed from time to time.\n(MASCA was previously known as the Drugs and Allied Substances Control Act, until 1 August 1997)\n- The Dangerous Drugs Act (Chapter 15:02) and its regulations.\n\n## Medicines and Allied Substances Control Act (MASCA)\nThis Act provides for:\n- Establishment of a medicines regulatory authority, the Medicines Control Authority of Zimbabwe\n- Registration of medicines\n- Licensing and Control of premises and persons handling medicines.\n- Control of clinical trials (in collaboration with the Medical Research Council and Department of Veterinary Services).\n- Procedure for handling prohibited drugs and \n- General provisions.\n\n## Dangerous Drugs Act (DDA) (Chapter 15:02)\nProvides for the control of: \n- Production \n- Importation \n- Exportation \n- Possession \n- Sale \n- Distribution, and \n- Use\n\nof dangerous drugs which are mostly narcotics liable to abuse.\n\n"
       }
     ],
     "3": [

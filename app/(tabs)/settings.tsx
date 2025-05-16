@@ -5,7 +5,7 @@ import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import HeaderNavigation from '@/components/HeaderNav';
 import SettingSwitchInput from '@/components/settingSwitchInput';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 // import { deleteDatabase, runDatabase } from '@/db/database';
 import { syncOnline } from '@/db/syncOnline';
 import { resetAllCache } from '@/hooks/useDatabase.native';
@@ -15,6 +15,16 @@ export default function Settings () {
 const [notifications, setNotifications] = useState(false)
 const [sync, setSync] = useState(false)
 const [ nightMode, setNightMode] = useState(true)
+
+useEffect(() => {
+  fetch("https://dzoro--h9jzp3tibi.expo.app/api/courses")
+  .then((res) => res.json())
+  .then((data) => console.log(data))
+  .catch((err) => {
+    console.log("Fetch error:", err.message); // better context
+  });
+
+})
 
 function syncDatabase() {
   syncOnline()

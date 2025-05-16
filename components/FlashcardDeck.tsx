@@ -1,4 +1,4 @@
-import { StyleSheet, Text, Touchable, TouchableOpacity, View } from 'react-native';
+import { StyleSheet, Text, Touchable, TouchableOpacity, useWindowDimensions, View } from 'react-native';
 import React from 'react';
 import { ThemedText } from './ThemedText';
 import { FontAwesome } from '@expo/vector-icons';
@@ -22,10 +22,10 @@ const FlashcardDeck = ({
   courseTitle,
 }: FlashcardDeckProps) => {
   const router = useRouter();
-
+  const {width} = useWindowDimensions();
   return (
     <TouchableOpacity
-      style={styles.wrapper}
+      style={[styles.wrapper, { width: width > 600 ? 300 : "100%", marginHorizontal: width > 600 ? 10 : 0, }]}
       activeOpacity={0.85}
       onPress={() => router.push(link)}
     >
@@ -55,7 +55,7 @@ const FlashcardDeck = ({
             ]}
           />
         </View>
-      <View style={{distplay: 'flex', width: '100%', alignItems: 'flex-end', marginTop: 10}}>
+      <View style={{display: 'flex', width: '100%', alignItems: 'flex-end', marginTop: 10}}>
         <TouchableOpacity
           style={[styles.button, { backgroundColor: Colors.primary }]}
           onPress={() => router.push(link)}>
@@ -72,10 +72,9 @@ export default FlashcardDeck;
 
 const styles = StyleSheet.create({
   wrapper: {
-    width: 350,
     height: 210,
-    margin: 15,
     position: 'relative',
+    marginVertical: 10,
   },
   button: {
     padding: 10,

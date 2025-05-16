@@ -10,12 +10,21 @@ const data = {
       "icon": "🧪"
     },
     {
+      "id": 2,
+      "title": "Forensic Dispensing",
+      "level": "Internship",
+      "description": "Delve into forensic and related dipsensing practice in preparation for you preregistration course with the Zimbabwean Pharmacy Council",
+      "color": "#ccc",
+      "completion": 0,
+      "icon": "🧑‍💼"
+    },
+    {
       "id": 3,
       "title": "Life Science",
       "level": "Grade 12",
       "description": "Explore the intricate details of biology, from genetics to human physiology. This course prepares you for further studies in the life sciences with a focus on cellular biology, ecology, and evolution.",
       "color": "#A0D6A0",
-      "completion": 50,
+      "completion": 0,
       "icon": "🧬"
     },
     {

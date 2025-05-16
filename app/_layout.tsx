@@ -9,6 +9,7 @@ import { useColorScheme } from '@/hooks/useColorScheme';
 import Onboarding from '@/components/onboarding';
 import { AppContextProvider } from '@/context/appContext';
 import { AuthProvider } from '@/context/authProvider';
+import Background from '@/components/Background';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -36,6 +37,7 @@ const [onboarded, setOnborded] = useState(true)
         <AuthProvider>
 
       { onboarded? <Stack>
+
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="flashcards/[id]" options={{ headerShown: true, title: "Flashcards" }} />
         <Stack.Screen name="notificationsScreen" options={{ headerShown: true, title: "Notifications" }} />
@@ -48,7 +50,7 @@ const [onboarded, setOnborded] = useState(true)
             title: "Course",
             headerSearchBarOptions: {
               placeholder: "Search",
-
+              
             }
           }} />
         <Stack.Screen name="quizes/[id]" options={{ headerShown: true, title: "Quiz" }} />

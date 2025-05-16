@@ -1,23 +1,24 @@
 import { ThemedText } from "../ThemedText";
 import { ThemedView } from "../ThemedView";
-import { Image, StyleSheet } from 'react-native';
+import { Image, StyleSheet, View } from 'react-native';
 
 export default function ProfileIcon() {
     return (
-        <ThemedView style={styles.container}>
+        <View style={styles.container}>
                   <Image
           source={require('@/assets/images/avatar.png')}
           style={styles.avatar}
         />
-            <ThemedText type="defaultSemiBold">Munyaradzi Chiwundura</ThemedText>
-        </ThemedView>
+            <ThemedText type="subtitle">Munyaradzi Chiwundura</ThemedText>
+        </View>
     )
 }
 
 const styles = StyleSheet.create({
     container: {
         display: "flex",
-        alignItems: "center"
+        alignItems: "center",
+        marginVertical: 20
     },
 avatar: {
     width: 50,

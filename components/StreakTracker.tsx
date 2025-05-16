@@ -1,23 +1,25 @@
 import { View, Text, StyleSheet, useColorScheme } from "react-native";
 import { ThemedText } from "./ThemedText";
 
-interface StreakTrackerProps {
-  currentStreak: number;
-  bestStreak: number;
-  completedDays: {
-    day: string;
-    status: boolean;
-    date: number;
-  }[];
-}
+export default function StreakTracker() {
 
+const currentStreak = 5 
+const bestStreak = 22  
 
+const completedDays = [
+  { day: "M", status: true, date: 18 },
+  { day: "T", status: false, date: 19 },
+  { day: "W", status: true, date: 20 },
+  { day: "T", status: true, date: 21 },
+  { day: "F", status: false, date: 22 },
+  { day: "S", status: true, date: 23 },
+  { day: "S", status: false, date: 24 },
+];
 
-export default function StreakTracker({ currentStreak, bestStreak, completedDays }: StreakTrackerProps) {
     const colorScheme = useColorScheme()
   return (
     <View style={[styles.container, {
-            backgroundColor: colorScheme === "light" ? "rgba(255, 255, 255, 1)" : "rgba(255, 255, 255, 0.05)",
+            backgroundColor: colorScheme === "light" ? "rgba(255, 255, 255, 0.5)" : "rgba(255, 255, 255, 0.05)",
             boxShadow: colorScheme === "light" ? "0 4px 4px rgba(0, 0, 0, 0.25)" : "0 0 0 rgba(0, 0, 0, 0.1)"
     }]}>
       <Text style={styles.streakText}>🔥 {currentStreak} Days</Text>

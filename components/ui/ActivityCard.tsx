@@ -80,6 +80,8 @@ const styles = StyleSheet.create({
         flexDirection: "row",   
         justifyContent: "space-between",
         margin: 10,
+        maxWidth: 400,
+        minWidth: 300,
     },
     cardInfo :{
         width: "70%",
