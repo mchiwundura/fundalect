@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TouchableOpacity, useColorScheme } from "react-native";
+import { StyleSheet, Text, TouchableOpacity, useColorScheme, View } from "react-native";
 import { ThemedView } from "../ThemedView";
 import { Activity } from "../../types/ui/ActivityCard";
 import { ThemedText } from "../ThemedText";
@@ -47,12 +47,12 @@ const activityColors = colorMap[activity.type] || colorMap.Flashcards;
                     <Text style={styles.iconText}>{activity.icon}</Text>
                 </ThemedView>
 
-                 <ThemedView style={styles.cardInfo}>
+                 <View style={styles.cardInfo}>
                     
                     {/* The title container */}
                     <ThemedText type="defaultSemiBold">{activity.title}</ThemedText>
                     
-                    <ThemedView style={{flexDirection: "row", justifyContent: "space-between", alignItems: "center"}}>
+                    <View style={{flexDirection: "row", justifyContent: "space-between", alignItems: "center"}}>
                         <ThemedText type="subtle">Completion: {activity.completion}%</ThemedText>
                         <IconTextButton title={activity.type} 
                         textColor={activityColors.textColor}
@@ -60,13 +60,13 @@ const activityColors = colorMap[activity.type] || colorMap.Flashcards;
                         color={activityColors.backgroundColor}
                         icon={activity.type === "Flashcards"? "bolt" : "doc.plaintext"} 
                         onPress={() => navigation.navigate("flashcards", {activity})} />
-                    </ThemedView>
+                    </View>
                     
                     {/* Progress Bar */}
                     <ThemedView style={styles.progressBar}>
                         <ThemedView style={[styles.progress,  {width: `${activity.completion}%`}]}></ThemedView>
                     </ThemedView>
-                 </ThemedView>
+                 </View>
        
                  </TouchableOpacity>
     )
@@ -79,9 +79,9 @@ const styles = StyleSheet.create({
         display: "flex",
         flexDirection: "row",   
         justifyContent: "space-between",
-        margin: 10,
+        marginVertical: 5,
+        width: "100%",
         maxWidth: 400,
-        minWidth: 300,
     },
     cardInfo :{
         width: "70%",

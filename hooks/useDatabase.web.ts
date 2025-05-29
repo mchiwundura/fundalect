@@ -41,12 +41,26 @@ export function useDatabase() {
       },
       getFlashcards: async (lessonId: string | string[], courseId: string | string[]) => {
           async function fetchLesson() {
-            const response = await fetch(`/api/flashcards?id=${lessonId}&lessonId=${courseId}`)
+            const response = await fetch(`/api/flashcards?lessonId=${lessonId}&courseId=${courseId}`)
             const data = await response.json()
             return data
           }
           const content = await fetchLesson();
-          return content.contents;
+          console.log("Fetching flashcards for lessonId:", lessonId, "and courseId:", courseId, content);
+          return content.data;
+      },
+      getInitialData: async (courseIds: string) => {
+          async function fetchInitialData() {
+            const flashcards = await fetch(`/api/initialFlashcards?courses=${courseIds}`)
+            const lessons = await fetch(`/api/initialLessons?courses=${courseIds}`)
+            
+            const lessonsData = await lessons.json()
+            const flashcardsData = await flashcards.json()
+            console.log("Initial data fetched:", flashcardsData, lessonsData);
+            return {flashcards: flashcardsData, lessons: lessonsData}
+          }
+          const content = await fetchInitialData();
+          return content;
       },
     };
 }

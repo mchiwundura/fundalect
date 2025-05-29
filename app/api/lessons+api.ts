@@ -1400,28 +1400,133 @@ const data = {
           "flashcards": [
             {
               "front": {
-                "title": "Phenotype vs Genotype",
-                "question": "What is the difference between genotype and phenotype?"
+                "title": "Gene",
+                "question": "What is a gene?"
               },
-              "back": "Genotype is the genetic makeup, phenotype is the observable trait."
+              "back": "A small portion of DNA that codes for a particular characteristic. Found inside the chromosome, located in the nucleus of a cell."
             },
             {
               "front": {
-                "title": "Types of Dominance",
-                "question": "What are three types of dominance in inheritance?"
+                "title": "Alleles",
+                "question": "What are alleles?"
               },
-              "back": "Complete dominance, incomplete dominance, and co-dominance."
+              "back": "Different forms of a gene at the same locus on homologous chromosomes. Example: Dominant (T) – tall, Recessive (t) – short."
             },
             {
               "front": {
-                "title": "Sex-linked Traits",
-                "question": "What are sex-linked traits?"
+                "title": "Genotype",
+                "question": "What is a genotype?"
               },
-              "back": "Traits controlled by genes on sex chromosomes, usually X-linked."
+              "back": "The genetic makeup of an organism. Examples: TT (homozygous dominant), Tt (heterozygous), tt (homozygous recessive)."
+            },
+            {
+              "front": {
+                "title": "Phenotype",
+                "question": "What is a phenotype?"
+              },
+              "back": "The physical appearance of an organism determined by its genotype. Example: Tall or short plants."
+            },
+            {
+              "front": {
+                "title": "Dominant Allele",
+                "question": "What is a dominant allele?"
+              },
+              "back": "An allele that is expressed in the phenotype when present in homozygous (TT) or heterozygous (Tt) form. Example: T for tall."
+            },
+            {
+              "front": {
+                "title": "Recessive Allele",
+                "question": "What is a recessive allele?"
+              },
+              "back": "An allele masked in the heterozygous condition and only expressed in the homozygous condition. Example: t for short."
+            },
+            {
+              "front": {
+                "title": "Heterozygous",
+                "question": "What does heterozygous mean?"
+              },
+              "back": "Having two different alleles for a trait. Example: Tt – phenotype is tall due to the dominant allele."
+            },
+            {
+              "front": {
+                "title": "Homozygous",
+                "question": "What does homozygous mean?"
+              },
+              "back": "Having two identical alleles for a trait. Examples: TT – tall (dominant), tt – short (recessive)."
+            },
+            {
+              "front": {
+                "title": "Monohybrid Cross",
+                "question": "What is a monohybrid cross?"
+              },
+              "back": "A genetic cross examining one characteristic or trait. Example: Flower colour – yellow vs white."
+            },
+            {
+              "front": {
+                "title": "Complete Dominance",
+                "question": "What is complete dominance?"
+              },
+              "back": "A dominant allele fully masks the recessive allele in a heterozygous organism. Example: Tt results in a tall plant because T masks t."
+            },
+            {
+              "front": {
+                "title": "Incomplete Dominance",
+                "question": "What is incomplete dominance?"
+              },
+              "back": "The offspring shows a phenotype that is intermediate between the parents. Example: Red × White flowers → Pink flowers."
+            },
+            {
+              "front": {
+                "title": "Co-dominance",
+                "question": "What is co-dominance?"
+              },
+              "back": "Both alleles are equally expressed in the phenotype. Example: Red × White flowers → Flowers with red and white patches."
+            },
+            {
+              "front": {
+                "title": "Multiple Alleles",
+                "question": "What are multiple alleles?"
+              },
+              "back": "More than two alternative forms of a gene exist at the same locus. Example: Blood groups IA, IB, and i."
+            },
+            {
+              "front": {
+                "title": "Sex-linked Characteristics",
+                "question": "What are sex-linked characteristics?"
+              },
+              "back": "Traits carried on the sex chromosomes (usually X). Example: Haemophilia or colour-blindness – XᴴXʰ (carrier female), XʰY (affected male)."
+            },
+            {
+              "front": {
+                "title": "Karyotype",
+                "question": "What is a karyotype?"
+              },
+              "back": "The number, shape, and arrangement of chromosomes in the nucleus of a somatic cell. Used to detect chromosomal abnormalities."
+            },
+            {
+              "front": {
+                "title": "Cloning",
+                "question": "What is cloning?"
+              },
+              "back": "A process to produce genetically identical organisms. Example: Dolly the sheep was cloned from a diploid cell."
+            },
+            {
+              "front": {
+                "title": "Genetic Modification",
+                "question": "What is genetic modification?"
+              },
+              "back": "Altering genetic material to produce desired traits. Example: Inserting the human insulin gene into bacteria to produce insulin."
+            },
+            {
+              "front": {
+                "title": "Human Genome",
+                "question": "What is the human genome?"
+              },
+              "back": "A complete map of all genes on human chromosomes. Example: Gene 3 on chromosome 4 controls a specific trait."
             }
           ]
         },
-        "content": "\n## Genetics and Inheritance\n\nGenetics is the study of heredity — how traits are passed from one generation to another.\n\n**Key Concepts:**\n\n- **Alleles:** Different forms of a gene.\n- **Dominance:** Alleles may be dominant, recessive, or show co-dominance.\n- **Genetic Crosses:** Punnett squares predict inheritance patterns.\n- **Sex Determination:** XX = female, XY = male.\n- **Mutations:** Changes in DNA that may lead to new traits or diseases.\n- **Pedigree Diagrams:** Trace inheritance in families.\n\nDNA is the molecular basis of inheritance.\n\n"
+        "content": "\n## Genetics and Inheritance\n\nGenetics is the study of heredity — how traits are passed from one generation to another.\n\n**Key Concepts:**\n\n- **Alleles:** Different forms of a gene.\n- **Dominance:** Alleles may be dominant, recessive, or show co-dominance.\n- **Genetic Crosses:** Punnett squares predict inheritance patterns.\n- **Sex Determination:** XX = female, XY = male.\n- **Mutations:** Changes in DNA that may lead to new traits or diseases.\n- **Pedigree Diagrams:** Trace inheritance in families.\n\n## Genetic Crosses\n### Monohybrid Cross\nThe follwing genetic problem format is used to solve all monohybrid genetic problems:\n- **P1** Phenotype\n- Genotype\n- Meiosis\n- Gametes\n- Fetilization\n- **F1** Genotype\n- Phenotype\n\n#### Common monohybrid Crosses\n1) Heterozygous parent (Tt) and homozygous recessive parent (tt) produce F1 offspring that are:\n- 50% heterozygous (Tt)\n→ 50% homozygous recessive (tt)\n\n2) Homozygous dominant parent (TT) and homozygous recessive parent (tt) produce F1 offspring that are:\n- 100% heterozygous (Tt)\n\n3) Homozygous dominant parent (TT) and heterozygous parent (Tt) produce F1 offspring that are:\n- 50% homozygous dominant (TT)\n- 50% heterozygous (Tt)\n\n4) Two heterozygous parents (Tt × Tt) produce F1 offspring that are:\n- 25% homozygous dominant (TT)\n- 50% heterozygous (Tt)\n- 25% homozygous recessive (tt)\n\n### Dihybrid cross\nA dihybrid cross looks at how two different characteristics are inherited at the same time (e.g. seed colour and seed shape).\nMendel’s Law of Independent Assortment explains how this works.\n\n#### Law of Independant Assortment\nGenes for different traits (like colour and shape) are passed on independently of each other during reproduction.\n\nThis means the way one trait is inherited doesn't affect the other.\n\nIt happens because the alleles (gene versions) for each trait mix randomly when gametes (sex cells) are formed.\n\nImportant: This law only works if the genes for the traits are on different chromosomes.\n"
       },
       {
         "data": {
@@ -2480,7 +2585,7 @@ export async function GET(request: Request) {
   }
 
   if (lessonId) {
-    const lesson = lessons[parseInt(lessonId)];
+    const lesson = lessons[parseInt(lessonId) - 1];
     return Response.json({ contents: lesson });
   }
 

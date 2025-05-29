@@ -25,5 +25,32 @@ const rgbaColor = (hex: string, alpha: number): string => {
     
     return `rgba(${r}, ${g}, ${b}, ${alpha})`;
   };
+ 
+  export function darkenHex(hex: string, percent: number): string {
+  // Remove "#" if present
+  hex = hex.replace(/^#/, '');
+
+  // Convert shorthand to full form (e.g., "03F" -> "0033FF")
+  if (hex.length === 3) {
+    hex = hex.split('').map(c => c + c).join('');
+  }
+
+  const num = parseInt(hex, 16);
+
+  let r = (num >> 16) - (255 * (percent / 100));
+  let g = ((num >> 8) & 0x00FF) - (255 * (percent / 100));
+  let b = (num & 0x0000FF) - (255 * (percent / 100));
+
+  // Clamp values and convert to hex
+  r = Math.max(0, Math.min(255, Math.round(r)));
+  g = Math.max(0, Math.min(255, Math.round(g)));
+  b = Math.max(0, Math.min(255, Math.round(b)));
+
+  return `#${((1 << 24) + (r << 16) + (g << 8) + b)
+    .toString(16)
+    .slice(1)
+    .toUpperCase()}`;
+}
+
   
   export default rgbaColor;

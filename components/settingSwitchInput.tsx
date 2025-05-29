@@ -46,7 +46,8 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "space-between",
         paddingHorizontal: 20,
-        borderRadius: 50
+        borderRadius: 50,
+        marginVertical:10
     },
     textAndIconContainer: {
         display: "flex",

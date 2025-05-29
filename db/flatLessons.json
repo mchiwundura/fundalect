@@ -1,0 +1,289 @@
+{
+  "contents": [
+    {
+      "title": "Newton's Laws and Friction",
+      "icon": "🍎",
+      "courseId": 1,
+      "lessonId": 1,
+      "color": "#FFB785"
+    },
+    {
+      "title": "Electromagnetism Fundamentals",
+      "icon": "🧲",
+      "courseId": 1,
+      "lessonId": 10,
+      "color": "#FFB785"
+    },
+    {
+      "title": "Ohm's Law and Electrical Circuits",
+      "icon": "💡",
+      "courseId": 1,
+      "lessonId": 11,
+      "color": "#FFB785"
+    },
+    {
+      "title": "Energy Changes in Chemical Reactions",
+      "icon": "⚛️",
+      "courseId": 1,
+      "lessonId": 12,
+      "color": "#FFB785"
+    },
+    {
+      "title": "Acid-Base and Redox Reactions",
+      "icon": "🧪",
+      "courseId": 1,
+      "lessonId": 13,
+      "color": "#FFB785"
+    },
+    {
+      "title": "Earth's Lithosphere and Mineral Resources",
+      "icon": "🌎",
+      "courseId": 1,
+      "lessonId": 14,
+      "color": "#FFB785"
+    },
+    {
+      "title": "Chemical Bonding and Molecular Structure",
+      "icon": "⚛️",
+      "courseId": 1,
+      "lessonId": 2,
+      "color": "#FFB785"
+    },
+    {
+      "title": "Intermolecular Forces and Their Effects",
+      "icon": "🧪",
+      "courseId": 1,
+      "lessonId": 3,
+      "color": "#FFB785"
+    },
+    {
+      "title": "Geometrical Optics",
+      "icon": "💡",
+      "courseId": 1,
+      "lessonId": 4,
+      "color": "#FFB785"
+    },
+    {
+      "title": "Geometrical Optics",
+      "icon": "💡",
+      "courseId": 1,
+      "lessonId": 5,
+      "color": "#FFB785"
+    },
+    {
+      "title": "Wavefronts, Huygens' Principle, and Diffraction",
+      "icon": "🌊",
+      "courseId": 1,
+      "lessonId": 6,
+      "color": "#FFB785"
+    },
+    {
+      "title": "Kinetic Theory of Gases and Gas Laws",
+      "icon": "💨",
+      "courseId": 1,
+      "lessonId": 7,
+      "color": "#FFB785"
+    },
+    {
+      "title": "Quantitative Aspects of Chemical Change",
+      "icon": "🧪",
+      "courseId": 1,
+      "lessonId": 8,
+      "color": "#FFB785"
+    },
+    {
+      "title": "Electrostatics Fundamentals",
+      "icon": "⚡️",
+      "courseId": 1,
+      "lessonId": 9,
+      "color": "#FFB785"
+    },
+    {
+      "title": "Definitions",
+      "icon": "📔",
+      "courseId": 2,
+      "lessonId": 1,
+      "color": "#ccc"
+    },
+    {
+      "title": "Meiosis",
+      "icon": "🧬",
+      "courseId": 3,
+      "lessonId": 1,
+      "color": "#A0D6A0"
+    },
+    {
+      "title": "Evolution",
+      "icon": "🧬",
+      "courseId": 3,
+      "lessonId": 10,
+      "color": "#A0D6A0"
+    },
+    {
+      "title": "Human Impact on the Environment",
+      "icon": "🌍",
+      "courseId": 3,
+      "lessonId": 11,
+      "color": "#A0D6A0"
+    },
+    {
+      "title": "Scientific Skills",
+      "icon": "📊",
+      "courseId": 3,
+      "lessonId": 12,
+      "color": "#A0D6A0"
+    },
+    {
+      "title": "Nucleic Acids",
+      "icon": "🧬",
+      "courseId": 3,
+      "lessonId": 2,
+      "color": "#A0D6A0"
+    },
+    {
+      "title": "Reproduction in Vertebrates",
+      "icon": "🐣",
+      "courseId": 3,
+      "lessonId": 3,
+      "color": "#A0D6A0"
+    },
+    {
+      "title": "Human Reproduction",
+      "icon": "👶",
+      "courseId": 3,
+      "lessonId": 4,
+      "color": "#A0D6A0"
+    },
+    {
+      "title": "Genetics and Inheritance",
+      "icon": "🧬",
+      "courseId": 3,
+      "lessonId": 5,
+      "color": "#A0D6A0"
+    },
+    {
+      "title": "Responding to the Environment (Humans)",
+      "icon": "🧠",
+      "courseId": 3,
+      "lessonId": 6,
+      "color": "#A0D6A0"
+    },
+    {
+      "title": "Endocrine System",
+      "icon": "🕹️",
+      "courseId": 3,
+      "lessonId": 7,
+      "color": "#A0D6A0"
+    },
+    {
+      "title": "Homeostasis in Humans",
+      "icon": "🌡️",
+      "courseId": 3,
+      "lessonId": 8,
+      "color": "#A0D6A0"
+    },
+    {
+      "courseId": 3,
+      "lessonId": 9,
+      "color": "#A0D6A0"
+    },
+    {
+      "title": "Laws of Exponents",
+      "icon": "🧮",
+      "courseId": 4,
+      "lessonId": 1,
+      "color": "#3498DB"
+    },
+    {
+      "title": "Descriptive Statistics",
+      "icon": "📊",
+      "courseId": 4,
+      "lessonId": 10,
+      "color": "#3498DB"
+    },
+    {
+      "title": "Trigonometry of Right-Angled Triangles",
+      "icon": "📐",
+      "courseId": 4,
+      "lessonId": 11,
+      "color": "#3498DB"
+    },
+    {
+      "title": "Quadrilaterals and the Mid-Point Theorem",
+      "icon": "⬜",
+      "courseId": 4,
+      "lessonId": 12,
+      "color": "#3498DB"
+    },
+    {
+      "title": "Area, Volume, and Surface Area of Geometric Solids",
+      "icon": "📐",
+      "courseId": 4,
+      "lessonId": 13,
+      "color": "#3498DB"
+    },
+    {
+      "title": "Probability Fundamentals",
+      "icon": "🎲",
+      "courseId": 4,
+      "lessonId": 14,
+      "color": "#3498DB"
+    },
+    {
+      "title": "Arithmetic Sequences",
+      "icon": "🧮",
+      "courseId": 4,
+      "lessonId": 2,
+      "color": "#3498DB"
+    },
+    {
+      "title": "Linear and Quadratic Equations and Inequalities",
+      "icon": "🧮",
+      "courseId": 4,
+      "lessonId": 3,
+      "color": "#3498DB"
+    },
+    {
+      "title": "Trigonometric Ratios and Equations",
+      "icon": "📐",
+      "courseId": 4,
+      "lessonId": 4,
+      "color": "#3498DB"
+    },
+    {
+      "title": "Characteristics and Properties of Functions",
+      "icon": "📈",
+      "courseId": 4,
+      "lessonId": 5,
+      "color": "#3498DB"
+    },
+    {
+      "title": "Quadrilaterals and the Mid-Point Theorem",
+      "icon": "🫗",
+      "courseId": 4,
+      "lessonId": 6,
+      "color": "#3498DB"
+    },
+    {
+      "title": "Analytical Geometry",
+      "icon": "📍",
+      "courseId": 4,
+      "lessonId": 7,
+      "color": "#3498DB"
+    },
+    {
+      "title": "Simple and Compound Interest",
+      "icon": "💰",
+      "courseId": 4,
+      "lessonId": 8,
+      "color": "#3498DB"
+    },
+    {
+      "title": "Five Number Summary and Box-and-Whisker Plots",
+      "icon": "📊",
+      "courseId": 4,
+      "lessonId": 9,
+      "color": "#3498DB"
+    }
+  ]
+}

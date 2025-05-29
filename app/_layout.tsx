@@ -9,7 +9,7 @@ import { useColorScheme } from '@/hooks/useColorScheme';
 import Onboarding from '@/components/onboarding';
 import { AppContextProvider } from '@/context/appContext';
 import { AuthProvider } from '@/context/authProvider';
-import Background from '@/components/Background';
+ import { QueryClientProvider, useQueryClient } from '@tanstack/react-query';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -29,11 +29,12 @@ const [onboarded, setOnborded] = useState(true)
     return null;
   }
 
-
+// const queryClient = useQueryClient()
 
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <AppContextProvider>
+      {/* <QueryClientProvider client={queryClient}> */}
         <AuthProvider>
 
       { onboarded? <Stack>
@@ -61,6 +62,7 @@ const [onboarded, setOnborded] = useState(true)
       <Onboarding deboard={() => setOnborded(true)}/>}
       <StatusBar style="auto" />
       </AuthProvider>
+      {/* </QueryClientProvider> */}
       </AppContextProvider>
     </ThemeProvider>
   );

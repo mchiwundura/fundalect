@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Platform, ScrollView } from 'react-native';
+import { Image, StyleSheet, Platform, ScrollView, View } from 'react-native';
 
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
@@ -9,6 +9,8 @@ import { useEffect, useState } from 'react';
 // import { deleteDatabase, runDatabase } from '@/db/database';
 import { syncOnline } from '@/db/syncOnline';
 import { resetAllCache } from '@/hooks/useDatabase.native';
+import ProfileIcon from '@/components/ui/ProfileIcon';
+import Background from '@/components/Background';
 
 export default function Settings () {
 
@@ -41,20 +43,26 @@ function runDatabase() {
 
 
     return (
-<ScrollView style={{padding: 32}}>
+      <Background>
 
+      <View style={{display: "flex", width: "100%", alignItems: "center"}}>
 
+<ScrollView style={{padding: 32, width: "90%",maxWidth: 500}}>
+
+<ProfileIcon/>
 <SettingSwitchInput onPress={() => deleteDatabase()} icon={"rectangle.portrait.and.arrow.right"} title='Sign Out'/>
-<ThemedText   type='subtitle'>Settings</ThemedText>
+<ThemedText style={styles.sectionTitle}   type='subtitle'>Settings</ThemedText>
 
 <SettingSwitchInput onPress={() => setNotifications(!notifications)} icon={"bell"} radio state={notifications} title='Notifications'/>
 <SettingSwitchInput onPress={() => syncDatabase()} icon={"arrow.triangle.2.circlepath"} state={sync} radio title='Sync'/>
 <SettingSwitchInput onPress={() => setNightMode(!nightMode)} icon="moon.circle.fill" radio state={nightMode} title='Night mode'/>
 
-<ThemedText type='subtitle'>Help</ThemedText>
+<ThemedText style={styles.sectionTitle} type='subtitle'>Help</ThemedText>
 
 <SettingSwitchInput onPress={() => resetAllCache()} icon={"questionmark.circle"} title='Help'/>
       </ScrollView>
+      </View>
+      </Background>
     )
 
 }
@@ -76,4 +84,7 @@ const styles = StyleSheet.create({
       left: 0,
       position: 'absolute',
     },
+    sectionTitle: {
+    marginVertical: 20
+    }
   });

@@ -4,11 +4,13 @@ import { ThemedText } from './ThemedText';
 import { FontAwesome } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
 import { Colors } from '@/constants/Colors';
+import  Animated  from 'react-native-reanimated';
 
 type FlashcardDeckProps = {
   title: string;
   color: string;
   link: string;
+  setDeck: any;
   completion: number;
   courseTitle?: string;
   courseId?: number;
@@ -20,20 +22,24 @@ const FlashcardDeck = ({
   link,
   completion,
   courseTitle,
+  setDeck
 }: FlashcardDeckProps) => {
   const router = useRouter();
   const {width} = useWindowDimensions();
   return (
-    <TouchableOpacity
+    <TouchableOpacity 
       style={[styles.wrapper, { width: width > 600 ? 300 : "100%", marginHorizontal: width > 600 ? 10 : 0, }]}
       activeOpacity={0.85}
-      onPress={() => router.push(link)}
+      onPress={() => {
+        router.push(link)
+        setDeck()
+      }}
     >
       {/* Peeking background card */}
       <View style={[styles.cardPeek, { backgroundColor: color }]} />
 
       {/* Main card */}
-      <View style={[styles.container, { backgroundColor: color }]}>
+      <Animated.View sharedTransitionTag="flashcard" style={[styles.container, { backgroundColor: color }]}>
         <View style={styles.topRow}>
           <Text style={styles.courseTitle}>{courseTitle}</Text>
           <FontAwesome name="bookmark" size={20} color="white" />
@@ -43,6 +49,7 @@ const FlashcardDeck = ({
           {title}
         </ThemedText>
 
+        <View>
         <ThemedText type="subtitle" style={styles.subtitle}>
           Completion: {completion}%
         </ThemedText>
@@ -53,17 +60,10 @@ const FlashcardDeck = ({
               styles.progressBarFill,
               { width: `${completion}%` },
             ]}
-          />
+            />
         </View>
-      <View style={{display: 'flex', width: '100%', alignItems: 'flex-end', marginTop: 10}}>
-        <TouchableOpacity
-          style={[styles.button, { backgroundColor: Colors.primary }]}
-          onPress={() => router.push(link)}>
-            <ThemedText type="subtitle" style={{ color: 'white' }}>
-              Start Deck</ThemedText>
-          </TouchableOpacity>
-      </View>
             </View>
+            </Animated.View>
     </TouchableOpacity>
   );
 };
@@ -99,6 +99,7 @@ const styles = StyleSheet.create({
     padding: 20,
     zIndex: 1,
     shadowColor: '#000',
+    justifyContent: 'space-between',
     shadowOffset: { width: 0, height: 6 },
     shadowOpacity: 0.2,
     shadowRadius: 8,

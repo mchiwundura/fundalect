@@ -1,27 +1,32 @@
-import { StyleSheet, useColorScheme } from "react-native";
+import { StyleSheet, Touchable, TouchableOpacity, useColorScheme, View } from "react-native";
 import { ThemedText } from "../ThemedText";
 import { ThemedView } from "../ThemedView";
-import { Link } from "expo-router";
+import { Link, useRouter } from "expo-router";
 
 interface LessonCardProps {
     title: string;
+    onPress: any
 }
 
 
 
 
 export default function LessonCard(props: LessonCardProps) {
-
+const router = useRouter();
         const rgbaColor = (hex, alpha) => {
         const [r, g, b] = hex.match(/\w\w/g).map(x => parseInt(x, 16));
         return `rgba(${r},${g},${b},${alpha})`;
       };
-
+function buttonPressed() {
+    props.onPress();
+    router.push(props.link);
+}
     const colorScheme = useColorScheme()
 
     return (
-        <Link style={styles.link} href={props.link} >
-        <ThemedView style={[styles.container, {
+        <TouchableOpacity onPress={buttonPressed} style={styles.link} >
+           
+        <View  style={[styles.container, {
             borderColor: rgbaColor(props.color, 0.8),
             backgroundColor : rgbaColor(props.color, 0.2),
             boxShadow: colorScheme === "light" ? "0 4px 4px rgba(0, 0, 0, 0.25)" : "0 4px 4px rgba(0, 0, 0, 0.9)"
@@ -31,14 +36,16 @@ export default function LessonCard(props: LessonCardProps) {
            <ThemedText type="defaultSemiBold">
                 {props.title}
            </ThemedText>
-        </ThemedView>
-            </Link>
+        </View>
+      
+            </TouchableOpacity>
     )
 }
 
 const styles = StyleSheet.create({
     link: {
         marginVertical: 10,
+        height: 60,
     },
     container: {
         padding: 10,

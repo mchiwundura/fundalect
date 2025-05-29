@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { ThemedView } from "@/components/ThemedView";
 import { ThemedText } from "@/components/ThemedText";
 import { rules } from '@/hooks/markdownRules';
 import Markdown from 'react-native-markdown-display';
@@ -23,7 +22,7 @@ const {lessonId} = useLocalSearchParams();
 const {id} = useLocalSearchParams();
 const [lesson, setLesson] = useState<Lesson | null>(null)
 let getLesson: ((lessonId: number) => Promise<any>) | undefined;
-
+const { lessonColor } = useAppContext();
 useEffect(() => {
   async function fetchDatabase() {
     const db = await useDatabase();
@@ -47,17 +46,18 @@ async function getContent() {
 
     useEffect(() => {
         getContent()
+        console.log(lessonColor, "lesson color")
     }, []);
     
     return (
-        <ParallaxScrollView headerBackgroundColor={{ light: '#9584FF', dark: '#9584FF' }} headerImage={
-            <ThemedView style={[styles.header, {backgroundColor: lesson? lesson.course_color : "#fff"}]}>
+        <ParallaxScrollView headerBackgroundColor={{ light: 'white', dark: 'black' }} headerImage={
+            <View style={[styles.header, {backgroundColor: lessonColor}]}>
   <ThemedText type="title">
     {lesson && lesson.data.Title}
 
   </ThemedText>
   <Text style={styles.icon}>{lesson && lesson.data.icon}</Text>
-</ThemedView>
+</View>
         }>
             
         <View>

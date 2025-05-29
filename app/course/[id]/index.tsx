@@ -59,7 +59,7 @@ export default function Course() {
         <View>
           <ThemedText>{course.description}</ThemedText>
         {lessons.map((x, y) => (
-          <LessonCard color={course.color} key={y} title={x.Title} link={`/course/${id}/lesson/${y}`} completion={22}/>
+          <LessonCard color={course.color} key={y} title={x.Title} link={`/course/${id}/lesson/${y + 1}`} completion={22}/>
         ))}
         </View>
       )}
