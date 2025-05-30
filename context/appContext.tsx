@@ -19,6 +19,8 @@ type appContextType = {
   setLessonColor: (color: string) => void;
   setFlashcards: (cards: Flashcard[]) => void;
   setQuizzes: (quizzes: QuizQuestion[]) => void;
+  flashcardNavigation: boolean;
+  setFlashcardNavigation: (flashCardNavigation: boolean) => void;
 };
 
 const appContext = createContext<appContextType | undefined>(undefined);
@@ -27,9 +29,10 @@ export const AppContextProvider = ({ children }: { children: React.ReactNode }) 
   const [flashcards, setFlashcards] = useState<Flashcard[]>([]);
   const [quizzes, setQuizzes] = useState<QuizQuestion[]>([]);
   const [lessonColor, setLessonColor] = useState<string>("");
+  const [flashcardNavigation, setFlashcardNavigation] = useState<boolean>(true)
 
   return (
-    <appContext.Provider value={{ flashcards, quizzes, lessonColor, setFlashcards, setQuizzes, setLessonColor }}>
+    <appContext.Provider value={{ flashcards, quizzes, lessonColor, flashcardNavigation, setFlashcards, setQuizzes, setLessonColor, setFlashcardNavigation }}>
       {children}
     </appContext.Provider>
   );

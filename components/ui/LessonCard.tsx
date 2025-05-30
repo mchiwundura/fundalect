@@ -1,6 +1,6 @@
 import { StyleSheet, Touchable, TouchableOpacity, useColorScheme, View } from "react-native";
 import { ThemedText } from "../ThemedText";
-import { ThemedView } from "../ThemedView";
+import { ThemedView } from "../ThemedViewOld";
 import { Link, useRouter } from "expo-router";
 
 interface LessonCardProps {

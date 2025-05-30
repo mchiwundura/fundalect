@@ -7,7 +7,7 @@ import Animated, {
   useScrollViewOffset,
 } from 'react-native-reanimated';
 
-import { ThemedView } from '@/components/ThemedView';
+import { ThemedView } from '@/components/ThemedViewOld';
 import { useBottomTabOverflow } from '@/components/ui/TabBarBackground';
 import { useColorScheme } from '@/hooks/useColorScheme';
 
@@ -70,6 +70,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     marginHorizontal: 'auto',
+    width: "100%"
 // width: 480
   },
   header: {

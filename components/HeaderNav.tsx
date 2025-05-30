@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 import { ThemedText } from "./ThemedText";
-import { ThemedView } from "./ThemedView";
+import { ThemedView } from "./ThemedViewOld";
 import NavigationButton from "./ui/NavButton";
 import ProfileIcon from "./ui/ProfileIcon";
 

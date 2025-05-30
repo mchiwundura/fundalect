@@ -1,5 +1,5 @@
 import { StyleSheet, Text, TextInput } from "react-native"
-import { ThemedView } from "./ThemedView"
+import { ThemedView } from "./ThemedViewOld"
 import { ThemedText } from "./ThemedText"
 import { TouchableOpacity } from "react-native"
 import { MultipleChoice } from "./question_type/multipleChoice"

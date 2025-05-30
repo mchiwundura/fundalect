@@ -50,7 +50,7 @@ async function getContent() {
     }, []);
     
     return (
-        <ParallaxScrollView headerBackgroundColor={{ light: 'white', dark: 'black' }} headerImage={
+        <ParallaxScrollView  headerBackgroundColor={{ light: 'white', dark: 'black' }} headerImage={
             <View style={[styles.header, {backgroundColor: lessonColor}]}>
   <ThemedText type="title">
     {lesson && lesson.data.Title}
@@ -80,7 +80,7 @@ async function getContent() {
 const styles = StyleSheet.create({
   header: {
   height: "100%",
-  borderRadius: 20,
+  borderRadius: 10,
   display: "flex",
   alignItems: "center",
   justifyContent: "space-between",

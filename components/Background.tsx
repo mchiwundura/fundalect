@@ -1,8 +1,8 @@
 import { StyleSheet, Image, useWindowDimensions, View, useColorScheme } from 'react-native'
-import React, { useEffect } from 'react'
+import React, { FC, useEffect } from 'react'
 import Animated, { useAnimatedStyle, useSharedValue, withRepeat, withTiming } from 'react-native-reanimated'
 
-const Background = ({children}) => {
+const Background: FC = ({children}) => {
 
     const { width } = useWindowDimensions();
 

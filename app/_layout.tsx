@@ -10,6 +10,7 @@ import Onboarding from '@/components/onboarding';
 import { AppContextProvider } from '@/context/appContext';
 import { AuthProvider } from '@/context/authProvider';
  import { QueryClientProvider, useQueryClient } from '@tanstack/react-query';
+import FlashcardOptionsMenu from '@/components/ui/FlashcardOptionsMenu';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -44,6 +45,9 @@ const [onboarded, setOnborded] = useState(true)
         <Stack.Screen name="notificationsScreen" options={{ headerShown: true, title: "Notifications" }} />
         <Stack.Screen name="search" options={{ headerShown: true, title: "Discover", presentation: 'modal'}}   />
         <Stack.Screen name="course/[id]" options={{ headerShown: true, title: "Courses" }} />
+        <Stack.Screen  name="course/[id]/lesson/[lessonId]/flashcards" options={{ headerShown: true, title: "Flashcards", headerRight: () => FlashcardOptionsMenu() }} />
+        <Stack.Screen  name="course/[id]/lesson/[lessonId]/index" options={{ headerShown: true, title: "Lesson", headerRight: () => FlashcardOptionsMenu() }} />
+        
         <Stack.Screen 
           name="course/[id]/index" 
           options={{ 

@@ -1,16 +1,12 @@
-import { Image, StyleSheet, Platform, ScrollView, View } from 'react-native';
-
-import ParallaxScrollView from '@/components/ParallaxScrollView';
+import {StyleSheet,ScrollView, View } from 'react-native';
 import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
-import HeaderNavigation from '@/components/HeaderNav';
 import SettingSwitchInput from '@/components/settingSwitchInput';
 import { useEffect, useState } from 'react';
-// import { deleteDatabase, runDatabase } from '@/db/database';
 import { syncOnline } from '@/db/syncOnline';
 import { resetAllCache } from '@/hooks/useDatabase.native';
 import ProfileIcon from '@/components/ui/ProfileIcon';
 import Background from '@/components/Background';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function Settings () {
 
@@ -27,6 +23,33 @@ useEffect(() => {
   });
 
 })
+
+async function usersRecentActivity() {
+const activities = [
+  {
+        "id": 1,
+        "title": "Central Nervous System",
+        "icon": "😰",
+        "completion": 55,
+        "type": "Quiz"
+    },
+    {
+        "id": 2,
+        "title": "Colloidal Systems",
+        "icon": "🧴",
+        "completion": 35,
+        "type": "Quiz"
+    },
+  ]
+
+  try {
+    const jsonValue = JSON.stringify(activities);
+    await AsyncStorage.setItem('@recentActivities', jsonValue);
+    console.log("Activities saved successfully");
+  } catch (e) {
+    console.error("Error saving activities:", e);
+  }
+}
 
 function syncDatabase() {
   syncOnline()
@@ -50,7 +73,7 @@ function runDatabase() {
 <ScrollView style={{padding: 32, width: "90%",maxWidth: 500}}>
 
 <ProfileIcon/>
-<SettingSwitchInput onPress={() => deleteDatabase()} icon={"rectangle.portrait.and.arrow.right"} title='Sign Out'/>
+<SettingSwitchInput onPress={() => usersRecentActivity()} icon={"rectangle.portrait.and.arrow.right"} title='Sign Out'/>
 <ThemedText style={styles.sectionTitle}   type='subtitle'>Settings</ThemedText>
 
 <SettingSwitchInput onPress={() => setNotifications(!notifications)} icon={"bell"} radio state={notifications} title='Notifications'/>

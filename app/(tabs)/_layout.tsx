@@ -39,6 +39,9 @@ export default function TabLayout() {
         options={{
           title: 'Courses',
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="square.grid.2x2" color={color} />,
+                    headerStyle: {
+            backgroundColor: Colors.primary
+          }
         }}
       />
       <Tabs.Screen
@@ -46,6 +49,9 @@ export default function TabLayout() {
         options={{
           title: 'Progress',
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="chart.bar" color={color} />,
+          headerStyle: {
+            backgroundColor: Colors.primary
+          }
         }}
       />
       <Tabs.Screen

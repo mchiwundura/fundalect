@@ -1,5 +1,5 @@
 import { StyleSheet, useColorScheme } from "react-native";
-import { ThemedView } from "./ThemedView";
+import { ThemedView } from "./ThemedViewOld";
 import {Calendar} from 'react-native-calendars'
 
 interface CalendarViewProps {
@@ -15,7 +15,7 @@ export default function CalendarView({ completedDays }: CalendarViewProps) {
     <ThemedView style={styles.graphContainer}>
       <Calendar style={{width: 340, borderRadius: 10, 
  boxShadow: theme === "light" ? "0 4px 4px rgba(0, 0, 0, 0.25)" : "0 0 0 rgba(0, 0, 0, 0.1)",
-    backgroundColor: theme === "light" ? "rgba(255, 255, 255, 1)" : "rgba(255, 255, 255, 0.05)",
+    backgroundColor: theme !== "light" ? "rgba(255, 255, 255, 0.1)" : "rgba(255, 255, 255, 0.05)",
       }} 
       onDayPress={day => {
         console.log('selected day', day)

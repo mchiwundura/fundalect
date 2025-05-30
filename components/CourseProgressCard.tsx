@@ -1,5 +1,5 @@
 import { ThemedText } from "./ThemedText";
-import { ThemedView } from "./ThemedView";
+import { ThemedView } from "./ThemedViewOld";
 import { StyleSheet } from "react-native";
 
 interface CourseProgressCardProps {

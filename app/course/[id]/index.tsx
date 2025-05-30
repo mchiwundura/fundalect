@@ -4,10 +4,11 @@ import { useLocalSearchParams, useNavigation } from "expo-router";
 import { View, StyleSheet, Text } from "react-native";
 import { useEffect, useState } from "react";
 import LessonCard from "@/components/ui/LessonCard";
-import { ThemedView } from "@/components/ThemedView";
+import { ThemedView } from "@/components/ThemedViewOld";
 import { ThemedText } from "@/components/ThemedText";
 import { useDatabase } from "@/hooks/useDatabase";
 import { CourseInterface, LessonInterface } from "@/types/database";
+import { useAppContext } from "@/context/appContext";
 
 
 
@@ -17,6 +18,7 @@ export default function Course() {
   const {id} = useLocalSearchParams();
   const [course, setCourse] = useState<CourseInterface | null>(null);
   const [lessons, setLessons] = useState<LessonInterface[]>([]);
+  const {setLessonColor} = useAppContext()
   console.error("Page Id", id)
   async function runDatabase() {
     try {
@@ -59,7 +61,7 @@ export default function Course() {
         <View>
           <ThemedText>{course.description}</ThemedText>
         {lessons.map((x, y) => (
-          <LessonCard color={course.color} key={y} title={x.Title} link={`/course/${id}/lesson/${y + 1}`} completion={22}/>
+          <LessonCard onPress={() => setLessonColor(course.color)} color={course.color} key={y} title={x.Title} link={`/course/${id}/lesson/${y + 1}`} completion={22}/>
         ))}
         </View>
       )}

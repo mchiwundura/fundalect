@@ -1,5 +1,5 @@
 import { ThemedText } from "@/components/ThemedText";
-import { ThemedView } from "@/components/ThemedView";
+import { ThemedView } from "@/components/ThemedViewOld";
 import { StyleSheet, TouchableOpacity, View } from "react-native";
 
 import { useLocalSearchParams, useRouter } from "expo-router";

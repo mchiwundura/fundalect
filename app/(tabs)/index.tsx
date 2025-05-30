@@ -8,9 +8,10 @@ import ActivityCard from "@/components/ui/ActivityCard";
 import ReportStats from "@/components/ReportStats";
 import ProfileIcon from "@/components/ui/ProfileIcon";
 import LessonCard from "@/components/ui/LessonCard";
-import { Colors } from "@/constants/Colors";
 import { useDatabase } from "@/hooks/useDatabase";
 import { useAppContext } from "@/context/appContext";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import SideBar from "@/components/SideBar";
 
 // - API endpoint for indexes where we just get lesson/flashcards and quiz indexes // titles // color and icons, the full lessons are resource taxing surely
 // - Fetch flashcards decks (from database if no initial from local storage)
@@ -31,11 +32,17 @@ const [flashcards, setFlashcardsLocal] = useState([]);
 const [lessons, setLessons] = useState([])
 const {setFlashcards} = useAppContext()
 const {setLessonColor} = useAppContext();
+const [activities, setActivities] = useState([])
 
 useEffect(() => {
     async function fetchData() {
+        const usersRecentActivity = await AsyncStorage.getItem('@recentActivities');
+        if (usersRecentActivity) {
+            const jsonActivities = JSON.parse(usersRecentActivity);
+            setActivities(jsonActivities);
+            console.log("Recent activities found in local storage:", JSON.parse(usersRecentActivity));
+        }
         const data = await getInitialData("1,2,3,4");
-        console.error(data.flashcards)
         setFlashcardsLocal(data.flashcards);
         setFlashcards(data.flashcards[0].cards);
         setLessons(data.lessons);
@@ -48,57 +55,57 @@ useEffect(() => {
  setLarge(width > 600);
 }, [width])
 
- const activities = [
-    {
-        "id": 1,
-        "title": "Central Nervous System",
-        "icon": "😰",
-        "completion": 55,
-        "type": "Quiz"
-    },
-    {
-        "id": 2,
-        "title": "Colloidal Systems",
-        "icon": "🧴",
-        "completion": 35,
-        "type": "Quiz"
-    },
-    {
-        "id": 3,
-        "title": "Arrays",
-        "icon": "🧑‍💻",
-        "completion": 55,
-        "type": "Quiz"
-    },
-    {
-        "id": 4,
-        "title": "Novel Dosage Forms",
-        "icon": "💊",
-        "completion": 21,
-        "type": "Quiz"
-    },
-    {
-        "id": 5,
-        "title": "Drug Delivery Systems",
-        "icon": "🧪",
-        "completion": 40,
-        "type": "Quiz"
-    },
-    {
-        "id": 6,
-        "title": "Pharmacokinetics Basics",
-        "icon": "📉",
-        "completion": 30,
-        "type": "Quiz"
-    },
-    {
-        "id": 7,
-        "title": "Biopharmaceutics",
-        "icon": "🧬",
-        "completion": 25,
-        "type": "Quiz"
-    }
-]
+//  const activities = [
+//     {
+//         "id": 1,
+//         "title": "Central Nervous System",
+//         "icon": "😰",
+//         "completion": 55,
+//         "type": "Quiz"
+//     },
+//     {
+//         "id": 2,
+//         "title": "Colloidal Systems",
+//         "icon": "🧴",
+//         "completion": 35,
+//         "type": "Quiz"
+//     },
+//     {
+//         "id": 3,
+//         "title": "Arrays",
+//         "icon": "🧑‍💻",
+//         "completion": 55,
+//         "type": "Quiz"
+//     },
+//     {
+//         "id": 4,
+//         "title": "Novel Dosage Forms",
+//         "icon": "💊",
+//         "completion": 21,
+//         "type": "Quiz"
+//     },
+//     {
+//         "id": 5,
+//         "title": "Drug Delivery Systems",
+//         "icon": "🧪",
+//         "completion": 40,
+//         "type": "Quiz"
+//     },
+//     {
+//         "id": 6,
+//         "title": "Pharmacokinetics Basics",
+//         "icon": "📉",
+//         "completion": 30,
+//         "type": "Quiz"
+//     },
+//     {
+//         "id": 7,
+//         "title": "Biopharmaceutics",
+//         "icon": "🧬",
+//         "completion": 25,
+//         "type": "Quiz"
+//     }
+// ]
 
     return (
         <Background>
@@ -117,7 +124,7 @@ useEffect(() => {
                 setFlashcards(x.cards)
                 setLessonColor(x.color)
             }} 
-            title={x.title} color={x.color} link={`/course/${x.courseId}/lesson/${x.lessonId}/flashcards`} completion={50} courseTitle={'Natural Science'}/>
+            title={x.title} key={y} color={x.color} link={`/course/${x.courseId}/lesson/${x.lessonId}/flashcards`} completion={50} courseTitle={'Natural Science'}/>
         )}
 
             </ScrollView>
@@ -128,26 +135,13 @@ useEffect(() => {
                 <View style={{display: "flex", flexDirection: "row", flexWrap: "wrap"}}>
 
         {lessons && lessons.map((x ,y)=> {
-            return <View style={{width: large? 300 : '95%', marginHorizontal: large? 10 : "auto"}}><LessonCard onPress={() => setLessonColor(x.color)} title={x.title} color={x.color} link={`/course/${x.courseId}/lesson/${x.lessonId}`} completion={33}/></View>
+            return <View key={y} style={{width: large? 300 : '95%', marginHorizontal: large? 10 : "auto"}}><LessonCard onPress={() => setLessonColor(x.color)} title={x.title} color={x.color} link={`/course/${x.courseId}/lesson/${x.lessonId}`} completion={33}/></View>
         })}
         </View>
             </ScrollView>
         </ScrollView>
         {large && 
-        <View style={styles.sidebar}>
-        <ProfileIcon />
-        <ReportStats minutes={22} flashcards={14} tests={11}/> 
-        
-            <ThemedText style={styles.sectionTitle} type="subtitle">Your Streak</ThemedText>
-        <StreakTracker/>
-
-            <ThemedText style={styles.sectionTitle} type="subtitle">Take a Quiz</ThemedText>
-        <ScrollView>
-        {activities && activities.map((x ,y)=> {
-            return <ActivityCard key={y} activity={x}/>
-        })}
-        </ScrollView>
-        </View>
+            <SideBar/>
         }
 </View>
         </ScrollView>
@@ -158,7 +152,6 @@ useEffect(() => {
 const styles = StyleSheet.create({
     statsContainer: {
         display: "flex",
-        flexDirection: "row",
         marginBottom: 20,
     },
     sectionTitle: {

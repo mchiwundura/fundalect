@@ -1,5 +1,5 @@
 import { StyleSheet, Text, TouchableOpacity, useColorScheme, View } from "react-native";
-import { ThemedView } from "../ThemedView";
+import { ThemedView } from "../ThemedViewOld";
 import { Activity } from "../../types/ui/ActivityCard";
 import { ThemedText } from "../ThemedText";
 import IconTextButton from "./IconTextButton";

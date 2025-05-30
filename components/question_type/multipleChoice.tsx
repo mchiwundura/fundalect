@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { ThemedText } from "../ThemedText"
-import { ThemedView } from "../ThemedView"
+import { ThemedView } from "../ThemedViewOld"
 import { StyleSheet, TouchableOpacity } from "react-native"
 import { CardAlert } from "../CardAlert"
 

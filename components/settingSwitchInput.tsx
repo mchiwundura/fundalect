@@ -1,5 +1,5 @@
 import { StyleSheet, useColorScheme, Switch, View, TouchableOpacity } from "react-native"
-import { ThemedView } from "./ThemedView"
+import { ThemedView } from "./ThemedViewOld"
 import { ThemedText } from "./ThemedText"
 import { IconSymbol, IconSymbolName } from "./ui/IconSymbol";
 

@@ -1,6 +1,6 @@
 import { StyleSheet, TouchableOpacity, useColorScheme } from "react-native";
 import { ThemedText } from "../ThemedText";
-import { ThemedView } from "../ThemedView";
+import { ThemedView } from "../ThemedViewOld";
 import { IconSymbol, IconSymbolName } from "./IconSymbol";
 
 interface NavigationButton {

@@ -1,5 +1,5 @@
 import { ThemedText } from "@/components/ThemedText";
-import { ThemedView } from "@/components/ThemedView";
+import { ThemedView } from "@/components/ThemedViewOld";
 import { StyleSheet, TouchableOpacity, View, Dimensions } from "react-native";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { useEffect, useState } from "react";
@@ -23,6 +23,7 @@ import IconTextButton from "@/components/ui/IconTextButton";
 import { IconSymbol } from "@/components/ui/IconSymbol";
 import { useDatabase } from "@/hooks/useDatabase";
 import { useAppContext } from "@/context/appContext";
+import Background from "@/components/Background";
 
 // Define TypeScript interfaces for the flashcard data
 interface FlashcardFront {
@@ -56,12 +57,10 @@ export default function Flashcards() {
   
   // State
   const [currentCard, setCurrentCard] = useState(0);
-  const [flashcardz, setFlashcards] = useState<Flashcard[]>([]);
   const [front, setFront] = useState(true);
-  const [navigationVisible, setNavigationVisible] = useState(true);
+  const {flashcardNavigation} = useAppContext()
 
   // Hooks
-  const { getFlashcards } = useDatabase();
   const { flashcards } = useAppContext();
   const { lessonColor } = useAppContext();
 
@@ -70,16 +69,6 @@ export default function Flashcards() {
   const SWIPE_THRESHOLD = windowWidth * 0.25;
   const SWIPE_UP_THRESHOLD = windowHeight * 0.15;
 
-  async function getDeck() {
-    try {
-      const fetchedFlashcards = await getFlashcards( lessonId, id);
-      setFlashcards(fetchedFlashcards[0].cards);
- 
-
-    } catch (error) {
-      console.error("Error fetching flashcards:", error);
-    }
-  }
 
   function nextCard() {
     behindCardY.value = withTiming(0, { duration: 300 });
@@ -114,7 +103,7 @@ export default function Flashcards() {
   }
 
   function cardGood() {
-    positionX.value = withTiming(400, { duration: 300 });
+    positionX.value = withTiming(front? 400 : -400, { duration: 300 });
     positionY.value = withTiming(-60, { duration: 300 });
     opacity.value = withTiming(0, { duration: 300 });
     scale.value = withTiming(0.8, { duration: 300 });
@@ -122,7 +111,7 @@ export default function Flashcards() {
   }
 
   function cardBad() {
-    positionX.value = withTiming(-400, { duration: 300 });
+    positionX.value = withTiming(front? -400 : 400, { duration: 300 });
     positionY.value = withTiming(60, { duration: 300 });
     opacity.value = withTiming(0, { duration: 300 });
     scale.value = withTiming(0.8, { duration: 300 });
@@ -137,10 +126,6 @@ export default function Flashcards() {
     scale.value = withTiming(0.8, { duration: 300 });
     nextCard();
   }
-
-  useEffect(() => {
-    getDeck();
-  }, []);
 
   // Gesture handler for swipe gestures
   const onGestureEvent = (event: PanGestureHandlerGestureEvent) => {
@@ -240,15 +225,16 @@ export default function Flashcards() {
 
   return (
     <GestureHandlerRootView style={{ flex: 1, width: '100%' }}>
-      <ThemedView style={styles.page}>
+      <Background>
+      <View style={styles.page}>
         {!isCompletedDeck ? (
           <View style={[
             styles.flashcardsContainer, 
-            { height: navigationVisible ? flashcardContainerHeight : windowHeight * 0.8 }
+            { height: flashcardNavigation ? flashcardContainerHeight : windowHeight * 0.8 }
           ]}>
             {hasNextCard && (
               <Animated.View 
-                style={[styles.behindCard, behindCardAnimatedStyle, { backgroundColor: lessonColor, opacity: 0.5 }]}
+                style={[styles.behindCard, behindCardAnimatedStyle, { backgroundColor: lessonColor, opacity: 0.5, top: flashcardNavigation? -5 : -10 }]}
               >
                 {hasFlashcards && (
                   <View>
@@ -269,9 +255,8 @@ export default function Flashcards() {
                 animatedStyle, 
                 { backgroundColor:lessonColor  }
               ]}>
-                {!front && <View style={{ width: "100%", height: "100%", position: "absolute", top: 0, left: 0, zIndex: -1, opacity:0.3, backgroundColor: "black", borderRadius: 25 }} />}
                 <TapGestureHandler onActivated={() => runOnJS(cardFlip)()}>
-                  <Animated.View style={styles.cardContent}>
+                  <Animated.View style={[styles.cardContent, {backgroundColor: front? "rgba(0,0,0,0.05)" : "rgba(0,0,0,0.3)"}]}>
                     {hasFlashcards ? (
                       <View>
                         {front && (
@@ -295,6 +280,8 @@ export default function Flashcards() {
             </PanGestureHandler>
           </View>
         ) : (
+
+          // End of the deck
           <View style={{
             width: "100%", 
             height: windowHeight * 0.9, 
@@ -348,7 +335,7 @@ export default function Flashcards() {
           </View>
         )}
         
-        {!isCompletedDeck && navigationVisible && (
+        {!isCompletedDeck && flashcardNavigation && (
           <FlashcardNav 
             bad={() => cardBad()} 
             flip={() => cardFlip()} 
@@ -371,7 +358,8 @@ export default function Flashcards() {
             />
           </>
         )}
-      </ThemedView>
+      </View>
+      </Background>
     </GestureHandlerRootView>
   );
 }
@@ -407,10 +395,12 @@ const styles = StyleSheet.create({
     height: "100%",
     display: "flex",
     borderRadius: 25,
-    padding: 25,
+    position: 'relative'
   },
   cardContent: {
+    borderRadius: 25,
     width: "100%",
+    padding: 25,
     height: "100%",
     alignItems: "center",
     justifyContent: "center",

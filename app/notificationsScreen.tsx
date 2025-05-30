@@ -3,7 +3,7 @@ import React from 'react';
 import { FlatList, Pressable, View, StyleSheet } from 'react-native';
 import { useRouter } from 'expo-router';
 import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
+import { ThemedView } from '@/components/ThemedViewOld';
 import { Ionicons } from '@expo/vector-icons';
 
 type Notification = {

@@ -1,4 +1,4 @@
-import { ThemedView } from "../ThemedView"
+import { ThemedView } from "../ThemedViewOld"
 
 export const OneWordAnswer = () => {
 

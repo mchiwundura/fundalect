@@ -1,36 +1,63 @@
-import { View, StyleSheet, ScrollView, useColorScheme } from "react-native";
+import { StyleSheet, ScrollView, useColorScheme, View } from "react-native";
 import { ThemedText } from "@/components/ThemedText";
 import ActivityGraph from "@/components/ActivityGraph";
 import CalendarView from "@/components/CalendarView";
-import ParallaxScrollView from "@/components/ParallaxScrollView";
-import HeaderNavigation from "@/components/HeaderNav";
-
-interface ProgressPageProps {
-  activityData: number[]; // Weekly activity data
-  completedDays: boolean[]; // Streak tracking
-  courses: { id: number; title: string; completion: number; type: string }[];
-}
+import { useEffect, useState } from "react";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import IconTextButton from "@/components/ui/IconTextButton";
+import ActivityCard from "@/components/ui/ActivityCard";
+import Background from "@/components/Background";
 
 
 export default function ProgressPage() {
 
 const activityData = [ {value:50}, {value:80}, {value:90}, {value:70} ]
-const courses = [
-    { id: 1, title: "Central Nervous System", completion: 68, type: "Flashcards" },
-    { id: 2, title: "Colloidal Systems", completion: 45, type: "Quiz" },
-    { id: 3, title: "Pharmacokinetics Basics", completion: 30, type: "Lesson" },
-  ]
-  const completedDays = [true, false, true, true, false, true, false]
+const completedDays = [true, false, true, true, false, true, false]
+  
+  const [activitiesDB, setActivitiesDB] = useState([])
+  const [activities, setActivities] = useState([])
   const colorScheme = useColorScheme();
 
+    useEffect(() => {
+        async function fetchActivities() {
+            try {
+                const usersRecentActivity = await AsyncStorage.getItem('@recentActivities');
+                if (usersRecentActivity) {
+                    const jsonActivities = JSON.parse(usersRecentActivity);
+                    setActivitiesDB(jsonActivities);
+                    setActivities(jsonActivities);
+                    console.log("Recent activities found in local storage:", jsonActivities);
+                }
+            } catch (error) {
+                console.error("Error fetching recent activities:", error);
+            }
+        }
+        fetchActivities();
+    }, []);
+
+        function filterActivities(type: string) {
+        if (type === "Quiz") { 
+            setActivities(activitiesDB.filter(x => x.type === "Quiz"));
+        } else if (type === "Flashcards") {
+            setActivities(activitiesDB.filter(x => x.type === "Flashcards"));
+        } else if (type === "Lesson") {
+            setActivities(activitiesDB.filter(x => x.type === "Lesson"))
+        } else
+        setActivities(activitiesDB);
+    }
+
   return (
-    <ScrollView style={{padding: 32}} > 
+    <Background>
+
+    <ScrollView style={{padding: 32}} >
+      <View style={styles.container}>
+        <View>
       <ThemedText type="title">Progress this week</ThemedText>
 
-      <ThemedText type="subtitle">Weekly Activity</ThemedText>
+      <ThemedText style={[styles.sectionTitle]} type="subtitle">Weekly Activity</ThemedText>
       <ActivityGraph
       showLine
-             lineConfig={{
+      lineConfig={{
             color: '#F29C6E',
             thickness: 3,
             curved: true,
@@ -38,12 +65,33 @@ const courses = [
             shiftY: 20,
             initialSpacing: -30,
           }}
-      data={activityData} />
-      <ThemedText type="subtitle">Active Days</ThemedText>
-      <CalendarView completedDays={completedDays} />
+          data={activityData} />
 
-      <ThemedText type="subtitle">Course Progress</ThemedText>
+      <ThemedText style={[styles.sectionTitle]} type="subtitle">Active Days</ThemedText>
+      <CalendarView completedDays={completedDays} />
+      <ThemedText style={[styles.sectionTitle]} type="subtitle">Recent Activity</ThemedText>
+              <ScrollView style={[styles.filterButtons]} horizontal>
+        <IconTextButton onPress={() => filterActivities("All")}  
+        color={colorScheme === "light"? "rgba( 0, 0, 0, 0.3)" : "rgba(255, 255, 255, 0.3)"} 
+        textColor={colorScheme === "light"? "rgba( 0, 0, 0, 1)" : "rgba(255, 255, 255, 1)"} 
+        title="All" 
+        icon="list.dash"
+        />
+        <IconTextButton onPress={() => filterActivities("Flashcards")} textColor="rgba(128, 184, 147, 1)" color="rgba(128, 184, 147, 0.2)"  title="Flashcards" icon="bolt" />
+        <IconTextButton onPress={() => filterActivities("Quiz")} textColor="rgba(149, 132, 255, 1 )" color="rgba(149, 132, 255, 0.2 )" title="Quizes" icon="doc.plaintext"  />     
+        <IconTextButton onPress={() => filterActivities("Lesson")} textColor="rgba(100, 170, 255, 1)" color="rgba(100, 170, 255, 0.2)" title="Lessons" icon="doc.plaintext"  />
+        </ScrollView>
+        <ScrollView style={[styles.recentActivityContainer]}>
+            
+            {activities && activities.map((x ,y)=> {
+                return <ActivityCard key={y} activity={x}/>
+              })}
+ 
+        </ScrollView>
+              </View> 
+</View>
     </ScrollView>
+</Background>
   );
 }
 
@@ -51,5 +99,16 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
+    alignItems: 'center',
   },
+  recentActivityContainer: {
+    paddingBottom: 200,
+    minHeight: 500
+  },
+  sectionTitle: {
+    marginVertical: 10,
+  },
+  filterButtons: {
+    marginVertical: 20,
+  }
 });
