@@ -24,6 +24,26 @@ useEffect(() => {
 
 })
 
+const exampleStreakData = {
+  currentStreak: 3,
+  bestStreak: 5,
+  activeDays: [
+    { date: "2025-06-01" },
+    { date: "2025-06-02" },
+    { date: "2025-06-03" },
+    { date: "2025-06-04" },
+    { date: "2025-06-05" },
+    { date: "2025-06-07" },
+  ],
+};
+
+async function resetStreakData() {
+  await AsyncStorage.setItem("streakData", JSON.stringify(exampleStreakData));
+  console.log("Streak data reset to example data");
+}
+
+
+
 async function usersRecentActivity() {
 const activities = [
   {
@@ -76,7 +96,7 @@ function runDatabase() {
 <SettingSwitchInput onPress={() => usersRecentActivity()} icon={"rectangle.portrait.and.arrow.right"} title='Sign Out'/>
 <ThemedText style={styles.sectionTitle}   type='subtitle'>Settings</ThemedText>
 
-<SettingSwitchInput onPress={() => setNotifications(!notifications)} icon={"bell"} radio state={notifications} title='Notifications'/>
+<SettingSwitchInput onPress={() => resetStreakData()} icon={"bell"} radio state={notifications} title='Notifications'/>
 <SettingSwitchInput onPress={() => syncDatabase()} icon={"arrow.triangle.2.circlepath"} state={sync} radio title='Sync'/>
 <SettingSwitchInput onPress={() => setNightMode(!nightMode)} icon="moon.circle.fill" radio state={nightMode} title='Night mode'/>
 

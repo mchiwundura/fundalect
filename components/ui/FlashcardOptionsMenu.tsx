@@ -1,8 +1,7 @@
 import { StyleSheet, Text, TouchableOpacity, useColorScheme, View } from 'react-native'
 import React, { useState } from 'react'
-import { ThemedText } from '../ThemedText'
-import Background from '../Background'
 import { useAppContext } from '@/context/appContext'
+import { IconSymbol } from './IconSymbol'
 
 const FlashcardOptionsMenu = () => {
     const [open, setOpen] = useState<boolean>(false)
@@ -11,18 +10,11 @@ const FlashcardOptionsMenu = () => {
 
   return (
     <View style={[styles.container]}>
-      
-      {/* The Button to toggle the menu*/}
-      <TouchableOpacity onPress={()=> setOpen(!open)} style={[styles.button, {backgroundColor: colorScheme === "light"? "rgba(255, 255, 255, 0.2)" : "rgba(0 , 0 , 0 , 0.2)"}]}>
-       {/* use the text as placeholder we shall get a hamburger menu later */}
-       <Text style={{color: "white"}}>0</Text>
+
+      <TouchableOpacity onPress={()=> setFlashcardNavigation(!flashcardNavigation)} style={[styles.button, {backgroundColor: colorScheme !== "light"? "rgba(255, 255, 255, 0.1)" : "rgba(0 , 0 , 0 , 0.1)"}]}>
+  
+       <IconSymbol name={flashcardNavigation? 'hand.draw' : 'hand.thumbsup.fill'} color={colorScheme === "light"? 'rgba(0, 0, 0, 0.8)' : 'rgba(255, 255, 255, 0.8)'}/>
       </TouchableOpacity>
-      
-      {/* The dropdown Menu */}
-      {open && <View style={[styles.dropdown, {backgroundColor: colorScheme === "light"? "rgba(255, 255, 255, 0.6)" : "rgba(0 , 0 , 0 , 0.6)"}]}>
-                    {/* <TouchableOpacity style={styles.dropdownOption}><ThemedText>Reset Deck</ThemedText></TouchableOpacity> */}
-                    <TouchableOpacity onPress={() => setFlashcardNavigation(!flashcardNavigation)} style={styles.dropdownOption}><ThemedText>{flashcardNavigation? "Hide" : "Show"} Buttons</ThemedText></TouchableOpacity>
-              </View>}
     </View>
   )
 }
@@ -34,26 +26,13 @@ const styles = StyleSheet.create({
         position: "relative"
     },
     button : {
-        width: 50,
-        height: 50,
+        width: 40,
+        height: 40,
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         marginRight: 10,
         borderRadius: 25
-    },
-    dropdown: {
-        position: "absolute",
-        top: 55,
-        width: 130,
-        right: 0,
-        padding: 15,
-        borderRadius: 5
-    },
-    dropdownOption: {
-        height: 20,
-        display: 'flex',
-        justifyContent: 'space-between',
-        marginBottom: 10
     }
+
 })

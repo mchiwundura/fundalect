@@ -1,43 +1,77 @@
+import { View } from "react-native";
 import { Text, Image } from "react-native";
 import { ThemedText } from "@/components/ThemedText";
 import { getUniqueID } from "react-native-markdown-display";
-import RemoteSvg from "@/components/svgRenderer";
 
 export const rules = {
-  heading1: (node, children, parent, styles) =>
-    <Text key={getUniqueID()} style={[styles.heading, styles.heading1]}>
+  heading1: (node, children, parent, styles) => (
+    <ThemedText
+      type="title"
+      key={getUniqueID()}
+      style={[
+        styles.heading,
+        styles.heading1,
+        { marginVertical: 10, color: "#9584FF" },
+      ]}
+    >
       {children}
-    </Text>,
+    </ThemedText>
+  ),
 
-  heading2: (node, children, parent, styles) =>
-    <ThemedText type="title" key={getUniqueID()} style={[styles.heading, styles.heading2, { marginVertical: 10, color: "#9584FF" }]}>
+  heading2: (node, children, parent, styles) => (
+    <ThemedText
+      type="title"
+      key={getUniqueID()}
+      style={[
+        styles.heading,
+        styles.heading2,
+        { marginVertical: 10, color: "#9584FF" },
+      ]}
+    >
       {children}
-    </ThemedText>,
+    </ThemedText>
+  ),
 
-  heading3: (node, children, parent, styles) =>
-    <ThemedText type="title" key={getUniqueID()} style={[styles.heading, styles.heading2, { marginVertical: 10 }]}>
+  heading3: (node, children, parent, styles) => (
+    <ThemedText
+      type="title"
+      key={getUniqueID()}
+      style={[styles.heading, styles.heading2, { marginVertical: 10 }]}
+    >
       {children}
-    </ThemedText>,
+    </ThemedText>
+  ),
 
-  blockquote: (node, children, parent, styles) =>
-    <ThemedText  key={getUniqueID()} style={[styles.blockquote, { backgroundColor: "black", marginVertical: 10 }]}>
+  blockquote: (node, children, parent, styles) => (
+    <ThemedText
+      key={getUniqueID()}
+      style={[
+        styles.blockquote,
+        { backgroundColor: "black", marginVertical: 10 },
+      ]}
+    >
       {children}
-    </ThemedText>,
+    </ThemedText>
+  ),
 
-  list_item: (node, children, parent, styles) =>
+  list_item: (node, children, parent, styles) => (
+    <ThemedText key={getUniqueID()} style={[styles]}>
+      <Bullet />
+      {children}
+    </ThemedText>
+  ),
+
+  paragraph: (node, children, parent, styles) => (
+    <ThemedText key={getUniqueID()} style={[styles, { opacity: 0.8 }]}>
+      {children}
+    </ThemedText>
+  ),
+
+  table: (node, children, parent, styles) => (
     <ThemedText key={getUniqueID()} style={[styles]}>
       {children}
-    </ThemedText>,
-
-  paragraph: (node, children, parent, styles) =>
-    <ThemedText key={getUniqueID()} style={[styles, {opacity: 0.8}]}>
-      {children}
-    </ThemedText>,
-
-  table: (node, children, parent, styles) =>
-    <ThemedText key={getUniqueID()} style={[styles]}>
-      {children}
-    </ThemedText>,
+    </ThemedText>
+  ),
 
   fence: (node, children, parent, styles) => {
     if (node.info === "math") {
@@ -66,10 +100,11 @@ export const rules = {
     );
   },
 
-  code_block: (node, children, parent, styles) =>
+  code_block: (node, children, parent, styles) => (
     <ThemedText key={getUniqueID()} style={[styles]}>
       {children}
-    </ThemedText>,
+    </ThemedText>
+  ),
 
   image: (node, children, parent, styles) => {
     const { src, alt } = node.attributes;
@@ -84,5 +119,22 @@ export const rules = {
         accessibilityLabel={alt}
       />
     );
-  }
+  },
 };
+
+export default function Bullet() {
+  return (
+    <View>
+      <View
+        style={{
+          width: 5,
+          height: 5,
+          backgroundColor: "#9584FF",
+          borderRadius: 50,
+          marginRight: 10,
+          marginBottom: 3,
+        }}
+      ></View>
+    </View>
+  );
+}

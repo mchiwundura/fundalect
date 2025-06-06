@@ -1,74 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1740818212511" clover="3.2.0">
-  <project timestamp="1740818212512" name="All files">
-    <metrics statements="27" coveredstatements="19" conditionals="17" coveredconditionals="8" methods="7" coveredmethods="6" elements="51" coveredelements="33" complexity="0" loc="27" ncloc="27" packages="5" files="9" classes="9"/>
+<coverage generated="1749141853964" clover="3.2.0">
+  <project timestamp="1749141853964" name="All files">
+    <metrics statements="68" coveredstatements="64" conditionals="58" coveredconditionals="45" methods="17" coveredmethods="16" elements="143" coveredelements="125" complexity="0" loc="68" ncloc="68" packages="5" files="9" classes="9"/>
     <package name="components">
-      <metrics statements="5" coveredstatements="5" conditionals="11" coveredconditionals="6" methods="2" coveredmethods="2"/>
-      <file name="ThemedText.tsx" path="C:\Users\Admin\Development\Projects\Fundani\intellect\components\ThemedText.tsx">
-        <metrics statements="3" coveredstatements="3" conditionals="11" coveredconditionals="6" methods="1" coveredmethods="1"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
+      <metrics statements="33" coveredstatements="32" conditionals="49" coveredconditionals="39" methods="9" coveredmethods="9"/>
+      <file name="StreakTracker.tsx" path="C:\Users\Admin\Development\Projects\Fundani\intellect\components\StreakTracker.tsx">
+        <metrics statements="24" coveredstatements="23" conditionals="30" coveredconditionals="27" methods="6" coveredmethods="6"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
         <line num="36" count="1" type="stmt"/>
+        <line num="39" count="2" type="stmt"/>
+        <line num="41" count="3" type="stmt"/>
+        <line num="42" count="2" type="stmt"/>
+        <line num="44" count="2" type="stmt"/>
+        <line num="51" count="14" type="stmt"/>
+        <line num="52" count="14" type="stmt"/>
+        <line num="53" count="14" type="stmt"/>
+        <line num="56" count="14" type="cond" truecount="3" falsecount="0"/>
+        <line num="58" count="14" type="cond" truecount="3" falsecount="0"/>
+        <line num="60" count="14" type="stmt"/>
+        <line num="96" count="1" type="stmt"/>
+      </file>
+      <file name="ThemedText.tsx" path="C:\Users\Admin\Development\Projects\Fundani\intellect\components\ThemedText.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="15" coveredconditionals="10" methods="1" coveredmethods="1"/>
+        <line num="20" count="30" type="stmt"/>
+        <line num="21" count="30" type="stmt"/>
+        <line num="22" count="30" type="stmt"/>
+        <line num="39" count="3" type="stmt"/>
       </file>
       <file name="ThemedView.tsx" path="C:\Users\Admin\Development\Projects\Fundani\intellect\components\ThemedView.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="16" type="stmt"/>
+        <line num="10" count="16" type="stmt"/>
+      </file>
+      <file name="ThemedViewOld.tsx" path="C:\Users\Admin\Development\Projects\Fundani\intellect\components\ThemedViewOld.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="11" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="components.question_type">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="oneWordAnswer.tsx" path="C:\Users\Admin\Development\Projects\Fundani\intellect\components\question_type\oneWordAnswer.tsx">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
+    <package name="components.ui">
+      <metrics statements="6" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="1"/>
+      <file name="LessonCard.tsx" path="C:\Users\Admin\Development\Projects\Fundani\intellect\components\ui\LessonCard.tsx">
+        <metrics statements="6" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="1"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
       </file>
     </package>
     <package name="constants">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="Colors.ts" path="C:\Users\Admin\Development\Projects\Fundani\intellect\constants\Colors.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="9" count="2" type="stmt"/>
-      </file>
-    </package>
-    <package name="db">
-      <metrics statements="11" coveredstatements="4" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="1"/>
-      <file name="localDatabase.ts" path="C:\Users\Admin\Development\Projects\Fundani\intellect\db\localDatabase.ts">
-        <metrics statements="10" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-      </file>
-      <file name="questions.ts" path="C:\Users\Admin\Development\Projects\Fundani\intellect\db\questions.ts">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="10" count="1" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
       </file>
     </package>
     <package name="hooks">
-      <metrics statements="6" coveredstatements="5" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="2"/>
-      <file name="getQuestions.ts" path="C:\Users\Admin\Development\Projects\Fundani\intellect\hooks\getQuestions.ts">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
-      </file>
+      <metrics statements="5" coveredstatements="4" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <file name="useColorScheme.ts" path="C:\Users\Admin\Development\Projects\Fundani\intellect\hooks\useColorScheme.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
       <file name="useThemeColor.ts" path="C:\Users\Admin\Development\Projects\Fundani\intellect\hooks\useThemeColor.ts">
         <metrics statements="5" coveredstatements="4" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="13" count="2" type="cond" truecount="1" falsecount="1"/>
-        <line num="14" count="2" type="stmt"/>
-        <line num="16" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="13" count="31" type="cond" truecount="1" falsecount="1"/>
+        <line num="14" count="31" type="stmt"/>
+        <line num="16" count="31" type="cond" truecount="1" falsecount="1"/>
         <line num="17" count="0" type="stmt"/>
-        <line num="19" count="2" type="stmt"/>
+        <line num="19" count="31" type="stmt"/>
+      </file>
+    </package>
+    <package name="utils">
+      <metrics statements="21" coveredstatements="21" conditionals="3" coveredconditionals="3" methods="5" coveredmethods="5"/>
+      <file name="streak.ts" path="C:\Users\Admin\Development\Projects\Fundani\intellect\utils\streak.ts">
+        <metrics statements="21" coveredstatements="21" conditionals="3" coveredconditionals="3" methods="5" coveredmethods="5"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="21" type="stmt"/>
+        <line num="7" count="21" type="stmt"/>
+        <line num="8" count="21" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="16" type="stmt"/>
+        <line num="16" count="16" type="stmt"/>
+        <line num="18" count="16" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="27" count="15" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="30" count="15" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="33" count="4" type="stmt"/>
+        <line num="34" count="4" type="stmt"/>
+        <line num="35" count="4" type="stmt"/>
+        <line num="36" count="4" type="stmt"/>
       </file>
     </package>
   </project>

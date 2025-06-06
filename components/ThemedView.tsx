@@ -1,12 +1,16 @@
-import { StyleSheet, Text, useColorScheme, View } from 'react-native'
-import React, { FC } from 'react'
+import { useColorScheme, View, ViewStyle, StyleProp } from 'react-native'
 
+interface ThemedViewProps {
+    children: React.ReactNode;
+    style?: StyleProp<ViewStyle>;
+}
 
-const ThemedView = ({children, style}) => {
+const ThemedView = ({children, style}: ThemedViewProps)=> {
     const colorScheme = useColorScheme()
   return (
-    <View style={[{backgroundColor: colorScheme === "light" ? "rgba(255, 255, 255, 0.5)" : "rgba(255, 255, 255, 0.05)",
-            boxShadow: colorScheme === "light" ? "0 4px 4px rgba(0, 0, 0, 0.25)" : "0 0 0 rgba(0, 0, 0, 0.1)"}, style]}>
+    <View style={[{backgroundColor: colorScheme === "light" ? "rgba(255, 255, 255, 0.7)" : "rgba(255, 255, 255, 0.05)",
+            boxShadow: colorScheme === "light" ? "0 4px 4px rgba(0, 0, 0, 0.25)" : "0 0 0 rgba(0, 0, 0, 0.1)",
+            }, style]}>
         {children}
     </View>
   )
@@ -14,4 +18,3 @@ const ThemedView = ({children, style}) => {
 
 export default ThemedView
 
-const styles = StyleSheet.create({})

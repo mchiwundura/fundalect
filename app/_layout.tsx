@@ -45,18 +45,15 @@ const [onboarded, setOnborded] = useState(true)
         <Stack.Screen name="notificationsScreen" options={{ headerShown: true, title: "Notifications" }} />
         <Stack.Screen name="search" options={{ headerShown: true, title: "Discover", presentation: 'modal'}}   />
         <Stack.Screen name="course/[id]" options={{ headerShown: true, title: "Courses" }} />
-        <Stack.Screen  name="course/[id]/lesson/[lessonId]/flashcards" options={{ headerShown: true, title: "Flashcards", headerRight: () => FlashcardOptionsMenu() }} />
-        <Stack.Screen  name="course/[id]/lesson/[lessonId]/index" options={{ headerShown: true, title: "Lesson", headerRight: () => FlashcardOptionsMenu() }} />
+        <Stack.Screen  name="course/[id]/lesson/[lessonId]/flashcards" options={{ headerShown: true, title: "Flashcards", headerRight: () => FlashcardOptionsMenu(), animation: 'slide_from_right' }} />
+        <Stack.Screen  name="course/[id]/lesson/[lessonId]/index" options={{ headerShown: true, title: "Lesson", headerRight: () => FlashcardOptionsMenu(), animation: 'slide_from_right' }} />
         
         <Stack.Screen 
           name="course/[id]/index" 
           options={{ 
             headerShown: true, 
             title: "Course",
-            headerSearchBarOptions: {
-              placeholder: "Search",
-              
-            }
+            presentation: 'modal', animation: 'slide_from_right'
           }} />
         <Stack.Screen name="quizes/[id]" options={{ headerShown: true, title: "Quiz" }} />
         <Stack.Screen name="lesson/[id]" options={{ headerShown: true, title: "Lesson" }} />

@@ -1,0 +1,731 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StreakTracker snapshot tests renders correctly and matches snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "rgba(255, 255, 255, 0.7)",
+        "boxShadow": "0 4px 4px rgba(0, 0, 0, 0.25)",
+      },
+      {
+        "borderRadius": 15,
+        "height": 150,
+        "padding": 20,
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      {
+        "color": "orange",
+        "fontSize": 16,
+        "fontWeight": "bold",
+      }
+    }
+  >
+    🔥 
+    0
+     Days
+  </Text>
+  <Text
+    style={
+      {
+        "color": "gray",
+        "fontSize": 14,
+      }
+    }
+  >
+    Best: 
+    0
+     Days
+  </Text>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "flexWrap": "nowrap",
+        "justifyContent": "center",
+        "marginTop": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "display": "flex",
+          "height": 55,
+          "marginHorizontal": 3,
+          "minWidth": 30,
+          "paddingTop": 35,
+          "position": "relative",
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "backgroundColor": "rgba(255, 255, 255, 0.7)",
+              "boxShadow": "0 4px 4px rgba(0, 0, 0, 0.25)",
+            },
+            [
+              {
+                "alignItems": "center",
+                "boxShadow": "none",
+                "display": "flex",
+                "height": 30,
+                "justifyContent": "center",
+                "left": 0,
+                "paddingHorizontal": 6,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              {
+                "borderColor": "#9C85FF",
+                "borderRadius": 15,
+                "borderWidth": 1,
+              },
+              false,
+              false,
+              false,
+              false,
+            ],
+          ]
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "rgba(0,0,0,0.8)",
+              },
+              {
+                "fontSize": 16,
+                "lineHeight": 24,
+              },
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              [
+                {
+                  "fontWeight": "bold",
+                },
+                false,
+                false,
+              ],
+            ]
+          }
+        >
+          3
+        </Text>
+      </View>
+      <Text
+        style={
+          [
+            {
+              "color": "rgba(0,0,0,0.8)",
+            },
+            {
+              "fontSize": 16,
+              "lineHeight": 24,
+            },
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+          ]
+        }
+      >
+        T
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "display": "flex",
+          "height": 55,
+          "marginHorizontal": 3,
+          "minWidth": 30,
+          "paddingTop": 35,
+          "position": "relative",
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "backgroundColor": "rgba(255, 255, 255, 0.7)",
+              "boxShadow": "0 4px 4px rgba(0, 0, 0, 0.25)",
+            },
+            [
+              {
+                "alignItems": "center",
+                "boxShadow": "none",
+                "display": "flex",
+                "height": 30,
+                "justifyContent": "center",
+                "left": 0,
+                "paddingHorizontal": 6,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              {
+                "borderColor": "#9C85FF",
+                "borderRadius": 15,
+                "borderWidth": 1,
+              },
+              false,
+              false,
+              false,
+              false,
+            ],
+          ]
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "rgba(0,0,0,0.8)",
+              },
+              {
+                "fontSize": 16,
+                "lineHeight": 24,
+              },
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              [
+                {
+                  "fontWeight": "bold",
+                },
+                false,
+                false,
+              ],
+            ]
+          }
+        >
+          4
+        </Text>
+      </View>
+      <Text
+        style={
+          [
+            {
+              "color": "rgba(0,0,0,0.8)",
+            },
+            {
+              "fontSize": 16,
+              "lineHeight": 24,
+            },
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+          ]
+        }
+      >
+        W
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "display": "flex",
+          "height": 55,
+          "marginHorizontal": 3,
+          "minWidth": 30,
+          "paddingTop": 35,
+          "position": "relative",
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "backgroundColor": "rgba(255, 255, 255, 0.7)",
+              "boxShadow": "0 4px 4px rgba(0, 0, 0, 0.25)",
+            },
+            [
+              {
+                "alignItems": "center",
+                "boxShadow": "none",
+                "display": "flex",
+                "height": 30,
+                "justifyContent": "center",
+                "left": 0,
+                "paddingHorizontal": 6,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              {
+                "borderColor": "#9C85FF",
+                "borderRadius": 15,
+                "borderWidth": 1,
+              },
+              false,
+              false,
+              false,
+              false,
+            ],
+          ]
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "rgba(0,0,0,0.8)",
+              },
+              {
+                "fontSize": 16,
+                "lineHeight": 24,
+              },
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              [
+                {
+                  "fontWeight": "bold",
+                },
+                false,
+                false,
+              ],
+            ]
+          }
+        >
+          5
+        </Text>
+      </View>
+      <Text
+        style={
+          [
+            {
+              "color": "rgba(0,0,0,0.8)",
+            },
+            {
+              "fontSize": 16,
+              "lineHeight": 24,
+            },
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+          ]
+        }
+      >
+        T
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "display": "flex",
+          "height": 55,
+          "marginHorizontal": 3,
+          "minWidth": 30,
+          "paddingTop": 35,
+          "position": "relative",
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "backgroundColor": "rgba(255, 255, 255, 0.7)",
+              "boxShadow": "0 4px 4px rgba(0, 0, 0, 0.25)",
+            },
+            [
+              {
+                "alignItems": "center",
+                "boxShadow": "none",
+                "display": "flex",
+                "height": 30,
+                "justifyContent": "center",
+                "left": 0,
+                "paddingHorizontal": 6,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              {
+                "borderColor": "#9C85FF",
+                "borderRadius": 15,
+                "borderWidth": 1,
+              },
+              false,
+              false,
+              false,
+              false,
+            ],
+          ]
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "rgba(0,0,0,0.8)",
+              },
+              {
+                "fontSize": 16,
+                "lineHeight": 24,
+              },
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              [
+                {
+                  "fontWeight": "bold",
+                },
+                {
+                  "color": "#FFD700",
+                },
+                false,
+              ],
+            ]
+          }
+        >
+          6
+        </Text>
+      </View>
+      <Text
+        style={
+          [
+            {
+              "color": "rgba(0,0,0,0.8)",
+            },
+            {
+              "fontSize": 16,
+              "lineHeight": 24,
+            },
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+          ]
+        }
+      >
+        F
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "display": "flex",
+          "height": 55,
+          "marginHorizontal": 3,
+          "minWidth": 30,
+          "paddingTop": 35,
+          "position": "relative",
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "backgroundColor": "rgba(255, 255, 255, 0.7)",
+              "boxShadow": "0 4px 4px rgba(0, 0, 0, 0.25)",
+            },
+            [
+              {
+                "alignItems": "center",
+                "boxShadow": "none",
+                "display": "flex",
+                "height": 30,
+                "justifyContent": "center",
+                "left": 0,
+                "paddingHorizontal": 6,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              {
+                "borderColor": "#9C85FF",
+                "borderRadius": 15,
+                "borderWidth": 1,
+              },
+              false,
+              false,
+              false,
+              false,
+            ],
+          ]
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "rgba(0,0,0,0.8)",
+              },
+              {
+                "fontSize": 16,
+                "lineHeight": 24,
+              },
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              [
+                {
+                  "fontWeight": "bold",
+                },
+                false,
+                false,
+              ],
+            ]
+          }
+        >
+          7
+        </Text>
+      </View>
+      <Text
+        style={
+          [
+            {
+              "color": "rgba(0,0,0,0.8)",
+            },
+            {
+              "fontSize": 16,
+              "lineHeight": 24,
+            },
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+          ]
+        }
+      >
+        S
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "display": "flex",
+          "height": 55,
+          "marginHorizontal": 3,
+          "minWidth": 30,
+          "paddingTop": 35,
+          "position": "relative",
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "backgroundColor": "rgba(255, 255, 255, 0.7)",
+              "boxShadow": "0 4px 4px rgba(0, 0, 0, 0.25)",
+            },
+            [
+              {
+                "alignItems": "center",
+                "boxShadow": "none",
+                "display": "flex",
+                "height": 30,
+                "justifyContent": "center",
+                "left": 0,
+                "paddingHorizontal": 6,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              {
+                "borderColor": "#9C85FF",
+                "borderRadius": 15,
+                "borderWidth": 1,
+              },
+              false,
+              false,
+              false,
+              false,
+            ],
+          ]
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "rgba(0,0,0,0.8)",
+              },
+              {
+                "fontSize": 16,
+                "lineHeight": 24,
+              },
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              [
+                {
+                  "fontWeight": "bold",
+                },
+                false,
+                false,
+              ],
+            ]
+          }
+        >
+          8
+        </Text>
+      </View>
+      <Text
+        style={
+          [
+            {
+              "color": "rgba(0,0,0,0.8)",
+            },
+            {
+              "fontSize": 16,
+              "lineHeight": 24,
+            },
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+          ]
+        }
+      >
+        S
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "display": "flex",
+          "height": 55,
+          "marginHorizontal": 3,
+          "minWidth": 30,
+          "paddingTop": 35,
+          "position": "relative",
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "backgroundColor": "rgba(255, 255, 255, 0.7)",
+              "boxShadow": "0 4px 4px rgba(0, 0, 0, 0.25)",
+            },
+            [
+              {
+                "alignItems": "center",
+                "boxShadow": "none",
+                "display": "flex",
+                "height": 30,
+                "justifyContent": "center",
+                "left": 0,
+                "paddingHorizontal": 6,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              {
+                "borderColor": "#9C85FF",
+                "borderRadius": 15,
+                "borderWidth": 1,
+              },
+              false,
+              false,
+              false,
+              false,
+            ],
+          ]
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "rgba(0,0,0,0.8)",
+              },
+              {
+                "fontSize": 16,
+                "lineHeight": 24,
+              },
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              undefined,
+              [
+                {
+                  "fontWeight": "bold",
+                },
+                false,
+                false,
+              ],
+            ]
+          }
+        >
+          9
+        </Text>
+      </View>
+      <Text
+        style={
+          [
+            {
+              "color": "rgba(0,0,0,0.8)",
+            },
+            {
+              "fontSize": 16,
+              "lineHeight": 24,
+            },
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+          ]
+        }
+      >
+        M
+      </Text>
+    </View>
+  </View>
+</View>
+`;

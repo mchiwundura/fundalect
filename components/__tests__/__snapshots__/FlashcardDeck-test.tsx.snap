@@ -1,0 +1,226 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Flashcard Deck Test Renders the card component 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "height": 210,
+      "marginHorizontal": 10,
+      "marginVertical": 10,
+      "opacity": 1,
+      "position": "relative",
+      "width": 300,
+    }
+  }
+>
+  <View
+    style={
+      [
+        {
+          "borderRadius": 20,
+          "height": 200,
+          "left": 8,
+          "opacity": 0.3,
+          "position": "absolute",
+          "right": 8,
+          "top": -8,
+          "zIndex": 0,
+        },
+        {
+          "backgroundColor": "yellow",
+        },
+      ]
+    }
+  />
+  <View
+    collapsable={false}
+    jestAnimatedStyle={
+      {
+        "value": {},
+      }
+    }
+    jestInlineStyle={
+      [
+        {
+          "borderRadius": 20,
+          "elevation": 5,
+          "flex": 1,
+          "justifyContent": "space-between",
+          "padding": 20,
+          "shadowColor": "#000",
+          "shadowOffset": {
+            "height": 6,
+            "width": 0,
+          },
+          "shadowOpacity": 0.2,
+          "shadowRadius": 8,
+          "zIndex": 1,
+        },
+        {
+          "backgroundColor": "yellow",
+        },
+      ]
+    }
+    style={
+      {
+        "backgroundColor": "yellow",
+        "borderRadius": 20,
+        "elevation": 5,
+        "flex": 1,
+        "justifyContent": "space-between",
+        "padding": 20,
+        "shadowColor": "#000",
+        "shadowOffset": {
+          "height": 6,
+          "width": 0,
+        },
+        "shadowOpacity": 0.2,
+        "shadowRadius": 8,
+        "zIndex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "rgba(0,0,0,0.8)",
+            },
+            {
+              "fontSize": 16,
+              "lineHeight": 24,
+            },
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            undefined,
+            {
+              "fontSize": 16,
+              "fontWeight": "600",
+            },
+          ]
+        }
+      >
+        pharmacology
+      </Text>
+    </View>
+    <Text
+      style={
+        [
+          {
+            "color": "rgba(0,0,0,0.8)",
+          },
+          undefined,
+          {
+            "fontSize": 32,
+            "fontWeight": "bold",
+            "lineHeight": 32,
+          },
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          {
+            "fontSize": 32,
+            "marginTop": 15,
+          },
+        ]
+      }
+    >
+      Pharmacology
+    </Text>
+    <View>
+      <Text
+        style={
+          [
+            {
+              "color": "rgba(0,0,0,0.8)",
+            },
+            undefined,
+            undefined,
+            undefined,
+            {
+              "fontSize": 20,
+              "fontWeight": "bold",
+            },
+            undefined,
+            undefined,
+            {
+              "fontSize": 16,
+              "marginVertical": 10,
+              "opacity": 0.7,
+            },
+          ]
+        }
+      >
+        Completion: 
+        20
+        %
+      </Text>
+      <View
+        style={
+          {
+            "backgroundColor": "rgba(255, 255, 255, 0.4)",
+            "borderRadius": 5,
+            "height": 10,
+            "overflow": "hidden",
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            [
+              {
+                "backgroundColor": "#00ff9d",
+                "borderRadius": 5,
+                "height": "100%",
+              },
+              {
+                "width": "20%",
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;

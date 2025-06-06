@@ -1,47 +1,43 @@
 import { ThemedText } from "@/components/ThemedText";
-import { ThemedView } from "@/components/ThemedViewOld";
-import { StyleSheet, TouchableOpacity, View, Dimensions } from "react-native";
-import { useLocalSearchParams, useRouter } from "expo-router";
+import { StyleSheet, View, Dimensions } from "react-native";
 import { useEffect, useState } from "react";
 import FlashcardNav from "@/components/FlashcardNav";
-import ConfettiCannon from 'react-native-confetti-cannon';
+
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
   withTiming,
   interpolate,
   Extrapolate,
-  runOnJS
+  runOnJS,
 } from "react-native-reanimated";
 import {
   PanGestureHandler,
   PanGestureHandlerGestureEvent,
   TapGestureHandler,
-  GestureHandlerRootView
-} from 'react-native-gesture-handler';
-import IconTextButton from "@/components/ui/IconTextButton";
-import { IconSymbol } from "@/components/ui/IconSymbol";
-import { useDatabase } from "@/hooks/useDatabase";
+  GestureHandlerRootView,
+} from "react-native-gesture-handler";
 import { useAppContext } from "@/context/appContext";
 import Background from "@/components/Background";
+import EndDeckCelebration from "@/components/EndDeckCelebration";
+import StreakExtensionCelebration from "@/components/StreakExtensionCelebration";
+import { StreakData } from "@/types/ui/streakTracker";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
-// Define TypeScript interfaces for the flashcard data
-interface FlashcardFront {
-  title: string;
-  question: string;
-}
-
-interface Flashcard {
-  id?: string;
-  front: FlashcardFront;
-  back: string;
-}
+// Todo: Implement Spaced repetition algorithm
+// Tood: Track Card perfomace
+// Todo: Calculate card performance at the end of the deck
+// Todo: Add cards progress to local storage
+// Todo: Animate page
+// Todo: Add day streak after completing a deck
+// Todo: Flashcard end of deck screen as separate component (pressing continue from there can trigger streak extended animation)
+// Todo: Move Utils and make tests
 
 export default function Flashcards() {
-  const router = useRouter();
-  const windowHeight = Dimensions.get('window').height;
-  const windowWidth = Dimensions.get('window').width;
-  
+  const windowHeight = Dimensions.get("window").height;
+  const windowWidth = Dimensions.get("window").width;
+  const [streakExtension, setStreakExtension] = useState(true);
+
   // Animation values
   const rotation = useSharedValue(0);
   const opacity = useSharedValue(1);
@@ -51,24 +47,19 @@ export default function Flashcards() {
   const behindCardScale = useSharedValue(0.95);
   const behindCardY = useSharedValue(-20);
   const behindCardOpacity = useSharedValue(0.8);
-  
-  // Get parameters
-  const { id, lessonId } = useLocalSearchParams<{ id: string; lessonId: string }>();
-  
+
   // State
   const [currentCard, setCurrentCard] = useState(0);
   const [front, setFront] = useState(true);
-  const {flashcardNavigation} = useAppContext()
+  const { flashcardNavigation } = useAppContext();
 
   // Hooks
   const { flashcards } = useAppContext();
   const { lessonColor } = useAppContext();
 
-  console.log("the flashcards letes see the color", flashcards)
   // Gesture threshold constants
   const SWIPE_THRESHOLD = windowWidth * 0.25;
   const SWIPE_UP_THRESHOLD = windowHeight * 0.15;
-
 
   function nextCard() {
     behindCardY.value = withTiming(0, { duration: 300 });
@@ -103,7 +94,7 @@ export default function Flashcards() {
   }
 
   function cardGood() {
-    positionX.value = withTiming(front? 400 : -400, { duration: 300 });
+    positionX.value = withTiming(front ? 400 : -400, { duration: 300 });
     positionY.value = withTiming(-60, { duration: 300 });
     opacity.value = withTiming(0, { duration: 300 });
     scale.value = withTiming(0.8, { duration: 300 });
@@ -111,11 +102,10 @@ export default function Flashcards() {
   }
 
   function cardBad() {
-    positionX.value = withTiming(front? -400 : 400, { duration: 300 });
+    positionX.value = withTiming(front ? -400 : 400, { duration: 300 });
     positionY.value = withTiming(60, { duration: 300 });
     opacity.value = withTiming(0, { duration: 300 });
     scale.value = withTiming(0.8, { duration: 300 });
-    // append the current card to the end of the deck
     flashcards.push(flashcards[currentCard]);
     nextCard();
   }
@@ -129,40 +119,41 @@ export default function Flashcards() {
 
   // Gesture handler for swipe gestures
   const onGestureEvent = (event: PanGestureHandlerGestureEvent) => {
-    const { translationX, translationY, velocityX, velocityY } = event.nativeEvent;
-    
+    const { translationX, translationY } = event.nativeEvent;
+
     // Update position based on drag
     positionX.value = translationX;
     positionY.value = translationY;
-    
+
     // Calculate rotation based on horizontal movement (subtle effect)
     rotation.value = interpolate(
       translationX,
       [-windowWidth / 2, 0, windowWidth / 2],
       [-15, 0, 15],
-      Extrapolate.CLAMP
+      Extrapolate.CLAMP,
     );
-    
+
     // Scale slightly as card is moved
     scale.value = interpolate(
       Math.abs(translationX) + Math.abs(translationY),
       [0, 100],
       [1, 0.95],
-      Extrapolate.CLAMP
+      Extrapolate.CLAMP,
     );
-    
+
     // Change opacity slightly as card is moved
     opacity.value = interpolate(
       Math.abs(translationX) + Math.abs(translationY),
       [0, 150],
       [1, 0.8],
-      Extrapolate.CLAMP
+      Extrapolate.CLAMP,
     );
   };
 
   const onGestureEnd = (event: PanGestureHandlerGestureEvent) => {
-    const { translationX, translationY, velocityX, velocityY } = event.nativeEvent;
-    
+    const { translationX, translationY, velocityX, velocityY } =
+      event.nativeEvent;
+
     // Determine what action to take based on the gesture
     if (translationX > SWIPE_THRESHOLD || velocityX > 800) {
       // Swipe right - Mark as "good"
@@ -179,7 +170,7 @@ export default function Flashcards() {
       positionY.value = withTiming(0, { duration: 200 });
       scale.value = withTiming(1, { duration: 200 });
       opacity.value = withTiming(1, { duration: 200 });
-      
+
       // Reset rotation only if we're on the front side
       if (front) {
         rotation.value = withTiming(0, { duration: 200 });
@@ -192,17 +183,17 @@ export default function Flashcards() {
       transform: [
         {
           rotateY: `${interpolate(
-            rotation.value, 
-            [0, 180], 
-            [0, 180], 
-            Extrapolate.CLAMP
+            rotation.value,
+            [0, 180],
+            [0, 180],
+            Extrapolate.CLAMP,
           )}deg`,
         },
         { translateX: positionX.value },
         { translateY: positionY.value },
-        { scale: scale.value }
+        { scale: scale.value },
       ],
-      opacity: opacity.value
+      opacity: opacity.value,
     };
   });
 
@@ -210,9 +201,9 @@ export default function Flashcards() {
     return {
       transform: [
         { scale: behindCardScale.value },
-        { translateY: behindCardY.value }
+        { translateY: behindCardY.value },
       ],
-      opacity: behindCardOpacity.value
+      opacity: behindCardOpacity.value,
     };
   });
 
@@ -223,142 +214,145 @@ export default function Flashcards() {
   const isCompletedDeck = flashcards && currentCard >= flashcards.length;
   const hasNextCard = flashcards && currentCard < flashcards.length - 1;
 
-  return (
-    <GestureHandlerRootView style={{ flex: 1, width: '100%' }}>
-      <Background>
-      <View style={styles.page}>
-        {!isCompletedDeck ? (
-          <View style={[
-            styles.flashcardsContainer, 
-            { height: flashcardNavigation ? flashcardContainerHeight : windowHeight * 0.8 }
-          ]}>
-            {hasNextCard && (
-              <Animated.View 
-                style={[styles.behindCard, behindCardAnimatedStyle, { backgroundColor: lessonColor, opacity: 0.5, top: flashcardNavigation? -5 : -10 }]}
-              >
-                {hasFlashcards && (
-                  <View>
-                    <ThemedText style={styles.cardText} type="title">
-                      {flashcards[currentCard + 1]?.front?.title || "No Title"}
-                    </ThemedText>
-                  </View>
-                )}
-              </Animated.View>
-            )}
-            
-            <PanGestureHandler 
-              onGestureEvent={onGestureEvent} 
-              onEnded={onGestureEnd}
-            >
-              <Animated.View sharedTransitionTag="flashcard" style={[
-                styles.card, 
-                animatedStyle, 
-                { backgroundColor:lessonColor  }
-              ]}>
-                <TapGestureHandler onActivated={() => runOnJS(cardFlip)()}>
-                  <Animated.View style={[styles.cardContent, {backgroundColor: front? "rgba(0,0,0,0.05)" : "rgba(0,0,0,0.3)"}]}>
-                    {hasFlashcards ? (
-                      <View>
-                        {front && (
-                          <ThemedText style={styles.cardText} type="title">
-                            {flashcards[currentCard]?.front?.title || "No Title"}
-                          </ThemedText>
-                        )}
-                        <ThemedText style={[styles.cardText, !front && styles.reverseText]}>
-                          {front
-                            ? flashcards[currentCard]?.front?.question || "No Front Text"
-                            : flashcards[currentCard]?.back || "No Back Text"
-                          }
-                        </ThemedText>
-                      </View>
-                    ) : (
-                      <ThemedText>Loading...</ThemedText>
-                    )}
-                  </Animated.View>
-                </TapGestureHandler>
-              </Animated.View>
-            </PanGestureHandler>
-          </View>
-        ) : (
+  // Tracking the streak
 
-          // End of the deck
-          <View style={{
-            width: "100%", 
-            height: windowHeight * 0.9, 
-            position: "absolute", 
-            alignItems: "center", 
-            display: "flex", 
-            justifyContent: "space-between"
-          }}>
-            <View style={{
-              display: "flex", 
-              width: "100%", 
-              alignItems: "center", 
-              paddingTop: 20
-            }}>
-              <ThemedText type="title" style={[styles.congrats, { color: "#9584FF" }]}>
-                Congratulations
-              </ThemedText>
-              <ThemedText type="defaultSemiBold">
-                You have finished this deck of Flashcards
-              </ThemedText>
-            </View>
-            
-            <View style={{ width: "90%" }}>
-              <IconTextButton
-                large
-                onPress={() => router.push(`/quizes/${id}`)}
-                textColor="rgba(149, 132, 255, 1)"
-                color="rgba(149, 132, 255, 0.2)"
-                title="Take the quiz"
-                icon="doc.plaintext"
-              />
-              
-              <TouchableOpacity 
-                style={styles.restartButton} 
-                onPress={() => setCurrentCard(0)}
-              >
-                <ThemedText style={{ color: "#9584FF", textDecorationLine: "underline" }}>
-                  Restart Deck
-                </ThemedText>
-              </TouchableOpacity>
-              
-              <View style={{ display: "flex", alignItems: "center" }}>
-                <TouchableOpacity 
-                  onPress={() => router.push("/")} 
-                  style={styles.homeButton}
+  const STORAGE_KEY = "streakData";
+  const [streakData, setStreakData] = useState<StreakData>({
+    currentStreak: 0,
+    bestStreak: 0,
+    activeDays: [],
+  });
+
+  useEffect(() => {
+    const loadData = async () => {
+      try {
+        const json = await AsyncStorage.getItem(STORAGE_KEY);
+        if (json) {
+          const data: StreakData = JSON.parse(json);
+          const sortedDays = data.activeDays.sort(
+            (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime(),
+          );
+          setStreakData({ ...data, activeDays: sortedDays });
+        }
+      } catch (error) {
+        console.error("Failed to load streak data", error);
+      }
+    };
+
+    loadData();
+  }, []);
+
+  return (
+    <GestureHandlerRootView style={{ flex: 1, width: "100%" }}>
+      <Background>
+        <View style={styles.page}>
+          {!isCompletedDeck && (
+            <View
+              style={[
+                styles.flashcardsContainer,
+                {
+                  height: flashcardNavigation
+                    ? flashcardContainerHeight
+                    : windowHeight * 0.8,
+                },
+              ]}
+            >
+              {hasNextCard && (
+                <Animated.View
+                  style={[
+                    styles.behindCard,
+                    behindCardAnimatedStyle,
+                    {
+                      backgroundColor: lessonColor,
+                      opacity: 0.5,
+                      top: flashcardNavigation ? -5 : -10,
+                    },
+                  ]}
                 >
-                  <IconSymbol name="house.fill" size={36} color={"#9584FF"} />
-                </TouchableOpacity>
-              </View>
+                  {hasFlashcards && (
+                    <View>
+                      <ThemedText style={styles.cardText} type="title">
+                        {flashcards[currentCard + 1]?.front?.title ||
+                          "No Title"}
+                      </ThemedText>
+                    </View>
+                  )}
+                </Animated.View>
+              )}
+
+              <PanGestureHandler
+                onGestureEvent={onGestureEvent}
+                onEnded={onGestureEnd}
+              >
+                <Animated.View
+                  sharedTransitionTag="flashcard"
+                  style={[
+                    styles.card,
+                    animatedStyle,
+                    { backgroundColor: lessonColor },
+                  ]}
+                >
+                  <TapGestureHandler onActivated={() => runOnJS(cardFlip)()}>
+                    <Animated.View
+                      style={[
+                        styles.cardContent,
+                        {
+                          backgroundColor: front
+                            ? "rgba(0,0,0,0.05)"
+                            : "rgba(0,0,0,0.3)",
+                        },
+                      ]}
+                    >
+                      {hasFlashcards ? (
+                        <View>
+                          {front && (
+                            <ThemedText style={styles.cardText} type="title">
+                              {flashcards[currentCard]?.front?.title ||
+                                "No Title"}
+                            </ThemedText>
+                          )}
+                          <ThemedText
+                            style={[
+                              styles.cardText,
+                              !front && styles.reverseText,
+                            ]}
+                          >
+                            {front
+                              ? flashcards[currentCard]?.front?.question ||
+                                "No Front Text"
+                              : flashcards[currentCard]?.back || "No Back Text"}
+                          </ThemedText>
+                        </View>
+                      ) : (
+                        <ThemedText>Loading...</ThemedText>
+                      )}
+                    </Animated.View>
+                  </TapGestureHandler>
+                </Animated.View>
+              </PanGestureHandler>
             </View>
-          </View>
-        )}
-        
-        {!isCompletedDeck && flashcardNavigation && (
-          <FlashcardNav 
-            bad={() => cardBad()} 
-            flip={() => cardFlip()} 
-            good={() => cardGood()} 
-            skip={() => cardSkip()} 
-            active={!front} 
-          />
-        )}
-        
-        {isCompletedDeck && (
-          <>
-            <ConfettiCannon colors={["#9584FF"]} count={300} origin={{ x: -10, y: 0 }} />
-            <ConfettiCannon autoStartDelay={500} colors={["#9584FF"]} count={300} origin={{ x: 400, y: 0 }} />
-            <ConfettiCannon 
-              explosionSpeed={20} 
-              autoStartDelay={1000} 
-              colors={["#9584FF"]} 
-              count={300} 
-              origin={{ x: -250, y: 0 }} 
+          )}
+
+          {!isCompletedDeck && flashcardNavigation && (
+            <FlashcardNav
+              bad={() => cardBad()}
+              flip={() => cardFlip()}
+              good={() => cardGood()}
+              skip={() => cardSkip()}
+              active={!front}
             />
-          </>
-        )}
-      </View>
+          )}
+
+          {isCompletedDeck &&
+            (streakExtension ? (
+              <StreakExtensionCelebration
+                {...streakData}
+                onContinue={() => setStreakExtension(false)}
+              />
+            ) : (
+              <EndDeckCelebration restart={() => setCurrentCard(0)} />
+            ))}
+        </View>
       </Background>
     </GestureHandlerRootView>
   );
@@ -371,7 +365,7 @@ const styles = StyleSheet.create({
     height: "100%",
     alignItems: "center",
     position: "relative",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
   },
   flashcardsContainer: {
     display: "flex",
@@ -395,7 +389,7 @@ const styles = StyleSheet.create({
     height: "100%",
     display: "flex",
     borderRadius: 25,
-    position: 'relative'
+    position: "relative",
   },
   cardContent: {
     borderRadius: 25,
@@ -410,30 +404,6 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   reverseText: {
-    transform: [{ rotateY: "180deg" }]
+    transform: [{ rotateY: "180deg" }],
   },
-  congrats: {
-    fontWeight: "bold",
-    marginVertical: 20,
-  },
-  restartButton: {
-    height: 20,
-    width: "100%",
-    display: "flex",
-    alignItems: "center",
-    marginVertical: 20,
-    borderRadius: 10,
-    bottom: 20,
-    marginTop: 35
-  },
-  homeButton: {
-    width: 60,
-    height: 60,
-    backgroundColor: "#000",
-    marginTop: -20,
-    borderRadius: 30,
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center"
-  }
 });

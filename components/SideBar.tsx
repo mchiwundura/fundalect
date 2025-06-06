@@ -50,6 +50,7 @@ const styles = StyleSheet.create({
         minWidth: 350,
         padding: 32,
         paddingTop: 50,
+
     },
        sectionTitle: {
         marginVertical: 10

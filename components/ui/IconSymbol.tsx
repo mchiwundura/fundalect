@@ -30,6 +30,8 @@ const MAPPING = {
    "repeat": "repeat",
     "stopwatch" : "access-time",
     'checkmark.circle.fill' : 'check-circle-outline',
+    'hand.thumbsup.fill' : 'thumbs-up-down',
+    'hand.draw' : 'swap-horiz'
 } as Partial<
   Record<
     import('expo-symbols').SymbolViewProps['name'],
