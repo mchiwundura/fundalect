@@ -1,8 +1,7 @@
 import { ThemedText } from "@/components/ThemedText";
 import { StyleSheet, View, Dimensions } from "react-native";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import FlashcardNav from "@/components/FlashcardNav";
-
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
@@ -17,26 +16,29 @@ import {
   TapGestureHandler,
   GestureHandlerRootView,
 } from "react-native-gesture-handler";
-import { useAppContext } from "@/context/appContext";
+import { Flashcard, useAppContext } from "@/context/appContext";
 import Background from "@/components/Background";
 import EndDeckCelebration from "@/components/EndDeckCelebration";
 import StreakExtensionCelebration from "@/components/StreakExtensionCelebration";
 import { StreakData } from "@/types/ui/streakTracker";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { FlashcardPerformance } from "@/types/flashcards";
+import { useActivities } from "@/hooks/useDeck";
 
-// Todo: Implement Spaced repetition algorithm
-// Tood: Track Card perfomace
-// Todo: Calculate card performance at the end of the deck
-// Todo: Add cards progress to local storage
-// Todo: Animate page
-// Todo: Add day streak after completing a deck
-// Todo: Flashcard end of deck screen as separate component (pressing continue from there can trigger streak extended animation)
-// Todo: Move Utils and make tests
+// Todo: Add cards progress to local storage, check if card progress is already there
+// Todo: Add day streak after completing a deck and check if streak is already there
 
 export default function Flashcards() {
   const windowHeight = Dimensions.get("window").height;
   const windowWidth = Dimensions.get("window").width;
   const [streakExtension, setStreakExtension] = useState(true);
+  const startTime = useMemo(() => Date.now(), []);
+
+  const elapsed = Math.ceil((Date.now() - startTime) / 1000);
+  const minutes = Math.floor(elapsed / 60);
+  const seconds = elapsed % 60;
+
+  const formattedTime = `${minutes}:${seconds.toString().padStart(2, "0")}`;
 
   // Animation values
   const rotation = useSharedValue(0);
@@ -52,10 +54,15 @@ export default function Flashcards() {
   const [currentCard, setCurrentCard] = useState(0);
   const [front, setFront] = useState(true);
   const { flashcardNavigation } = useAppContext();
+  const { currentDeck } = useAppContext();
 
   // Hooks
   const { flashcards } = useAppContext();
   const { lessonColor } = useAppContext();
+
+  const initialFlashcards = useMemo(() => {
+    return flashcards.length;
+  }, []);
 
   // Gesture threshold constants
   const SWIPE_THRESHOLD = windowWidth * 0.25;
@@ -93,16 +100,16 @@ export default function Flashcards() {
     }
   }
 
-  function cardGood() {
-    positionX.value = withTiming(front ? 400 : -400, { duration: 300 });
+  function cardGood(swipe: boolean) {
+    positionX.value = withTiming(swipe ? 400 : -400, { duration: 300 });
     positionY.value = withTiming(-60, { duration: 300 });
     opacity.value = withTiming(0, { duration: 300 });
     scale.value = withTiming(0.8, { duration: 300 });
     nextCard();
   }
 
-  function cardBad() {
-    positionX.value = withTiming(front ? -400 : 400, { duration: 300 });
+  function cardBad(swipe: boolean) {
+    positionX.value = withTiming(swipe ? -400 : 400, { duration: 300 });
     positionY.value = withTiming(60, { duration: 300 });
     opacity.value = withTiming(0, { duration: 300 });
     scale.value = withTiming(0.8, { duration: 300 });
@@ -157,10 +164,10 @@ export default function Flashcards() {
     // Determine what action to take based on the gesture
     if (translationX > SWIPE_THRESHOLD || velocityX > 800) {
       // Swipe right - Mark as "good"
-      runOnJS(cardGood)();
+      runOnJS(cardGood)(true);
     } else if (translationX < -SWIPE_THRESHOLD || velocityX < -800) {
       // Swipe left - Mark as "bad"
-      runOnJS(cardBad)();
+      runOnJS(cardBad)(true);
     } else if (translationY < -SWIPE_UP_THRESHOLD || velocityY < -800) {
       // Swipe up - Skip to next card
       runOnJS(cardSkip)();
@@ -223,6 +230,35 @@ export default function Flashcards() {
     activeDays: [],
   });
 
+  const [currentDeckPerformance, setCurrentDeckPerformance] =
+    useState<FlashcardPerformance[]>();
+
+  const getOrCreateDeckPerformance = async (
+    deckId: string,
+    flashcards: Flashcard[],
+  ) => {
+    const key = `deckPerformance:${deckId}`;
+    const json = await AsyncStorage.getItem(key);
+
+    if (json) {
+      setCurrentDeckPerformance(JSON.parse(json));
+      return;
+    }
+
+    const initialPerformance = flashcards.map((card) => ({
+      cardId: card.id,
+      easeFactor: 2.5,
+      interval: 1,
+      repetitions: 0,
+      dueDate: new Date().toISOString(),
+    }));
+
+    await AsyncStorage.setItem(key, JSON.stringify(initialPerformance));
+    setCurrentDeckPerformance(initialPerformance);
+  };
+
+  const { addActivity } = useActivities();
+
   useEffect(() => {
     const loadData = async () => {
       try {
@@ -238,8 +274,20 @@ export default function Flashcards() {
         console.error("Failed to load streak data", error);
       }
     };
-
+    getOrCreateDeckPerformance(
+      currentDeck?.deckId || "defaultDeck",
+      flashcards,
+    );
     loadData();
+
+    return addActivity({
+      completion: Math.ceil((initialFlashcards / currentCard) * 100),
+      dateCompleted: new Date().toLocaleString(),
+      icon: currentDeck.icon,
+      id: `D${currentDeck}${Date.now()}`,
+      title: currentDeck.title,
+      type: "Flashcards",
+    });
   }, []);
 
   return (
@@ -335,9 +383,9 @@ export default function Flashcards() {
 
           {!isCompletedDeck && flashcardNavigation && (
             <FlashcardNav
-              bad={() => cardBad()}
+              bad={() => cardBad(false)}
               flip={() => cardFlip()}
-              good={() => cardGood()}
+              good={() => cardGood(false)}
               skip={() => cardSkip()}
               active={!front}
             />
@@ -350,7 +398,13 @@ export default function Flashcards() {
                 onContinue={() => setStreakExtension(false)}
               />
             ) : (
-              <EndDeckCelebration restart={() => setCurrentCard(0)} />
+              <EndDeckCelebration
+                nextDeck={currentDeck}
+                duration={formattedTime}
+                performance={Math.ceil((initialFlashcards / currentCard) * 100)}
+                flashcardsLength={initialFlashcards}
+                restart={() => setCurrentCard(0)}
+              />
             ))}
         </View>
       </Background>

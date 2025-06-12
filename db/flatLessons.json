@@ -284,6 +284,69 @@
       "courseId": 4,
       "lessonId": 9,
       "color": "#3498DB"
+    },
+    {
+      "title": "Quadratic Equations and their Roots",
+      "icon": "二次方程式",
+      "courseId": 5,
+      "lessonId": 1,
+      "color": "#00FFFF"
+    },
+    {
+      "title": "Descriptive Statistics",
+      "icon": "📊",
+      "courseId": 5,
+      "lessonId": 10,
+      "color": "#00FFFF"
+    },
+    {
+      "title": "Analytical Geometry Formulas",
+      "icon": "📐",
+      "courseId": 5,
+      "lessonId": 3,
+      "color": "#00FFFF"
+    },
+    {
+      "title": "Grade 11 Functions Summary",
+      "icon": "📈",
+      "courseId": 5,
+      "lessonId": 4,
+      "color": "#00FFFF"
+    },
+    {
+      "title": "Trigonometric Identities and Rules",
+      "icon": "📐",
+      "courseId": 5,
+      "lessonId": 5,
+      "color": "#00FFFF"
+    },
+    {
+      "title": "Area, Surface Area, and Volume Formulas",
+      "icon": "📐",
+      "courseId": 5,
+      "lessonId": 6,
+      "color": "#00FFFF"
+    },
+    {
+      "title": "Circle Geometry Theorems",
+      "icon": "⚪",
+      "courseId": 5,
+      "lessonId": 7,
+      "color": "#00FFFF"
+    },
+    {
+      "title": "Financial Growth and Decay",
+      "icon": "💰",
+      "courseId": 5,
+      "lessonId": 8,
+      "color": "#00FFFF"
+    },
+    {
+      "title": "Basic Probability Concepts",
+      "icon": "🎲",
+      "courseId": 5,
+      "lessonId": 9,
+      "color": "#00FFFF"
     }
   ]
 }

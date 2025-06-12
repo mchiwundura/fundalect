@@ -14,6 +14,7 @@ import { useDatabase } from "@/hooks/useDatabase";
 import { useAppContext } from "@/context/appContext";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import SideBar from "@/components/SideBar";
+import { FlashcardDeckProps } from "@/types/ui/FlashcardDeck";
 
 // - API endpoint for indexes where we just get lesson/flashcards and quiz indexes // titles // color and icons, the full lessons are resource taxing surely
 // - Fetch flashcards decks (from database if no initial from local storage)
@@ -28,12 +29,13 @@ export default function Home() {
   const { width } = useWindowDimensions();
   const [large, setLarge] = useState(width > 600);
   const { getInitialData } = useDatabase();
-  const [flashcards, setFlashcardsLocal] = useState([]);
+  const [flashcards, setFlashcardsLocal] = useState<FlashcardDeckProps[]>([]);
   const [lessons, setLessons] = useState([]);
   const { setFlashcards } = useAppContext();
   const { setLessonColor } = useAppContext();
   const [activities, setActivities] = useState([]);
   const { setCurrentCourse } = useAppContext();
+  const { setCurrentDeck } = useAppContext();
 
   useEffect(() => {
     async function fetchData() {
@@ -47,7 +49,7 @@ export default function Home() {
           JSON.parse(usersRecentActivity),
         );
       }
-      const data = await getInitialData("1,2,3,4");
+      const data = await getInitialData("1,2,3,4,5");
       setFlashcardsLocal(data.flashcards);
       setFlashcards(data.flashcards[0].cards);
       setLessons(data.lessons);
@@ -89,6 +91,7 @@ export default function Home() {
                   <FlashcardDeck
                     setDeck={() => {
                       setFlashcards(x.cards);
+                      setCurrentDeck(x);
                       setLessonColor(x.color);
                       setCurrentCourse(x.courseId);
                     }}

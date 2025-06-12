@@ -35,6 +35,15 @@ const data = {
       "completion": 25,
       "icon": "➗",
       "level": 10
+    },
+    {
+      "id": 5,
+      "title": "Mathematics",
+      "level": "Grade 11",
+      "description": "Preparing your for your final year before Metric",
+      "color": "#00FFFF",
+      "completion": 0,
+      "icon": "✖️"
     }
   ]
 };

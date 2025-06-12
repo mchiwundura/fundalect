@@ -23,12 +23,23 @@ import Animated, {
 import { useEffect } from "react";
 import CelebrationStat from "./ui/CelebrationStat";
 import FlashcardDeck from "./FlashcardDeck";
+import { FlashcardDeckProps } from "@/types/ui/FlashcardDeck";
 
 interface EndDeckCelebrationProps {
   restart: () => void;
+  performance: number;
+  duration: string;
+  flashcardsLength: number;
+  nextDeck: FlashcardDeckProps;
 }
 
-const EndDeckCelebration = ({ restart }: EndDeckCelebrationProps) => {
+const EndDeckCelebration = ({
+  restart,
+  performance,
+  duration,
+  flashcardsLength,
+  nextDeck,
+}: EndDeckCelebrationProps) => {
   const { height, width } = useWindowDimensions();
   const { currentCourse } = useAppContext();
   const router = useRouter();
@@ -92,13 +103,13 @@ const EndDeckCelebration = ({ restart }: EndDeckCelebrationProps) => {
         <View style={styles.smokeContainer}>
           <View style={styles.statsRow}>
             <Animated.View entering={FadeInDown.delay(2000)}>
-              <CelebrationStat type="speed" value="0:17" />
+              <CelebrationStat type="speed" value={duration} />
             </Animated.View>
             <Animated.View entering={FadeInDown.delay(2300)}>
-              <CelebrationStat type="flashcards" value={55} />
+              <CelebrationStat type="flashcards" value={flashcardsLength} />
             </Animated.View>
             <Animated.View entering={FadeInDown.delay(2600)}>
-              <CelebrationStat type="accuracy" value="74%" />
+              <CelebrationStat type="accuracy" value={`${performance}%`} />
             </Animated.View>
           </View>
 
@@ -109,14 +120,7 @@ const EndDeckCelebration = ({ restart }: EndDeckCelebrationProps) => {
             <ThemedText type="subtitle" style={styles.deckSubtitle}>
               Try another Deck
             </ThemedText>
-            <FlashcardDeck
-              // TODO: Replace these props with state
-              color="pink"
-              completion={22}
-              link={"/" as RelativePathString}
-              setDeck={() => console.log("pakaipa")}
-              title="Recomended Deck"
-            />
+            <FlashcardDeck {...nextDeck} />
           </Animated.View>
         </View>
 

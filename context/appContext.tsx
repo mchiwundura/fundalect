@@ -1,9 +1,23 @@
 // context/LessonContentContext.tsx
 import React, { createContext, useContext, useState } from "react";
+import { ColorValue } from "react-native";
 
 export type Flashcard = {
-  question: string;
-  answer: string;
+  id: string;
+  front: {
+    title: string;
+    question: string;
+  };
+  back: string;
+};
+
+export type FlashcardDeckProps = {
+  deckId: string;
+  courseId: number;
+  lessonId: number;
+  color: ColorValue;
+  title: string;
+  flashcards: Flashcard[];
 };
 
 export type QuizQuestion = {
@@ -16,13 +30,15 @@ type appContextType = {
   flashcards: Flashcard[];
   quizzes: QuizQuestion[];
   lessonColor: string;
+  currentDeck: FlashcardDeck | null;
+  flashcardNavigation: boolean;
+  currentCourse: number;
   setLessonColor: (color: string) => void;
   setFlashcards: (cards: Flashcard[]) => void;
   setQuizzes: (quizzes: QuizQuestion[]) => void;
-  flashcardNavigation: boolean;
   setFlashcardNavigation: (flashCardNavigation: boolean) => void;
-  currentCourse: number;
   setCurrentCourse: (courseId: number) => void;
+  setCurrentDeck: (deck: FlashcardDeck | null) => void;
 };
 
 const appContext = createContext<appContextType | undefined>(undefined);
@@ -33,6 +49,7 @@ export const AppContextProvider = ({
   children: React.ReactNode;
 }) => {
   const [flashcards, setFlashcards] = useState<Flashcard[]>([]);
+  const [currentDeck, setCurrentDeck] = useState<FlashcardDeck | null>(null);
   const [quizzes, setQuizzes] = useState<QuizQuestion[]>([]);
   const [lessonColor, setLessonColor] = useState<string>("");
   const [flashcardNavigation, setFlashcardNavigation] = useState<boolean>(true);
@@ -46,11 +63,13 @@ export const AppContextProvider = ({
         lessonColor,
         flashcardNavigation,
         currentCourse,
+        currentDeck,
         setFlashcards,
         setQuizzes,
         setLessonColor,
         setFlashcardNavigation,
         setCurrentCourse,
+        setCurrentDeck,
       }}
     >
       {children}

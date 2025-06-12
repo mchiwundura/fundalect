@@ -5,6 +5,7 @@
       "icon": "🍎",
       "cards": [
         {
+          "id": "ca170a4844ae60a38926004c3663da107ebe352a",
           "front": {
             "title": "Normal Force",
             "question": "What is the normal force and its direction relative to the surface?"
@@ -12,6 +13,7 @@
           "back": "The force exerted by a surface on an object in contact with it.  It's perpendicular to the surface."
         },
         {
+          "id": "e5abf64933829733dad2c8193c0db30dfd0c6649",
           "front": {
             "title": "Frictional Force",
             "question": "Describe frictional force and its relationship to the normal force."
@@ -19,6 +21,7 @@
           "back": "A force opposing motion between surfaces in contact. Its magnitude is proportional to the normal force."
         },
         {
+          "id": "c38c7f32fc781f616e018ca2350f0fd5c753e65e",
           "front": {
             "title": "Coefficients of Friction",
             "question": "What are μs and μk, and how are they used?"
@@ -26,6 +29,7 @@
           "back": "μs (coefficient of static friction) and μk (coefficient of kinetic friction) are constants determining the magnitude of frictional force given the normal force.  μs applies when objects are at rest, μk when they're moving."
         },
         {
+          "id": "a09f4162c09958169ee89370871a1537ebdba02d",
           "front": {
             "title": "Force Components on a Slope",
             "question": "How are the components of gravity (Fg) resolved parallel and perpendicular to a slope?"
@@ -33,6 +37,7 @@
           "back": "\n      Fg sin(θ)\n Fgx = ──────\n           1\n\n      Fg cos(θ)\n Fgy = ──────\n           1\n"
         },
         {
+          "id": "dac74389fc612a71dcec49b89c52bc0bb0e3421c",
           "front": {
             "title": "Newton's First Law",
             "question": "State Newton's First Law of Motion."
@@ -40,6 +45,7 @@
           "back": "An object at rest stays at rest and an object in motion stays in motion with the same speed and in the same direction unless acted upon by an unbalanced force."
         },
         {
+          "id": "a1bc36369288ac9b065ae9b6bcb8b472b1652bf1",
           "front": {
             "title": "Newton's Second Law",
             "question": "State Newton's Second Law and give its formula."
@@ -47,6 +53,7 @@
           "back": "The acceleration of an object is directly proportional to the net force acting on the object, is in the same direction as the net force, and is inversely proportional to the mass of the object.\n\n`Fnet = ma`"
         },
         {
+          "id": "5b8b2936c6692783e190fd0b05ebb652ce9687ac",
           "front": {
             "title": "Newton's Third Law",
             "question": "State Newton's Third Law of Motion."
@@ -54,6 +61,7 @@
           "back": "For every action, there is an equal and opposite reaction."
         },
         {
+          "id": "a1dd75a1d864dcb9b9b1e7dbc140e7431936df5e",
           "front": {
             "title": "Newton's Law of Universal Gravitation",
             "question": "State Newton's Law of Universal Gravitation and provide its formula."
@@ -61,15 +69,17 @@
           "back": "Every particle attracts every other particle in the universe with a force which is directly proportional to the product of their masses and inversely proportional to the square of the distance between their centers.\n\n      Gm1m2\n F = ──────\n       d^2\n"
         }
       ],
-      "color": "#FFB785",
+      "deckId": "C1L1",
+      "courseId": 1,
       "lessonId": 1,
-      "courseId": 1
+      "color": "#FFB785"
     },
     {
       "title": "Electromagnetism Fundamentals",
       "icon": "🧲",
       "cards": [
         {
+          "id": "c7caba4726749dd461e2c9712ab030bb0d374007",
           "front": {
             "title": "Electromagnetism",
             "question": "What is electromagnetism?"
@@ -77,6 +87,7 @@
           "back": "The study of the properties and relationship between electric currents and magnetism."
         },
         {
+          "id": "8596007fd9d1b754676dc2c83008c81026b14bcd",
           "front": {
             "title": "Magnetic Field around a Conductor",
             "question": "What happens when a current flows through a conductor?"
@@ -84,6 +95,7 @@
           "back": "A magnetic field is produced around the conductor."
         },
         {
+          "id": "e39e1532df46d893282ecf109192e75a6e94086b",
           "front": {
             "title": "Right Hand Rule",
             "question": "How do you determine the direction of the magnetic field around a current-carrying conductor?"
@@ -91,6 +103,7 @@
           "back": "Use the Right Hand Rule."
         },
         {
+          "id": "457b2e538ece2fbd5c4992f5be7329852d154cb5",
           "front": {
             "title": "Electromagnet",
             "question": "What is an electromagnet?"
@@ -98,6 +111,7 @@
           "back": "A temporary magnet created by a current-carrying conductor."
         },
         {
+          "id": "e97134c763c4cb307c43418b73a64f41e9e7b8d0",
           "front": {
             "title": "Magnetic Flux",
             "question": "How is magnetic flux calculated?"
@@ -105,6 +119,7 @@
           "back": "Magnetic flux (Φ) = BAcos(θ), where B is the magnetic field, A is the surface area, and θ is the angle between the field and the surface normal."
         },
         {
+          "id": "5dcd06ec43d6f47ccf4822a7326952c5b1d5e2fc",
           "front": {
             "title": "Electromagnetic Induction",
             "question": "What is electromagnetic induction?"
@@ -112,6 +127,7 @@
           "back": "The generation of a voltage in a conductor due to a changing magnetic field."
         },
         {
+          "id": "ee229120eeec94d4f2a1bd60634cf17dcfe0d55c",
           "front": {
             "title": "Faraday's Law of Electromagnetic Induction",
             "question": "State Faraday's Law of Electromagnetic Induction."
@@ -119,6 +135,7 @@
           "back": "The magnitude of the induced emf (ε) is given by: ε = -N(ΔΦ/Δt), where N is the number of turns, and ΔΦ/Δt is the rate of change of magnetic flux."
         },
         {
+          "id": "ec5e24af08339f0b5b3a69e258b3e48085afaa7a",
           "front": {
             "title": "Units in Electromagnetism",
             "question": "What are the units for induced emf, magnetic field, and magnetic flux?"
@@ -126,15 +143,17 @@
           "back": "| Quantity | Unit Name | Unit Symbol |\n|---|---|---|\n| Induced emf (ε) | Volt | V |\n| Magnetic field (B) | Tesla | T |\n| Magnetic flux (Φ) | Weber | Wb |\n| Time (t) | seconds | s |"
         }
       ],
-      "color": "#FFB785",
+      "deckId": "C1L10",
+      "courseId": 1,
       "lessonId": 10,
-      "courseId": 1
+      "color": "#FFB785"
     },
     {
       "title": "Ohm's Law and Electrical Circuits",
       "icon": "💡",
       "cards": [
         {
+          "id": "69eabf9c1d3af9a6cc61f597af836923027aa853",
           "front": {
             "title": "Ohm's Law",
             "question": "State Ohm's Law and write its formula."
@@ -142,6 +161,7 @@
           "back": "Ohm's Law states that the current through a conductor is proportional to the voltage across it, at constant temperature.  Formula:  `I = V/R`"
         },
         {
+          "id": "583840b3fb8067c56f43ee7354e26cb6cbc09d13",
           "front": {
             "title": "Ohmic vs. Non-Ohmic Conductors",
             "question": "What is the difference between ohmic and non-ohmic conductors?"
@@ -149,6 +169,7 @@
           "back": "Ohmic conductors obey Ohm's Law; their resistance is constant. Non-ohmic conductors do not obey Ohm's Law; their resistance changes with voltage or current."
         },
         {
+          "id": "bc3eabadb6236a0c286e8ec9c447b5ff2e181cf9",
           "front": {
             "title": "Calculating Resistance",
             "question": "How do you calculate the resistance of a resistor using Ohm's Law?"
@@ -156,6 +177,7 @@
           "back": "Formula: `R = V/I`"
         },
         {
+          "id": "e28712e04cf0c0d31fc45f02f2256a9efc43c3cf",
           "front": {
             "title": "Resistors in Series",
             "question": "How do you calculate the equivalent resistance of resistors connected in series?"
@@ -163,6 +185,7 @@
           "back": "Formula: `Rs = R1 + R2 + R3 + ... + Rn`"
         },
         {
+          "id": "1a2a13cfe6c7f1d2846ee54cd150ee18f6917532",
           "front": {
             "title": "Resistors in Parallel",
             "question": "How do you calculate the equivalent resistance of resistors connected in parallel?"
@@ -170,6 +193,7 @@
           "back": "Formula: `1/Rp = 1/R1 + 1/R2 + 1/R3 + ... + 1/Rn`"
         },
         {
+          "id": "28b0946700cdeb89146301ee397de47b2afe4c42",
           "front": {
             "title": "Electrical Power",
             "question": "Define electrical power and give three formulas for calculating it."
@@ -177,6 +201,7 @@
           "back": "Electrical power is the rate of electrical energy conversion. Formulas: `P = VI`, `P = I²R`, `P = V²/R`"
         },
         {
+          "id": "f0501ee64543be6e8e343db88ea3ed5fe8a7ee6d",
           "front": {
             "title": "Electrical Energy",
             "question": "How do you calculate electrical energy dissipated in a circuit?"
@@ -184,6 +209,7 @@
           "back": "Formula: `E = Pt`"
         },
         {
+          "id": "21a4dcd1ad9b5e237ccd2fb143b0f05c6fb0d19f",
           "front": {
             "title": "Kilowatt Hour",
             "question": "What is a kilowatt-hour (kWh)?"
@@ -191,15 +217,17 @@
           "back": "A kilowatt-hour is the energy used by a 1 kW device operating for one hour."
         }
       ],
-      "color": "#FFB785",
+      "deckId": "C1L11",
+      "courseId": 1,
       "lessonId": 11,
-      "courseId": 1
+      "color": "#FFB785"
     },
     {
       "title": "Energy Changes in Chemical Reactions",
       "icon": "⚛️",
       "cards": [
         {
+          "id": "35d54bc9ddf5f1b2309b78246c8525e516812963",
           "front": {
             "title": "Bond Energy",
             "question": "What is bond energy and how is it measured?"
@@ -207,6 +235,7 @@
           "back": "Bond energy is the amount of energy required to break a chemical bond between two atoms. It's measured in kJ·mol⁻¹."
         },
         {
+          "id": "652a3220f0b2c193bb34b4032178efbf5d686bc8",
           "front": {
             "title": "Enthalpy",
             "question": "What does enthalpy (H) represent?"
@@ -214,6 +243,7 @@
           "back": "Enthalpy is a measure of the total energy of a chemical system at constant pressure."
         },
         {
+          "id": "d9af744807cb168b5349f97954f010950083d49c",
           "front": {
             "title": "Exothermic Reaction",
             "question": "Describe an exothermic reaction and its enthalpy change (ΔH)."
@@ -221,6 +251,7 @@
           "back": "An exothermic reaction releases energy as heat or light.  The energy of the products is less than the energy of the reactants, resulting in a negative ΔH (ΔH < 0)."
         },
         {
+          "id": "759b87f0ceed581d23a015a715f4f8e273bce3ed",
           "front": {
             "title": "Endothermic Reaction",
             "question": "Describe an endothermic reaction and its enthalpy change (ΔH)."
@@ -228,6 +259,7 @@
           "back": "An endothermic reaction absorbs energy as heat or light. The energy of the products is greater than the energy of the reactants, resulting in a positive ΔH (ΔH > 0)."
         },
         {
+          "id": "24583e8de6bab10c8d89e8d130afc9692e32650a",
           "front": {
             "title": "Heat of Reaction (ΔH)",
             "question": "How is the heat of reaction calculated?"
@@ -235,6 +267,7 @@
           "back": "ΔH = E<sub>prod</sub> - E<sub>react</sub>, where E<sub>prod</sub> is the energy of the products and E<sub>react</sub> is the energy of the reactants."
         },
         {
+          "id": "2d64be9f992c4e28d64ec0afabbb9db7f51d7e0f",
           "front": {
             "title": "Activation Energy",
             "question": "What is activation energy?"
@@ -242,6 +275,7 @@
           "back": "Activation energy is the minimum amount of energy needed to start a chemical reaction."
         },
         {
+          "id": "7c9418ccf0430b6224f98a52b8e77a41e5dcc710",
           "front": {
             "title": "Activated Complex",
             "question": "What is an activated complex?"
@@ -249,15 +283,17 @@
           "back": "The activated complex (or transition state) is a high-energy, short-lived intermediate state formed during a reaction, where bonds in reactants are breaking and bonds in products are forming."
         }
       ],
-      "color": "#FFB785",
+      "deckId": "C1L12",
+      "courseId": 1,
       "lessonId": 12,
-      "courseId": 1
+      "color": "#FFB785"
     },
     {
       "title": "Acid-Base and Redox Reactions",
       "icon": "🧪",
       "cards": [
         {
+          "id": "b3d91b92418bb64f71f64273ccaa5fdca27535e8",
           "front": {
             "title": "Arrhenius Acids and Bases",
             "question": "Define Arrhenius acids and bases."
@@ -265,6 +301,7 @@
           "back": "Arrhenius acid: Increases the concentration of hydronium ions (H₃O⁺) in solution. Arrhenius base: Increases the concentration of hydroxide ions (OH⁻) in solution.  This definition is limited to aqueous solutions."
         },
         {
+          "id": "ffbfaba790175a4207b928eff58a7f619d12adb9",
           "front": {
             "title": "Brønsted-Lowry Acids and Bases",
             "question": "Define Brønsted-Lowry acids and bases."
@@ -272,6 +309,7 @@
           "back": "Brønsted-Lowry acid: Proton (H⁺) donor. Brønsted-Lowry base: Proton (H⁺) acceptor."
         },
         {
+          "id": "7c08691f90b328e276764102f1edc5f7980f653d",
           "front": {
             "title": "Amphoteric Substance",
             "question": "What is an amphoteric substance?"
@@ -279,6 +317,7 @@
           "back": "A substance that can act as both an acid and a base. Water (H₂O) is an example."
         },
         {
+          "id": "c8241434bd68993cae0f67eee9cda9715f2178bb",
           "front": {
             "title": "Amphiprotic Substance",
             "question": "What is an amphiprotic substance?"
@@ -286,6 +325,7 @@
           "back": "A substance that can act as both a proton donor and a proton acceptor. HCO₃⁻ and HSO₄⁻ are examples."
         },
         {
+          "id": "7c64cce461883d94c60e6f1695a815a9c74ee6a3",
           "front": {
             "title": "Conjugate Acid-Base Pair",
             "question": "What is a conjugate acid-base pair?"
@@ -293,6 +333,7 @@
           "back": "Two species that differ by a single proton (H⁺). One is an acid, the other its conjugate base (or vice versa)."
         },
         {
+          "id": "7aff318bfce0a03aa5ee634e7b42b14ab1dad722",
           "front": {
             "title": "Neutralization Reaction",
             "question": "What is a neutralization reaction?"
@@ -300,6 +341,7 @@
           "back": "A reaction between an acid and a base."
         },
         {
+          "id": "04eb58c97f3784dd4b95f845646ae0e54b3fb136",
           "front": {
             "title": "Acid-Metal Hydroxide Reaction",
             "question": "What are the products of an acid reacting with a metal hydroxide?"
@@ -307,6 +349,7 @@
           "back": "A salt and water."
         },
         {
+          "id": "04eb58c97f3784dd4b95f845646ae0e54b3fb136",
           "front": {
             "title": "Acid-Metal Oxide Reaction",
             "question": "What are the products of an acid reacting with a metal oxide?"
@@ -314,6 +357,7 @@
           "back": "A salt and water."
         },
         {
+          "id": "da596a285572e0ec734b8064623dee28dcba063d",
           "front": {
             "title": "Acid-Metal Carbonate Reaction",
             "question": "What are the products of an acid reacting with a metal carbonate?"
@@ -321,6 +365,7 @@
           "back": "A salt, water, and carbon dioxide."
         },
         {
+          "id": "fa6ad215e4c7b9317854d4bf849d9419a2800021",
           "front": {
             "title": "Oxidation",
             "question": "Define oxidation."
@@ -328,6 +373,7 @@
           "back": "Loss of electrons."
         },
         {
+          "id": "f5f5bdefe3d5f1739d1047eef970cb0ef231cb81",
           "front": {
             "title": "Reduction",
             "question": "Define reduction."
@@ -335,6 +381,7 @@
           "back": "Gain of electrons."
         },
         {
+          "id": "fe6912f18aee2ec8b71115d0be55d39b6a5bc6f9",
           "front": {
             "title": "Redox Reaction",
             "question": "What is a redox reaction?"
@@ -342,6 +389,7 @@
           "back": "A reaction involving both oxidation and reduction; a transfer of electrons."
         },
         {
+          "id": "75117c9d8b8de7636f9a75500a2684a12faf623b",
           "front": {
             "title": "Oxidation Number",
             "question": "What is an oxidation number?"
@@ -349,6 +397,7 @@
           "back": "The charge an atom would have if the compound were composed entirely of ions."
         },
         {
+          "id": "0ad31ca369a850cf5d3d22837334531ea76cb4f7",
           "front": {
             "title": "Oxidizing and Reducing Agents",
             "question": "Define oxidizing and reducing agents."
@@ -356,6 +405,7 @@
           "back": "Oxidizing agent: The species that is reduced (gains electrons). Reducing agent: The species that is oxidized (loses electrons)."
         },
         {
+          "id": "3a90a9052751e7971737b678b9d34a3e02954235",
           "front": {
             "title": "Half-Reaction",
             "question": "What is a half-reaction?"
@@ -363,15 +413,17 @@
           "back": "Either the oxidation or reduction portion of a redox reaction."
         }
       ],
-      "color": "#FFB785",
+      "deckId": "C1L13",
+      "courseId": 1,
       "lessonId": 13,
-      "courseId": 1
+      "color": "#FFB785"
     },
     {
       "title": "Earth's Lithosphere and Mineral Resources",
       "icon": "🌎",
       "cards": [
         {
+          "id": "5fd388fb6070fa13f8a68730077192759acf4c50",
           "front": {
             "title": "Lithosphere",
             "question": "What is the Earth's lithosphere composed of?"
@@ -379,6 +431,7 @@
           "back": "The lithosphere is the rigid outer part of the Earth, consisting of the crust and upper mantle."
         },
         {
+          "id": "6195e64f24222365f1e540ec3e499b0bf8a1fb4a",
           "front": {
             "title": "Mineral Resources",
             "question": "What are some examples of mineral resources found in the lithosphere?"
@@ -386,6 +439,7 @@
           "back": "The lithosphere is a rich source of many minerals, which can be extracted through mining."
         },
         {
+          "id": "6941e34e522398a2a2c0dd55497e9df3b573c9c8",
           "front": {
             "title": "Environmental Impact of Mining",
             "question": "What is the environmental impact of mining and mineral use?"
@@ -393,6 +447,7 @@
           "back": "Mining and mineral use have a significant impact on the environment."
         },
         {
+          "id": "00cdcd477220b7ad2954611b97b1fcb82a5916a7",
           "front": {
             "title": "Other Lithosphere Resources",
             "question": "Besides minerals, what other resources are found in the lithosphere?"
@@ -400,15 +455,17 @@
           "back": "Fuels are another important resource found within the lithosphere."
         }
       ],
-      "color": "#FFB785",
+      "deckId": "C1L14",
+      "courseId": 1,
       "lessonId": 14,
-      "courseId": 1
+      "color": "#FFB785"
     },
     {
       "title": "Chemical Bonding and Molecular Structure",
       "icon": "⚛️",
       "cards": [
         {
+          "id": "06d81fa01f4645a6a1f3ce9b7609e84329a8e0ff",
           "front": {
             "title": "Chemical Bond",
             "question": "What is a chemical bond?"
@@ -416,6 +473,7 @@
           "back": "A physical process causing atoms to attract and bind in new compounds. Atoms bond to fill their outer valence shell."
         },
         {
+          "id": "1900994790f278d66e4651c4e66b093896dfae69",
           "front": {
             "title": "Forces in Bonding",
             "question": "What forces act between atoms in a bond?"
@@ -423,6 +481,7 @@
           "back": "Attractive forces between nuclei and electrons; repulsive forces between like-charged electrons and nuclei.  The balance of these forces determines bond energy."
         },
         {
+          "id": "324cc83fb256047458507f4d055b4eb176965f98",
           "front": {
             "title": "Lewis Diagrams",
             "question": "What are Lewis diagrams?"
@@ -430,6 +489,7 @@
           "back": "Representations of molecular structure using dots or crosses for valence electrons around a central atom."
         },
         {
+          "id": "20e8ac43244ad1cf41323972eae005b6b348c630",
           "front": {
             "title": "Covalent Bond",
             "question": "What is a covalent bond?"
@@ -437,6 +497,7 @@
           "back": "A bond where pairs of electrons are shared between two atoms. Single, double, and triple bonds exist depending on the number of shared electron pairs."
         },
         {
+          "id": "20ca3a697658119a219e5de329847c84af86552e",
           "front": {
             "title": "Dative Covalent Bond",
             "question": "What is a dative covalent bond?"
@@ -444,6 +505,7 @@
           "back": "A covalent bond where both shared electrons come from the same atom. Examples: hydronium (H₃O⁺) and ammonium (NH₄⁺) ions."
         },
         {
+          "id": "c51ab6739ebf93abc3af42b9834550a5f0951602",
           "front": {
             "title": "VSEPR Theory",
             "question": "What does VSEPR theory predict?"
@@ -451,6 +513,7 @@
           "back": "Predicts the shape of molecules by minimizing electron-pair repulsion around the central atom."
         },
         {
+          "id": "fa5c54d0aebdf7742b72e091437223b00511a446",
           "front": {
             "title": "Electronegativity",
             "question": "What is electronegativity?"
@@ -458,6 +521,7 @@
           "back": "An atom's power to attract electrons towards itself in a chemical bond."
         },
         {
+          "id": "2b6e6e65099ba9d3467a4f3e9a6518fa66cc83a9",
           "front": {
             "title": "Polar vs. Non-polar Covalent Bonds",
             "question": "What's the difference between polar and non-polar covalent bonds?"
@@ -465,6 +529,7 @@
           "back": "Polar bonds are between non-identical atoms (different electronegativity); non-polar bonds are between identical atoms or atoms with the same electronegativity."
         },
         {
+          "id": "def2d542d163b68c2e31006feb6732d612ca8bb2",
           "front": {
             "title": "Polar vs. Non-polar Molecules",
             "question": "What is the difference between polar and non-polar molecules?"
@@ -472,6 +537,7 @@
           "back": "Polar molecules have uneven charge distribution; non-polar molecules have even charge distribution or symmetrical polar bonds."
         },
         {
+          "id": "b2282e1e41754ef0410aa2e45d3a0697197055d5",
           "front": {
             "title": "Bond Length and Energy",
             "question": "Define bond length and bond energy."
@@ -479,6 +545,7 @@
           "back": "Bond length: distance between nuclei of bonded atoms. Bond energy: energy needed to break a bond."
         },
         {
+          "id": "d841a8ef65b9f3bf1327bafae42d83b7f3eef41a",
           "front": {
             "title": "Bond Strength",
             "question": "What factors affect bond strength?"
@@ -486,15 +553,17 @@
           "back": "Bond length, atom size, and number of bonds between atoms."
         }
       ],
-      "color": "#FFB785",
+      "deckId": "C1L2",
+      "courseId": 1,
       "lessonId": 2,
-      "courseId": 1
+      "color": "#FFB785"
     },
     {
       "title": "Intermolecular Forces and Their Effects",
       "icon": "🧪",
       "cards": [
         {
+          "id": "788ae29e87b6e776e78c17f40938e5a00a39a98f",
           "front": {
             "title": "Intermolecular Forces",
             "question": "What are intermolecular forces?"
@@ -502,6 +571,7 @@
           "back": "Forces of attraction between molecules.  Their strength influences a substance's properties."
         },
         {
+          "id": "ec69cb58910246f07e3facdd68e8e3e650e6d3d9",
           "front": {
             "title": "Polar Molecules",
             "question": "What characterizes a polar molecule?"
@@ -509,6 +579,7 @@
           "back": "Unequal distribution of charge; one part is slightly positive, the other slightly negative (a dipole)."
         },
         {
+          "id": "7ddc2044735104e45b708185c13ab1496f6b4110",
           "front": {
             "title": "Non-polar Molecules",
             "question": "What characterizes a non-polar molecule?"
@@ -516,6 +587,7 @@
           "back": "Equal distribution of charge."
         },
         {
+          "id": "d32eb10b61e01be82fec28bea9fc482e3e664f86",
           "front": {
             "title": "Types of Intermolecular Forces",
             "question": "List the five main types of intermolecular forces."
@@ -523,6 +595,7 @@
           "back": "Ion-dipole, ion-induced dipole, dipole-dipole, dipole-induced dipole, induced dipole (London dispersion)."
         },
         {
+          "id": "33957e6cb80a369f74f9ce1469f3d5a2d09dd5ae",
           "front": {
             "title": "Ion-Dipole Forces",
             "question": "Describe ion-dipole forces."
@@ -530,6 +603,7 @@
           "back": "Attraction between an ion and a polar molecule."
         },
         {
+          "id": "299c417b27bace73750430031c3510d8108dbf01",
           "front": {
             "title": "Ion-Induced Dipole Forces",
             "question": "Describe ion-induced dipole forces."
@@ -537,6 +611,7 @@
           "back": "An ion induces a temporary dipole in a non-polar molecule."
         },
         {
+          "id": "cb820d1fd27725b5a028eda3464c3e9ebae029b9",
           "front": {
             "title": "Dipole-Dipole Forces",
             "question": "Describe dipole-dipole forces."
@@ -544,6 +619,7 @@
           "back": "Attraction between two polar molecules."
         },
         {
+          "id": "0668881ce90c4ef7e074c950ff9845d9938bb850",
           "front": {
             "title": "Dipole-Induced Dipole Forces",
             "question": "Describe dipole-induced dipole forces."
@@ -551,6 +627,7 @@
           "back": "A polar molecule induces a temporary dipole in a non-polar molecule."
         },
         {
+          "id": "0e1ae4fea2318ca2e5b6df1ac447f6e1cd80e88f",
           "front": {
             "title": "Induced Dipole Forces (London Dispersion Forces)",
             "question": "Describe induced dipole forces."
@@ -558,6 +635,7 @@
           "back": "Temporary dipoles induced in non-polar molecules due to fluctuating electron distribution."
         },
         {
+          "id": "552ee823ce09790f29ae1148a0526487c71d70a1",
           "front": {
             "title": "Van der Waals Forces",
             "question": "What are van der Waals forces?"
@@ -565,6 +643,7 @@
           "back": "A collective term for dipole-dipole, dipole-induced dipole, and induced dipole forces."
         },
         {
+          "id": "a2cbaa6b314b4ab349465398f3a9672a20ff2d99",
           "front": {
             "title": "Hydrogen Bonds",
             "question": "Describe hydrogen bonds."
@@ -572,6 +651,7 @@
           "back": "A strong type of dipole-dipole force involving hydrogen bonded to a highly electronegative atom (O, F, N)."
         },
         {
+          "id": "055ed7f2812cab406509253a4b675f000a59f120",
           "front": {
             "title": "Intermolecular Forces and Properties",
             "question": "How do intermolecular forces affect the properties of substances?"
@@ -579,6 +659,7 @@
           "back": "Stronger intermolecular forces lead to higher melting/boiling points, higher viscosity, higher density, and lower thermal expansion."
         },
         {
+          "id": "41db31b1ebe2153ad1d1107553662aa22b5895f1",
           "front": {
             "title": "Water's Properties",
             "question": "What unique properties does water possess due to its strong hydrogen bonds?"
@@ -586,6 +667,7 @@
           "back": "High specific heat, infrared radiation absorption, wide liquid range, high heat of vaporization, less dense solid phase."
         },
         {
+          "id": "1e50f30771f72cc30f4dd497f346c1b47f53de3d",
           "front": {
             "title": "Specific Heat",
             "question": "What is specific heat?"
@@ -593,6 +675,7 @@
           "back": "The amount of heat needed to raise the temperature of a unit mass by one degree."
         },
         {
+          "id": "846b0aead34df09df13b2fc5d689d60d641f9afc",
           "front": {
             "title": "Heat of Vaporization",
             "question": "What is heat of vaporization?"
@@ -600,15 +683,17 @@
           "back": "The energy needed to change a given quantity of a substance into a gas."
         }
       ],
-      "color": "#FFB785",
+      "deckId": "C1L3",
+      "courseId": 1,
       "lessonId": 3,
-      "courseId": 1
+      "color": "#FFB785"
     },
     {
       "title": "Geometrical Optics",
       "icon": "💡",
       "cards": [
         {
+          "id": "198bd7e244d3b0b2019356096617d51f0e5bd40d",
           "front": {
             "title": "Reflection and the Law of Reflection",
             "question": "Describe the law of reflection."
@@ -616,6 +701,7 @@
           "back": "The angle of incidence equals the angle of reflection.  These angles are measured relative to the normal (a line perpendicular to the reflecting surface)."
         },
         {
+          "id": "c21e3e79793d06d0a0cbadaa0f73a6a2b894d991",
           "front": {
             "title": "Speed of Light",
             "question": "Where does light travel fastest?"
@@ -623,6 +709,7 @@
           "back": "Light travels fastest in a vacuum. It travels slower in other media."
         },
         {
+          "id": "6fee0cd341866e6bc8c912f890ac2023f40a16b5",
           "front": {
             "title": "Refraction and Refractive Index",
             "question": "What is refraction, and what influences it?"
@@ -630,6 +717,7 @@
           "back": "Refraction is the bending of light as it passes from one medium to another. The refractive index of a medium determines the degree of bending.  A higher refractive index indicates greater bending."
         },
         {
+          "id": "f696a1aa3e169c88a7e3c4c5ced8f920bc805afd",
           "front": {
             "title": "Sketching Ray Diagrams",
             "question": "How do ray diagrams depict light's path through different media?"
@@ -637,6 +725,7 @@
           "back": "Ray diagrams use lines to show the path of light. The bending of these lines at the interface between media illustrates refraction, with the degree of bending determined by the refractive indices."
         },
         {
+          "id": "d542876a0fac96b73207cfd3662b1a5b6a838d25",
           "front": {
             "title": "Snell's Law",
             "question": "State Snell's Law and explain its use."
@@ -644,6 +733,7 @@
           "back": "Snell's Law:  ```math\n n₁sinθ₁ = n₂sinθ₂ ```\nwhere n₁ and n₂ are the refractive indices of the two media, and θ₁ and θ₂ are the angles of incidence and refraction, respectively.  It allows calculation of the angle of refraction or the refractive index of a medium."
         },
         {
+          "id": "968d5035a22850680516dbeb39146fb2ff04999f",
           "front": {
             "title": "Total Internal Reflection",
             "question": "What conditions are necessary for total internal reflection?"
@@ -651,15 +741,17 @@
           "back": "Total internal reflection occurs when light travels from a denser medium to a less dense medium, and the angle of incidence exceeds the critical angle.  No light is refracted; all light is reflected back into the denser medium."
         }
       ],
-      "color": "#FFB785",
+      "deckId": "C1L4",
+      "courseId": 1,
       "lessonId": 4,
-      "courseId": 1
+      "color": "#FFB785"
     },
     {
       "title": "Geometrical Optics",
       "icon": "💡",
       "cards": [
         {
+          "id": "e55e265a6af9965d6b92576aec10ab7a3675df2d",
           "front": {
             "title": "Law of Reflection",
             "question": "What is the relationship between the angle of incidence and the angle of reflection?"
@@ -667,6 +759,7 @@
           "back": "The angle of incidence (θᵢ) equals the angle of reflection (θᵣ).  The incident ray, reflected ray, and normal all lie in the same plane."
         },
         {
+          "id": "d09d3719d19f94e1c02fff8d28e540f78ca4eda2",
           "front": {
             "title": "Refractive Index",
             "question": "Define refractive index and provide its formula."
@@ -674,6 +767,7 @@
           "back": "The refractive index (n) is the ratio of the speed of light in a vacuum (c) to its speed in a material (v).  Formula:  `n = c/v`"
         },
         {
+          "id": "50c3f38f4890d2a3a08c72964d0470b0a5315490",
           "front": {
             "title": "Snell's Law",
             "question": "State Snell's Law and explain what it describes."
@@ -681,6 +775,7 @@
           "back": "Snell's Law describes the relationship between refractive indices and angles in refraction: `n₁ sin θ₁ = n₂ sin θ₂` where n₁ and n₂ are the refractive indices of the two media, and θ₁ and θ₂ are the angles of incidence and refraction respectively."
         },
         {
+          "id": "34f68263f9063db3f22a8684caa4de58b5e4dd23",
           "front": {
             "title": "Critical Angle",
             "question": "What is the critical angle, and what phenomenon does it relate to?"
@@ -688,6 +783,7 @@
           "back": "The critical angle is the angle of incidence at which the angle of refraction is 90°. It's the angle at which total internal reflection begins."
         },
         {
+          "id": "646713fea0bb6f1e6f8792257cadaa2bf8699822",
           "front": {
             "title": "Total Internal Reflection",
             "question": "When does total internal reflection occur?"
@@ -695,15 +791,17 @@
           "back": "Total internal reflection occurs when light travels from a denser medium to a less dense medium, and the angle of incidence is greater than the critical angle.  No light is refracted; all light is reflected internally."
         }
       ],
-      "color": "#FFB785",
+      "deckId": "C1L5",
+      "courseId": 1,
       "lessonId": 5,
-      "courseId": 1
+      "color": "#FFB785"
     },
     {
       "title": "Wavefronts, Huygens' Principle, and Diffraction",
       "icon": "🌊",
       "cards": [
         {
+          "id": "354cfaa19b2319a91d9b5f96820bcb50b9af293d",
           "front": {
             "title": "Wavefront",
             "question": "What is a wavefront?"
@@ -711,6 +809,7 @@
           "back": "An imaginary line connecting points on a wave that are in phase."
         },
         {
+          "id": "474fed95d7afebfd4652e1e3aea36eb28ee376a7",
           "front": {
             "title": "Huygens' Principle",
             "question": "State Huygens' Principle."
@@ -718,6 +817,7 @@
           "back": "Every point on a wavefront acts as a source of secondary spherical wavelets.  The new wavefront is the surface tangent to these wavelets."
         },
         {
+          "id": "eb79a2611e001b36cfded451bb075923897086a9",
           "front": {
             "title": "Diffraction",
             "question": "What is diffraction?"
@@ -725,6 +825,7 @@
           "back": "The bending of waves as they pass through an aperture or around an obstacle."
         },
         {
+          "id": "fa6dc2209e7df8b6c96b1e6b0194a3d0a991217f",
           "front": {
             "title": "Diffraction and Wavelength/Slit Width",
             "question": "How does the degree of diffraction relate to wavelength and slit width?"
@@ -732,15 +833,17 @@
           "back": "Diffraction is proportional to the ratio of wavelength (λ) to slit width (w):  Diffraction ∝ λ/w"
         }
       ],
-      "color": "#FFB785",
+      "deckId": "C1L6",
+      "courseId": 1,
       "lessonId": 6,
-      "courseId": 1
+      "color": "#FFB785"
     },
     {
       "title": "Kinetic Theory of Gases and Gas Laws",
       "icon": "💨",
       "cards": [
         {
+          "id": "24faf02e5f6944c5c1b648627a98cf182fabd9de",
           "front": {
             "title": "Kinetic Theory of Gases",
             "question": "What are the main tenets of the Kinetic Theory of Gases?"
@@ -748,6 +851,7 @@
           "back": "Gases are composed of constantly moving particles with negligible volume and intermolecular forces.  Pressure results from particle collisions, and temperature reflects average kinetic energy."
         },
         {
+          "id": "87052f3fa34a5fa3dac6ca2ad303607d91bbe09c",
           "front": {
             "title": "Ideal Gas",
             "question": "What defines an ideal gas?"
@@ -755,6 +859,7 @@
           "back": "An ideal gas consists of identical particles with zero volume and no intermolecular forces.  Particles move at the same speed."
         },
         {
+          "id": "abaac050f2bec71e0bbe318747ac78c6df8f8602",
           "front": {
             "title": "Real Gas",
             "question": "How do real gases deviate from ideal gas behavior?"
@@ -762,6 +867,7 @@
           "back": "Real gases deviate from ideal behavior at high pressures (particle volume becomes significant) and low temperatures (intermolecular forces become significant)."
         },
         {
+          "id": "d1b965abc9e582ea0cb72ca31e9f5f71b9895f6c",
           "front": {
             "title": "Boyle's Law",
             "question": "State Boyle's Law and write the formula."
@@ -769,6 +875,7 @@
           "back": "At constant temperature, the pressure of a fixed amount of gas is inversely proportional to its volume.  `p₁V₁ = p₂V₂`"
         },
         {
+          "id": "90fba5f0513d8cdb118b2d780ea10f57352ff7f0",
           "front": {
             "title": "Charles' Law",
             "question": "State Charles' Law and write the formula."
@@ -776,6 +883,7 @@
           "back": "At constant pressure, the volume of a fixed amount of gas is directly proportional to its Kelvin temperature. `V₁/T₁ = V₂/T₂`"
         },
         {
+          "id": "5f811a4d1cd06b4df44f3e5d9b626349538eafb8",
           "front": {
             "title": "Pressure-Temperature Relationship",
             "question": "Describe the relationship between pressure and temperature for a fixed volume of gas."
@@ -783,6 +891,7 @@
           "back": "At constant volume, the pressure of a fixed amount of gas is directly proportional to its Kelvin temperature. `p₁/T₁ = p₂/T₂`"
         },
         {
+          "id": "6e51538739b56eed8b43ceb35766090763a81575",
           "front": {
             "title": "Kelvin Temperature Conversion",
             "question": "How do you convert Celsius to Kelvin?"
@@ -790,6 +899,7 @@
           "back": "T<sub>K</sub> = T<sub>C</sub> + 273"
         },
         {
+          "id": "99552cf0ed16de71a46b1e97c05c7d90fcfb2c75",
           "front": {
             "title": "General Gas Equation",
             "question": "State the general gas equation."
@@ -797,6 +907,7 @@
           "back": "`p₁V₁/T₁ = p₂V₂/T₂`"
         },
         {
+          "id": "bd187384fef77513d98b683de29f785d6651125a",
           "front": {
             "title": "Avogadro's Law",
             "question": "State Avogadro's Law."
@@ -804,6 +915,7 @@
           "back": "Equal volumes of gases at the same temperature and pressure contain the same number of molecules."
         },
         {
+          "id": "67cdd9ea372029398a5a46b2c77452d7ef452758",
           "front": {
             "title": "Ideal Gas Equation",
             "question": "State the ideal gas equation and define each variable."
@@ -811,6 +923,7 @@
           "back": "pV = nRT, where p = pressure, V = volume, n = number of moles, R = universal gas constant, T = Kelvin temperature."
         },
         {
+          "id": "152ff1537cee890005588af8efbcbebf755fd492",
           "front": {
             "title": "Universal Gas Constant (R)",
             "question": "What is the value of the universal gas constant (R) and its units?"
@@ -818,15 +931,17 @@
           "back": "R = 8.314 J·K⁻¹·mol⁻¹"
         }
       ],
-      "color": "#FFB785",
+      "deckId": "C1L7",
+      "courseId": 1,
       "lessonId": 7,
-      "courseId": 1
+      "color": "#FFB785"
     },
     {
       "title": "Quantitative Aspects of Chemical Change",
       "icon": "🧪",
       "cards": [
         {
+          "id": "12e29987f3c933b7eb955fdd2812f04404dc5957",
           "front": {
             "title": "Molar Volume of Gas at STP",
             "question": "What is the volume occupied by one mole of any gas at Standard Temperature and Pressure (STP)?"
@@ -834,6 +949,7 @@
           "back": "22.4 dm³"
         },
         {
+          "id": "090ca1bb92e70ba7741d0e3a4bfc9ecb487d69ef",
           "front": {
             "title": "Volume of Gas at STP",
             "question": "How do you calculate the volume of 'n' moles of gas at STP?"
@@ -841,6 +957,7 @@
           "back": "V<sub>g</sub> = 22.4n<sub>g</sub>, where V<sub>g</sub> is the volume in dm³ and n<sub>g</sub> is the number of moles."
         },
         {
+          "id": "4c2e2e8959c3c712f247d9633d37a9a2e7a2d1c2",
           "front": {
             "title": "Volume Relationship in Gas Reactions",
             "question": "What is the formula describing the volume relationship between two gases (A and B) in a reaction?"
@@ -848,6 +965,7 @@
           "back": "V<sub>A</sub> = (a/b)V<sub>B</sub>, where V<sub>A</sub> and V<sub>B</sub> are the volumes of gases A and B, and 'a' and 'b' are their stoichiometric coefficients."
         },
         {
+          "id": "ab962bd42f57aea6ccd768a881358d1ece5710d1",
           "front": {
             "title": "Concentration of a Solution",
             "question": "How is the concentration (c) of a solution calculated?"
@@ -855,6 +973,7 @@
           "back": "c = n/V, where c is the concentration in mol·dm⁻³, n is the number of moles of solute, and V is the volume of the solution in dm³."
         },
         {
+          "id": "2374d6c0b4e46362923f85759e178b9baa842985",
           "front": {
             "title": "Standard Solution",
             "question": "What is a standard solution?"
@@ -862,6 +981,7 @@
           "back": "A solution with a precisely known concentration."
         },
         {
+          "id": "ccab5c49f5f12eaeafaecc031c4ac7d784834b79",
           "front": {
             "title": "Titration Calculation",
             "question": "What formula relates the concentrations and volumes of two solutions in a titration?"
@@ -869,6 +989,7 @@
           "back": "```math\n(c<sub>A</sub>V<sub>A</sub>)/a = (c<sub>B</sub>V<sub>B</sub>)/b\n```\nwhere c<sub>A</sub> and c<sub>B</sub> are the concentrations, V<sub>A</sub> and V<sub>B</sub> are the volumes, and a and b are the stoichiometric coefficients of reactants A and B."
         },
         {
+          "id": "03c528278453cfa089cfb73ca7ad1084dacf5ffb",
           "front": {
             "title": "Limiting Reagent",
             "question": "What is a limiting reagent?"
@@ -876,6 +997,7 @@
           "back": "The reactant that is completely consumed in a chemical reaction, limiting the amount of product formed."
         },
         {
+          "id": "00da23f9a4d5a69b21d1d72c4fca0d1d6fba4039",
           "front": {
             "title": "Excess Reagent",
             "question": "What is an excess reagent?"
@@ -883,6 +1005,7 @@
           "back": "The reactant that is not completely consumed in a chemical reaction."
         },
         {
+          "id": "907cc13bdfda9ac1e326d683f963ba168e129a08",
           "front": {
             "title": "Percent Yield",
             "question": "How is percent yield calculated?"
@@ -890,6 +1013,7 @@
           "back": "```math\n% yield = (actual yield / theoretical yield) * 100\n```"
         },
         {
+          "id": "dbedc73b471b23f632774124962922859162e98f",
           "front": {
             "title": "Empirical Formula",
             "question": "What is an empirical formula?"
@@ -897,6 +1021,7 @@
           "back": "The simplest whole-number ratio of atoms in a compound."
         },
         {
+          "id": "f8015ff9e1566bf00cceae32a70045120adf9560",
           "front": {
             "title": "Molecular Formula",
             "question": "What is a molecular formula?"
@@ -904,6 +1029,7 @@
           "back": "The actual number of atoms of each element in a molecule of a compound."
         },
         {
+          "id": "81978e0cb6c7bf298ccfdb7ff474c88e762c33d3",
           "front": {
             "title": "Percent Purity",
             "question": "How is percent purity calculated?"
@@ -911,15 +1037,17 @@
           "back": "```math\n% purity = (mass of compound / mass of sample) * 100\n```"
         }
       ],
-      "color": "#FFB785",
+      "deckId": "C1L8",
+      "courseId": 1,
       "lessonId": 8,
-      "courseId": 1
+      "color": "#FFB785"
     },
     {
       "title": "Electrostatics Fundamentals",
       "icon": "⚡️",
       "cards": [
         {
+          "id": "07847ea1c505ead01b418976b077ba1b9ec52e86",
           "front": {
             "title": "Electric Charge",
             "question": "What are the three types of electric charge?"
@@ -927,6 +1055,7 @@
           "back": "Objects can be positively charged, negatively charged, or neutral."
         },
         {
+          "id": "52e649ac99e0d9095ef5f17e3fe8c9634cd7f705",
           "front": {
             "title": "Coulomb's Law",
             "question": "State Coulomb's Law."
@@ -934,6 +1063,7 @@
           "back": "The magnitude of the electrostatic force between two point charges is directly proportional to the product of the magnitudes of the charges and inversely proportional to the square of the distance between them.  ```math\nF = \\frac{kQ_1Q_2}{r^2}\n```"
         },
         {
+          "id": "292e62e10c930419c03b4c202b7916898d78172d",
           "front": {
             "title": "Electric Field",
             "question": "What is an electric field?"
@@ -941,6 +1071,7 @@
           "back": "A region of space where an electric charge experiences a force. The direction of the field at a point is the direction a positive test charge would move if placed at that point."
         },
         {
+          "id": "ff57d3425a8edba1a0bec5cb1491119118e37c6e",
           "front": {
             "title": "Electric Field Lines",
             "question": "How are electric field lines represented?"
@@ -948,6 +1079,7 @@
           "back": "Electric field lines point away from positive charges and towards negative charges.  This illustrates that like charges repel and unlike charges attract."
         },
         {
+          "id": "d42075265e62fe5a4174ece51db954693b25870d",
           "front": {
             "title": "Electric Field Strength",
             "question": "Define electric field strength (E)."
@@ -955,6 +1087,7 @@
           "back": "Electric field strength (E) is the force per unit charge: ```math\nE = \\frac{F}{q}\n```  The units are N·C⁻¹."
         },
         {
+          "id": "fe2f41a6076ec0caf11b158c472b29e54ea608d2",
           "front": {
             "title": "Electric Field due to a Point Charge",
             "question": "What is the formula for the electric field due to a point charge Q?"
@@ -962,6 +1095,7 @@
           "back": "```math\nE = \\frac{F}{q} = \\frac{kQ}{r^2}\n```"
         },
         {
+          "id": "c08be13374358205d9ae06b3d6c604dfa6224e25",
           "front": {
             "title": "Electrostatic Force",
             "question": "Describe the nature of the electrostatic force."
@@ -969,15 +1103,17 @@
           "back": "The electrostatic force is attractive between unlike charges and repulsive between like charges."
         }
       ],
-      "color": "#FFB785",
+      "deckId": "C1L9",
+      "courseId": 1,
       "lessonId": 9,
-      "courseId": 1
+      "color": "#FFB785"
     },
     {
       "title": "Definitions",
       "icon": "📔",
       "cards": [
         {
+          "id": "e73ab5147f1b2c5d9ebb10f027f6d4823952aac9",
           "front": {
             "title": "Medicines",
             "question": "How is a medicine defined in terms of its purpose and claims?"
@@ -985,6 +1121,7 @@
           "back": "Any substance or mixture of substances used, manufactured, sold, or represented as suitable for diagnosing, treating, mitigating, or preventing disease, or modifying any physical, mental, or organic function in humans or animals. It includes substances that claim medicinal effects even without making explicit claims."
         },
         {
+          "id": "64917d95173d3881d15a40995a5f881a4d7b91e9",
           "front": {
             "title": "Advertisement",
             "question": "What qualifies as an advertisement for a medicine?"
@@ -992,6 +1129,7 @@
           "back": "Any written, pictorial, visual, verbal, or descriptive material that appears in publications, TV, cinema, or is distributed to the public in any way to promote the sale of the medicine."
         },
         {
+          "id": "603df9589e137ae1bfbf8eb3facdd1d23ae6b682",
           "front": {
             "title": "Clinical Trial",
             "question": "What is a clinical trial and what does it involve?"
@@ -999,6 +1137,7 @@
           "back": "A systematic study in humans or animals to establish the efficacy of medicines, verify effects or adverse reactions, and study absorption, distribution, metabolism, and excretion."
         },
         {
+          "id": "2ab1f7d12fb3676a63fcd7202f8189bbc26ac010",
           "front": {
             "title": "Sell",
             "question": "What actions are included in the definition of 'sell'?"
@@ -1006,6 +1145,7 @@
           "back": "Includes wholesale, retail, import, export, advertise, label, prepare, expose, possess for sale, smuggle, administer, hawk, supply, barter, deliver, transmit as gift or sample, or dispose of in any way."
         },
         {
+          "id": "98ef71a0b9d1304327fb3eb1d69ff5f3403b8a64",
           "front": {
             "title": "Possess",
             "question": "What does 'possess' mean in the legal context of medicines?"
@@ -1013,6 +1153,7 @@
           "back": "To keep, store, or have in custody, control, or supervision. Liability may extend to individuals responsible for those flouting the law under their control."
         },
         {
+          "id": "c11c8d6b0eedabef11ef94642fedffcd18c15c28",
           "front": {
             "title": "Deal In",
             "question": "What does 'deal in' prohibited drugs involve?"
@@ -1020,6 +1161,7 @@
           "back": "Selling or performing any act (as principal, agent, messenger, etc.) related to delivery, collection, import/export, administration, manufacture, or transmission of a prohibited drug."
         },
         {
+          "id": "a7c1f8bd2bce06128a58c4fe9ae161f49b99ff04",
           "front": {
             "title": "Manufacture",
             "question": "What is considered 'manufacture' of medicine, and who is allowed to compound?"
@@ -1027,6 +1169,7 @@
           "back": "Includes compounding, processing, or packing for sale. Excludes compounding by a licensed practitioner or pharmacist for a specific patient or for sale from the premises. MCAZ approval is required for general sale. Prohibited substances cannot be compounded."
         },
         {
+          "id": "593bc663449f3f9c7dfed0152adff11163c3a845",
           "front": {
             "title": "Dispense",
             "question": "What does it mean to 'dispense' a medicine?"
@@ -1034,6 +1177,7 @@
           "back": "To prepare, measure, mix, dissolve, or count out a drug for the treatment of a specific person or animal. Does not include the actual administration of the drug."
         },
         {
+          "id": "8cc06023c550cb241a3cb17efe594b9a0f657197",
           "front": {
             "title": "Prescription",
             "question": "What is a prescription and who is it intended for?"
@@ -1041,6 +1185,7 @@
           "back": "An order made by a prescriber, written or verbal, for supplying a medicine to a specific person or animal. It must not be made out to groups like families or clinics. Dangerous Drugs prescriptions must be handwritten."
         },
         {
+          "id": "37114f538b7eb274b4a274bbfd8b96ee9c74c5a7",
           "front": {
             "title": "Prescriber",
             "question": "Who is legally allowed to prescribe medicine?"
@@ -1048,6 +1193,7 @@
           "back": "Only medical, dental, and veterinary practitioners. Pharmacists and nurses cannot prescribe but may supply certain medicines as permitted by law."
         },
         {
+          "id": "f24e1084886816b567f9d5edc6d328f5a75806a8",
           "front": {
             "title": "Dangerous Drugs Register",
             "question": "What are the requirements for a Dangerous Drugs Register?"
@@ -1055,6 +1201,7 @@
           "back": "Must be a bound book, not loose-leaf or card index. Records must comply with Sections 9, 28, and 33 of the Dangerous Drugs Regulations."
         },
         {
+          "id": "827ae18a8deba6839d1f96e6ac0a7327e736c492",
           "front": {
             "title": "Continuous and Personal Supervision",
             "question": "What is required under continuous and personal supervision?"
@@ -1062,15 +1209,17 @@
           "back": "All regulated activities must occur under the presence and active supervision of a person with a valid Persons Licence issued by MCAZ, who is authorized to dispense medicines."
         }
       ],
-      "color": "#ccc",
+      "deckId": "C2L1",
+      "courseId": 2,
       "lessonId": 1,
-      "courseId": 2
+      "color": "#ccc"
     },
     {
       "title": "Meiosis",
       "icon": "🧬",
       "cards": [
         {
+          "id": "7611b0b1c9e7d57b15dd6ea765c89a935118cf5c",
           "front": {
             "title": "Definition of Meiosis",
             "question": "What is meiosis?"
@@ -1078,6 +1227,7 @@
           "back": "Meiosis is a type of cell division where a diploid cell divides to form four genetically different haploid cells (sex cells)."
         },
         {
+          "id": "ca3f80e76ba70ac6ec1854a393619e5b797fa871",
           "front": {
             "title": "Purpose of Meiosis",
             "question": "What is the significance of meiosis?"
@@ -1085,6 +1235,7 @@
           "back": "It halves the number of chromosomes (from diploid to haploid), ensuring the correct number in the zygote after fertilization, and it introduces genetic variation through crossing over."
         },
         {
+          "id": "4b4dbd28165aed7d97cb0312b131a09723f66a31",
           "front": {
             "title": "Meiosis I",
             "question": "What happens during Meiosis I?"
@@ -1092,6 +1243,7 @@
           "back": "Homologous chromosomes separate, resulting in two haploid cells with duplicated chromosomes."
         },
         {
+          "id": "5266efc010d913f030ec99f844a8a6efa9c85906",
           "front": {
             "title": "Meiosis II",
             "question": "What happens during Meiosis II?"
@@ -1099,6 +1251,7 @@
           "back": "Sister chromatids separate, forming four genetically different haploid cells."
         },
         {
+          "id": "29b17d52e295995cd244e7f5da782da688f066e0",
           "front": {
             "title": "Crossing Over",
             "question": "What is crossing over?"
@@ -1106,6 +1259,7 @@
           "back": "During Prophase I, chromatids of homologous chromosomes exchange segments at the chiasma, leading to genetic variation."
         },
         {
+          "id": "c0b5d999f3d1ec86ab197e9b2fd803204d8a18ee",
           "front": {
             "title": "Non-Disjunction",
             "question": "What is non-disjunction?"
@@ -1113,6 +1267,7 @@
           "back": "It is the failure of chromosomes to separate properly during Anaphase I or II, which can lead to disorders like Down syndrome."
         },
         {
+          "id": "8cb0d847c0556ec058662b588e45975a44ca6b26",
           "front": {
             "title": "Meiosis vs Mitosis",
             "question": "How is meiosis different from mitosis?"
@@ -1120,15 +1275,17 @@
           "back": "Meiosis produces four haploid, genetically different cells; mitosis produces two diploid, genetically identical cells."
         }
       ],
-      "color": "#A0D6A0",
+      "deckId": "C3L1",
+      "courseId": 3,
       "lessonId": 1,
-      "courseId": 3
+      "color": "#A0D6A0"
     },
     {
       "title": "Evolution",
       "icon": "🧬",
       "cards": [
         {
+          "id": "e5a3fa0032189176121e887c519c2c03a0022a08",
           "front": {
             "title": "What is Evolution?",
             "question": "Define evolution in biological terms."
@@ -1136,6 +1293,7 @@
           "back": "Evolution is the change in the characteristics of a species over generations through natural selection and other processes."
         },
         {
+          "id": "56de5faeda5a487833195fa729974ccb15a78387",
           "front": {
             "title": "Natural Selection",
             "question": "What is natural selection?"
@@ -1143,6 +1301,7 @@
           "back": "Natural selection is the process by which organisms better adapted to their environment survive and reproduce, passing on advantageous traits."
         },
         {
+          "id": "1bad88aebe590d95a60fc8c5f4d62c679db5e3eb",
           "front": {
             "title": "Variation",
             "question": "What causes variation in a population?"
@@ -1150,6 +1309,7 @@
           "back": "Variation is caused by mutations, genetic recombination, and random fertilisation."
         },
         {
+          "id": "866193f4740b9f681436e4293fb831ad22097f11",
           "front": {
             "title": "Speciation",
             "question": "How does speciation occur?"
@@ -1157,6 +1317,7 @@
           "back": "Speciation occurs when populations become reproductively isolated and evolve independently into new species."
         },
         {
+          "id": "9a48888991c180872e903edae0644fe9f37cbb0b",
           "front": {
             "title": "Evidence for Evolution",
             "question": "What evidence supports the theory of evolution?"
@@ -1164,15 +1325,17 @@
           "back": "Fossil records, comparative anatomy, DNA similarities, and embryology all support evolution."
         }
       ],
-      "color": "#A0D6A0",
+      "deckId": "C3L10",
+      "courseId": 3,
       "lessonId": 10,
-      "courseId": 3
+      "color": "#A0D6A0"
     },
     {
       "title": "Human Impact on the Environment",
       "icon": "🌍",
       "cards": [
         {
+          "id": "7c368dff63b982252e1e7034dab8c82700a89602",
           "front": {
             "title": "Biodiversity",
             "question": "What is biodiversity and why is it important?"
@@ -1180,6 +1343,7 @@
           "back": "Biodiversity refers to the variety of life in all its forms. It ensures ecosystem stability and resilience."
         },
         {
+          "id": "af574feeb95349eddb238c9458c4e58da291aa23",
           "front": {
             "title": "Deforestation",
             "question": "How does deforestation affect the environment?"
@@ -1187,6 +1351,7 @@
           "back": "It leads to habitat loss, reduced biodiversity, soil erosion, and contributes to climate change."
         },
         {
+          "id": "208b53a2c4a4120e3a2468d2b33a94f54916d61f",
           "front": {
             "title": "Greenhouse Effect",
             "question": "What causes the enhanced greenhouse effect?"
@@ -1194,6 +1359,7 @@
           "back": "Human activities like burning fossil fuels increase greenhouse gases (CO₂, CH₄), leading to global warming."
         },
         {
+          "id": "d1eb1f38b268993b460602626cf96a78856d7d9d",
           "front": {
             "title": "Eutrophication",
             "question": "What is eutrophication and what causes it?"
@@ -1201,6 +1367,7 @@
           "back": "Excess nutrients from fertilizers enter water bodies, causing algae blooms that deplete oxygen and kill aquatic life."
         },
         {
+          "id": "ab31af33063558c9df355534d1ecb4d1b24da3da",
           "front": {
             "title": "Sustainable Living",
             "question": "How can we reduce our impact on the environment?"
@@ -1208,15 +1375,17 @@
           "back": "By conserving resources, reducing waste, recycling, and using renewable energy sources."
         }
       ],
-      "color": "#A0D6A0",
+      "deckId": "C3L11",
+      "courseId": 3,
       "lessonId": 11,
-      "courseId": 3
+      "color": "#A0D6A0"
     },
     {
       "title": "Scientific Skills",
       "icon": "📊",
       "cards": [
         {
+          "id": "2c9a8b7f20e1ba11208dcbf675fa8119b257c058",
           "front": {
             "title": "Scientific Method",
             "question": "What are the steps of the scientific method?"
@@ -1224,6 +1393,7 @@
           "back": "Identify a problem, formulate a hypothesis, conduct an experiment, collect data, analyze results, and draw a conclusion."
         },
         {
+          "id": "b9f4ed35fd8accc00277b608d2aee918b1b9fc8a",
           "front": {
             "title": "Controlled Variables",
             "question": "What are controlled variables?"
@@ -1231,6 +1401,7 @@
           "back": "Controlled variables are factors kept constant to ensure a fair test in an experiment."
         },
         {
+          "id": "12ff93b8f7b694fed6142d6cf0f03c438c9cecf2",
           "front": {
             "title": "Graph Interpretation",
             "question": "What should you include when drawing a graph?"
@@ -1238,6 +1409,7 @@
           "back": "A title, labeled axes with units, appropriate scale, and a key if necessary."
         },
         {
+          "id": "79753bb4c5977eea76c857ae9a3093d2fd66df4e",
           "front": {
             "title": "Accuracy vs Precision",
             "question": "What is the difference between accuracy and precision?"
@@ -1245,6 +1417,7 @@
           "back": "Accuracy is how close a result is to the true value; precision is how consistently results can be repeated."
         },
         {
+          "id": "ce23c856f0f2ad3d1b02f947d69e4107bca6d0d8",
           "front": {
             "title": "Essay Writing in Science",
             "question": "What is the basic structure for writing a scientific essay?"
@@ -1252,15 +1425,17 @@
           "back": "Introduction, body (with logical arguments and evidence), and conclusion."
         }
       ],
-      "color": "#A0D6A0",
+      "deckId": "C3L12",
+      "courseId": 3,
       "lessonId": 12,
-      "courseId": 3
+      "color": "#A0D6A0"
     },
     {
       "title": "Nucleic Acids",
       "icon": "🧬",
       "cards": [
         {
+          "id": "558c58d58b6bdc1ca88c9875c45fc0f09079106d",
           "front": {
             "title": "What are nucleic acids?",
             "question": "What are the two types of nucleic acids found in cells?"
@@ -1268,6 +1443,7 @@
           "back": "The two types of nucleic acids are DNA (deoxyribonucleic acid) and RNA (ribonucleic acid)."
         },
         {
+          "id": "1173a64ba40adb0da1e14feb771c9f54d34c5f42",
           "front": {
             "title": "DNA vs RNA",
             "question": "What is the main difference between DNA and RNA?"
@@ -1275,6 +1451,7 @@
           "back": "DNA is double-stranded and contains thymine; RNA is single-stranded and contains uracil instead of thymine."
         },
         {
+          "id": "9e4f5456dd5c874ad1399aca3a4f61a8cbec8c2c",
           "front": {
             "title": "Structure of DNA",
             "question": "What are the building blocks of DNA?"
@@ -1282,6 +1459,7 @@
           "back": "DNA is made up of nucleotides, which consist of a phosphate group, a deoxyribose sugar, and a nitrogenous base."
         },
         {
+          "id": "9f14433e31fdd7a03fae915ba6027eb12004fbbc",
           "front": {
             "title": "Nitrogenous Bases",
             "question": "Which bases pair in DNA and RNA?"
@@ -1289,6 +1467,7 @@
           "back": "In DNA: A pairs with T, and G pairs with C. In RNA: A pairs with U, and G pairs with C."
         },
         {
+          "id": "a699179f0d9200a7c48b5359e97f4aa75307b782",
           "front": {
             "title": "DNA Replication",
             "question": "Why is DNA replication important?"
@@ -1296,6 +1475,7 @@
           "back": "DNA replication ensures that each new cell has an exact copy of the DNA, preserving genetic information."
         },
         {
+          "id": "faeea888d1a94c1196142f4ec0b11de1bd52f5f0",
           "front": {
             "title": "Protein Synthesis",
             "question": "What are the two main stages of protein synthesis?"
@@ -1303,6 +1483,7 @@
           "back": "Transcription (in the nucleus) and translation (in the cytoplasm at the ribosome)."
         },
         {
+          "id": "d3cd6e8e7c64eb4a985f9768cbcc41ed3b160ae8",
           "front": {
             "title": "mRNA and tRNA",
             "question": "What are the roles of mRNA and tRNA in protein synthesis?"
@@ -1310,6 +1491,7 @@
           "back": "mRNA carries the genetic code from DNA to the ribosome; tRNA brings amino acids and matches codons with anticodons."
         },
         {
+          "id": "99f2e37ed0989bcbd8d013a04be97d29aa77be12",
           "front": {
             "title": "Codons",
             "question": "What is a codon?"
@@ -1317,6 +1499,7 @@
           "back": "A codon is a sequence of three bases on mRNA that codes for a specific amino acid."
         },
         {
+          "id": "e9e9014e91ab7d5d3f617eaedd34847ac06d5245",
           "front": {
             "title": "DNA Profiling",
             "question": "What is DNA profiling used for?"
@@ -1324,15 +1507,17 @@
           "back": "DNA profiling is used to identify individuals in criminal cases, paternity tests, and identifying remains."
         }
       ],
-      "color": "#A0D6A0",
+      "deckId": "C3L2",
+      "courseId": 3,
       "lessonId": 2,
-      "courseId": 3
+      "color": "#A0D6A0"
     },
     {
       "title": "Reproduction in Vertebrates",
       "icon": "🐣",
       "cards": [
         {
+          "id": "70bd69b396e1135bc3911343dccf4b0b68c49cc6",
           "front": {
             "title": "External Fertilisation",
             "question": "What is external fertilisation?"
@@ -1340,6 +1525,7 @@
           "back": "It is when sperm fertilises the egg outside the body, usually in water, allowing sperm to swim to the egg."
         },
         {
+          "id": "f7601d48dd611ff5b7512f0d33c8a989e9e4d746",
           "front": {
             "title": "Internal Fertilisation",
             "question": "Why is internal fertilisation advantageous?"
@@ -1347,6 +1533,7 @@
           "back": "It allows fertilisation in dry environments and increases the likelihood of successful reproduction."
         },
         {
+          "id": "735f34f7fb39d6b1ef31d641270df2ec252085c3",
           "front": {
             "title": "Ovipary vs Vivipary",
             "question": "What is the difference between ovipary and vivipary?"
@@ -1354,15 +1541,17 @@
           "back": "Ovipary involves laying eggs; vivipary involves live birth after internal development of the embryo."
         }
       ],
-      "color": "#A0D6A0",
+      "deckId": "C3L3",
+      "courseId": 3,
       "lessonId": 3,
-      "courseId": 3
+      "color": "#A0D6A0"
     },
     {
       "title": "Human Reproduction",
       "icon": "👶",
       "cards": [
         {
+          "id": "1eee0ba3e0302170e2951f9d2cfa5014c3291e8c",
           "front": {
             "title": "Function of Testes",
             "question": "What do the testes produce?"
@@ -1370,6 +1559,7 @@
           "back": "Sperm cells and the hormone testosterone."
         },
         {
+          "id": "980a60f1b66465932951adb10c4884353d652487",
           "front": {
             "title": "Structure of Sperm",
             "question": "What are the parts of a sperm cell and their functions?"
@@ -1377,6 +1567,7 @@
           "back": "Acrosome (enzymes), nucleus (DNA), mitochondria (energy), tail (movement)."
         },
         {
+          "id": "dfbae467da281d9b6431e1d5aadac0dc958a209b",
           "front": {
             "title": "Menstrual Cycle",
             "question": "What are the main phases of the menstrual cycle?"
@@ -1384,15 +1575,17 @@
           "back": "Menstruation, follicular phase, ovulation, luteal phase."
         }
       ],
-      "color": "#A0D6A0",
+      "deckId": "C3L4",
+      "courseId": 3,
       "lessonId": 4,
-      "courseId": 3
+      "color": "#A0D6A0"
     },
     {
       "title": "Genetics and Inheritance",
       "icon": "🧬",
       "cards": [
         {
+          "id": "dda4ef49f03fca3fc29a3e5acfec6fe7fe121883",
           "front": {
             "title": "Gene",
             "question": "What is a gene?"
@@ -1400,6 +1593,7 @@
           "back": "A small portion of DNA that codes for a particular characteristic. Found inside the chromosome, located in the nucleus of a cell."
         },
         {
+          "id": "54498f515edb8cf6c6ddb870fa595e8506435352",
           "front": {
             "title": "Alleles",
             "question": "What are alleles?"
@@ -1407,6 +1601,7 @@
           "back": "Different forms of a gene at the same locus on homologous chromosomes. Example: Dominant (T) – tall, Recessive (t) – short."
         },
         {
+          "id": "7d042331abd371772182cd062e0f241c2d9959d6",
           "front": {
             "title": "Genotype",
             "question": "What is a genotype?"
@@ -1414,6 +1609,7 @@
           "back": "The genetic makeup of an organism. Examples: TT (homozygous dominant), Tt (heterozygous), tt (homozygous recessive)."
         },
         {
+          "id": "0f9c0b19330d5f500abc2205ef476a4ca6f07848",
           "front": {
             "title": "Phenotype",
             "question": "What is a phenotype?"
@@ -1421,6 +1617,7 @@
           "back": "The physical appearance of an organism determined by its genotype. Example: Tall or short plants."
         },
         {
+          "id": "a97e44737cdda33405b54aa6ca8009532706548d",
           "front": {
             "title": "Dominant Allele",
             "question": "What is a dominant allele?"
@@ -1428,6 +1625,7 @@
           "back": "An allele that is expressed in the phenotype when present in homozygous (TT) or heterozygous (Tt) form. Example: T for tall."
         },
         {
+          "id": "74a209484d587247e5ef78d320ed92ee85b0c641",
           "front": {
             "title": "Recessive Allele",
             "question": "What is a recessive allele?"
@@ -1435,6 +1633,7 @@
           "back": "An allele masked in the heterozygous condition and only expressed in the homozygous condition. Example: t for short."
         },
         {
+          "id": "2bba55b81764ede96a22d57716a6e8fbbc83f37e",
           "front": {
             "title": "Heterozygous",
             "question": "What does heterozygous mean?"
@@ -1442,6 +1641,7 @@
           "back": "Having two different alleles for a trait. Example: Tt – phenotype is tall due to the dominant allele."
         },
         {
+          "id": "d7f2394890b50f2033b0845ebc7e7ca394645382",
           "front": {
             "title": "Homozygous",
             "question": "What does homozygous mean?"
@@ -1449,6 +1649,7 @@
           "back": "Having two identical alleles for a trait. Examples: TT – tall (dominant), tt – short (recessive)."
         },
         {
+          "id": "1a2e47e0423c6001b68905f9b8d6dcd1e91a6640",
           "front": {
             "title": "Monohybrid Cross",
             "question": "What is a monohybrid cross?"
@@ -1456,6 +1657,7 @@
           "back": "A genetic cross examining one characteristic or trait. Example: Flower colour – yellow vs white."
         },
         {
+          "id": "7fd2a730091c69a49f4c127872a99f7900ef3058",
           "front": {
             "title": "Complete Dominance",
             "question": "What is complete dominance?"
@@ -1463,6 +1665,7 @@
           "back": "A dominant allele fully masks the recessive allele in a heterozygous organism. Example: Tt results in a tall plant because T masks t."
         },
         {
+          "id": "7242ebd81c6a6e0ac320c19218b4fb290b406d3b",
           "front": {
             "title": "Incomplete Dominance",
             "question": "What is incomplete dominance?"
@@ -1470,6 +1673,7 @@
           "back": "The offspring shows a phenotype that is intermediate between the parents. Example: Red × White flowers → Pink flowers."
         },
         {
+          "id": "b5a9c300e7a5e511bab01ca5c36e562922bf8371",
           "front": {
             "title": "Co-dominance",
             "question": "What is co-dominance?"
@@ -1477,6 +1681,7 @@
           "back": "Both alleles are equally expressed in the phenotype. Example: Red × White flowers → Flowers with red and white patches."
         },
         {
+          "id": "818900cb2b2d738d1e5b044a88c00cf00826585d",
           "front": {
             "title": "Multiple Alleles",
             "question": "What are multiple alleles?"
@@ -1484,6 +1689,7 @@
           "back": "More than two alternative forms of a gene exist at the same locus. Example: Blood groups IA, IB, and i."
         },
         {
+          "id": "1bff800097557232024d649200a86c2259f15275",
           "front": {
             "title": "Sex-linked Characteristics",
             "question": "What are sex-linked characteristics?"
@@ -1491,6 +1697,7 @@
           "back": "Traits carried on the sex chromosomes (usually X). Example: Haemophilia or colour-blindness – XᴴXʰ (carrier female), XʰY (affected male)."
         },
         {
+          "id": "35ad0bcff3637f693ad6f7a033e589c111c4cdc6",
           "front": {
             "title": "Karyotype",
             "question": "What is a karyotype?"
@@ -1498,6 +1705,7 @@
           "back": "The number, shape, and arrangement of chromosomes in the nucleus of a somatic cell. Used to detect chromosomal abnormalities."
         },
         {
+          "id": "c7595d86a76e236e654131134d0da40bbf374540",
           "front": {
             "title": "Cloning",
             "question": "What is cloning?"
@@ -1505,6 +1713,7 @@
           "back": "A process to produce genetically identical organisms. Example: Dolly the sheep was cloned from a diploid cell."
         },
         {
+          "id": "30abdebfe27acafc758045acc81d8f742e244933",
           "front": {
             "title": "Genetic Modification",
             "question": "What is genetic modification?"
@@ -1512,6 +1721,7 @@
           "back": "Altering genetic material to produce desired traits. Example: Inserting the human insulin gene into bacteria to produce insulin."
         },
         {
+          "id": "6d5bb1029677254ec1758eedb7df6b9190f1aebe",
           "front": {
             "title": "Human Genome",
             "question": "What is the human genome?"
@@ -1519,15 +1729,17 @@
           "back": "A complete map of all genes on human chromosomes. Example: Gene 3 on chromosome 4 controls a specific trait."
         }
       ],
-      "color": "#A0D6A0",
+      "deckId": "C3L5",
+      "courseId": 3,
       "lessonId": 5,
-      "courseId": 3
+      "color": "#A0D6A0"
     },
     {
       "title": "Responding to the Environment (Humans)",
       "icon": "🧠",
       "cards": [
         {
+          "id": "2e4ebe2e356d9d6e173b21f67e5f328ed3dc8e98",
           "front": {
             "title": "Central Nervous System",
             "question": "What are the two main parts of the central nervous system?"
@@ -1535,6 +1747,7 @@
           "back": "The brain and the spinal cord."
         },
         {
+          "id": "bb8f653c9972e2123ffd02bf321c0ca11e592816",
           "front": {
             "title": "Reflex Arc",
             "question": "What is a reflex arc?"
@@ -1542,6 +1755,7 @@
           "back": "A pathway that controls an involuntary response to a stimulus, involving a sensory neuron, interneuron, and motor neuron."
         },
         {
+          "id": "02f00ca0c75c3f8e82b964012ca07d5c7466ffd6",
           "front": {
             "title": "Function of the Cerebellum",
             "question": "What is the role of the cerebellum in the brain?"
@@ -1549,6 +1763,7 @@
           "back": "The cerebellum coordinates voluntary movements and helps maintain posture and balance."
         },
         {
+          "id": "b0730dda4f46eeb292612ac8f6a27e3752ac5a35",
           "front": {
             "title": "Sense Organs",
             "question": "What are the five main sense organs?"
@@ -1556,6 +1771,7 @@
           "back": "Eyes, ears, skin, tongue, and nose."
         },
         {
+          "id": "b29cb48efd3ce928ba808d28fbcf7138853e54ea",
           "front": {
             "title": "Homeostasis Link",
             "question": "How is the nervous system linked to homeostasis?"
@@ -1563,15 +1779,17 @@
           "back": "It detects changes in the environment and sends signals to organs to maintain stable internal conditions."
         }
       ],
-      "color": "#A0D6A0",
+      "deckId": "C3L6",
+      "courseId": 3,
       "lessonId": 6,
-      "courseId": 3
+      "color": "#A0D6A0"
     },
     {
       "title": "Endocrine System",
       "icon": "🕹️",
       "cards": [
         {
+          "id": "7f823ac478583f46a636674c4a2cfdecc4fd312b",
           "front": {
             "title": "What is the endocrine system?",
             "question": "What is the primary function of the endocrine system?"
@@ -1579,6 +1797,7 @@
           "back": "The endocrine system regulates body functions by releasing hormones into the bloodstream."
         },
         {
+          "id": "03dc8d1b039db560a287ed60a3b82baa97ac56df",
           "front": {
             "title": "Hormones",
             "question": "What are hormones?"
@@ -1586,6 +1805,7 @@
           "back": "Hormones are chemical messengers secreted by endocrine glands that affect target organs."
         },
         {
+          "id": "03862ed1108d31babfa69104f0a27a07e7b69ef4",
           "front": {
             "title": "Glands of the Endocrine System",
             "question": "Which are the major endocrine glands?"
@@ -1593,6 +1813,7 @@
           "back": "Pituitary gland, thyroid gland, adrenal glands, pancreas, ovaries, and testes."
         },
         {
+          "id": "7298812a245a9d4d592cbb9864cd6298ca2f87da",
           "front": {
             "title": "Pancreas",
             "question": "What hormones are produced by the pancreas and what do they regulate?"
@@ -1600,6 +1821,7 @@
           "back": "Insulin and glucagon; they regulate blood glucose levels."
         },
         {
+          "id": "f6b1026f9fb8f11cc4b19a28a7061aebb731372b",
           "front": {
             "title": "Negative Feedback",
             "question": "What is negative feedback in the endocrine system?"
@@ -1607,15 +1829,17 @@
           "back": "A process where the body detects a change and responds to reverse that change, maintaining balance (homeostasis)."
         }
       ],
-      "color": "#A0D6A0",
+      "deckId": "C3L7",
+      "courseId": 3,
       "lessonId": 7,
-      "courseId": 3
+      "color": "#A0D6A0"
     },
     {
       "title": "Homeostasis in Humans",
       "icon": "🌡️",
       "cards": [
         {
+          "id": "ad56b953dafe47079ee4fda1545c6cb1f359d2cc",
           "front": {
             "title": "Definition of Homeostasis",
             "question": "What is homeostasis?"
@@ -1623,6 +1847,7 @@
           "back": "Homeostasis is the maintenance of a constant internal environment in the body."
         },
         {
+          "id": "2ba51b3138a84fa98cd41b956625371d31c08c20",
           "front": {
             "title": "Importance of Homeostasis",
             "question": "Why is homeostasis important?"
@@ -1630,6 +1855,7 @@
           "back": "It ensures that enzymes and cells function optimally by maintaining stable internal conditions."
         },
         {
+          "id": "d78057e7565c8348b8359a37676dfa87b983b538",
           "front": {
             "title": "Body Temperature Regulation",
             "question": "How does the body regulate temperature when it is too hot?"
@@ -1637,6 +1863,7 @@
           "back": "By sweating and vasodilation to release heat through the skin."
         },
         {
+          "id": "3567715be5cd2e67650cd02037d27c83992ae4b6",
           "front": {
             "title": "Glucose Regulation",
             "question": "Which hormones regulate blood sugar levels?"
@@ -1644,6 +1871,7 @@
           "back": "Insulin lowers blood glucose; glucagon raises it."
         },
         {
+          "id": "7bc2c9f76e4bdc8c3060f3f98ba927a43ac0102c",
           "front": {
             "title": "Negative Feedback in Homeostasis",
             "question": "What is the role of negative feedback in homeostasis?"
@@ -1651,20 +1879,17 @@
           "back": "It reverses changes to bring internal conditions back to normal."
         }
       ],
-      "color": "#A0D6A0",
+      "deckId": "C3L8",
+      "courseId": 3,
       "lessonId": 8,
-      "courseId": 3
-    },
-    {
-      "color": "#A0D6A0",
-      "lessonId": 9,
-      "courseId": 3
+      "color": "#A0D6A0"
     },
     {
       "title": "Laws of Exponents",
       "icon": "🧮",
       "cards": [
         {
+          "id": "6126e17b33374fb7b61f2e58d12d6cd80495d0f8",
           "front": {
             "title": "Exponential Notation",
             "question": "How is a number written in exponential notation?"
@@ -1672,6 +1897,7 @@
           "back": "A number is written as aⁿ, where n is any natural number and a is any real number.  'a' is the base and 'n' is the exponent or index."
         },
         {
+          "id": "0da15b427f5ceedaf9204a32311b9eed6796b1c8",
           "front": {
             "title": "Definition of a⁰",
             "question": "What is a⁰ equal to?"
@@ -1679,6 +1905,7 @@
           "back": "a⁰ = 1, if a ≠ 0"
         },
         {
+          "id": "0914024412256ab6681a5bf165e2702b12a6d277",
           "front": {
             "title": "Definition of a⁻ⁿ",
             "question": "How is a⁻ⁿ defined?"
@@ -1686,6 +1913,7 @@
           "back": "a⁻ⁿ = 1/aⁿ, if a ≠ 0"
         },
         {
+          "id": "10318c0ba69fcfe0bfc51f5a714c10f79cdd4123",
           "front": {
             "title": "Definition of 1/a⁻ⁿ",
             "question": "What is 1/a⁻ⁿ equal to?"
@@ -1693,6 +1921,7 @@
           "back": "1/a⁻ⁿ = aⁿ, if a ≠ 0"
         },
         {
+          "id": "e632e1c36b88ad391ecc0c9b71da73fd31ee72dc",
           "front": {
             "title": "Product of Powers",
             "question": "What is the rule for multiplying powers with the same base?"
@@ -1700,6 +1929,7 @@
           "back": "aᵐ × aⁿ = aᵐ⁺ⁿ"
         },
         {
+          "id": "29b4d2dca5208e04d75c8001231cad4879b69102",
           "front": {
             "title": "Quotient of Powers",
             "question": "What is the rule for dividing powers with the same base?"
@@ -1707,6 +1937,7 @@
           "back": "aᵐ / aⁿ = aᵐ⁻ⁿ"
         },
         {
+          "id": "387770ef077f5ee226eb1fd554e023b719e1998e",
           "front": {
             "title": "Power of a Product",
             "question": "What is the rule for raising a product to a power?"
@@ -1714,6 +1945,7 @@
           "back": "(ab)ⁿ = aⁿbⁿ"
         },
         {
+          "id": "4f8bd743882dfd1a72866283f0e8d94e6f608d33",
           "front": {
             "title": "Power of a Quotient",
             "question": "What is the rule for raising a quotient to a power?"
@@ -1721,6 +1953,7 @@
           "back": "(a/b)ⁿ = aⁿ/bⁿ"
         },
         {
+          "id": "0ea550bb62ec42336df24efd77fde1978340428b",
           "front": {
             "title": "Power of a Power",
             "question": "What is the rule for raising a power to another power?"
@@ -1728,6 +1961,7 @@
           "back": "(aᵐ)ⁿ = aᵐⁿ"
         },
         {
+          "id": "e61bb0e45a27c653a2ba2c434ccadd829d3073e6",
           "front": {
             "title": "Simplifying Exponential Expressions",
             "question": "How do you simplify expressions with exponents?"
@@ -1735,6 +1969,7 @@
           "back": "Reduce bases to prime bases or factorize."
         },
         {
+          "id": "d48ad174acf46a73b7858c9a578de5b0aba097f1",
           "front": {
             "title": "Solving Exponential Equations",
             "question": "How do you solve equations with exponents?"
@@ -1742,15 +1977,17 @@
           "back": "If aˣ = aʸ, then x = y; or factorize the expressions."
         }
       ],
-      "color": "#3498DB",
+      "deckId": "C4L1",
+      "courseId": 4,
       "lessonId": 1,
-      "courseId": 4
+      "color": "#3498DB"
     },
     {
       "title": "Descriptive Statistics",
       "icon": "📊",
       "cards": [
         {
+          "id": "7c0c776fcb0cad531bb84bef6845be41186faf09",
           "front": {
             "title": "Data",
             "question": "What is data in the context of statistics?"
@@ -1758,6 +1995,7 @@
           "back": "Data are pieces of information observed and recorded from experiments or surveys."
         },
         {
+          "id": "298a00bc723131e864a2f540c72dbca52a56e437",
           "front": {
             "title": "Quantitative Data",
             "question": "What are quantitative data?"
@@ -1765,6 +2003,7 @@
           "back": "Data that can be expressed numerically.  Can be discrete or continuous."
         },
         {
+          "id": "29c87ddc687e7c7b6f99dc95226d64375a5e57e6",
           "front": {
             "title": "Qualitative Data",
             "question": "What are qualitative data?"
@@ -1772,6 +2011,7 @@
           "back": "Data that cannot be expressed numerically.  Includes categorical and anecdotal data."
         },
         {
+          "id": "46625996d12d772c9f6f47d88e54d1b69d9c5d3c",
           "front": {
             "title": "Mean",
             "question": "How is the mean calculated?"
@@ -1779,6 +2019,7 @@
           "back": "The sum of a set of values divided by the number of values.\n```math\n      ∑ xi\n x̄ = ─────\n       n\n```"
         },
         {
+          "id": "69992e32e4d64e38486d1fbc861f0f3e596c8bce",
           "front": {
             "title": "Median",
             "question": "How is the median determined?"
@@ -1786,6 +2027,7 @@
           "back": "The middle value in an ordered data set.  If there's an even number of values, it's the average of the two middle values."
         },
         {
+          "id": "57a319da34210bc3ad88d669f5b42d9db6e3d83a",
           "front": {
             "title": "Mode",
             "question": "What is the mode of a data set?"
@@ -1793,6 +2035,7 @@
           "back": "The value that appears most frequently in a data set."
         },
         {
+          "id": "3cfeb4d427b5b54b38df7237e3a35a2ff0ad20e7",
           "front": {
             "title": "Outlier",
             "question": "What is an outlier?"
@@ -1800,6 +2043,7 @@
           "back": "A value significantly different from the other values in a data set."
         },
         {
+          "id": "9f98681b0c00d7fb12f4eea3e10a04fdc4d9f38a",
           "front": {
             "title": "Grouping Continuous Data",
             "question": "How can continuous data be made discrete?"
@@ -1807,6 +2051,7 @@
           "back": "By dividing the range of values into sub-ranges (classes) and assigning each value to its respective class."
         },
         {
+          "id": "4614e3794afd4114fc5305fff4a8eb6ac73271f2",
           "front": {
             "title": "Dispersion",
             "question": "What does dispersion refer to in statistics?"
@@ -1814,6 +2059,7 @@
           "back": "Statistics that describe how values are distributed around the center (mean, median)."
         },
         {
+          "id": "456c9232fd64d99a3e7111d26665b5c887db983d",
           "front": {
             "title": "Range",
             "question": "How is the range calculated?"
@@ -1821,6 +2067,7 @@
           "back": "The difference between the maximum and minimum values in a data set."
         },
         {
+          "id": "3df63f9d615d714377db9b1726f71eca90c5df70",
           "front": {
             "title": "Percentile",
             "question": "What is the pth percentile?"
@@ -1828,6 +2075,7 @@
           "back": "The value, v, below which p% of the data falls.  Calculated using:\n```math\nr = (p/100)(n - 1) + 1\n``` where n is the number of values."
         },
         {
+          "id": "1e689b54c743c7bb8cb279f8d124d3ec986c3d51",
           "front": {
             "title": "Quartiles",
             "question": "What are quartiles?"
@@ -1835,6 +2083,7 @@
           "back": "Three values (Q1, Q2, Q3) that divide an ordered data set into four equal parts. Q2 is the median."
         },
         {
+          "id": "f3721e7cf08736a0d3286c48d390060bf3bf9c97",
           "front": {
             "title": "Interquartile Range (IQR)",
             "question": "How is the IQR calculated?"
@@ -1842,6 +2091,7 @@
           "back": "The difference between the upper quartile (Q3) and the lower quartile (Q1). Represents the range of the middle 50% of data."
         },
         {
+          "id": "023b1ffd1b96ba9bf31bbfba5a01bd436037ce68",
           "front": {
             "title": "Semi-Interquartile Range",
             "question": "How is the semi-IQR calculated?"
@@ -1849,6 +2099,7 @@
           "back": "Half of the interquartile range."
         },
         {
+          "id": "1232cfa30e139265d9eed0400ee266e12edf3d31",
           "front": {
             "title": "Five-Number Summary",
             "question": "What constitutes the five-number summary?"
@@ -1856,6 +2107,7 @@
           "back": "Minimum value, Q1, Q2 (median), Q3, Maximum value."
         },
         {
+          "id": "1599faa13aafd666bb994103df8222c371f63dee",
           "front": {
             "title": "Box-and-Whisker Plot",
             "question": "What is a box-and-whisker plot?"
@@ -1863,15 +2115,17 @@
           "back": "A graphical representation of the five-number summary."
         }
       ],
-      "color": "#3498DB",
+      "deckId": "C4L10",
+      "courseId": 4,
       "lessonId": 10,
-      "courseId": 4
+      "color": "#3498DB"
     },
     {
       "title": "Trigonometry of Right-Angled Triangles",
       "icon": "📐",
       "cards": [
         {
+          "id": "a59ab74563fcc230b0b991ccee7e67e84342e526",
           "front": {
             "title": "Trigonometric Ratios",
             "question": "What are the three basic trigonometric ratios?"
@@ -1879,6 +2133,7 @@
           "back": "The three basic trigonometric ratios for a right-angled triangle are: \n\n* sine (sin):  opposite/hypotenuse\n* cosine (cos): adjacent/hypotenuse\n* tangent (tan): opposite/adjacent"
         },
         {
+          "id": "bf427456883659ac152961644d68b2a80bcde926",
           "front": {
             "title": "Angle of Elevation",
             "question": "Define the angle of elevation."
@@ -1886,6 +2141,7 @@
           "back": "The angle of elevation is the angle between the line of sight to an object above the horizontal and the horizontal plane."
         },
         {
+          "id": "e8264b6395bb7705d6d66386e4c5eed5c22281b2",
           "front": {
             "title": "Angle of Depression",
             "question": "Define the angle of depression."
@@ -1893,6 +2149,7 @@
           "back": "The angle of depression is the angle between the line of sight to an object below the horizontal and the horizontal plane."
         },
         {
+          "id": "6212c6bdc56eff612ac12a140a6a51895377d3b2",
           "front": {
             "title": "Applications of Trigonometry",
             "question": "Give an example of how trigonometry is used to solve problems."
@@ -1900,15 +2157,17 @@
           "back": "Trigonometry is used to solve problems involving right-angled triangles in two dimensions. For example, finding the height of a building given the angle of elevation and distance from the base."
         }
       ],
-      "color": "#3498DB",
+      "deckId": "C4L11",
+      "courseId": 4,
       "lessonId": 11,
-      "courseId": 4
+      "color": "#3498DB"
     },
     {
       "title": "Quadrilaterals and the Mid-Point Theorem",
       "icon": "⬜",
       "cards": [
         {
+          "id": "558f83cfd39051ddd9396b412143db2f18f9919f",
           "front": {
             "title": "Quadrilateral",
             "question": "What is a quadrilateral?"
@@ -1916,6 +2175,7 @@
           "back": "A closed shape with four straight line segments."
         },
         {
+          "id": "07afa84e261e7acac7a3ba141e6d039389360308",
           "front": {
             "title": "Parallelogram",
             "question": "List three properties of a parallelogram."
@@ -1923,6 +2183,7 @@
           "back": "• Both pairs of opposite sides are parallel and equal.\n• Both pairs of opposite angles are equal.\n• Diagonals bisect each other."
         },
         {
+          "id": "2697aebebb820c3686191b81baccaedf75182e1d",
           "front": {
             "title": "Rectangle",
             "question": "What makes a rectangle different from a parallelogram?"
@@ -1930,6 +2191,7 @@
           "back": "All four angles are 90°.  Diagonals are equal in length."
         },
         {
+          "id": "14862830793a4ff4cb68d0c74b8646fb8c3e7ba9",
           "front": {
             "title": "Rhombus",
             "question": "What is a rhombus?"
@@ -1937,6 +2199,7 @@
           "back": "A parallelogram with all four sides equal in length. Diagonals bisect each other at 90° and bisect the opposite angles."
         },
         {
+          "id": "65392b4bd85ea3fbddfe84f4cd9e47697b11fc82",
           "front": {
             "title": "Square",
             "question": "What is a square?"
@@ -1944,6 +2207,7 @@
           "back": "A rhombus with all four angles equal to 90°."
         },
         {
+          "id": "9a0abb322f108732fbf8de68b42b14989d963fbc",
           "front": {
             "title": "Trapezium",
             "question": "What is a trapezium?"
@@ -1951,6 +2215,7 @@
           "back": "A quadrilateral with one pair of opposite sides parallel."
         },
         {
+          "id": "c97877efd78577099ea862680cd9591e896ac913",
           "front": {
             "title": "Kite",
             "question": "Describe a kite and one of its properties."
@@ -1958,6 +2223,7 @@
           "back": "A quadrilateral with two pairs of adjacent sides equal. One pair of opposite angles are equal (the angles between unequal sides)."
         },
         {
+          "id": "56ae45c0388cfab42a54b759995f3041ddcb8d59",
           "front": {
             "title": "Mid-point Theorem",
             "question": "State the mid-point theorem."
@@ -1965,15 +2231,17 @@
           "back": "The line joining the mid-points of two sides of a triangle is parallel to the third side and half its length."
         }
       ],
-      "color": "#3498DB",
+      "deckId": "C4L12",
+      "courseId": 4,
       "lessonId": 12,
-      "courseId": 4
+      "color": "#3498DB"
     },
     {
       "title": "Area, Volume, and Surface Area of Geometric Solids",
       "icon": "📐",
       "cards": [
         {
+          "id": "0e25f642d849f493e5f592edee6e3f1edb2ce1be",
           "front": {
             "title": "Area of a Square",
             "question": "What is the formula for the area of a square?"
@@ -1981,6 +2249,7 @@
           "back": "Area = s² where s is the side length"
         },
         {
+          "id": "f6d7622f301511097dc08e51879d69055f1950eb",
           "front": {
             "title": "Area of a Rectangle",
             "question": "How do you calculate the area of a rectangle?"
@@ -1988,6 +2257,7 @@
           "back": "Area = b × h where b is the base and h is the height"
         },
         {
+          "id": "bb07aec7377af10379ed16a5921d3a1bb0ebcee3",
           "front": {
             "title": "Area of a Triangle",
             "question": "What's the formula for the area of a triangle?"
@@ -1995,6 +2265,7 @@
           "back": "Area = (1/2) × b × h where b is the base and h is the height"
         },
         {
+          "id": "3bcb18848e2db89d461cb35d122a587fb2a913cc",
           "front": {
             "title": "Area of a Trapezium",
             "question": "How do you find the area of a trapezium?"
@@ -2002,6 +2273,7 @@
           "back": "Area = (1/2)(a + b) × h where a and b are the parallel sides and h is the height"
         },
         {
+          "id": "f6d7622f301511097dc08e51879d69055f1950eb",
           "front": {
             "title": "Area of a Parallelogram",
             "question": "What is the area formula for a parallelogram?"
@@ -2009,6 +2281,7 @@
           "back": "Area = b × h where b is the base and h is the height"
         },
         {
+          "id": "18722531e712b41ffdb3979e5e675b19f1b9728b",
           "front": {
             "title": "Area of a Circle",
             "question": "Give the formula for the area of a circle."
@@ -2016,6 +2289,7 @@
           "back": "Area = πr² where r is the radius"
         },
         {
+          "id": "e23bc31bd64c8b2ca3c6bafc7c72a028f0a0b322",
           "front": {
             "title": "Volume of a Rectangular Prism",
             "question": "How do you calculate the volume of a rectangular prism?"
@@ -2023,6 +2297,7 @@
           "back": "Volume = l × b × h where l is length, b is width, and h is height"
         },
         {
+          "id": "be135605c85a41b1c9eea9dddc773c76a9472af3",
           "front": {
             "title": "Volume of a Triangular Prism",
             "question": "What is the formula for the volume of a triangular prism?"
@@ -2030,6 +2305,7 @@
           "back": "Volume = (1/2 × b × h) × H where b and h are the base and height of the triangle, and H is the prism's height"
         },
         {
+          "id": "1e59a92f1edc76fc6b579e5898d26773a74f265e",
           "front": {
             "title": "Volume of a Cube",
             "question": "What is the volume of a cube with side length s?"
@@ -2037,6 +2313,7 @@
           "back": "Volume = s³"
         },
         {
+          "id": "9119fea5999e997a6ee68f63b7aef89ba7a2ea4e",
           "front": {
             "title": "Volume of a Cylinder",
             "question": "Give the formula for the volume of a cylinder."
@@ -2044,6 +2321,7 @@
           "back": "Volume = πr² × h where r is the radius and h is the height"
         },
         {
+          "id": "2729231ae06aa39d0ff4e2239e23d25ac98b3b33",
           "front": {
             "title": "Surface Area of a Square Pyramid",
             "question": "What is the formula for the surface area of a square pyramid?"
@@ -2051,6 +2329,7 @@
           "back": "Surface Area = b(b + 2h) where b is the base side and h is the slant height"
         },
         {
+          "id": "9731ad1eaf96f3e1dd18bd1c9488fe211dbfd043",
           "front": {
             "title": "Surface Area of a Triangular Pyramid",
             "question": "How do you calculate the surface area of a triangular pyramid?"
@@ -2058,6 +2337,7 @@
           "back": "Surface Area = (1/2)b(hb + 3hs) where b is the base, hb is the base height, and hs is the slant height"
         },
         {
+          "id": "e86422ee4ccac0340da606c6e8a2e5b9401916e7",
           "front": {
             "title": "Surface Area of a Right Cone",
             "question": "Give the formula for the surface area of a right cone."
@@ -2065,6 +2345,7 @@
           "back": "Surface Area = πr(r + hs) where r is the radius and hs is the slant height"
         },
         {
+          "id": "1fefd1698d8b014ff4ec338c9b7fb60c85b51f7b",
           "front": {
             "title": "Surface Area of a Sphere",
             "question": "What is the formula for the surface area of a sphere?"
@@ -2072,6 +2353,7 @@
           "back": "Surface Area = 4πr² where r is the radius"
         },
         {
+          "id": "90f997d5ec502f091ec495cc01427824c19f6cb2",
           "front": {
             "title": "Volume of a Square Pyramid",
             "question": "What is the volume of a square pyramid?"
@@ -2079,6 +2361,7 @@
           "back": "Volume = (1/3) × b² × H where b is the base side and H is the height"
         },
         {
+          "id": "87c0d4b92c53c635b665e4bb617550dd9c2e2b9e",
           "front": {
             "title": "Volume of a Triangular Pyramid",
             "question": "How do you calculate the volume of a triangular pyramid?"
@@ -2086,6 +2369,7 @@
           "back": "Volume = (1/3) × (1/2 × b × h) × H where b and h are the base and height of the triangle, and H is the pyramid's height"
         },
         {
+          "id": "c88f01c5339c7c4d7c76126d566d336b34dd4e12",
           "front": {
             "title": "Volume of a Right Cone",
             "question": "Give the formula for the volume of a right cone."
@@ -2093,6 +2377,7 @@
           "back": "Volume = (1/3) × πr² × H where r is the radius and H is the height"
         },
         {
+          "id": "d235f008a7642ee5933b6bf292ce4a0648c73321",
           "front": {
             "title": "Volume of a Sphere",
             "question": "What is the formula for the volume of a sphere?"
@@ -2100,15 +2385,17 @@
           "back": "Volume = (4/3)πr³ where r is the radius"
         }
       ],
-      "color": "#3498DB",
+      "deckId": "C4L13",
+      "courseId": 4,
       "lessonId": 13,
-      "courseId": 4
+      "color": "#3498DB"
     },
     {
       "title": "Probability Fundamentals",
       "icon": "🎲",
       "cards": [
         {
+          "id": "9622a6336c72029792c7ecbbeafd8d98021512ff",
           "front": {
             "title": "Experiment",
             "question": "What is an experiment in probability?"
@@ -2116,6 +2403,7 @@
           "back": "An uncertain process."
         },
         {
+          "id": "dce44832f5a0647ec97aaa75582519492f3dac4e",
           "front": {
             "title": "Outcome",
             "question": "What is an outcome in probability?"
@@ -2123,6 +2411,7 @@
           "back": "A single result of an experiment."
         },
         {
+          "id": "32b5f1bac404ed9d4ed5a9c0c0d4896a8580757d",
           "front": {
             "title": "Sample Space",
             "question": "Define sample space and its notation."
@@ -2130,6 +2419,7 @@
           "back": "The set of all possible outcomes of an experiment.  Denoted by S, with size n(S)."
         },
         {
+          "id": "225fcf0fd696518e3a3fe625863c33118dc8141f",
           "front": {
             "title": "Event",
             "question": "What is an event in probability?"
@@ -2137,6 +2427,7 @@
           "back": "A specific set of outcomes of an experiment. Denoted by E, with size n(E)."
         },
         {
+          "id": "30a0f78fe132eded9e743a17b823bdf7310148e5",
           "front": {
             "title": "Probability",
             "question": "Define probability and its range."
@@ -2144,6 +2435,7 @@
           "back": "A real number between 0 and 1 describing the likelihood of an event occurring. 0 means it never occurs, 1 means it always occurs."
         },
         {
+          "id": "7fc7dcc9fd34407a1f35365287e6c5ae5d5b0465",
           "front": {
             "title": "Theoretical Probability",
             "question": "How do you calculate theoretical probability?"
@@ -2151,6 +2443,7 @@
           "back": "When all outcomes are equally likely, it's the ratio of the number of favorable outcomes to the total number of possible outcomes:  P(E) = n(E) / n(S)"
         },
         {
+          "id": "9055a482ac12f1217854e8f7065f4b0366282eb5",
           "front": {
             "title": "Relative Frequency",
             "question": "How do you calculate relative frequency?"
@@ -2158,6 +2451,7 @@
           "back": "The number of times an event occurs divided by the total number of trials: f = p/n (where p is positive trials and n is total trials)."
         },
         {
+          "id": "beb7d11242cd64180962fff3232e7baf6d2c6673",
           "front": {
             "title": "Union of Events",
             "question": "What is the union of two events?"
@@ -2165,6 +2459,7 @@
           "back": "A new set containing all elements in at least one of the two sets (A∪B or A or B)."
         },
         {
+          "id": "c1ac0f5aa330a1b9b9dbdbfdc0776e431c2fe18a",
           "front": {
             "title": "Intersection of Events",
             "question": "What is the intersection of two events?"
@@ -2172,6 +2467,7 @@
           "back": "A new set containing all elements in both sets (A∩B or A and B)."
         },
         {
+          "id": "318ccfb676cf99c79b35bd0b3255aed40729935f",
           "front": {
             "title": "Probability of the Sample Space",
             "question": "What is the probability of the sample space?"
@@ -2179,6 +2475,7 @@
           "back": "P(S) = 1"
         },
         {
+          "id": "59f61a0b1dc3a5389a9ce810e788bdce2ee3936c",
           "front": {
             "title": "Probability of the Union of Two Events",
             "question": "Give the formula for the probability of the union of two events."
@@ -2186,6 +2483,7 @@
           "back": "P(A∪B) = P(A) + P(B) - P(A∩B)"
         },
         {
+          "id": "67ae969e439188c6fe3f8f72d4809962a00f2752",
           "front": {
             "title": "Mutually Exclusive Events",
             "question": "Define mutually exclusive events."
@@ -2193,6 +2491,7 @@
           "back": "Two events that cannot occur at the same time."
         },
         {
+          "id": "5edaf2a87330d63f74543067701973585c4d5061",
           "front": {
             "title": "Complement of a Set",
             "question": "What is the complement of a set A?"
@@ -2200,6 +2499,7 @@
           "back": "A set containing all elements not in A (A' or not(A))."
         },
         {
+          "id": "06c0b036b558f8945a97243adb0eb7361fe453e8",
           "front": {
             "title": "Complementary Events",
             "question": "What are the characteristics of complementary events?"
@@ -2207,15 +2507,17 @@
           "back": "They are mutually exclusive (A∩A' = Ø) and their union covers the sample space (A∪A' = S). Their probabilities sum to 1: P(A) + P(A') = 1."
         }
       ],
-      "color": "#3498DB",
+      "deckId": "C4L14",
+      "courseId": 4,
       "lessonId": 14,
-      "courseId": 4
+      "color": "#3498DB"
     },
     {
       "title": "Arithmetic Sequences",
       "icon": "🧮",
       "cards": [
         {
+          "id": "962dfdb7a2f4a11239e1c9f9a3439ad1a1aac573",
           "front": {
             "title": "General Term of an Arithmetic Sequence",
             "question": "How do you express the nth term of an arithmetic sequence?"
@@ -2223,6 +2525,7 @@
           "back": "The nth term, T<sub>n</sub>, represents the general term of an arithmetic sequence."
         },
         {
+          "id": "efa21cde7359b7c8401d7ed0e2905fe336aa7630",
           "front": {
             "title": "Common Difference",
             "question": "How is the common difference (d) of an arithmetic sequence defined?"
@@ -2230,6 +2533,7 @@
           "back": "The common difference, d, is the difference between any two consecutive terms:  d = T<sub>n</sub> - T<sub>n-1</sub>"
         },
         {
+          "id": "66a832eae113c3d6b1be7cdd694f8091cd139d0e",
           "front": {
             "title": "Formula for the nth term",
             "question": "What is the general formula to find any term in an arithmetic sequence?"
@@ -2237,15 +2541,17 @@
           "back": "While a specific formula isn't provided in the notes,  you can derive one using the common difference. For example, if you know the first term (T<sub>1</sub>) and the common difference (d), the nth term can be calculated as T<sub>n</sub> = T<sub>1</sub> + (n-1)d"
         }
       ],
-      "color": "#3498DB",
+      "deckId": "C4L2",
+      "courseId": 4,
       "lessonId": 2,
-      "courseId": 4
+      "color": "#3498DB"
     },
     {
       "title": "Linear and Quadratic Equations and Inequalities",
       "icon": "🧮",
       "cards": [
         {
+          "id": "fd9abeddfa429b75e5add05f29c8c4fbe52a1692",
           "front": {
             "title": "Linear Equation",
             "question": "What is a linear equation and how many solutions does it have?"
@@ -2253,6 +2559,7 @@
           "back": "A linear equation has a variable with an exponent of 1. It has at most one solution."
         },
         {
+          "id": "a5ae2dcc647444f28e9c3f21380f1fdf4ea21658",
           "front": {
             "title": "Quadratic Equation",
             "question": "What is a quadratic equation and how many solutions does it have?"
@@ -2260,6 +2567,7 @@
           "back": "A quadratic equation has a variable with an exponent of at most 2. It has at most two solutions."
         },
         {
+          "id": "d1292c9ffcd8e883b6173695a4a812f1d61d0b22",
           "front": {
             "title": "System of Simultaneous Equations",
             "question": "How many equations are needed to solve for two unknown variables, and what are the methods to solve them?"
@@ -2267,6 +2575,7 @@
           "back": "Two equations are required.  Methods include algebraic solutions (substitution or elimination) and graphical solutions (finding the point of intersection)."
         },
         {
+          "id": "b5d4a3322276adb5ef03271e7b753dbb87cd8208",
           "front": {
             "title": "Literal Equations",
             "question": "What are literal equations?"
@@ -2274,6 +2583,7 @@
           "back": "Literal equations contain several letters and variables."
         },
         {
+          "id": "88fd48a1da149915edc90e78126e432b63a92fcb",
           "front": {
             "title": "Linear Inequality",
             "question": "How is a linear inequality similar to a linear equation, and what happens when multiplying/dividing by a negative number?"
@@ -2281,15 +2591,17 @@
           "back": "Similar to a linear equation, but uses inequality symbols (<, >, ≤, ≥).  When multiplying or dividing both sides by a negative number, the inequality sign reverses."
         }
       ],
-      "color": "#3498DB",
+      "deckId": "C4L3",
+      "courseId": 4,
       "lessonId": 3,
-      "courseId": 4
+      "color": "#3498DB"
     },
     {
       "title": "Trigonometric Ratios and Equations",
       "icon": "📐",
       "cards": [
         {
+          "id": "ac35699343dc7b731b3006e12a25e812b62058df",
           "front": {
             "title": "Sine, Cosine, Tangent",
             "question": "Define the trigonometric ratios sin θ, cos θ, and tan θ for a right-angled triangle."
@@ -2297,6 +2609,7 @@
           "back": "In a right-angled triangle:\n\n* sin θ = opposite / hypotenuse = y / r\n* cos θ = adjacent / hypotenuse = x / r\n* tan θ = opposite / adjacent = y / x"
         },
         {
+          "id": "a622a4aac5648bf6eb6a30aba3d405bf40fd6fc1",
           "front": {
             "title": "Reciprocal Trigonometric Ratios",
             "question": "What are the reciprocal trigonometric ratios and how are they defined?"
@@ -2304,6 +2617,7 @@
           "back": "The reciprocal ratios are:\n\n* cosec θ = 1 / sin θ = hypotenuse / opposite = r / y\n* sec θ = 1 / cos θ = hypotenuse / adjacent = r / x\n* cot θ = 1 / tan θ = adjacent / opposite = x / y"
         },
         {
+          "id": "a2eee5bfacf113650e1ff8823c39d6b4a551ee67",
           "front": {
             "title": "Solving Trigonometric Equations",
             "question": "How can we solve simple trigonometric equations?"
@@ -2311,6 +2625,7 @@
           "back": "We can use the principles of solving equations and the trigonometric ratios to solve simple trigonometric equations."
         },
         {
+          "id": "1b962bbf52b514b1b0ab427adad9f4005528aa74",
           "front": {
             "title": "Special Angles",
             "question": "For which angles can we easily find the values of sin, cos, and tan without a calculator?"
@@ -2318,6 +2633,7 @@
           "back": "We can easily find the values of sin, cos, and tan for 0°, 30°, 45°, 60°, and 90° without a calculator."
         },
         {
+          "id": "4d2b6a46491811a34f49ffb14d0de85a589cb86b",
           "front": {
             "title": "Extending Trigonometric Ratios",
             "question": "How can the definitions of trigonometric ratios be extended?"
@@ -2325,15 +2641,17 @@
           "back": "The definitions of the trigonometric ratios can be extended to any angle."
         }
       ],
-      "color": "#3498DB",
+      "deckId": "C4L4",
+      "courseId": 4,
       "lessonId": 4,
-      "courseId": 4
+      "color": "#3498DB"
     },
     {
       "title": "Characteristics and Properties of Functions",
       "icon": "📈",
       "cards": [
         {
+          "id": "4592b5fe6ba3dd7064d3f76fdec14fe2be54676e",
           "front": {
             "title": "Independent and Dependent Variables",
             "question": "What are independent and dependent variables in a function?"
@@ -2341,6 +2659,7 @@
           "back": "The independent variable (x) is freely chosen, while the dependent variable (y) is calculated based on the x-value."
         },
         {
+          "id": "b4b58369dbfc98aaeec7ab1fb0e3e97e2b2f89f6",
           "front": {
             "title": "Domain and Range",
             "question": "Define the domain and range of a function."
@@ -2348,6 +2667,7 @@
           "back": "The domain is the set of all possible x-values. The range is the set of all resulting y-values."
         },
         {
+          "id": "476e8e1f19485cb931b0be70c8d915e2555643c9",
           "front": {
             "title": "Asymptote",
             "question": "What is an asymptote?"
@@ -2355,6 +2675,7 @@
           "back": "An asymptote is a line that a function's graph approaches but never touches."
         },
         {
+          "id": "004b1a0bc7d939a492e7e252ca87746178681292",
           "front": {
             "title": "Linear Function",
             "question": "What is the general form of a linear function?"
@@ -2362,6 +2683,7 @@
           "back": "y = ax + q"
         },
         {
+          "id": "a9fc292fe020c26a65cc76a422d6194c22877441",
           "front": {
             "title": "Parabolic Function",
             "question": "What is the general form of a parabolic function?"
@@ -2369,6 +2691,7 @@
           "back": "y = ax² + q"
         },
         {
+          "id": "b3c5cad591a79a171bf2651c06f333614900289a",
           "front": {
             "title": "Hyperbolic Function",
             "question": "What is the general form of a hyperbolic function?"
@@ -2376,6 +2699,7 @@
           "back": "y = a/x + q"
         },
         {
+          "id": "c8566275811e6a98295359b06e3358d1bda12ce9",
           "front": {
             "title": "Exponential Function",
             "question": "What is the general form of an exponential function?"
@@ -2383,6 +2707,7 @@
           "back": "y = abˣ + q"
         },
         {
+          "id": "024a1a6709a0a40eb9498d3eea57b68906cf9f05",
           "front": {
             "title": "Trigonometric Functions",
             "question": "Give examples of general forms for trigonometric functions."
@@ -2390,15 +2715,17 @@
           "back": "y = a sin θ + q\ny = a cos θ + q\ny = a tan θ + q"
         }
       ],
-      "color": "#3498DB",
+      "deckId": "C4L5",
+      "courseId": 4,
       "lessonId": 5,
-      "courseId": 4
+      "color": "#3498DB"
     },
     {
       "title": "Quadrilaterals and the Mid-Point Theorem",
       "icon": "🫗",
       "cards": [
         {
+          "id": "558f83cfd39051ddd9396b412143db2f18f9919f",
           "front": {
             "title": "Quadrilateral",
             "question": "What is a quadrilateral?"
@@ -2406,6 +2733,7 @@
           "back": "A closed shape with four straight line segments."
         },
         {
+          "id": "d7e8335285c401323e9196ef3dcc6f6c3fde838e",
           "front": {
             "title": "Parallelogram",
             "question": "What are the properties of a parallelogram?"
@@ -2413,6 +2741,7 @@
           "back": "Both pairs of opposite sides are parallel and equal in length. Both pairs of opposite angles are equal. Diagonals bisect each other."
         },
         {
+          "id": "fc709c809bd382b0c1c802ed3d190a94a373b41c",
           "front": {
             "title": "Rectangle",
             "question": "What are the properties of a rectangle?"
@@ -2420,6 +2749,7 @@
           "back": "A parallelogram with all four angles equal to 90°.  Opposite sides are parallel and equal. Diagonals bisect each other and are equal in length."
         },
         {
+          "id": "020df0e04bc7fdbaac322eed5bde76bed675a70b",
           "front": {
             "title": "Rhombus",
             "question": "What are the properties of a rhombus?"
@@ -2427,6 +2757,7 @@
           "back": "A parallelogram with all four sides equal in length. Opposite angles are equal. Diagonals bisect each other at 90° and bisect the opposite angles."
         },
         {
+          "id": "202635449d7bcedcfd8a68ea5499f3fff55f44e3",
           "front": {
             "title": "Square",
             "question": "What are the properties of a square?"
@@ -2434,6 +2765,7 @@
           "back": "A rhombus with all four angles equal to 90°.  Opposite sides are parallel. Diagonals bisect each other at 90° and are equal in length. All interior angles are 90° and diagonals bisect opposite angles into 45° angles."
         },
         {
+          "id": "9a0abb322f108732fbf8de68b42b14989d963fbc",
           "front": {
             "title": "Trapezium",
             "question": "What is a trapezium?"
@@ -2441,6 +2773,7 @@
           "back": "A quadrilateral with one pair of opposite sides parallel."
         },
         {
+          "id": "f909fcc0c77d6d1b7b961fd51380c346687eb46d",
           "front": {
             "title": "Kite",
             "question": "What are the properties of a kite?"
@@ -2448,6 +2781,7 @@
           "back": "A quadrilateral with two pairs of adjacent sides equal. One pair of opposite angles are equal. The diagonal between equal sides bisects the other diagonal and bisects the interior angles. Diagonals intersect at 90°."
         },
         {
+          "id": "56ae45c0388cfab42a54b759995f3041ddcb8d59",
           "front": {
             "title": "Mid-point Theorem",
             "question": "State the mid-point theorem."
@@ -2455,15 +2789,17 @@
           "back": "The line joining the mid-points of two sides of a triangle is parallel to the third side and half its length."
         }
       ],
-      "color": "#3498DB",
+      "deckId": "C4L6",
+      "courseId": 4,
       "lessonId": 6,
-      "courseId": 4
+      "color": "#3498DB"
     },
     {
       "title": "Analytical Geometry",
       "icon": "📍",
       "cards": [
         {
+          "id": "a3d49e44671785e1fda96e3b655957b84838174e",
           "front": {
             "title": "Point",
             "question": "How is a point represented?"
@@ -2471,6 +2807,7 @@
           "back": "A point is an ordered pair of numbers written as (x, y)."
         },
         {
+          "id": "0065590c1c3d4e1167fe8b6ad4d79aa26f50596c",
           "front": {
             "title": "Distance Formula",
             "question": "What is the formula for calculating the distance between two points?"
@@ -2478,6 +2815,7 @@
           "back": "```math\nd = √((x₁ - x₂)² + (y₁ - y₂)²)\n```"
         },
         {
+          "id": "92dcc6a3baaa8fd0fe25a0cc70c1fd9b88af5c4c",
           "front": {
             "title": "Gradient",
             "question": "How is the gradient of a line calculated?"
@@ -2485,6 +2823,7 @@
           "back": "The gradient (m) is the ratio of vertical change to horizontal change between two points:\n```math\nm = (y₂ - y₁) / (x₂ - x₁)\n```"
         },
         {
+          "id": "1a54120452203ed957c0e21d020442d2242e7ddf",
           "front": {
             "title": "Equation of a Straight Line",
             "question": "What is the standard form of the equation of a straight line?"
@@ -2492,6 +2831,7 @@
           "back": "y = mx + c, where m is the gradient and c is the y-intercept."
         },
         {
+          "id": "e7606babd81c67960d9f34e41013c33936cff6ab",
           "front": {
             "title": "Equation of a Straight Line (Two-Point Form)",
             "question": "What is the two-point form of the equation of a straight line?"
@@ -2499,6 +2839,7 @@
           "back": "```math\n(y - y₁) / (x - x₁) = (y₂ - y₁) / (x₂ - x₁)\n```"
         },
         {
+          "id": "7181e4737060cb9ac6002b305504535df500e577",
           "front": {
             "title": "Parallel Lines",
             "question": "What is the relationship between the gradients of parallel lines?"
@@ -2506,6 +2847,7 @@
           "back": "Parallel lines have equal gradients."
         },
         {
+          "id": "c2209a11272f464d40fb3ed942eec8f636d0c7ca",
           "front": {
             "title": "Perpendicular Lines",
             "question": "What is the relationship between the gradients of perpendicular lines?"
@@ -2513,6 +2855,7 @@
           "back": "The product of the gradients of perpendicular lines is -1."
         },
         {
+          "id": "df6c088ffada9aad2d021cfc18477e883599f76e",
           "front": {
             "title": "Horizontal Line Gradient",
             "question": "What is the gradient of a horizontal line?"
@@ -2520,6 +2863,7 @@
           "back": "The gradient of a horizontal line is 0."
         },
         {
+          "id": "b26e532cb994597281aaabaf7e1db44990b82f3a",
           "front": {
             "title": "Vertical Line Gradient",
             "question": "What is the gradient of a vertical line?"
@@ -2527,6 +2871,7 @@
           "back": "The gradient of a vertical line is undefined."
         },
         {
+          "id": "ea06491be7aaf91507b6533938b16940ffed50fa",
           "front": {
             "title": "Midpoint Formula",
             "question": "What is the formula for finding the midpoint between two points?"
@@ -2534,15 +2879,17 @@
           "back": "```math\nM(x, y) = ((x₁ + x₂) / 2, (y₁ + y₂) / 2)\n```"
         }
       ],
-      "color": "#3498DB",
+      "deckId": "C4L7",
+      "courseId": 4,
       "lessonId": 7,
-      "courseId": 4
+      "color": "#3498DB"
     },
     {
       "title": "Simple and Compound Interest",
       "icon": "💰",
       "cards": [
         {
+          "id": "63220798536994182c6e784cb73b075f112f4440",
           "front": {
             "title": "Simple Interest",
             "question": "What is the formula for calculating simple interest?"
@@ -2550,6 +2897,7 @@
           "back": "The formula for simple interest is:\n```math\n A = P(1 + in)\n```\nWhere:\n* A = accumulated amount\n* P = principal amount\n* i = interest rate (as a decimal)\n* n = number of years"
         },
         {
+          "id": "a187a8722d409f1e79f8d71a02c97af0a039240b",
           "front": {
             "title": "Compound Interest",
             "question": "How is compound interest calculated?"
@@ -2557,6 +2905,7 @@
           "back": "The formula for compound interest is:\n```math\n A = P(1 + i)^n\n```\nWhere:\n* A = accumulated amount\n* P = principal amount\n* i = interest rate (as a decimal)\n* n = number of years"
         },
         {
+          "id": "77613b54b5e01dd4449869dbbacfdca7a6b390b3",
           "front": {
             "title": "Hire Purchase Repayments",
             "question": "How are hire purchase loan repayments calculated?"
@@ -2564,6 +2913,7 @@
           "back": "Hire purchase loan repayments are calculated using the simple interest formula on the cash price minus the deposit.  Monthly repayments are found by dividing the accumulated amount by the number of months."
         },
         {
+          "id": "9913ae210edc03878c0478cf3deb591b949f1273",
           "front": {
             "title": "Population Growth/Inflation",
             "question": "What formula is used to calculate population growth or inflation?"
@@ -2571,6 +2921,7 @@
           "back": "Population growth and inflation are calculated using the compound interest formula."
         },
         {
+          "id": "073c9bf2209be3b122d355f9244daef029c63d2d",
           "front": {
             "title": "Foreign Exchange Rate",
             "question": "What is a foreign exchange rate?"
@@ -2578,15 +2929,17 @@
           "back": "A foreign exchange rate is the price of one currency in terms of another."
         }
       ],
-      "color": "#3498DB",
+      "deckId": "C4L8",
+      "courseId": 4,
       "lessonId": 8,
-      "courseId": 4
+      "color": "#3498DB"
     },
     {
       "title": "Five Number Summary and Box-and-Whisker Plots",
       "icon": "📊",
       "cards": [
         {
+          "id": "2c66b53c4834e509735846eb1fd2eea7041dc95e",
           "front": {
             "title": "Five Number Summary",
             "question": "What are the five values in a five number summary?"
@@ -2594,6 +2947,7 @@
           "back": "Minimum, First Quartile (Q1), Median (Q2), Third Quartile (Q3), Maximum"
         },
         {
+          "id": "ec75b4f633c74bbf53d9c0cce62c2ffd41df2ce0",
           "front": {
             "title": "Box-and-Whisker Plot",
             "question": "What does a box-and-whisker plot visually represent?"
@@ -2601,6 +2955,7 @@
           "back": "The five number summary: minimum, Q1, median, Q3, and maximum.  The box represents the interquartile range (IQR = Q3 - Q1), and the whiskers extend to the minimum and maximum values."
         },
         {
+          "id": "c6e9f8d0ddaf55336c30ece496421fbf145f2b56",
           "front": {
             "title": "Calculating Quartiles",
             "question": "How do you calculate the quartiles in a data set?"
@@ -2608,6 +2963,7 @@
           "back": "Sort the data.  The median is Q2. Q1 is the median of the lower half of the data, and Q3 is the median of the upper half. If the number of data points is even, the median is the average of the two middle values. For quartiles, use the average of the two surrounding values if necessary."
         },
         {
+          "id": "d43492a8c436bac27448539a0695860c21ad6682",
           "front": {
             "title": "Interquartile Range (IQR)",
             "question": "What is the interquartile range?"
@@ -2615,9 +2971,876 @@
           "back": "The difference between the third quartile (Q3) and the first quartile (Q1): IQR = Q3 - Q1"
         }
       ],
-      "color": "#3498DB",
+      "deckId": "C4L9",
+      "courseId": 4,
       "lessonId": 9,
-      "courseId": 4
+      "color": "#3498DB"
+    },
+    {
+      "title": "Quadratic Equations and their Roots",
+      "icon": "二次方程式",
+      "cards": [
+        {
+          "id": "dfac2fef674aa58556a8e28306cbe751c6b2edbe",
+          "front": {
+            "title": "Zero Product Law",
+            "question": "What does the zero product law state?"
+          },
+          "back": "If a × b = 0, then a = 0 or b = 0 (or both)."
+        },
+        {
+          "id": "f2053c7c085eacf8df3bd15e15eabd2cc12295cf",
+          "front": {
+            "title": "Quadratic Formula",
+            "question": "What is the quadratic formula?"
+          },
+          "back": "```math\nx =  ─────\n     -b ± √(b² - 4ac)\n       2a\n```"
+        },
+        {
+          "id": "9b2f70ffce2acf2751f5ec7320e9d23b41cf940f",
+          "front": {
+            "title": "Discriminant",
+            "question": "What is the discriminant and what does it tell us about the roots of a quadratic equation?"
+          },
+          "back": "The discriminant (Δ) is b² - 4ac.  \n* Δ < 0: Non-real roots\n* Δ = 0: Real and equal roots\n* Δ > 0: Real and unequal roots (rational if Δ is a perfect square, irrational otherwise)."
+        },
+        {
+          "id": "bc8662cfebb5647240d471d08a06df3e300ad76a",
+          "front": {
+            "title": "Completing the Square",
+            "question": "How do you complete the square to solve a quadratic equation?"
+          },
+          "back": "Rewrite the quadratic expression in the form a(x + p)² + q.  This involves finding the values of 'p' and 'q' that make the expression equivalent to the original."
+        },
+        {
+          "id": "8fa93af6f737a78c7c6a6dc6799f99c094ac6df8",
+          "front": {
+            "title": "Standard Form of a Quadratic Equation",
+            "question": "What is the standard form of a quadratic equation?"
+          },
+          "back": "ax² + bx + c = 0, where a, b, and c are constants and a ≠ 0."
+        },
+        {
+          "id": "b7d314397256e20ba4594199264941de6a1144f6",
+          "front": {
+            "title": "Nature of Roots based on Discriminant",
+            "question": "What does the sign of the discriminant tell us about the nature of the roots?"
+          },
+          "back": "Positive discriminant: Two distinct real roots.\nZero discriminant: One real root (repeated).\nNegative discriminant: Two complex roots (non-real)."
+        },
+        {
+          "id": "09cd0e5a367e63fa1073aaf69f0c6f4cfbf80ca1",
+          "front": {
+            "title": "Finding a Quadratic Equation from its Roots",
+            "question": "How can you find a quadratic equation given its roots?"
+          },
+          "back": "If the roots are α and β, then the equation is (x - α)(x - β) = 0.  Expand and simplify to standard form."
+        }
+      ],
+      "deckId": "C5L1",
+      "courseId": 5,
+      "lessonId": 1,
+      "color": "#00FFFF"
+    },
+    {
+      "title": "Descriptive Statistics",
+      "icon": "📊",
+      "cards": [
+        {
+          "id": "999570bca690826d264f7407a8c4beb3962fba97",
+          "front": {
+            "title": "Histogram",
+            "question": "What does a histogram visually represent?"
+          },
+          "back": "A histogram visualizes the frequency of different events. Each rectangle represents an event, and its height corresponds to the event's frequency."
+        },
+        {
+          "id": "f55f0f375985d1b8e1132898fae41a7b1a2d1bf8",
+          "front": {
+            "title": "Frequency Polygon",
+            "question": "How does a frequency polygon relate to a histogram?"
+          },
+          "back": "A frequency polygon represents the same data as a histogram but uses lines and points instead of rectangles.  It connects the midpoints of the tops of the histogram's rectangles."
+        },
+        {
+          "id": "e4d357fc3ff3f588521accfa44689413101befdb",
+          "front": {
+            "title": "Ogive (Cumulative Histogram)",
+            "question": "What does an ogive show?"
+          },
+          "back": "An ogive displays the cumulative frequency—the total number of occurrences of a value or any value less than it.  The first count is always zero, and the last is the sum of all counts."
+        },
+        {
+          "id": "796bdfa7613700ed42f36213001ece4da59825a1",
+          "front": {
+            "title": "Variance",
+            "question": "What is the formula for variance?"
+          },
+          "back": "```math\nσ² = 1/n * Σᵢ₌₁ⁿ (xᵢ - x̄)²\n```\nWhere: σ² is the variance, n is the number of data points, xᵢ represents individual data points, and x̄ is the mean."
+        },
+        {
+          "id": "c3975fe497b5c8d6bd0a6ff14357b9dedd91a17e",
+          "front": {
+            "title": "Standard Deviation",
+            "question": "How is standard deviation related to variance?"
+          },
+          "back": "The standard deviation (σ) is the square root of the variance: \n```math\nσ = √(1/n * Σᵢ₌₁ⁿ (xᵢ - x̄)²)\n```\nIt's measured in the same units as the data, unlike variance."
+        },
+        {
+          "id": "e127d110e93eda40073e6721d08d477e78c21c72",
+          "front": {
+            "title": "Symmetric Distribution",
+            "question": "Describe the characteristics of a symmetric distribution."
+          },
+          "back": "In a symmetric distribution, the mean is approximately equal to the median, and the tails of the distribution are balanced."
+        },
+        {
+          "id": "6c030f3a699936e58c585da60f738be3ab00bed7",
+          "front": {
+            "title": "Right (Positively) Skewed Distribution",
+            "question": "What are the characteristics of a right-skewed distribution?"
+          },
+          "back": "In a right-skewed distribution:\n* The mean is greater than the median.\n* The right tail is longer than the left tail.\n* The median is closer to the first quartile than the third."
+        },
+        {
+          "id": "04e3afd4b5cb2740308151cc0116695f5d198d56",
+          "front": {
+            "title": "Left (Negatively) Skewed Distribution",
+            "question": "What are the characteristics of a left-skewed distribution?"
+          },
+          "back": "In a left-skewed distribution:\n* The mean is less than the median.\n* The left tail is longer than the right tail.\n* The median is closer to the third quartile than the first."
+        },
+        {
+          "id": "70796ce47593eb497106749a1d241e01adce7cd9",
+          "front": {
+            "title": "Outlier",
+            "question": "What is an outlier?"
+          },
+          "back": "An outlier is a data point that significantly differs from the rest of the data."
+        }
+      ],
+      "deckId": "C5L10",
+      "courseId": 5,
+      "lessonId": 10,
+      "color": "#00FFFF"
+    },
+    {
+      "title": "Analytical Geometry Formulas",
+      "icon": "📐",
+      "cards": [
+        {
+          "id": "cf5345a450d7aca69d1f6dfc1e1bf9f2d1626a13",
+          "front": {
+            "title": "Distance Between Two Points",
+            "question": "How do you calculate the distance between two points (x₁, y₁) and (x₂, y₂)? "
+          },
+          "back": "The distance, *d*, is calculated using the formula:\n```math\n     √((x₂ - x₁)² + (y₂ - y₁)²) \n```"
+        },
+        {
+          "id": "06a5799bb153d30264dc7b6c55a55e5eb7000e0d",
+          "front": {
+            "title": "Gradient of a Line",
+            "question": "What is the formula for the gradient (*m*) of a line passing through two points (x₁, y₁) and (x₂, y₂)? "
+          },
+          "back": "The gradient is given by:\n```math\n     y₂ - y₁\n  ───────\n     x₂ - x₁\n```"
+        },
+        {
+          "id": "72152ddafd5c7cc5ee52bf87ed8c6c14b01d3b49",
+          "front": {
+            "title": "Midpoint of a Line Segment",
+            "question": "How do you find the midpoint of a line segment connecting (x₁, y₁) and (x₂, y₂)? "
+          },
+          "back": "The midpoint, M(x, y), is:\n```math\n     x₁ + x₂     y₁ + y₂\n  (───────, ───────)\n       2         2\n```"
+        },
+        {
+          "id": "3ba9db8c15dd7600fcdcf161a723971019cbf895",
+          "front": {
+            "title": "Parallel Lines",
+            "question": "What is the relationship between the gradients of parallel lines?"
+          },
+          "back": "Parallel lines have equal gradients:  m₁ = m₂"
+        },
+        {
+          "id": "c098d3bd58b5bd0a1bb94a94d5047257ad65d17f",
+          "front": {
+            "title": "Perpendicular Lines",
+            "question": "How are the gradients of perpendicular lines related?"
+          },
+          "back": "For perpendicular lines, the product of their gradients is -1: m₁ * m₂ = -1"
+        },
+        {
+          "id": "d2bbd38016ee067ade8226cec660120db5bc6e64",
+          "front": {
+            "title": "General Form of a Straight Line",
+            "question": "What is the general form of the equation of a straight line?"
+          },
+          "back": "The general form is: ax + by + c = 0"
+        },
+        {
+          "id": "d60299e5f188f1a4d937af55a45e4a3eac73530b",
+          "front": {
+            "title": "Two-Point Form of a Straight Line",
+            "question": "Give the two-point form of a straight line equation."
+          },
+          "back": "The equation is:\n```math\n     y - y₁     y₂ - y₁\n  ─────── = ───────\n     x - x₁     x₂ - x₁\n```"
+        },
+        {
+          "id": "f5629d7d21e8766ec2afef9effd5083c3bee2e1b",
+          "front": {
+            "title": "Gradient-Point Form of a Straight Line",
+            "question": "What is the gradient-point form of a straight line equation?"
+          },
+          "back": "The equation is: y - y₁ = m(x - x₁)"
+        },
+        {
+          "id": "e49d2e33e3ad15e7311dad3fb7e9ac936f90d062",
+          "front": {
+            "title": "Gradient-Intercept Form of a Straight Line",
+            "question": "What is the gradient-intercept (standard) form of a straight line equation?"
+          },
+          "back": "The equation is: y = mx + c"
+        },
+        {
+          "id": "0a5f6b8c60db7d0f9bc8569f2e1e0d8ebacee5e9",
+          "front": {
+            "title": "Angle of Inclination",
+            "question": "How is the angle of inclination (θ) of a line related to its gradient?"
+          },
+          "back": "The gradient, *m*, is the tangent of the angle of inclination: m = tan θ"
+        }
+      ],
+      "deckId": "C5L3",
+      "courseId": 5,
+      "lessonId": 3,
+      "color": "#00FFFF"
+    },
+    {
+      "title": "Grade 11 Functions Summary",
+      "icon": "📈",
+      "cards": [
+        {
+          "id": "d680beb9c41613190fe29e3b4e1a17ec82f68a24",
+          "front": {
+            "title": "Parabolic Functions",
+            "question": "What are the key features of a parabolic function?"
+          },
+          "back": "Standard form: `y = ax² + bx + c`\n* y-intercept: `(0; c)`\n* x-intercept: `x = (-b ± √(b² - 4ac)) / 2a`\n* Turning point: `(-b/2a; -b²/4a + c)`\n* Axis of symmetry: `x = -b/2a`\nCompleted square form: `y = a(x + p)² + q`\n* Turning point: `(-p; q)`\n* `p > 0`: horizontal shift left\n* `p < 0`: horizontal shift right\n* `q > 0`: vertical shift up\n* `q < 0`: vertical shift down"
+        },
+        {
+          "id": "0ac8304ae37a6892a63c06e9c5c9fbc320434031",
+          "front": {
+            "title": "Average Gradient",
+            "question": "How do you calculate the average gradient?"
+          },
+          "back": "Average gradient = `(y₂ - y₁) / (x₂ - x₁)`"
+        },
+        {
+          "id": "158980f2175e0bc3bc057acd92ee5710500a65ab",
+          "front": {
+            "title": "Hyperbolic Functions",
+            "question": "Describe the key features of a hyperbolic function and its shifted form."
+          },
+          "back": "Standard form: `y = k/x`\n* `k > 0`: first and third quadrants\n* `k < 0`: second and fourth quadrants\nShifted form: `y = k/(x + p) + q`\n* `p > 0`: horizontal shift left\n* `p < 0`: horizontal shift right\n* `q > 0`: vertical shift up\n* `q < 0`: vertical shift down\n* Asymptotes: `x = -p` and `y = q`"
+        },
+        {
+          "id": "b036003db4dab8a6f035cb8b234c369a7fea1c8d",
+          "front": {
+            "title": "Exponential Functions",
+            "question": "Explain the behavior of exponential functions and their shifted forms."
+          },
+          "back": "Standard form: `y = abˣ`\n* `a > 0`: above x-axis\n* `a < 0`: below x-axis\n* `b > 1`: increasing function if `a > 0`; decreasing if `a < 0`\n* `0 < b < 1`: decreasing function if `a > 0`; increasing if `a < 0`\nShifted form: `y = ab^(x + p) + q`\n* `p > 0`: horizontal shift left\n* `p < 0`: horizontal shift right\n* `q > 0`: vertical shift up\n* `q < 0`: vertical shift down\n* Asymptote: `y = q`"
+        },
+        {
+          "id": "5685f89a1391eee7613c201841aa64c1da529bec",
+          "front": {
+            "title": "Sine Functions",
+            "question": "What are the key features of a shifted sine function?"
+          },
+          "back": "Shifted form: `y = a sin(kθ + p) + q`\n* Period = `360°/|k|`\n* `k > 1` or `k < -1`: period decreases\n* `0 < k < 1` or `-1 < k < 0`: period increases\n* `p > 0`: horizontal shift left\n* `p < 0`: horizontal shift right\n* `q > 0`: vertical shift up\n* `q < 0`: vertical shift down\n* `sin(-θ) = -sin θ`"
+        },
+        {
+          "id": "11c86e731717c09c751d9892ec32d04dfd7d7fe5",
+          "front": {
+            "title": "Cosine Functions",
+            "question": "What are the key features of a shifted cosine function?"
+          },
+          "back": "Shifted form: `y = a cos(kθ + p) + q`\n* Period = `360°/|k|`\n* `k > 1` or `k < -1`: period decreases\n* `0 < k < 1` or `-1 < k < 0`: period increases\n* `p > 0`: horizontal shift left\n* `p < 0`: horizontal shift right\n* `q > 0`: vertical shift up\n* `q < 0`: vertical shift down\n* `cos(-θ) = cos θ`"
+        },
+        {
+          "id": "c6adaaff0f6a083797e699107dedae359a8bf700",
+          "front": {
+            "title": "Tangent Functions",
+            "question": "What are the key features of a shifted tangent function?"
+          },
+          "back": "Shifted form: `y = a tan(kθ + p) + q`\n* Period = `180°/|k|`\n* `k > 1` or `k < -1`: period decreases\n* `0 < k < 1` or `-1 < k < 0`: period increases\n* `p > 0`: horizontal shift left\n* `p < 0`: horizontal shift right\n* `q > 0`: vertical shift up\n* `q < 0`: vertical shift down\n* `tan(-θ) = -tan θ`\n* Asymptotes: `(90° - p)/k ± 180°n/k`, `n ∈ ℤ`"
+        }
+      ],
+      "deckId": "C5L4",
+      "courseId": 5,
+      "lessonId": 4,
+      "color": "#00FFFF"
+    },
+    {
+      "title": "Trigonometric Identities and Rules",
+      "icon": "📐",
+      "cards": [
+        {
+          "id": "bc56e8cff97a5d07368b6b13992781431475bfb6",
+          "front": {
+            "title": "Square Identity",
+            "question": "What is the Pythagorean identity relating sine and cosine?"
+          },
+          "back": "```math\ncos²θ + sin²θ = 1\n```"
+        },
+        {
+          "id": "8dd78b51dff14c04c40c3289c8c866b069672979",
+          "front": {
+            "title": "Quotient Identity",
+            "question": "How is tangent defined in terms of sine and cosine?"
+          },
+          "back": "```math\ntanθ = sinθ / cosθ\n```"
+        },
+        {
+          "id": "27bcf13b0625e17397477f9820f2f77548bf59d9",
+          "front": {
+            "title": "Negative Angle Identities (Sine)",
+            "question": "How does the sine of a negative angle relate to the sine of the positive angle?"
+          },
+          "back": "```math\nsin(-θ) = -sinθ\n```"
+        },
+        {
+          "id": "9acd1d7cda418c7f5c633d1c36d0e9c721387b85",
+          "front": {
+            "title": "Negative Angle Identities (Cosine)",
+            "question": "How does the cosine of a negative angle relate to the cosine of the positive angle?"
+          },
+          "back": "```math\ncos(-θ) = cosθ\n```"
+        },
+        {
+          "id": "fd89f32ffd1831ea0bd0bcfbee84d632d8683b02",
+          "front": {
+            "title": "Periodicity Identity (Sine)",
+            "question": "What is the period of the sine function?"
+          },
+          "back": "```math\nsin(θ ± 360°) = sinθ\n```"
+        },
+        {
+          "id": "2105b9b87a343b4a6072a75660f42a3aec80f7a1",
+          "front": {
+            "title": "Periodicity Identity (Cosine)",
+            "question": "What is the period of the cosine function?"
+          },
+          "back": "```math\ncos(θ ± 360°) = cosθ\n```"
+        },
+        {
+          "id": "ea05d532938ca64f02ceab476d24bdf28206cd5b",
+          "front": {
+            "title": "Cofunction Identity (Sine and Cosine)",
+            "question": "How are sine and cosine related as cofunctions?"
+          },
+          "back": "```math\nsin(90° - θ) = cosθ\ncos(90° - θ) = sinθ\n```"
+        },
+        {
+          "id": "87bdf916edc76de3253ac9c396025096c03db676",
+          "front": {
+            "title": "Sine Rule",
+            "question": "State the sine rule for a triangle."
+          },
+          "back": "```math\nsinA / a = sinB / b = sinC / c\n```"
+        },
+        {
+          "id": "305890aaadd95c6b960828064ad5e2f223436f96",
+          "front": {
+            "title": "Area Rule",
+            "question": "Give the formula for the area of a triangle using two sides and the included angle."
+          },
+          "back": "Area of triangle ABC = 1/2 * b * c * sinA  (or similar variations using other sides and angles)"
+        },
+        {
+          "id": "19273a1b34d91086c8e0007db7b9b34290fc5161",
+          "front": {
+            "title": "Cosine Rule",
+            "question": "State the cosine rule for a triangle."
+          },
+          "back": "```math\na² = b² + c² - 2bc cosA\n``` (and similar variations for b² and c²)"
+        },
+        {
+          "id": "7ecef60c82900d2288e9ae32d6834fa5baaf9785",
+          "front": {
+            "title": "General Solution for sinθ = x",
+            "question": "What is the general solution for θ when sinθ = x?"
+          },
+          "back": "θ = sin⁻¹x + k * 360° or θ = (180° - sin⁻¹x) + k * 360°, where k ∈ ℤ"
+        },
+        {
+          "id": "0cdf5f1cde69025db7f4d238b7ab1163c3008f01",
+          "front": {
+            "title": "General Solution for cosθ = x",
+            "question": "What is the general solution for θ when cosθ = x?"
+          },
+          "back": "θ = cos⁻¹x + k * 360° or θ = (360° - cos⁻¹x) + k * 360°, where k ∈ ℤ"
+        },
+        {
+          "id": "f2d8d23970a5279ad1c5f4280d51f7f6dc885d5b",
+          "front": {
+            "title": "General Solution for tanθ = x",
+            "question": "What is the general solution for θ when tanθ = x?"
+          },
+          "back": "θ = tan⁻¹x + k * 180°, where k ∈ ℤ"
+        }
+      ],
+      "deckId": "C5L5",
+      "courseId": 5,
+      "lessonId": 5,
+      "color": "#00FFFF"
+    },
+    {
+      "title": "Area, Surface Area, and Volume Formulas",
+      "icon": "📐",
+      "cards": [
+        {
+          "id": "0e25f642d849f493e5f592edee6e3f1edb2ce1be",
+          "front": {
+            "title": "Area of a Square",
+            "question": "What is the formula for the area of a square?"
+          },
+          "back": "Area = s² where s is the side length"
+        },
+        {
+          "id": "f6d7622f301511097dc08e51879d69055f1950eb",
+          "front": {
+            "title": "Area of a Rectangle",
+            "question": "How do you calculate the area of a rectangle?"
+          },
+          "back": "Area = b × h where b is the base and h is the height"
+        },
+        {
+          "id": "5b6ac045014370fe065e79545f3945abce64437c",
+          "front": {
+            "title": "Area of a Triangle",
+            "question": "What's the formula for the area of a triangle?"
+          },
+          "back": "Area = ½ × b × h where b is the base and h is the height"
+        },
+        {
+          "id": "27079a58315f6f738f39e0e003f6e9a2f55175f0",
+          "front": {
+            "title": "Area of a Trapezium",
+            "question": "How do you find the area of a trapezium?"
+          },
+          "back": "Area = ½ × (a + b) × h where a and b are the parallel sides and h is the height"
+        },
+        {
+          "id": "f6d7622f301511097dc08e51879d69055f1950eb",
+          "front": {
+            "title": "Area of a Parallelogram",
+            "question": "What is the area formula for a parallelogram?"
+          },
+          "back": "Area = b × h where b is the base and h is the height"
+        },
+        {
+          "id": "18722531e712b41ffdb3979e5e675b19f1b9728b",
+          "front": {
+            "title": "Area of a Circle",
+            "question": "What's the formula for the area of a circle?"
+          },
+          "back": "Area = πr² where r is the radius"
+        },
+        {
+          "id": "4f6da31fa12757d67bff0a1c9ce1a1a1d0d9df52",
+          "front": {
+            "title": "Volume of a Rectangular Prism",
+            "question": "How do you calculate the volume of a rectangular prism?"
+          },
+          "back": "Volume = l × b × h where l is the length, b is the breadth, and h is the height"
+        },
+        {
+          "id": "dc9bb29d9d4cee2fb0d7e8faacd31929aaf79215",
+          "front": {
+            "title": "Volume of a Triangular Prism",
+            "question": "What's the formula for the volume of a triangular prism?"
+          },
+          "back": "Volume = (½ × b × h) × H where b and h are the base and height of the triangle, and H is the prism's height"
+        },
+        {
+          "id": "c379c30b9b7fca4f0945934efc4f8778d548e055",
+          "front": {
+            "title": "Volume of a Cube",
+            "question": "How do you find the volume of a cube?"
+          },
+          "back": "Volume = s³ where s is the side length"
+        },
+        {
+          "id": "9119fea5999e997a6ee68f63b7aef89ba7a2ea4e",
+          "front": {
+            "title": "Volume of a Cylinder",
+            "question": "What's the formula for the volume of a cylinder?"
+          },
+          "back": "Volume = πr² × h where r is the radius and h is the height"
+        },
+        {
+          "id": "78b38e35a217d008375dddebc4bc3b1786ff6f78",
+          "front": {
+            "title": "Surface Area of a Square Pyramid",
+            "question": "What is the surface area formula for a square pyramid?"
+          },
+          "back": "Surface Area = b(b + 2h) where b is the base side length and h is the slant height"
+        },
+        {
+          "id": "67ddb9a475b85ef7e9a37d6483b637b4ac4d7b8a",
+          "front": {
+            "title": "Surface Area of a Triangular Pyramid",
+            "question": "How do you calculate the surface area of a triangular pyramid?"
+          },
+          "back": "Surface Area = ½b(hb + 3hs) where b is the base length, hb is the base height, and hs is the slant height"
+        },
+        {
+          "id": "e86422ee4ccac0340da606c6e8a2e5b9401916e7",
+          "front": {
+            "title": "Surface Area of a Right Cone",
+            "question": "What's the surface area formula for a right cone?"
+          },
+          "back": "Surface Area = πr(r + hs) where r is the radius and hs is the slant height"
+        },
+        {
+          "id": "1fefd1698d8b014ff4ec338c9b7fb60c85b51f7b",
+          "front": {
+            "title": "Surface Area of a Sphere",
+            "question": "How do you find the surface area of a sphere?"
+          },
+          "back": "Surface Area = 4πr² where r is the radius"
+        },
+        {
+          "id": "b1647330d5fe7d88febdf4736a9b2acefcc2e216",
+          "front": {
+            "title": "Volume of a Square Pyramid",
+            "question": "What is the volume formula for a square pyramid?"
+          },
+          "back": "Volume = (⅓) × b² × H where b is the base side length and H is the height"
+        },
+        {
+          "id": "1a8d2a0e518a6c49f803060910e95daa7764fb86",
+          "front": {
+            "title": "Volume of a Triangular Pyramid",
+            "question": "How do you calculate the volume of a triangular pyramid?"
+          },
+          "back": "Volume = (⅓) × (½ × b × h) × H where b and h are the base and height of the triangle, and H is the pyramid's height"
+        },
+        {
+          "id": "2251295d54efcf4a82369a021654e46e4bfc20fe",
+          "front": {
+            "title": "Volume of a Right Cone",
+            "question": "What's the volume formula for a right cone?"
+          },
+          "back": "Volume = (⅓) × πr² × H where r is the radius and H is the height"
+        },
+        {
+          "id": "d235f008a7642ee5933b6bf292ce4a0648c73321",
+          "front": {
+            "title": "Volume of a Sphere",
+            "question": "How do you find the volume of a sphere?"
+          },
+          "back": "Volume = (4/3)πr³ where r is the radius"
+        }
+      ],
+      "deckId": "C5L6",
+      "courseId": 5,
+      "lessonId": 6,
+      "color": "#00FFFF"
+    },
+    {
+      "title": "Circle Geometry Theorems",
+      "icon": "⚪",
+      "cards": [
+        {
+          "id": "53e828693bf19f4e958e6135e876d009b77ac366",
+          "front": {
+            "title": "Arc",
+            "question": "What is an arc?"
+          },
+          "back": "A portion of the circumference of a circle."
+        },
+        {
+          "id": "401d681e5c8ef6232fa031d720023cd9d2f29ba3",
+          "front": {
+            "title": "Chord",
+            "question": "What is a chord?"
+          },
+          "back": "A straight line joining the ends of an arc."
+        },
+        {
+          "id": "86492e70e9af878cef33a81833867ab4b46bb250",
+          "front": {
+            "title": "Circumference",
+            "question": "What is the circumference of a circle?"
+          },
+          "back": "The perimeter or boundary line of a circle."
+        },
+        {
+          "id": "c90c8d75f9e7c590ab943827a157c477dedb3f27",
+          "front": {
+            "title": "Radius",
+            "question": "What is the radius of a circle?"
+          },
+          "back": "Any straight line from the center of the circle to a point on the circumference."
+        },
+        {
+          "id": "fa4bad4d0db15705cff9ffac06cc5f605ee4d7bb",
+          "front": {
+            "title": "Diameter",
+            "question": "What is the diameter of a circle?"
+          },
+          "back": "A chord that passes through the center of the circle. It's twice the length of the radius."
+        },
+        {
+          "id": "d990414ac0e2bc42c7041d6b48f48b78e7988ec2",
+          "front": {
+            "title": "Segment",
+            "question": "What is a segment of a circle?"
+          },
+          "back": "A part of the circle cut off by a chord."
+        },
+        {
+          "id": "77e314be75e247b407744debf2fcf5592a384ac5",
+          "front": {
+            "title": "Tangent",
+            "question": "What is a tangent to a circle?"
+          },
+          "back": "A straight line that touches the circle at only one point on the circumference.  It is perpendicular to the radius at the point of contact."
+        },
+        {
+          "id": "65fcecc16369800913be04f930447974b08eaf54",
+          "front": {
+            "title": "Angle Subtended by an Arc at the Center",
+            "question": "How does the angle subtended by an arc at the center relate to the angle subtended at the circumference?"
+          },
+          "back": "The angle at the center is twice the size of the angle at the circumference."
+        },
+        {
+          "id": "486cac2f760fa1256cbd15cd53ca6f7de72f1a36",
+          "front": {
+            "title": "Angles Subtended by the Same Arc",
+            "question": "What is true about angles at the circumference subtended by the same arc?"
+          },
+          "back": "They are equal."
+        },
+        {
+          "id": "30eed4dd7c60bc8c6b045d83d2b278f00328c9a3",
+          "front": {
+            "title": "Cyclic Quadrilateral",
+            "question": "What is the property of opposite angles in a cyclic quadrilateral?"
+          },
+          "back": "Opposite angles are supplementary (add up to 180°)."
+        },
+        {
+          "id": "486cac2f760fa1256cbd15cd53ca6f7de72f1a36",
+          "front": {
+            "title": "Tangent and Chord Theorem",
+            "question": "What is the relationship between the angle between a tangent and a chord, and the angle in the alternate segment?"
+          },
+          "back": "They are equal."
+        },
+        {
+          "id": "b95ab1900cf464c1c181608f9cbd51dff09d6103",
+          "front": {
+            "title": "Tangents from a Point",
+            "question": "What is true about tangents drawn from the same external point to a circle?"
+          },
+          "back": "The lengths of the tangents are equal."
+        }
+      ],
+      "deckId": "C5L7",
+      "courseId": 5,
+      "lessonId": 7,
+      "color": "#00FFFF"
+    },
+    {
+      "title": "Financial Growth and Decay",
+      "icon": "💰",
+      "cards": [
+        {
+          "id": "b156d1214ea871396cc3c70293cae8e68092df45",
+          "front": {
+            "title": "Simple Interest",
+            "question": "How is the future value calculated with simple interest?"
+          },
+          "back": "Formula:  ```math\nA = P(1 + in)\n``` where A is the future value, P is the principal, i is the interest rate per period, and n is the number of periods."
+        },
+        {
+          "id": "37894a9060ab21bf10224be34074bb59b2cb0424",
+          "front": {
+            "title": "Compound Interest",
+            "question": "How is the future value calculated with compound interest?"
+          },
+          "back": "Formula: ```math\nA = P(1 + i)^n\n``` where A is the future value, P is the principal, i is the interest rate per period, and n is the number of periods."
+        },
+        {
+          "id": "1e7d9a36672447a59feef9c2412e2d3d261bead1",
+          "front": {
+            "title": "Simple Depreciation",
+            "question": "How is the future value calculated with simple depreciation?"
+          },
+          "back": "Formula: ```math\nA = P(1 - in)\n``` where A is the future value, P is the initial value, i is the depreciation rate per period, and n is the number of periods."
+        },
+        {
+          "id": "adabad2b994ec45b056100375a089977d8e57e55",
+          "front": {
+            "title": "Compound Depreciation",
+            "question": "How is the future value calculated with compound depreciation?"
+          },
+          "back": "Formula: ```math\nA = P(1 - i)^n\n``` where A is the future value, P is the initial value, i is the depreciation rate per period, and n is the number of periods."
+        },
+        {
+          "id": "d1ff34bdeab5440b1de92bec2cfa43c094238b88",
+          "front": {
+            "title": "Nominal and Effective Interest Rates",
+            "question": "How are nominal and effective annual interest rates related?"
+          },
+          "back": "Formula: ```math\n1 + i = (1 + i^(m)/m)^m\n``` where i is the effective annual interest rate, and i^(m) is the nominal interest rate compounded m times per year."
+        }
+      ],
+      "deckId": "C5L8",
+      "courseId": 5,
+      "lessonId": 8,
+      "color": "#00FFFF"
+    },
+    {
+      "title": "Basic Probability Concepts",
+      "icon": "🎲",
+      "cards": [
+        {
+          "id": "5838a841a0f5a26cb863275c97e4ae3dff7d832c",
+          "front": {
+            "title": "Outcome",
+            "question": "What is an outcome in probability?"
+          },
+          "back": "A single observation of an experiment."
+        },
+        {
+          "id": "33be2576b1cca6f0a00d2ad3d8a80590e49ab5a6",
+          "front": {
+            "title": "Sample Space",
+            "question": "Define sample space."
+          },
+          "back": "The set of all possible outcomes of an experiment."
+        },
+        {
+          "id": "6ebacbead100a3d1bafcbdcdb5af60a5aeea3ee6",
+          "front": {
+            "title": "Event",
+            "question": "What is an event in probability?"
+          },
+          "back": "A set of outcomes of an experiment."
+        },
+        {
+          "id": "f8e1ce3b70828d421d98e8bc0aa1ab6b1f5a1d91",
+          "front": {
+            "title": "Probability",
+            "question": "How is probability defined?"
+          },
+          "back": "A real number between 0 and 1 that describes how likely an event is to occur."
+        },
+        {
+          "id": "4b0f72b27b9b77629ad33b4c18b76b31b160b876",
+          "front": {
+            "title": "Relative Frequency",
+            "question": "How do you calculate relative frequency?"
+          },
+          "back": "The number of times an event occurs during experimental trials divided by the total number of trials."
+        },
+        {
+          "id": "eae16d924f2540f43125eaf18dce16a3672c739e",
+          "front": {
+            "title": "Union of Events",
+            "question": "What is the union of events A and B?"
+          },
+          "back": "The set of all outcomes that occur in at least one of the events (A or B)."
+        },
+        {
+          "id": "a78540122a572f0e2386892d0aaa2d417b415ade",
+          "front": {
+            "title": "Intersection of Events",
+            "question": "What is the intersection of events A and B?"
+          },
+          "back": "The set of all outcomes that occur in both events (A and B)."
+        },
+        {
+          "id": "3ee1492de0ac299f94f8385d62b8a0650ebc68b7",
+          "front": {
+            "title": "Mutually Exclusive Events",
+            "question": "Define mutually exclusive events."
+          },
+          "back": "Events with no outcomes in common.  (A and B) = Ø"
+        },
+        {
+          "id": "fcaa7cd9ca2d6572f3b0c76c90d26203f86be8ad",
+          "front": {
+            "title": "Complementary Events",
+            "question": "What are complementary events?"
+          },
+          "back": "Two mutually exclusive events that together contain all outcomes in the sample space.  The complement of A is written as 'not A'."
+        },
+        {
+          "id": "71eedd06aa695b8cb131458bc5ad3a78e1faa07c",
+          "front": {
+            "title": "Independent Events",
+            "question": "When are events considered independent?"
+          },
+          "back": "Two events where knowing the outcome of one does not affect the probability of the other. P(A and B) = P(A) * P(B)"
+        },
+        {
+          "id": "9b7fe1295da920183adf134362a67f058238e99f",
+          "front": {
+            "title": "Addition Rule",
+            "question": "State the addition rule for probability."
+          },
+          "back": "P(A or B) = P(A) + P(B) - P(A and B)"
+        },
+        {
+          "id": "da4a47ee13e93d42dadf15ac4343c64e0357ba4d",
+          "front": {
+            "title": "Addition Rule (Mutually Exclusive)",
+            "question": "What is the addition rule for mutually exclusive events?"
+          },
+          "back": "P(A or B) = P(A) + P(B)"
+        },
+        {
+          "id": "c35bb46226dd2d509f4f0984a0ee18e171fb9e26",
+          "front": {
+            "title": "Complementary Rule",
+            "question": "State the complementary rule."
+          },
+          "back": "P(not A) = 1 - P(A)"
+        },
+        {
+          "id": "e1ad2ff3f9ec24898a4d03502ee24fb6f7dae7f3",
+          "front": {
+            "title": "Venn Diagram",
+            "question": "What is a Venn diagram used for?"
+          },
+          "back": "A visual tool to show how events overlap. Regions represent events, containing outcomes, counts, or probabilities."
+        },
+        {
+          "id": "9bb113ab0229f960eacf0fd16b47301a05807055",
+          "front": {
+            "title": "Tree Diagram",
+            "question": "How are tree diagrams used in probability?"
+          },
+          "back": "A visual tool for computing probabilities of dependent events.  Probabilities are multiplied along paths, and path probabilities are added for combinations of outcomes."
+        },
+        {
+          "id": "83aba180cb80df0dc7852b1acdfde292546902a2",
+          "front": {
+            "title": "Two-Way Contingency Table",
+            "question": "What is a two-way contingency table used for?"
+          },
+          "back": "Organising data to determine dependence or independence between two events, each with two outcomes.  Shows counts for all outcome combinations."
+        }
+      ],
+      "deckId": "C5L9",
+      "courseId": 5,
+      "lessonId": 9,
+      "color": "#00FFFF"
     }
   ]
 }

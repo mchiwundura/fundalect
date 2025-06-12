@@ -1,5 +1,5 @@
 import { Pressable, useColorScheme, useWindowDimensions } from "react-native";
-import React, { useEffect } from "react";
+import React, { ReactNode, useEffect } from "react";
 import { StyleSheet } from "react-native";
 import { icon } from "@/constants/icon";
 import Animated, {
@@ -8,14 +8,22 @@ import Animated, {
   useSharedValue,
   withSpring,
 } from "react-native-reanimated";
+import { LabelPosition } from "@react-navigation/bottom-tabs/lib/typescript/src/types";
 
 interface TabBarButtonProps {
   onPress: Function;
-  onLongPress: Function;
+  onLongPress?: Function;
   isFocused: boolean;
   routeName: string;
   color: string;
-  label: string;
+  label:
+    | string
+    | ((props: {
+        focused: boolean;
+        color: string;
+        position: LabelPosition;
+        children: string;
+      }) => ReactNode);
 }
 
 export default function TabBarButton({

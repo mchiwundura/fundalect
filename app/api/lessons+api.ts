@@ -2336,8 +2336,69 @@ const data = {
         "content": "\n## Trigonometric Ratios and Equations\n\n### Trigonometric Ratios\n\nWe can define three basic trigonometric ratios for right-angled triangles: sine (sin), cosine (cos), and tangent (tan).  These are defined as follows:\n\n*   ```math\n      opposite\nsin θ = ───────\n    hypotenuse\n    ```\n*   ```math\n      adjacent\ncos θ = ───────\n    hypotenuse\n    ```\n*   ```math\n      opposite\ntan θ = ───────\n     adjacent\n    ```\n\nWhere θ represents the angle.  We often use a coordinate system where the hypotenuse has length *r*, the opposite side has length *y*, and the adjacent side has length *x*.\n\n\n### Reciprocal Trigonometric Ratios\n\nEach of the basic trigonometric ratios has a reciprocal:\n\n*   cosecant (cosec) = 1 / sin θ = hypotenuse / opposite =  ```math\n                            r\n                       ─────\n                         y\n                       ```\n*   secant (sec) = 1 / cos θ = hypotenuse / adjacent = ```math\n                            r\n                       ─────\n                         x\n                       ```\n*   cotangent (cot) = 1 / tan θ = adjacent / opposite = ```math\n                             x\n                        ─────\n                         y\n                       ```\n\n### Solving Trigonometric Equations\n\nWe can use our knowledge of solving equations and trigonometric ratios to solve simple trigonometric equations.\n\n### Special Angles\n\nFor certain angles (0°, 30°, 45°, 60°, and 90°), the values of sin, cos, and tan can be easily determined without a calculator.\n\n### Extending Trigonometric Ratios\n\nThe definitions of trigonometric ratios can be extended to include any angle, not just those in right-angled triangles.\n"
       },
       {
-        "data": {},
-        "content": "```json\n{\n  \"Title\": \"Characteristics and Properties of Functions\",\n  \"icon\": \"📈\",\n  \"flashcards\": [\n    {\n      \"front\": {\n        \"title\": \"Independent and Dependent Variables\",\n        \"question\": \"What are independent and dependent variables in a function?\"\n      },\n      \"back\": \"The independent variable (x) is freely chosen, while the dependent variable (y) is calculated based on the x-value.\"\n    },\n    {\n      \"front\": {\n        \"title\": \"Domain and Range\",\n        \"question\": \"Define the domain and range of a function.\"\n      },\n      \"back\": \"The domain is the set of all possible x-values. The range is the set of all resulting y-values.\"\n    },\n    {\n      \"front\": {\n        \"title\": \"Asymptote\",\n        \"question\": \"What is an asymptote?\"\n      },\n      \"back\": \"An asymptote is a line that a function's graph approaches but never touches.\"\n    },\n    {\n      \"front\": {\n        \"title\": \"Linear Function\",\n        \"question\": \"What is the general form of a linear function?\"\n      },\n      \"back\": \"y = ax + q\"\n    },\n    {\n      \"front\": {\n        \"title\": \"Parabolic Function\",\n        \"question\": \"What is the general form of a parabolic function?\"\n      },\n      \"back\": \"y = ax² + q\"\n    },\n    {\n      \"front\": {\n        \"title\": \"Hyperbolic Function\",\n        \"question\": \"What is the general form of a hyperbolic function?\"\n      },\n      \"back\": \"y = a/x + q\"\n    },\n    {\n      \"front\": {\n        \"title\": \"Exponential Function\",\n        \"question\": \"What is the general form of an exponential function?\"\n      },\n      \"back\": \"y = abˣ + q\"\n    },\n    {\n      \"front\": {\n        \"title\": \"Trigonometric Functions\",\n        \"question\": \"Give examples of general forms for trigonometric functions.\"\n      },\n      \"back\": \"y = a sin θ + q\\ny = a cos θ + q\\ny = a tan θ + q\"\n    }\n  ]\n}\n```\n\n## Characteristics and Properties of Functions\n\n📈\n\n### Characteristics of Functions\n\n* **Independent and Dependent Variables:** The x-value is the independent variable (freely chosen), and the y-value is the dependent variable (calculated based on x).\n\n* **Domain and Range:** The domain is the set of all possible x-values for which the function is defined.  The range is the set of all resulting y-values.\n\n* **Asymptote:** An asymptote is a line that the graph of a function approaches but never touches.\n\n\n### Special Functions and Their Properties\n\nThe following outlines the general forms of several common functions:\n\n| Function Type      | General Form       |\n|----------------------|--------------------|\n| Linear              | `y = ax + q`       |\n| Parabolic           | `y = ax² + q`      |\n| Hyperbolic          | `y = a/x + q`      |\n| Exponential         | `y = abˣ + q`      |\n| Trigonometric (Sine)| `y = a sin θ + q`  |\n| Trigonometric (Cosine)| `y = a cos θ + q` |\n| Trigonometric (Tangent)| `y = a tan θ + q` |\n\n"
+        "data": {
+          "Title": "Characteristics and Properties of Functions",
+          "icon": "📈",
+          "flashcards": [
+            {
+              "front": {
+                "title": "Independent and Dependent Variables",
+                "question": "What are independent and dependent variables in a function?"
+              },
+              "back": "The independent variable (x) is freely chosen, while the dependent variable (y) is calculated based on the x-value."
+            },
+            {
+              "front": {
+                "title": "Domain and Range",
+                "question": "Define the domain and range of a function."
+              },
+              "back": "The domain is the set of all possible x-values. The range is the set of all resulting y-values."
+            },
+            {
+              "front": {
+                "title": "Asymptote",
+                "question": "What is an asymptote?"
+              },
+              "back": "An asymptote is a line that a function's graph approaches but never touches."
+            },
+            {
+              "front": {
+                "title": "Linear Function",
+                "question": "What is the general form of a linear function?"
+              },
+              "back": "y = ax + q"
+            },
+            {
+              "front": {
+                "title": "Parabolic Function",
+                "question": "What is the general form of a parabolic function?"
+              },
+              "back": "y = ax² + q"
+            },
+            {
+              "front": {
+                "title": "Hyperbolic Function",
+                "question": "What is the general form of a hyperbolic function?"
+              },
+              "back": "y = a/x + q"
+            },
+            {
+              "front": {
+                "title": "Exponential Function",
+                "question": "What is the general form of an exponential function?"
+              },
+              "back": "y = abˣ + q"
+            },
+            {
+              "front": {
+                "title": "Trigonometric Functions",
+                "question": "Give examples of general forms for trigonometric functions."
+              },
+              "back": "y = a sin θ + q\ny = a cos θ + q\ny = a tan θ + q"
+            }
+          ]
+        },
+        "content": " \n\n## Characteristics and Properties of Functions\n\n📈\n\n### Characteristics of Functions\n\n* **Independent and Dependent Variables:** The x-value is the independent variable (freely chosen), and the y-value is the dependent variable (calculated based on x).\n\n* **Domain and Range:** The domain is the set of all possible x-values for which the function is defined.  The range is the set of all resulting y-values.\n\n* **Asymptote:** An asymptote is a line that the graph of a function approaches but never touches.\n\n\n### Special Functions and Their Properties\n\nThe following outlines the general forms of several common functions:\n\n| Function Type      | General Form       |\n|----------------------|--------------------|\n| Linear              | `y = ax + q`       |\n| Parabolic           | `y = ax² + q`      |\n| Hyperbolic          | `y = a/x + q`      |\n| Exponential         | `y = abˣ + q`      |\n| Trigonometric (Sine)| `y = a sin θ + q`  |\n| Trigonometric (Cosine)| `y = a cos θ + q` |\n| Trigonometric (Tangent)| `y = a tan θ + q` |\n\n"
       },
       {
         "data": {
@@ -2564,6 +2625,768 @@ const data = {
         },
         "content": "\n# Five Number Summary and Box-and-Whisker Plots\n\nThe five number summary is a concise way to summarize a dataset.  It consists of five key values:\n\n* **Minimum:** The smallest value in the dataset.\n* **First Quartile (Q1):** The value that separates the bottom 25% of the data from the top 75%.\n* **Median (Q2):** The middle value of the dataset (or the average of the two middle values if the dataset has an even number of values).\n* **Third Quartile (Q3):** The value that separates the bottom 75% of the data from the top 25%.\n* **Maximum:** The largest value in the dataset.\n\nThese five values can be visually represented using a box-and-whisker plot.  The box represents the interquartile range (IQR), which is the difference between Q3 and Q1 (IQR = Q3 - Q1).  A line inside the box indicates the median.  Whiskers extend from the box to the minimum and maximum values.\n\n\n**Worked Example:**\n\nLet's find the five number summary for the dataset: {1.25, 1.5, 2.5, 2.5, 3.1, 3.2, 4.1, 4.25, 4.75, 4.8, 4.95, 5.1}\n\n1. **Sort the data:** The data is already sorted.\n2. **Minimum:** 1.25\n3. **Maximum:** 5.1\n4. **Median (Q2):**  There are 12 values, so the median is the average of the 6th and 7th values: (3.2 + 4.1) / 2 = 3.65\n5. **First Quartile (Q1):** The median of the lower half (1.25, 1.5, 2.5, 2.5, 3.1, 3.2): (2.5 + 2.5) / 2 = 2.5\n6. **Third Quartile (Q3):** The median of the upper half (4.1, 4.25, 4.75, 4.8, 4.95, 5.1): (4.75 + 4.8) / 2 = 4.775\n\nTherefore, the five number summary is: Minimum = 1.25, Q1 = 2.5, Median = 3.65, Q3 = 4.775, Maximum = 5.1\n\n\n**Additional Examples:**\n\nSeveral additional examples of calculating five-number summaries and constructing box-and-whisker plots from different datasets are omitted for brevity.  The process remains consistent: sort the data, find the minimum, maximum, median, Q1, and Q3.  Then, represent these values graphically in a box-and-whisker plot.\n"
       }
+    ],
+    "5": [
+      {
+        "data": {
+          "Title": "Quadratic Equations and their Roots",
+          "icon": "二次方程式",
+          "flashcards": [
+            {
+              "front": {
+                "title": "Zero Product Law",
+                "question": "What does the zero product law state?"
+              },
+              "back": "If a × b = 0, then a = 0 or b = 0 (or both)."
+            },
+            {
+              "front": {
+                "title": "Quadratic Formula",
+                "question": "What is the quadratic formula?"
+              },
+              "back": "```math\nx =  ─────\n     -b ± √(b² - 4ac)\n       2a\n```"
+            },
+            {
+              "front": {
+                "title": "Discriminant",
+                "question": "What is the discriminant and what does it tell us about the roots of a quadratic equation?"
+              },
+              "back": "The discriminant (Δ) is b² - 4ac.  \n* Δ < 0: Non-real roots\n* Δ = 0: Real and equal roots\n* Δ > 0: Real and unequal roots (rational if Δ is a perfect square, irrational otherwise)."
+            },
+            {
+              "front": {
+                "title": "Completing the Square",
+                "question": "How do you complete the square to solve a quadratic equation?"
+              },
+              "back": "Rewrite the quadratic expression in the form a(x + p)² + q.  This involves finding the values of 'p' and 'q' that make the expression equivalent to the original."
+            },
+            {
+              "front": {
+                "title": "Standard Form of a Quadratic Equation",
+                "question": "What is the standard form of a quadratic equation?"
+              },
+              "back": "ax² + bx + c = 0, where a, b, and c are constants and a ≠ 0."
+            },
+            {
+              "front": {
+                "title": "Nature of Roots based on Discriminant",
+                "question": "What does the sign of the discriminant tell us about the nature of the roots?"
+              },
+              "back": "Positive discriminant: Two distinct real roots.\nZero discriminant: One real root (repeated).\nNegative discriminant: Two complex roots (non-real)."
+            },
+            {
+              "front": {
+                "title": "Finding a Quadratic Equation from its Roots",
+                "question": "How can you find a quadratic equation given its roots?"
+              },
+              "back": "If the roots are α and β, then the equation is (x - α)(x - β) = 0.  Expand and simplify to standard form."
+            }
+          ]
+        },
+        "content": "\n## Quadratic Equations and their Roots\n\n### Key Concepts\n\n* **Zero Product Law:** If the product of two factors is zero, then at least one of the factors must be zero.  This is crucial for solving quadratic equations that can be factored.\n\n* **Quadratic Formula:**  This formula provides the solutions (roots) for any quadratic equation in standard form (ax² + bx + c = 0).\n\n```math\n     -b ± √(b² - 4ac)\nx =  ─────────────\n           2a\n```\n\n* **Discriminant (Δ):** The discriminant, Δ = b² - 4ac, determines the nature of the roots of a quadratic equation.\n\n    * Δ > 0: Two distinct real roots.  These roots are rational if Δ is a perfect square; otherwise, they are irrational.\n    * Δ = 0: One real root (a repeated root).\n    * Δ < 0: Two complex (non-real) roots.\n\n* **Completing the Square:**  A technique to rewrite a quadratic expression into a perfect square trinomial plus a constant, useful for solving equations and finding the vertex of a parabola.\n\n\n* **Standard Form:** The standard form of a quadratic equation is ax² + bx + c = 0, where a, b, and c are constants and a ≠ 0.\n\n\n### Solving Quadratic Equations\n\nQuadratic equations can be solved using various methods, including:\n\n* **Factoring:**  If the quadratic expression can be easily factored, set each factor to zero and solve for x.\n\n* **Quadratic Formula:**  Use the quadratic formula when factoring is difficult or impossible.\n\n* **Completing the Square:**  This method can be useful for solving equations and also for transforming the equation to find properties of the parabola represented by the equation.\n\n\n### Applications\n\nUnderstanding quadratic equations and their properties is essential in various mathematical and scientific applications, including:\n\n* Modeling projectile motion\n* Analyzing parabolic curves\n* Solving optimization problems\n\n\n"
+      },
+      {
+        "data": {
+          "Title": "Descriptive Statistics",
+          "icon": "📊",
+          "flashcards": [
+            {
+              "front": {
+                "title": "Histogram",
+                "question": "What does a histogram visually represent?"
+              },
+              "back": "A histogram visualizes the frequency of different events. Each rectangle represents an event, and its height corresponds to the event's frequency."
+            },
+            {
+              "front": {
+                "title": "Frequency Polygon",
+                "question": "How does a frequency polygon relate to a histogram?"
+              },
+              "back": "A frequency polygon represents the same data as a histogram but uses lines and points instead of rectangles.  It connects the midpoints of the tops of the histogram's rectangles."
+            },
+            {
+              "front": {
+                "title": "Ogive (Cumulative Histogram)",
+                "question": "What does an ogive show?"
+              },
+              "back": "An ogive displays the cumulative frequency—the total number of occurrences of a value or any value less than it.  The first count is always zero, and the last is the sum of all counts."
+            },
+            {
+              "front": {
+                "title": "Variance",
+                "question": "What is the formula for variance?"
+              },
+              "back": "```math\nσ² = 1/n * Σᵢ₌₁ⁿ (xᵢ - x̄)²\n```\nWhere: σ² is the variance, n is the number of data points, xᵢ represents individual data points, and x̄ is the mean."
+            },
+            {
+              "front": {
+                "title": "Standard Deviation",
+                "question": "How is standard deviation related to variance?"
+              },
+              "back": "The standard deviation (σ) is the square root of the variance: \n```math\nσ = √(1/n * Σᵢ₌₁ⁿ (xᵢ - x̄)²)\n```\nIt's measured in the same units as the data, unlike variance."
+            },
+            {
+              "front": {
+                "title": "Symmetric Distribution",
+                "question": "Describe the characteristics of a symmetric distribution."
+              },
+              "back": "In a symmetric distribution, the mean is approximately equal to the median, and the tails of the distribution are balanced."
+            },
+            {
+              "front": {
+                "title": "Right (Positively) Skewed Distribution",
+                "question": "What are the characteristics of a right-skewed distribution?"
+              },
+              "back": "In a right-skewed distribution:\n* The mean is greater than the median.\n* The right tail is longer than the left tail.\n* The median is closer to the first quartile than the third."
+            },
+            {
+              "front": {
+                "title": "Left (Negatively) Skewed Distribution",
+                "question": "What are the characteristics of a left-skewed distribution?"
+              },
+              "back": "In a left-skewed distribution:\n* The mean is less than the median.\n* The left tail is longer than the right tail.\n* The median is closer to the third quartile than the first."
+            },
+            {
+              "front": {
+                "title": "Outlier",
+                "question": "What is an outlier?"
+              },
+              "back": "An outlier is a data point that significantly differs from the rest of the data."
+            }
+          ]
+        },
+        "content": "\n## Descriptive Statistics\n\n### Data Visualization\n\n* **Histograms:** Visualize the frequency of events. Each bar represents an event, and its height shows the frequency.\n* **Frequency Polygons:** Similar to histograms, but use lines and points to connect the midpoints of the histogram bars.\n* **Ogives (Cumulative Histograms):** Show the cumulative frequency—the total count of occurrences up to a given value.  The first value is always zero, and the last is the total count.\n\n### Measures of Dispersion\n\n* **Variance (σ²):** Measures the spread of data around the mean.  Calculated as:\n   ```math\n   σ² = 1/n * Σᵢ₌₁ⁿ (xᵢ - x̄)²\n   ```\n* **Standard Deviation (σ):** The square root of the variance.  Measured in the same units as the data.\n\n### Data Distribution Shapes\n\n* **Symmetric Distribution:** Mean ≈ Median; tails are balanced.\n* **Right (Positively) Skewed Distribution:** Mean > Median; longer right tail; median closer to the first quartile.\n* **Left (Negatively) Skewed Distribution:** Mean < Median; longer left tail; median closer to the third quartile.\n\n### Outliers\n\nAn outlier is a data point significantly distant from the rest of the data.\n"
+      },
+      {
+        "data": {
+          "Title": "Analytical Geometry Formulas",
+          "icon": "📐",
+          "flashcards": [
+            {
+              "front": {
+                "title": "Distance Between Two Points",
+                "question": "How do you calculate the distance between two points (x₁, y₁) and (x₂, y₂)? "
+              },
+              "back": "The distance, *d*, is calculated using the formula:\n```math\n     √((x₂ - x₁)² + (y₂ - y₁)²) \n```"
+            },
+            {
+              "front": {
+                "title": "Gradient of a Line",
+                "question": "What is the formula for the gradient (*m*) of a line passing through two points (x₁, y₁) and (x₂, y₂)? "
+              },
+              "back": "The gradient is given by:\n```math\n     y₂ - y₁\n  ───────\n     x₂ - x₁\n```"
+            },
+            {
+              "front": {
+                "title": "Midpoint of a Line Segment",
+                "question": "How do you find the midpoint of a line segment connecting (x₁, y₁) and (x₂, y₂)? "
+              },
+              "back": "The midpoint, M(x, y), is:\n```math\n     x₁ + x₂     y₁ + y₂\n  (───────, ───────)\n       2         2\n```"
+            },
+            {
+              "front": {
+                "title": "Parallel Lines",
+                "question": "What is the relationship between the gradients of parallel lines?"
+              },
+              "back": "Parallel lines have equal gradients:  m₁ = m₂"
+            },
+            {
+              "front": {
+                "title": "Perpendicular Lines",
+                "question": "How are the gradients of perpendicular lines related?"
+              },
+              "back": "For perpendicular lines, the product of their gradients is -1: m₁ * m₂ = -1"
+            },
+            {
+              "front": {
+                "title": "General Form of a Straight Line",
+                "question": "What is the general form of the equation of a straight line?"
+              },
+              "back": "The general form is: ax + by + c = 0"
+            },
+            {
+              "front": {
+                "title": "Two-Point Form of a Straight Line",
+                "question": "Give the two-point form of a straight line equation."
+              },
+              "back": "The equation is:\n```math\n     y - y₁     y₂ - y₁\n  ─────── = ───────\n     x - x₁     x₂ - x₁\n```"
+            },
+            {
+              "front": {
+                "title": "Gradient-Point Form of a Straight Line",
+                "question": "What is the gradient-point form of a straight line equation?"
+              },
+              "back": "The equation is: y - y₁ = m(x - x₁)"
+            },
+            {
+              "front": {
+                "title": "Gradient-Intercept Form of a Straight Line",
+                "question": "What is the gradient-intercept (standard) form of a straight line equation?"
+              },
+              "back": "The equation is: y = mx + c"
+            },
+            {
+              "front": {
+                "title": "Angle of Inclination",
+                "question": "How is the angle of inclination (θ) of a line related to its gradient?"
+              },
+              "back": "The gradient, *m*, is the tangent of the angle of inclination: m = tan θ"
+            }
+          ]
+        },
+        "content": "\n## Analytical Geometry Formulas\n\nThis document summarizes key formulas in analytical geometry.\n\n### Lines\n\n* **Distance between two points:**  The distance (*d*) between points (x₁, y₁) and (x₂, y₂) is calculated as:\n\n```math\n     √((x₂ - x₁)² + (y₂ - y₁)²)\n```\n\n* **Gradient of a line:** The gradient (*m*) of a line passing through points (x₁, y₁) and (x₂, y₂) is:\n\n```math\n     y₂ - y₁\n  ───────\n     x₂ - x₁\n```\n\n* **Midpoint of a line segment:** The midpoint M(x, y) of the line segment connecting (x₁, y₁) and (x₂, y₂) is:\n\n```math\n     x₁ + x₂     y₁ + y₂\n  (───────, ───────)\n       2         2\n```\n\n* **Parallel lines:** Parallel lines have equal gradients (m₁ = m₂).\n\n* **Perpendicular lines:**  The product of the gradients of perpendicular lines is -1 (m₁ * m₂ = -1).\n\n### Equations of a Straight Line\n\n* **General form:** ax + by + c = 0\n\n* **Two-point form:**\n\n```math\n     y - y₁     y₂ - y₁\n  ─────── = ───────\n     x - x₁     x₂ - x₁\n```\n\n* **Gradient-point form:** y - y₁ = m(x - x₁)\n\n* **Gradient-intercept form (standard form):** y = mx + c\n\n* **Angle of inclination:** The angle of inclination (θ) is the angle between the line and the positive x-axis.  The gradient is given by m = tan θ.\n"
+      },
+      {
+        "data": {
+          "Title": "Grade 11 Functions Summary",
+          "icon": "📈",
+          "flashcards": [
+            {
+              "front": {
+                "title": "Parabolic Functions",
+                "question": "What are the key features of a parabolic function?"
+              },
+              "back": "Standard form: `y = ax² + bx + c`\n* y-intercept: `(0; c)`\n* x-intercept: `x = (-b ± √(b² - 4ac)) / 2a`\n* Turning point: `(-b/2a; -b²/4a + c)`\n* Axis of symmetry: `x = -b/2a`\nCompleted square form: `y = a(x + p)² + q`\n* Turning point: `(-p; q)`\n* `p > 0`: horizontal shift left\n* `p < 0`: horizontal shift right\n* `q > 0`: vertical shift up\n* `q < 0`: vertical shift down"
+            },
+            {
+              "front": {
+                "title": "Average Gradient",
+                "question": "How do you calculate the average gradient?"
+              },
+              "back": "Average gradient = `(y₂ - y₁) / (x₂ - x₁)`"
+            },
+            {
+              "front": {
+                "title": "Hyperbolic Functions",
+                "question": "Describe the key features of a hyperbolic function and its shifted form."
+              },
+              "back": "Standard form: `y = k/x`\n* `k > 0`: first and third quadrants\n* `k < 0`: second and fourth quadrants\nShifted form: `y = k/(x + p) + q`\n* `p > 0`: horizontal shift left\n* `p < 0`: horizontal shift right\n* `q > 0`: vertical shift up\n* `q < 0`: vertical shift down\n* Asymptotes: `x = -p` and `y = q`"
+            },
+            {
+              "front": {
+                "title": "Exponential Functions",
+                "question": "Explain the behavior of exponential functions and their shifted forms."
+              },
+              "back": "Standard form: `y = abˣ`\n* `a > 0`: above x-axis\n* `a < 0`: below x-axis\n* `b > 1`: increasing function if `a > 0`; decreasing if `a < 0`\n* `0 < b < 1`: decreasing function if `a > 0`; increasing if `a < 0`\nShifted form: `y = ab^(x + p) + q`\n* `p > 0`: horizontal shift left\n* `p < 0`: horizontal shift right\n* `q > 0`: vertical shift up\n* `q < 0`: vertical shift down\n* Asymptote: `y = q`"
+            },
+            {
+              "front": {
+                "title": "Sine Functions",
+                "question": "What are the key features of a shifted sine function?"
+              },
+              "back": "Shifted form: `y = a sin(kθ + p) + q`\n* Period = `360°/|k|`\n* `k > 1` or `k < -1`: period decreases\n* `0 < k < 1` or `-1 < k < 0`: period increases\n* `p > 0`: horizontal shift left\n* `p < 0`: horizontal shift right\n* `q > 0`: vertical shift up\n* `q < 0`: vertical shift down\n* `sin(-θ) = -sin θ`"
+            },
+            {
+              "front": {
+                "title": "Cosine Functions",
+                "question": "What are the key features of a shifted cosine function?"
+              },
+              "back": "Shifted form: `y = a cos(kθ + p) + q`\n* Period = `360°/|k|`\n* `k > 1` or `k < -1`: period decreases\n* `0 < k < 1` or `-1 < k < 0`: period increases\n* `p > 0`: horizontal shift left\n* `p < 0`: horizontal shift right\n* `q > 0`: vertical shift up\n* `q < 0`: vertical shift down\n* `cos(-θ) = cos θ`"
+            },
+            {
+              "front": {
+                "title": "Tangent Functions",
+                "question": "What are the key features of a shifted tangent function?"
+              },
+              "back": "Shifted form: `y = a tan(kθ + p) + q`\n* Period = `180°/|k|`\n* `k > 1` or `k < -1`: period decreases\n* `0 < k < 1` or `-1 < k < 0`: period increases\n* `p > 0`: horizontal shift left\n* `p < 0`: horizontal shift right\n* `q > 0`: vertical shift up\n* `q < 0`: vertical shift down\n* `tan(-θ) = -tan θ`\n* Asymptotes: `(90° - p)/k ± 180°n/k`, `n ∈ ℤ`"
+            }
+          ]
+        },
+        "content": "\n## Grade 11 Functions Summary\n\n### Parabolic Functions\n\nThe standard form of a parabolic function is:  `y = ax² + bx + c`\n\n* **y-intercept:**  `(0; c)`\n* **x-intercept:**  `x = (-b ± √(b² - 4ac)) / 2a`\n* **Turning point:** `(-b/2a; -b²/4a + c)`\n* **Axis of symmetry:** `x = -b/2a`\n\nThe completed square form is: `y = a(x + p)² + q`\n\n* **Turning point:** `(-p; q)`\n* `p > 0`: horizontal shift to the left\n* `p < 0`: horizontal shift to the right\n* `q > 0`: vertical shift upwards\n* `q < 0`: vertical shift downwards\n\n\n### Average Gradient\n\nThe average gradient between two points (x₁, y₁) and (x₂, y₂) is calculated as:\n\n`(y₂ - y₁) / (x₂ - x₁)`\n\n\n### Hyperbolic Functions\n\nThe standard form of a hyperbolic function is: `y = k/x`\n\n* `k > 0`: The graph is in the first and third quadrants.\n* `k < 0`: The graph is in the second and fourth quadrants.\n\nThe shifted form is: `y = k/(x + p) + q`\n\n* `p > 0`: horizontal shift to the left\n* `p < 0`: horizontal shift to the right\n* `q > 0`: vertical shift upwards\n* `q < 0`: vertical shift downwards\n* Asymptotes: `x = -p` and `y = q`\n\n\n### Exponential Functions\n\nThe standard form of an exponential function is: `y = abˣ`\n\n* `a > 0`: The graph is above the x-axis.\n* `a < 0`: The graph is below the x-axis.\n* `b > 1`: Increasing function if `a > 0`; decreasing if `a < 0`.\n* `0 < b < 1`: Decreasing function if `a > 0`; increasing if `a < 0`.\n\nThe shifted form is: `y = ab^(x + p) + q`\n\n* `p > 0`: horizontal shift to the left\n* `p < 0`: horizontal shift to the right\n* `q > 0`: vertical shift upwards\n* `q < 0`: vertical shift downwards\n* Asymptote: `y = q`\n\n\n### Trigonometric Functions\n\n**Sine Functions:**\n\nShifted form: `y = a sin(kθ + p) + q`\n\n* Period = `360°/|k|`\n* `k > 1` or `k < -1`: period decreases\n* `0 < k < 1` or `-1 < k < 0`: period increases\n* `p > 0`: horizontal shift to the left\n* `p < 0`: horizontal shift to the right\n* `q > 0`: vertical shift upwards\n* `q < 0`: vertical shift downwards\n* `sin(-θ) = -sin θ`\n\n**Cosine Functions:**\n\nShifted form: `y = a cos(kθ + p) + q`\n\n* Period = `360°/|k|`\n* `k > 1` or `k < -1`: period decreases\n* `0 < k < 1` or `-1 < k < 0`: period increases\n* `p > 0`: horizontal shift to the left\n* `p < 0`: horizontal shift to the right\n* `q > 0`: vertical shift upwards\n* `q < 0`: vertical shift downwards\n* `cos(-θ) = cos θ`\n\n**Tangent Functions:**\n\nShifted form: `y = a tan(kθ + p) + q`\n\n* Period = `180°/|k|`\n* `k > 1` or `k < -1`: period decreases\n* `0 < k < 1` or `-1 < k < 0`: period increases\n* `p > 0`: horizontal shift to the left\n* `p < 0`: horizontal shift to the right\n* `q > 0`: vertical shift upwards\n* `q < 0`: vertical shift downwards\n* `tan(-θ) = -tan θ`\n* Asymptotes: `(90° - p)/k ± 180°n/k`, `n ∈ ℤ`\n\n"
+      },
+      {
+        "data": {
+          "Title": "Trigonometric Identities and Rules",
+          "icon": "📐",
+          "flashcards": [
+            {
+              "front": {
+                "title": "Square Identity",
+                "question": "What is the Pythagorean identity relating sine and cosine?"
+              },
+              "back": "```math\ncos²θ + sin²θ = 1\n```"
+            },
+            {
+              "front": {
+                "title": "Quotient Identity",
+                "question": "How is tangent defined in terms of sine and cosine?"
+              },
+              "back": "```math\ntanθ = sinθ / cosθ\n```"
+            },
+            {
+              "front": {
+                "title": "Negative Angle Identities (Sine)",
+                "question": "How does the sine of a negative angle relate to the sine of the positive angle?"
+              },
+              "back": "```math\nsin(-θ) = -sinθ\n```"
+            },
+            {
+              "front": {
+                "title": "Negative Angle Identities (Cosine)",
+                "question": "How does the cosine of a negative angle relate to the cosine of the positive angle?"
+              },
+              "back": "```math\ncos(-θ) = cosθ\n```"
+            },
+            {
+              "front": {
+                "title": "Periodicity Identity (Sine)",
+                "question": "What is the period of the sine function?"
+              },
+              "back": "```math\nsin(θ ± 360°) = sinθ\n```"
+            },
+            {
+              "front": {
+                "title": "Periodicity Identity (Cosine)",
+                "question": "What is the period of the cosine function?"
+              },
+              "back": "```math\ncos(θ ± 360°) = cosθ\n```"
+            },
+            {
+              "front": {
+                "title": "Cofunction Identity (Sine and Cosine)",
+                "question": "How are sine and cosine related as cofunctions?"
+              },
+              "back": "```math\nsin(90° - θ) = cosθ\ncos(90° - θ) = sinθ\n```"
+            },
+            {
+              "front": {
+                "title": "Sine Rule",
+                "question": "State the sine rule for a triangle."
+              },
+              "back": "```math\nsinA / a = sinB / b = sinC / c\n```"
+            },
+            {
+              "front": {
+                "title": "Area Rule",
+                "question": "Give the formula for the area of a triangle using two sides and the included angle."
+              },
+              "back": "Area of triangle ABC = 1/2 * b * c * sinA  (or similar variations using other sides and angles)"
+            },
+            {
+              "front": {
+                "title": "Cosine Rule",
+                "question": "State the cosine rule for a triangle."
+              },
+              "back": "```math\na² = b² + c² - 2bc cosA\n``` (and similar variations for b² and c²)"
+            },
+            {
+              "front": {
+                "title": "General Solution for sinθ = x",
+                "question": "What is the general solution for θ when sinθ = x?"
+              },
+              "back": "θ = sin⁻¹x + k * 360° or θ = (180° - sin⁻¹x) + k * 360°, where k ∈ ℤ"
+            },
+            {
+              "front": {
+                "title": "General Solution for cosθ = x",
+                "question": "What is the general solution for θ when cosθ = x?"
+              },
+              "back": "θ = cos⁻¹x + k * 360° or θ = (360° - cos⁻¹x) + k * 360°, where k ∈ ℤ"
+            },
+            {
+              "front": {
+                "title": "General Solution for tanθ = x",
+                "question": "What is the general solution for θ when tanθ = x?"
+              },
+              "back": "θ = tan⁻¹x + k * 180°, where k ∈ ℤ"
+            }
+          ]
+        },
+        "content": "\n## Trigonometric Identities and Rules\n\n### Basic Identities\n\n* **Square Identity:**  ```math\\ncos²θ + sin²θ = 1\\n```\n* **Quotient Identity:** ```math\\ntanθ = sinθ / cosθ\\n```\n\n### Angle Relationships\n\n* **Negative Angle Identities:**\n    * ```math\\nsin(-θ) = -sinθ\\n```\n    * ```math\\ncos(-θ) = cosθ\\n```\n* **Periodicity Identities:**\n    * ```math\\nsin(θ ± 360°) = sinθ\\n```\n    * ```math\\ncos(θ ± 360°) = cosθ\\n```\n* **Cofunction Identities:**\n    * ```math\\nsin(90° - θ) = cosθ\\n```\n    * ```math\\ncos(90° - θ) = sinθ\\n```\n\n\n### Triangle Rules\n\n* **Sine Rule:** ```math\\nsinA / a = sinB / b = sinC / c\\n```\n* **Area Rule:** Area of triangle ABC = 1/2 * b * c * sinA (or similar variations using other sides and angles)\n* **Cosine Rule:** ```math\\na² = b² + c² - 2bc cosA\\n``` (and similar variations for b² and c²)\n\n### General Solutions\n\nFinding all possible solutions for θ given a trigonometric equation:\n\n* **If sinθ = x:** θ = sin⁻¹x + k * 360° or θ = (180° - sin⁻¹x) + k * 360°, where k ∈ ℤ\n* **If cosθ = x:** θ = cos⁻¹x + k * 360° or θ = (360° - cos⁻¹x) + k * 360°, where k ∈ ℤ\n* **If tanθ = x:** θ = tan⁻¹x + k * 180°, where k ∈ ℤ\n\n\n### Choosing the Right Rule\n\n* **Area Rule:** Use when no perpendicular height is given.\n* **Sine Rule:** Use when no right angle is given, and either two sides and an angle (not the included angle) or two angles and a side are given.\n* **Cosine Rule:** Use when no right angle is given, and either two sides and the included angle are given or three sides are given.\n\n"
+      },
+      {
+        "data": {
+          "Title": "Area, Surface Area, and Volume Formulas",
+          "icon": "📐",
+          "flashcards": [
+            {
+              "front": {
+                "title": "Area of a Square",
+                "question": "What is the formula for the area of a square?"
+              },
+              "back": "Area = s² where s is the side length"
+            },
+            {
+              "front": {
+                "title": "Area of a Rectangle",
+                "question": "How do you calculate the area of a rectangle?"
+              },
+              "back": "Area = b × h where b is the base and h is the height"
+            },
+            {
+              "front": {
+                "title": "Area of a Triangle",
+                "question": "What's the formula for the area of a triangle?"
+              },
+              "back": "Area = ½ × b × h where b is the base and h is the height"
+            },
+            {
+              "front": {
+                "title": "Area of a Trapezium",
+                "question": "How do you find the area of a trapezium?"
+              },
+              "back": "Area = ½ × (a + b) × h where a and b are the parallel sides and h is the height"
+            },
+            {
+              "front": {
+                "title": "Area of a Parallelogram",
+                "question": "What is the area formula for a parallelogram?"
+              },
+              "back": "Area = b × h where b is the base and h is the height"
+            },
+            {
+              "front": {
+                "title": "Area of a Circle",
+                "question": "What's the formula for the area of a circle?"
+              },
+              "back": "Area = πr² where r is the radius"
+            },
+            {
+              "front": {
+                "title": "Volume of a Rectangular Prism",
+                "question": "How do you calculate the volume of a rectangular prism?"
+              },
+              "back": "Volume = l × b × h where l is the length, b is the breadth, and h is the height"
+            },
+            {
+              "front": {
+                "title": "Volume of a Triangular Prism",
+                "question": "What's the formula for the volume of a triangular prism?"
+              },
+              "back": "Volume = (½ × b × h) × H where b and h are the base and height of the triangle, and H is the prism's height"
+            },
+            {
+              "front": {
+                "title": "Volume of a Cube",
+                "question": "How do you find the volume of a cube?"
+              },
+              "back": "Volume = s³ where s is the side length"
+            },
+            {
+              "front": {
+                "title": "Volume of a Cylinder",
+                "question": "What's the formula for the volume of a cylinder?"
+              },
+              "back": "Volume = πr² × h where r is the radius and h is the height"
+            },
+            {
+              "front": {
+                "title": "Surface Area of a Square Pyramid",
+                "question": "What is the surface area formula for a square pyramid?"
+              },
+              "back": "Surface Area = b(b + 2h) where b is the base side length and h is the slant height"
+            },
+            {
+              "front": {
+                "title": "Surface Area of a Triangular Pyramid",
+                "question": "How do you calculate the surface area of a triangular pyramid?"
+              },
+              "back": "Surface Area = ½b(hb + 3hs) where b is the base length, hb is the base height, and hs is the slant height"
+            },
+            {
+              "front": {
+                "title": "Surface Area of a Right Cone",
+                "question": "What's the surface area formula for a right cone?"
+              },
+              "back": "Surface Area = πr(r + hs) where r is the radius and hs is the slant height"
+            },
+            {
+              "front": {
+                "title": "Surface Area of a Sphere",
+                "question": "How do you find the surface area of a sphere?"
+              },
+              "back": "Surface Area = 4πr² where r is the radius"
+            },
+            {
+              "front": {
+                "title": "Volume of a Square Pyramid",
+                "question": "What is the volume formula for a square pyramid?"
+              },
+              "back": "Volume = (⅓) × b² × H where b is the base side length and H is the height"
+            },
+            {
+              "front": {
+                "title": "Volume of a Triangular Pyramid",
+                "question": "How do you calculate the volume of a triangular pyramid?"
+              },
+              "back": "Volume = (⅓) × (½ × b × h) × H where b and h are the base and height of the triangle, and H is the pyramid's height"
+            },
+            {
+              "front": {
+                "title": "Volume of a Right Cone",
+                "question": "What's the volume formula for a right cone?"
+              },
+              "back": "Volume = (⅓) × πr² × H where r is the radius and H is the height"
+            },
+            {
+              "front": {
+                "title": "Volume of a Sphere",
+                "question": "How do you find the volume of a sphere?"
+              },
+              "back": "Volume = (4/3)πr³ where r is the radius"
+            }
+          ]
+        },
+        "content": "\n## Area, Surface Area, and Volume Formulas\n\nArea is the two-dimensional space inside the boundary of a flat object.  Surface area is the total area of the exposed outer surfaces of a three-dimensional object. Volume is the three-dimensional space occupied by an object.\n\n### Area Formulas\n\n*   **Square:**  `Area = s²` where `s` is the side length.\n*   **Rectangle:** `Area = b × h` where `b` is the base and `h` is the height.\n*   **Triangle:** `Area = ½ × b × h` where `b` is the base and `h` is the height.\n*   **Trapezium:** `Area = ½ × (a + b) × h` where `a` and `b` are the parallel sides and `h` is the height.\n*   **Parallelogram:** `Area = b × h` where `b` is the base and `h` is the height.\n*   **Circle:** `Area = πr²` where `r` is the radius.\n\n\n### Volume Formulas\n\n*   **Rectangular Prism:** `Volume = l × b × h` where `l` is the length, `b` is the breadth, and `h` is the height.\n*   **Triangular Prism:** `Volume = (½ × b × h) × H` where `b` and `h` are the base and height of the triangular base, and `H` is the prism's height.\n*   **Cube:** `Volume = s³` where `s` is the side length.\n*   **Cylinder:** `Volume = πr² × h` where `r` is the radius and `h` is the height.\n*   **Square Pyramid:** `Volume = (⅓) × b² × H` where `b` is the base side length and `H` is the height.\n*   **Triangular Pyramid:** `Volume = (⅓) × (½ × b × h) × H` where `b` and `h` are the base and height of the triangular base, and `H` is the pyramid's height.\n*   **Right Cone:** `Volume = (⅓) × πr² × H` where `r` is the radius and `H` is the height.\n*   **Sphere:** `Volume = (4/3)πr³` where `r` is the radius.\n\n\n### Surface Area Formulas\n\n*   **Square Pyramid:** `Surface Area = b(b + 2h)` where `b` is the base side length and `h` is the slant height.\n*   **Triangular Pyramid:** `Surface Area = ½b(hb + 3hs)` where `b` is the base length, `hb` is the base height, and `hs` is the slant height.\n*   **Right Cone:** `Surface Area = πr(r + hs)` where `r` is the radius and `hs` is the slant height.\n*   **Sphere:** `Surface Area = 4πr²` where `r` is the radius.\n\nA net is the unfolded \"plan\" of a solid.  A pyramid is a geometric solid with a polygon base and sides converging at an apex.\n"
+      },
+      {
+        "data": {
+          "Title": "Circle Geometry Theorems",
+          "icon": "⚪",
+          "flashcards": [
+            {
+              "front": {
+                "title": "Arc",
+                "question": "What is an arc?"
+              },
+              "back": "A portion of the circumference of a circle."
+            },
+            {
+              "front": {
+                "title": "Chord",
+                "question": "What is a chord?"
+              },
+              "back": "A straight line joining the ends of an arc."
+            },
+            {
+              "front": {
+                "title": "Circumference",
+                "question": "What is the circumference of a circle?"
+              },
+              "back": "The perimeter or boundary line of a circle."
+            },
+            {
+              "front": {
+                "title": "Radius",
+                "question": "What is the radius of a circle?"
+              },
+              "back": "Any straight line from the center of the circle to a point on the circumference."
+            },
+            {
+              "front": {
+                "title": "Diameter",
+                "question": "What is the diameter of a circle?"
+              },
+              "back": "A chord that passes through the center of the circle. It's twice the length of the radius."
+            },
+            {
+              "front": {
+                "title": "Segment",
+                "question": "What is a segment of a circle?"
+              },
+              "back": "A part of the circle cut off by a chord."
+            },
+            {
+              "front": {
+                "title": "Tangent",
+                "question": "What is a tangent to a circle?"
+              },
+              "back": "A straight line that touches the circle at only one point on the circumference.  It is perpendicular to the radius at the point of contact."
+            },
+            {
+              "front": {
+                "title": "Angle Subtended by an Arc at the Center",
+                "question": "How does the angle subtended by an arc at the center relate to the angle subtended at the circumference?"
+              },
+              "back": "The angle at the center is twice the size of the angle at the circumference."
+            },
+            {
+              "front": {
+                "title": "Angles Subtended by the Same Arc",
+                "question": "What is true about angles at the circumference subtended by the same arc?"
+              },
+              "back": "They are equal."
+            },
+            {
+              "front": {
+                "title": "Cyclic Quadrilateral",
+                "question": "What is the property of opposite angles in a cyclic quadrilateral?"
+              },
+              "back": "Opposite angles are supplementary (add up to 180°)."
+            },
+            {
+              "front": {
+                "title": "Tangent and Chord Theorem",
+                "question": "What is the relationship between the angle between a tangent and a chord, and the angle in the alternate segment?"
+              },
+              "back": "They are equal."
+            },
+            {
+              "front": {
+                "title": "Tangents from a Point",
+                "question": "What is true about tangents drawn from the same external point to a circle?"
+              },
+              "back": "The lengths of the tangents are equal."
+            }
+          ]
+        },
+        "content": "\n## Circle Geometry Theorems\n\n### Basic Definitions\n\n* **Arc:** A portion of the circumference of a circle.\n* **Chord:** A straight line segment joining two points on the circumference.\n* **Circumference:** The total distance around the circle.\n* **Radius (r):** The distance from the center of the circle to any point on the circumference.\n* **Diameter:** A chord passing through the center of the circle.  It is twice the length of the radius (2r).\n* **Segment:** The region bounded by a chord and an arc.\n* **Tangent:** A straight line that touches the circle at exactly one point.  The tangent is perpendicular to the radius at the point of contact.\n\n\n### Theorems\n\n* **Angle at the Center Theorem:** The angle subtended by an arc at the center of a circle is twice the angle subtended by the same arc at any point on the circumference.\n\n* **Angles Subtended by the Same Arc Theorem:** Angles subtended by the same arc at the circumference are equal.\n\n* **Cyclic Quadrilateral Theorem:** In a cyclic quadrilateral (a quadrilateral whose vertices lie on a circle), the sum of opposite angles is 180°.\n\n* **Tangent-Chord Theorem:** The angle between a tangent and a chord drawn from the point of contact is equal to the angle in the alternate segment.\n\n* **Tangents from an External Point:** Two tangents drawn from an external point to a circle are equal in length.\n\n\n### Properties of Perpendicular Bisectors\n\n* The perpendicular bisector of a chord passes through the center of the circle.\n* If a line segment from the center of the circle bisects a chord and is perpendicular to it, then that line segment is the perpendicular bisector of the chord.\n\n"
+      },
+      {
+        "data": {
+          "Title": "Financial Growth and Decay",
+          "icon": "💰",
+          "flashcards": [
+            {
+              "front": {
+                "title": "Simple Interest",
+                "question": "How is the future value calculated with simple interest?"
+              },
+              "back": "Formula:  ```math\nA = P(1 + in)\n``` where A is the future value, P is the principal, i is the interest rate per period, and n is the number of periods."
+            },
+            {
+              "front": {
+                "title": "Compound Interest",
+                "question": "How is the future value calculated with compound interest?"
+              },
+              "back": "Formula: ```math\nA = P(1 + i)^n\n``` where A is the future value, P is the principal, i is the interest rate per period, and n is the number of periods."
+            },
+            {
+              "front": {
+                "title": "Simple Depreciation",
+                "question": "How is the future value calculated with simple depreciation?"
+              },
+              "back": "Formula: ```math\nA = P(1 - in)\n``` where A is the future value, P is the initial value, i is the depreciation rate per period, and n is the number of periods."
+            },
+            {
+              "front": {
+                "title": "Compound Depreciation",
+                "question": "How is the future value calculated with compound depreciation?"
+              },
+              "back": "Formula: ```math\nA = P(1 - i)^n\n``` where A is the future value, P is the initial value, i is the depreciation rate per period, and n is the number of periods."
+            },
+            {
+              "front": {
+                "title": "Nominal and Effective Interest Rates",
+                "question": "How are nominal and effective annual interest rates related?"
+              },
+              "back": "Formula: ```math\n1 + i = (1 + i^(m)/m)^m\n``` where i is the effective annual interest rate, and i^(m) is the nominal interest rate compounded m times per year."
+            }
+          ]
+        },
+        "content": "\n## Financial Growth and Decay\n\n### Interest and Depreciation\n\nThis section covers the calculation of future values involving interest and depreciation, considering both simple and compound methods.\n\n#### Simple Interest\n\nSimple interest is calculated only on the principal amount.  The formula for simple interest is:\n\n```math\nA = P(1 + in)\n```\n\nWhere:\n\n* A = Future Value\n* P = Principal (initial amount)\n* i = Interest rate per period\n* n = Number of periods\n\n\n#### Compound Interest\n\nCompound interest is calculated on both the principal amount and accumulated interest from previous periods. The formula for compound interest is:\n\n```math\nA = P(1 + i)^n\n```\n\nWhere:\n\n* A = Future Value\n* P = Principal (initial amount)\n* i = Interest rate per period\n* n = Number of periods\n\n\n#### Simple Depreciation\n\nSimple depreciation is a method where the depreciation amount is constant each period. The formula for simple depreciation is:\n\n```math\nA = P(1 - in)\n```\n\nWhere:\n\n* A = Future Value\n* P = Initial Value\n* i = Depreciation rate per period\n* n = Number of periods\n\n\n#### Compound Depreciation\n\nCompound depreciation is a method where the depreciation amount is calculated on the remaining value each period. The formula for compound depreciation is:\n\n```math\nA = P(1 - i)^n\n```\n\nWhere:\n\n* A = Future Value\n* P = Initial Value\n* i = Depreciation rate per period\n* n = Number of periods\n\n\n#### Nominal and Effective Annual Interest Rates\n\nThe relationship between nominal and effective annual interest rates is given by:\n\n```math\n1 + i = (1 + i^(m)/m)^m\n```\n\nWhere:\n\n* i = Effective annual interest rate\n* i^(m) = Nominal interest rate compounded m times per year\n\nThis formula allows for the conversion between nominal rates (stated interest rate) and effective annual rates (the actual interest earned considering compounding).\n"
+      },
+      {
+        "data": {
+          "Title": "Basic Probability Concepts",
+          "icon": "🎲",
+          "flashcards": [
+            {
+              "front": {
+                "title": "Outcome",
+                "question": "What is an outcome in probability?"
+              },
+              "back": "A single observation of an experiment."
+            },
+            {
+              "front": {
+                "title": "Sample Space",
+                "question": "Define sample space."
+              },
+              "back": "The set of all possible outcomes of an experiment."
+            },
+            {
+              "front": {
+                "title": "Event",
+                "question": "What is an event in probability?"
+              },
+              "back": "A set of outcomes of an experiment."
+            },
+            {
+              "front": {
+                "title": "Probability",
+                "question": "How is probability defined?"
+              },
+              "back": "A real number between 0 and 1 that describes how likely an event is to occur."
+            },
+            {
+              "front": {
+                "title": "Relative Frequency",
+                "question": "How do you calculate relative frequency?"
+              },
+              "back": "The number of times an event occurs during experimental trials divided by the total number of trials."
+            },
+            {
+              "front": {
+                "title": "Union of Events",
+                "question": "What is the union of events A and B?"
+              },
+              "back": "The set of all outcomes that occur in at least one of the events (A or B)."
+            },
+            {
+              "front": {
+                "title": "Intersection of Events",
+                "question": "What is the intersection of events A and B?"
+              },
+              "back": "The set of all outcomes that occur in both events (A and B)."
+            },
+            {
+              "front": {
+                "title": "Mutually Exclusive Events",
+                "question": "Define mutually exclusive events."
+              },
+              "back": "Events with no outcomes in common.  (A and B) = Ø"
+            },
+            {
+              "front": {
+                "title": "Complementary Events",
+                "question": "What are complementary events?"
+              },
+              "back": "Two mutually exclusive events that together contain all outcomes in the sample space.  The complement of A is written as 'not A'."
+            },
+            {
+              "front": {
+                "title": "Independent Events",
+                "question": "When are events considered independent?"
+              },
+              "back": "Two events where knowing the outcome of one does not affect the probability of the other. P(A and B) = P(A) * P(B)"
+            },
+            {
+              "front": {
+                "title": "Addition Rule",
+                "question": "State the addition rule for probability."
+              },
+              "back": "P(A or B) = P(A) + P(B) - P(A and B)"
+            },
+            {
+              "front": {
+                "title": "Addition Rule (Mutually Exclusive)",
+                "question": "What is the addition rule for mutually exclusive events?"
+              },
+              "back": "P(A or B) = P(A) + P(B)"
+            },
+            {
+              "front": {
+                "title": "Complementary Rule",
+                "question": "State the complementary rule."
+              },
+              "back": "P(not A) = 1 - P(A)"
+            },
+            {
+              "front": {
+                "title": "Venn Diagram",
+                "question": "What is a Venn diagram used for?"
+              },
+              "back": "A visual tool to show how events overlap. Regions represent events, containing outcomes, counts, or probabilities."
+            },
+            {
+              "front": {
+                "title": "Tree Diagram",
+                "question": "How are tree diagrams used in probability?"
+              },
+              "back": "A visual tool for computing probabilities of dependent events.  Probabilities are multiplied along paths, and path probabilities are added for combinations of outcomes."
+            },
+            {
+              "front": {
+                "title": "Two-Way Contingency Table",
+                "question": "What is a two-way contingency table used for?"
+              },
+              "back": "Organising data to determine dependence or independence between two events, each with two outcomes.  Shows counts for all outcome combinations."
+            }
+          ]
+        },
+        "content": "\n## Basic Probability Concepts\n\n### Terminology\n\n*   **Outcome:** A single observation of an experiment.\n*   **Sample Space:** The set of all possible outcomes of an experiment.\n*   **Event:** A set of outcomes of an experiment.\n*   **Probability:** A real number between 0 and 1 representing the likelihood of an event occurring.\n*   **Relative Frequency:** The number of times an event occurs divided by the total number of trials.\n*   **Union (A or B):** The set of outcomes in at least one of events A or B.\n*   **Intersection (A and B):** The set of outcomes in both events A and B.\n*   **Mutually Exclusive Events:** Events with no common outcomes.  (A and B) = Ø\n*   **Complementary Events:** Two mutually exclusive events whose union is the entire sample space.\n*   **Independent Events:** Knowing the outcome of one event doesn't affect the probability of the other.  P(A and B) = P(A) * P(B)\n\n\n### Identities\n\n*   **Addition Rule:**  `P(A or B) = P(A) + P(B) - P(A and B)`\n*   **Addition Rule (Mutually Exclusive):** `P(A or B) = P(A) + P(B)`\n*   **Complementary Rule:** `P(not A) = 1 - P(A)`\n\n\n### Visual Tools\n\n*   **Venn Diagram:** A visual representation of events and their overlaps.  Regions show outcomes, counts, or probabilities.\n*   **Tree Diagram:** A visual tool for calculating probabilities of dependent events.  Probabilities are multiplied along paths, and path probabilities are summed for combinations.\n*   **Two-Way Contingency Table:**  Organizes data to show the relationship between two events, each with two outcomes.  Displays counts for all possible combinations.\n\n"
+      }
     ]
   }
 };
@@ -2585,7 +3408,7 @@ export async function GET(request: Request) {
   }
 
   if (lessonId) {
-    const lesson = lessons[parseInt(lessonId) - 1];
+    const lesson = lessons[parseInt(lessonId)];
     return Response.json({ contents: lesson });
   }
 
